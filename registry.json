@@ -1,1 +1,10 @@
-{}
+{
+  "test-bild-upload": {
+    "topic": "Test Bild Upload",
+    "brief": "Testlauf fuer Referenzdatei-Upload. Bitte das mitgegebene Logo im Header einbauen.",
+    "path": "test-bild-upload.html",
+    "assets": [
+      "assets/test-bild-upload/FullLogo_Transparent_NoBuffer.png"
+    ]
+  }
+}
