@@ -1,1 +1,8 @@
-{}
+{
+  "carlos-selbsttest": {
+    "topic": "Carlos Selbsttest",
+    "brief": "Interner Testlauf zur Funktionsprüfung – bitte ignorieren.",
+    "path": "carlos-selbsttest.html",
+    "assets": []
+  }
+}
