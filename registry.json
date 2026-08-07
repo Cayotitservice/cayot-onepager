@@ -26,5 +26,20 @@
     "hero_titel": "IT-Notdienst in Bad Kreuznach - schnell da, schnell geloest",
     "bildrichtung": "Blick durch einen langen Gang zwischen zwei Rack-Reihen, starke Fluchtlinien, kühles Blau",
     "erstellt": "2026-08-07T23:00:34"
+  },
+  "microsoft-365-service": {
+    "titel": "Microsoft 365 Service",
+    "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: Ordnung schaffen, wo ueber Jahre gewachsen wurde.",
+    "thema": "Wir schauen uns an: Benutzerkonten, Mehr-Faktor-Anmeldung (MFA), Adminrollen, alte Benutzer die niemand geloescht hat, Lizenzen (wofuer wird eigentlich bezahlt), Entra, Geraete, OneDrive, SharePoint, Defender, Mailweiterleitungen und die grundlegende Sicherheit. Es gibt das als laufende Betreuung nach Aufwand ODER als festes Paket 'M365 Quick Check'. Beim Quick Check bekommt der Kunde danach eine kurze, verstaendliche Liste mit Ampel-Bewertung: gruen = passt, gelb = sollte geaendert werden, rot = dringend. Die Umsetzung der Punkte wird danach getrennt beauftragt und berechnet - das gehoert klar gesagt, damit niemand ueberrascht ist. KEINE Preise nennen, auch keinen Festpreis - nur 'Festpreis auf Anfrage'. Das Ampel-Ergebnis ist der Star der Seite: kurz, verstaendlich, kein Fachbericht, den niemand liest.",
+    "produkt": "Microsoft 365 pruefen, aufraeumen und sicher einstellen - fuer Betriebe mit 2 bis 20 Mitarbeitern.",
+    "path": "microsoft-365-service.html",
+    "assets": [
+      "assets/microsoft-365-service/hero_bild.png",
+      "assets/microsoft-365-service/zweitbild.png",
+      "assets/microsoft-365-service/hintergrund_bild.png"
+    ],
+    "hero_titel": "Microsoft 365 prüfen lassen - Ampel statt Fachbericht",
+    "bildrichtung": "Nahaufnahme eines Patchfeldes, hunderte farbige Kabel, geringe Schärfentiefe, warmes Bernstein",
+    "erstellt": "2026-08-07T23:05:04"
   }
 }
