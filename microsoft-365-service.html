@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Microsoft 365 prüfen lassen - Ampel statt Fachbericht | Cayot IT Service</title>
+<meta name="description" content="Microsoft 365 Check für Betriebe mit 2-20 Mitarbeitern: Konten, MFA, Lizenzen und Sicherheit prüfen - Ergebnis als klare Ampel-Liste." />
+<meta property="og:title" content="Microsoft 365 prüfen lassen - Ampel statt Fachbericht | Cayot IT Service" />
+<meta property="og:description" content="Microsoft 365 Check für Betriebe mit 2-20 Mitarbeitern: Konten, MFA, Lizenzen und Sicherheit prüfen - Ergebnis als klare Ampel-Liste." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/microsoft-365-service/hero_bild.png" />
+<link rel="icon" href="assets/marke/logo.png" />
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,.82) 40%,rgba(5,7,12,.94) 100%),url('assets/microsoft-365-service/hintergrund_bild.png') center/cover fixed no-repeat;background-color:#05070c;color:#edf1f7;
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ -webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:#29a8ff;text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
+.unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
+
+.kopf{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+ gap:1rem;padding:.75rem clamp(1rem,4vw,3rem);background:rgba(5,7,12,.85);
+ backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.10);flex-wrap:wrap}
+.marke{display:flex;align-items:center;gap:.6rem;color:#edf1f7;font-weight:600}
+.marke img{height:38px;width:auto}
+.kopf nav{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.kopf nav a{color:#a2abbd}
+
+.knopf{display:inline-block;padding:.85rem 1.5rem;border-radius:10px;font-weight:600;
+ border:1px solid rgba(255,255,255,0.10);background:#101625;color:#edf1f7;cursor:pointer;
+ transition:transform .15s ease,box-shadow .15s ease}
+.knopf:hover{text-decoration:none;transform:translateY(-1px)}
+.knopf.haupt{background:linear-gradient(135deg,#29a8ff,#1c6fa8);
+ border-color:transparent;color:#031018;box-shadow:0 6px 24px rgba(41,168,255,.28)}
+.knopf.leer{background:transparent}
+.knopf.klein{padding:.5rem 1rem;font-size:.9rem}
+.knopf.breit{width:100%;font-size:1.05rem}
+.knopfreihe{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.75rem}
+
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;
+ padding:clamp(2.5rem,7vw,5.5rem) clamp(1rem,4vw,3rem) clamp(2rem,5vw,4rem);max-width:1200px;margin:0 auto}
+.hero-bild img{border-radius:18px;border:1px solid rgba(255,255,255,0.10);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.fuer-wen{list-style:none;padding:0;margin:1.5rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem;
+ justify-content:inherit}
+.fuer-wen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:999px;
+ padding:.4rem 1rem;font-size:.9rem;color:#a2abbd}
+
+/* Nicht alles linksbuendig (Chef 07.08.2026). Ueberschriften und Einleitungen stehen
+   mittig, der Fliesstext in den Karten bleibt linksbuendig - alles zentriert liest sich
+   schlecht. */
+.block{max-width:1200px;margin:0 auto;padding:clamp(2rem,5vw,4rem) clamp(1rem,4vw,3rem);
+ text-align:center}
+.block>h2{margin-left:auto;margin-right:auto;max-width:22ch}
+.block>.unterzeile{margin-left:auto;margin-right:auto}
+.block .karte,.block .ablauf li,.block details{text-align:left}
+.raster{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:2rem}
+.karte{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:1.5rem}
+.karte h3{font-size:1.15rem;color:#29a8ff}
+.karte p{margin:0;color:#a2abbd}
+.block.problem .karte h3{color:#f0b429}
+
+.ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
+.ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
+ border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:1.35rem}
+.ablauf h3{margin:0 0 .25rem;font-size:1.1rem}
+.ablauf p{margin:0;color:#a2abbd}
+.nr{flex:0 0 2.25rem;height:2.25rem;border-radius:50%;display:grid;place-items:center;font-weight:700;
+ background:linear-gradient(135deg,#29a8ff,#1c6fa8);color:#031018}
+
+.bildband{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)}
+.bildband img{border-radius:18px;border:1px solid rgba(255,255,255,0.10);width:100%;object-fit:cover;max-height:420px}
+
+.faq{margin-top:1.5rem;display:grid;gap:.75rem}
+details{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:12px;padding:1rem 1.25rem}
+summary{cursor:pointer;font-weight:600}
+details p{color:#a2abbd;margin:.75rem 0 0}
+
+.anfrage{background:#101625;border-top:1px solid rgba(255,255,255,0.10);
+ border-bottom:1px solid rgba(255,255,255,0.10);max-width:none}
+.anfrage>*{max-width:1200px;margin-left:auto;margin-right:auto}
+.wege{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:2rem auto}
+.weg{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:1.25rem;
+ display:grid;gap:.25rem;color:#edf1f7}
+.weg span{color:#a2abbd;font-size:.92rem}
+.weg strong{font-size:1.1rem;color:#29a8ff}
+.weg.whatsapp strong{color:#22c55e}
+.weg:hover{text-decoration:none;border-color:#29a8ff}
+
+.formular{display:grid;gap:1rem;max-width:760px;margin:0 auto;text-align:left}
+.felder{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+label{display:grid;gap:.4rem;font-size:.9rem;color:#a2abbd}
+input,textarea{font:inherit;color:#edf1f7;background:#05070c;border:1px solid rgba(255,255,255,0.10);
+ border-radius:10px;padding:.75rem .9rem;width:100%}
+input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
+.hinweis{color:#a2abbd;font-size:.85rem;margin:0}
+
+.fuss{border-top:1px solid rgba(255,255,255,0.10);background:#05070c;
+ padding:clamp(2rem,5vw,3.5rem) clamp(1rem,4vw,3rem) 2rem}
+.fuss-spalten{max-width:1200px;margin:0 auto;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}
+.fuss p{color:#a2abbd;margin:.5rem 0 0}
+.fuss a{color:#a2abbd}
+.fuss a:hover{color:#29a8ff}
+.fuss h4{margin:0;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:#edf1f7}
+.fuss-logo{height:44px;width:auto}
+.partner{max-width:1200px;margin:2.5rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.10)}
+.haftung{font-size:.78rem;max-width:70ch}
+.copy{max-width:1200px;margin:2.5rem auto 0;color:#a2abbd;font-size:.85rem}
+
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .hero-bild{order:-1}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="kopf">
+  <a class="marke" href="https://itscayot.com">
+    <img src="assets/marke/logo.png" alt="Cayot IT Service" />
+    <span>Cayot IT Service</span>
+  </a>
+  <nav>
+    <a href="https://itscayot.com">Zur Hauptseite</a>
+    <a class="knopf klein" href="#anfrage">Kontakt</a>
+  </nav>
+</header>
+<main>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Microsoft 365 prüfen lassen - Ampel statt Fachbericht</h1>
+    <p class="unterzeile">Wir schauen uns Euer Microsoft 365 komplett an - Konten, Rechte, Sicherheit, Lizenzen - und zeigen Euch in einer kurzen Ampel-Liste, wo es passt und wo Handlungsbedarf besteht.</p>
+    <ul class="fuer-wen"><li>Handwerksbetriebe, die M365 nutzen, aber nie richtig eingerichtet haben</li><li>Einzelunternehmer und Selbstständige, die ihre Kundendaten schützen müssen</li><li>Firmen ohne eigene IT-Abteilung, denen der Überblick über Lizenzen und Konten fehlt</li><li>Privatleute mit eigenem Microsoft-365-Abo, die wissen wollen, ob ihr Konto sicher eingestellt ist</li></ul>
+    <div class="knopfreihe">
+      <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
+        Jetzt per WhatsApp anfragen</a>
+      <a class="knopf" href="tel:+4917620740729">Anrufen</a>
+      <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
+    </div>
+  </div>
+  <div class="hero-bild"><img src="assets/microsoft-365-service/hero_bild.png" alt="Microsoft 365 Service" /></div>
+</section>
+
+<section class="block problem">
+  <h2>Über die Jahre gewachsen, nie aufgeräumt</h2>
+  <div class="raster"><article class="karte"><h3>Niemand weiß, wer noch Zugriff hat</h3><p>Ehemalige Mitarbeiter, alte Praktikanten, vergessene Testkonten - viele Betriebe haben Benutzerkonten in Microsoft 365, die längst gelöscht sein sollten. Jedes offene Konto ist ein Einstiegspunkt für Angreifer.</p></article><article class="karte"><h3>Lizenzen, die niemand mehr zuordnen kann</h3><p>Über die Jahre wurden Lizenzen gebucht, aufgestockt, wieder reduziert - am Ende bezahlt Ihr für Funktionen, die keiner nutzt, oder es fehlt genau die, die Ihr bräuchtet.</p></article><article class="karte"><h3>Mehr-Faktor-Anmeldung? Fehlanzeige</h3><p>Ohne MFA reicht ein gestohlenes Passwort, um an Eure Mails, Dateien und Kundendaten zu kommen. In vielen Betrieben ist das bis heute nicht eingerichtet - einfach weil niemand Zeit hatte, sich darum zu kümmern.</p></article></div>
+</section>
+
+<section class="bildband">
+  <img src="assets/microsoft-365-service/zweitbild.png" alt="Microsoft 365 Service" />
+</section>
+
+<section class="block ">
+  <h2>Der M365 Quick Check: einmal draufschauen, klar bewertet</h2>
+  <div class="raster"><article class="karte"><h3>Vollständige Prüfung</h3><p>Wir gehen Benutzerkonten, Adminrollen, MFA, Entra, Geräte, OneDrive, SharePoint, Defender, Mailweiterleitungen und Lizenzen durch - alles, was zu Eurem Microsoft 365 gehört.</p></article><article class="karte"><h3>Ampel statt Fachbericht</h3><p>Am Ende bekommt Ihr eine kurze, verständliche Liste: Grün heißt, es passt. Gelb heißt, das sollte geändert werden. Rot heißt, hier besteht dringender Handlungsbedarf.</p></article><article class="karte"><h3>Laufende Betreuung möglich</h3><p>Wer nicht nur einmal prüfen, sondern dauerhaft sauber halten will, bucht die laufende Betreuung nach Aufwand - wir behalten Konten, Lizenzen und Sicherheit im Blick.</p></article><article class="karte"><h3>Umsetzung getrennt beauftragt</h3><p>Der Quick Check zeigt Euch, wo etwas zu tun ist. Die Umsetzung der Punkte wird danach getrennt besprochen und beauftragt - Festpreis auf Anfrage, ohne Überraschungen.</p></article></div>
+</section>
+
+<section class="block">
+  <h2>So läuft es ab</h2>
+  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Kurzes Gespräch</h3><p>Wir klären, welches Microsoft-365-Abo Ihr habt und wer bei Euch Zugriff braucht.</p></div></li><li><span class="nr">2</span><div><h3>Prüfung</h3><p>Wir gehen Eure Konten, Rechte, Geräte und Einstellungen systematisch durch.</p></div></li><li><span class="nr">3</span><div><h3>Ampel-Liste</h3><p>Ihr bekommt eine kurze, verständliche Übersicht mit Grün, Gelb und Rot statt einem langen Bericht.</p></div></li><li><span class="nr">4</span><div><h3>Entscheidung</h3><p>Ihr entscheidet, welche Punkte umgesetzt werden - die Umsetzung wird getrennt beauftragt und berechnet.</p></div></li></ol>
+</section>
+
+<section class="block ">
+  <h2>Ihr Nutzen</h2>
+  <div class="raster"><article class="karte"><h3>Überblick statt Bauchgefühl</h3><p>Ihr wisst genau, welche Konten, Rechte und Einstellungen in Eurem Microsoft 365 wirklich passen.</p></article><article class="karte"><h3>Weniger Angriffsfläche</h3><p>Alte Konten, fehlende MFA und offene Weiterleitungen werden erkannt, bevor sie zum Problem werden.</p></article><article class="karte"><h3>Lizenzen im Griff</h3><p>Ihr seht, wofür Ihr bezahlt - und könnt unnötige Lizenzen abbestellen oder fehlende ergänzen.</p></article><article class="karte"><h3>Klare Priorität</h3><p>Die Ampel zeigt Euch sofort, was dringend ist und was warten kann - keine lange Liste ohne Reihenfolge.</p></article></div>
+</section>
+
+<section class="block">
+  <h2>Häufige Fragen</h2>
+  <div class="faq"><details><summary>Was genau bekomme ich beim Quick Check?</summary><p>Eine kurze, verständliche Liste mit Ampel-Bewertung für Eure wichtigsten Microsoft-365-Bereiche - Konten, MFA, Rechte, Lizenzen, Geräte und Sicherheit.</p></details><details><summary>Was kostet der Quick Check?</summary><p>Das sagen wir Euch nach einem kurzen Gespräch über Euer Setup - Festpreis auf Anfrage.</p></details><details><summary>Wird die Umsetzung der Punkte gleich mitgemacht?</summary><p>Nein, der Quick Check ist die Prüfung. Die Umsetzung der gefundenen Punkte wird danach getrennt besprochen und beauftragt.</p></details><details><summary>Wir haben keine eigene IT-Abteilung - reicht das?</summary><p>Ja, genau für solche Betriebe ist der Quick Check gedacht. Ihr müsst selbst keine Fachbegriffe kennen, wir erklären Euch alles in der Ampel-Liste.</p></details><details><summary>Läuft die Prüfung während des laufenden Betriebs?</summary><p>Ja, wir prüfen im Hintergrund über Eure Adminrechte, ohne dass Euer Tagesgeschäft unterbrochen wird.</p></details></div>
+</section>
+
+<section class="block anfrage" id="anfrage">
+  <h2>Jetzt Microsoft 365 prüfen lassen</h2>
+  <p class="unterzeile">Vereinbart ein kurzes Gespräch - wir sagen Euch, was der Quick Check bei Euch kostet und was er bringt.</p>
+
+  <div class="wege">
+    <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
+      <strong>WhatsApp</strong><span>Sofort schreiben</span></a>
+    <a class="weg" href="tel:+4917620740729">
+      <strong>Anrufen</strong><span>0176 20740729</span></a>
+    <a class="weg" href="mailto:info@itscayot.com?subject=Microsoft 365 Service">
+      <strong>E-Mail</strong><span>info@itscayot.com</span></a>
+  </div>
+
+  <form class="formular" id="leadFormular">
+    <div class="felder">
+      <label>Name<input name="name" required autocomplete="name" /></label>
+      <label>Firma<input name="firma" autocomplete="organization" /></label>
+      <label>E-Mail<input name="email" type="email" required autocomplete="email" /></label>
+      <label>Telefon<input name="telefon" type="tel" autocomplete="tel" /></label>
+    </div>
+    <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
+    <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
+    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+      Es werden keine Daten auf dieser Seite gespeichert.</p>
+  </form>
+</section>
+</main>
+
+<footer class="fuss">
+  <div class="fuss-spalten">
+    <div>
+      <img class="fuss-logo" src="assets/marke/logo.png" alt="Cayot IT Service" />
+      <p>Cayot IT Service<br />Gabelsberger Straße 12<br />55543 Bad Kreuznach</p>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <p><a href="tel:+4917620740729">0176 20740729</a><br />
+         <a href="mailto:info@itscayot.com">info@itscayot.com</a><br />
+         <a href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+    <div>
+      <h4>Mehr</h4>
+      <p><a href="https://itscayot.com">Zur Hauptseite</a><br /><a href="https://instagram.com/cayot_it_service" target="_blank" rel="noopener">Instagram</a><br /><a href="https://www.youtube.com/@Cayot_IT_Service" target="_blank" rel="noopener">YouTube</a><br /><a href="https://g.page/r/CRgKx6ommkK5EBE/review" target="_blank" rel="noopener">Google-Bewertungen</a></p>
+    </div>
+    <div>
+      <h4>Rechtliches</h4>
+      <p><a href="https://www.itscayot.com/impressum">Impressum</a><br /><a href="https://www.itscayot.com/datenschutz">Datenschutz</a><br /><a href="https://www.itscayot.com/agb">AGB</a></p>
+    </div>
+  </div>
+  <div class="partner">
+    <h4>Partner</h4>
+    <p><a href="https://derbuerofuehrer.de/" target="_blank" rel="noopener nofollow">derBÜROFührer</a> · <a href="https://bni.de/de/index" target="_blank" rel="noopener nofollow">BNI</a> · <a href="https://www.trendmicro.com/de_de/business.html" target="_blank" rel="noopener nofollow">Trend Micro</a> · <a href="https://rbm-itsolutions.de/" target="_blank" rel="noopener nofollow">RBM IT Solutions</a></p>
+    <p class="haftung">Die Links führen auf externe Seiten. Für deren Inhalte sind
+      ausschließlich die jeweiligen Betreiber verantwortlich – eine Haftung wird nicht
+      übernommen.</p>
+  </div>
+  <p class="copy">© Marcel Cayot · Cayot IT Service</p>
+</footer>
+<script>
+document.getElementById('leadFormular').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var d = new FormData(e.target);
+  var zeilen = [
+    'Anfrage über: ' + "Microsoft 365 Service",
+    '',
+    'Name:     ' + (d.get('name') || ''),
+    'Firma:    ' + (d.get('firma') || ''),
+    'E-Mail:   ' + (d.get('email') || ''),
+    'Telefon:  ' + (d.get('telefon') || ''),
+    '',
+    'Nachricht:',
+    (d.get('nachricht') || '')
+  ];
+  window.location.href = 'mailto:info@itscayot.com'
+    + '?subject=' + encodeURIComponent('Anfrage: ' + "Microsoft 365 Service")
+    + '&body=' + encodeURIComponent(zeilen.join('\n'));
+});
+</script>
+</body>
+</html>
