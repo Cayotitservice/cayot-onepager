@@ -11,5 +11,20 @@
     "hero_titel": "So sichtbar ist Eure Domain für Angreifer wirklich",
     "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Etwas professioneller und konkreter wirken.",
     "ueberarbeitet": "2026-08-07T22:17:28"
+  },
+  "lokaler-it-notdienst": {
+    "titel": "Lokaler IT-Notdienst",
+    "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: der Nachbar, der sich wirklich auskennt und schnell da ist.",
+    "thema": "Typische Faelle: PC startet nicht mehr; WLAN funktioniert nicht; der Drucker spinnt; ein neuer PC muss eingerichtet werden; Daten vom alten Rechner uebernehmen; NAS einrichten; Microsoft-Konto reparieren; Outlook funktioniert nicht; Backup einrichten. GANZ WICHTIG und muss klar auf der Seite stehen: Es wird mindestens eine halbe Stunde berechnet, danach nach tatsaechlichem Aufwand. Das gehoert offen kommuniziert, am besten in den Ablauf oder die FAQ - nicht verstecken. Wir kommen persoenlich vorbei oder helfen per Fernwartung, je nachdem was schneller geht. Zielgruppe sind ausdruecklich auch Privatleute und Einzelunternehmer, nicht nur Firmen.",
+    "produkt": "Schnelle IT-Hilfe vor Ort und per Fernwartung in Bad Kreuznach und Umgebung.",
+    "path": "lokaler-it-notdienst.html",
+    "assets": [
+      "assets/lokaler-it-notdienst/hero_bild.png",
+      "assets/lokaler-it-notdienst/zweitbild.png",
+      "assets/lokaler-it-notdienst/hintergrund_bild.png"
+    ],
+    "hero_titel": "IT-Notdienst in Bad Kreuznach - schnell da, schnell geloest",
+    "bildrichtung": "Blick durch einen langen Gang zwischen zwei Rack-Reihen, starke Fluchtlinien, kühles Blau",
+    "erstellt": "2026-08-07T23:00:34"
   }
 }
