@@ -101,5 +101,20 @@
     "hero_titel": "Eure IT-Abteilung, ohne jemanden einzustellen",
     "bildrichtung": "Detail einer Serverfront mit Lüftungsgittern, strenges Raster, Grau mit einem grünen Akzent",
     "erstellt": "2026-08-07T23:16:32"
+  },
+  "cyberversicherung-vorbereiten": {
+    "titel": "Cyberversicherung vorbereiten",
+    "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: nuechtern und ehrlich. Kein Angstverkauf, sondern Hausaufgaben machen.",
+    "thema": "WICHTIG - genau so formulieren, nicht anders: Wir vermitteln und verkaufen KEINE Versicherungen. Wir pruefen den Ist-Zustand, arbeiten die Anforderungen ab, die Versicherer heute stellen (MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe), dokumentieren das nachvollziehbar und begleiten Euch - abgeschlossen wird bei Eurem Makler oder Versicherer. Das gehoert klar und selbstbewusst auf die Seite, nicht als Kleingedrucktes. Der Grund ist ein echter Nutzen fuer den Kunden: Viele Antraege scheitern oder die Police zahlt im Schadensfall nicht, weil im Fragebogen Dinge bestaetigt wurden, die technisch gar nicht umgesetzt sind. Genau das verhindern wir. Danach: Umsetzung von Massnahmen zur Vorbeugung und Begleitung im Umgang mit der aktuellen Bedrohungslage. KEINE Preise nennen.",
+    "produkt": "Den Ist-Zustand pruefen, die Anforderungen des Versicherers erfuellen und Euch zum Abschluss begleiten.",
+    "path": "cyberversicherung-vorbereiten.html",
+    "assets": [
+      "assets/cyberversicherung-vorbereiten/hero_bild.png",
+      "assets/cyberversicherung-vorbereiten/zweitbild.png",
+      "assets/cyberversicherung-vorbereiten/hintergrund_bild.png"
+    ],
+    "hero_titel": "Fit für die Cyberversicherung - technisch und im Nachweis",
+    "bildrichtung": "Kabeltrasse an der Decke, Blick nach oben, Perspektive von unten, Stahlblau",
+    "erstellt": "2026-08-07T23:19:19"
   }
 }
