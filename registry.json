@@ -116,5 +116,20 @@
     "hero_titel": "Fit für die Cyberversicherung - technisch und im Nachweis",
     "bildrichtung": "Kabeltrasse an der Decke, Blick nach oben, Perspektive von unten, Stahlblau",
     "erstellt": "2026-08-07T23:19:19"
+  },
+  "it-dokumente": {
+    "titel": "IT-Dokumente",
+    "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: handwerklich sauber. Papier, das im Ernstfall traegt.",
+    "thema": "Ihr braucht ein Administrationskonzept? Eine Security-Roadmap? Eine Risikobewertung fuer ein Projekt? Oder einfach nur ordentliche Onboarding-Checklisten fuer neue Mitarbeiter? Wir stellen alles bereit, angepasst an Eure Wuensche und Euren Betrieb - keine Vorlage von der Stange, in der noch der Name einer anderen Firma steht. WICHTIG, muss klar auf der Seite stehen (eigener Abschnitt oder FAQ): Das ist KEINE Rechtsberatung, sondern reine Erstellung nach Best Practice. Eine anwaltliche Pruefung der kundenspezifischen Anforderungen empfehlen wir ausdruecklich im Vorfeld. KEINE Preise nennen. Nutzen: Dokumente, die man im Ernstfall - Audit, Versicherung, Ausfall, Mitarbeiterwechsel - wirklich vorzeigen und benutzen kann.",
+    "produkt": "Administrationskonzept, Security-Roadmap, Risikobewertung, Onboarding-Checklisten - auf Euren Betrieb zugeschnitten.",
+    "path": "it-dokumente.html",
+    "assets": [
+      "assets/it-dokumente/hero_bild.png",
+      "assets/it-dokumente/zweitbild.png",
+      "assets/it-dokumente/hintergrund_bild.png"
+    ],
+    "hero_titel": "IT-Dokumente, die im Ernstfall wirklich helfen",
+    "bildrichtung": "Halbdunkler Technikraum mit einer einzelnen beleuchteten Rack-Tür, starker Kontrast",
+    "erstellt": "2026-08-07T23:21:58"
   }
 }
