@@ -84,8 +84,9 @@
       "assets/it-checkup-fuer-kleine-unternehmen/hintergrund_bild.png"
     ],
     "hero_titel": "Endlich wissen, wo Eure IT wirklich steht",
-    "bildrichtung": "Weitwinkel eines Rechenzentrums bei Nacht, viele kleine Statuslichter, dunkles Indigo",
-    "erstellt": "2026-08-07T23:13:46"
+    "bildrichtung": "Abstrakte Lichtspuren von Netzwerkverkehr über unscharfer Hardware, Cyan auf Anthrazit",
+    "erstellt": "2026-08-07T23:13:46",
+    "ueberarbeitet": "2026-08-07T23:26:55"
   },
   "eure-it-abteilung": {
     "titel": "Eure IT-Abteilung",
