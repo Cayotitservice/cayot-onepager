@@ -3,9 +3,13 @@
     "topic": "Sicherheitscheck von außen - Gratis Pentest",
     "brief": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen",
     "path": "sicherheitscheck-von-au-en-gratis-pentest.html",
-    "assets": [],
-    "hero_titel": "Seht Eure Domain mit den Augen eines Angreifers",
-    "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund",
-    "ueberarbeitet": "2026-08-07T21:57:57"
+    "assets": [
+      "assets/sicherheitscheck-von-au-en-gratis-pentest/hero_bild.png",
+      "assets/sicherheitscheck-von-au-en-gratis-pentest/zweitbild.png",
+      "assets/sicherheitscheck-von-au-en-gratis-pentest/hintergrund_bild.png"
+    ],
+    "hero_titel": "So sichtbar ist Eure Domain für Angreifer wirklich",
+    "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Etwas professioneller und konkreter wirken.",
+    "ueberarbeitet": "2026-08-07T22:17:28"
   }
 }
