@@ -41,5 +41,20 @@
     "hero_titel": "Microsoft 365 prüfen lassen - Ampel statt Fachbericht",
     "bildrichtung": "Nahaufnahme eines Patchfeldes, hunderte farbige Kabel, geringe Schärfentiefe, warmes Bernstein",
     "erstellt": "2026-08-07T23:05:04"
+  },
+  "nas-und-backup-service": {
+    "titel": "NAS und Backup Service",
+    "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: ruhig und gruendlich. Daten sind das, was man nicht nachkaufen kann.",
+    "thema": "Typische Auftraege: neue Synology einrichten; alte Synology auf eine neue migrieren; PCs automatisch sichern; Microsoft 365 auf die Synology sichern (Mails, OneDrive, SharePoint); Fotos und Dokumente zentral speichern statt auf zehn Rechnern; das NAS sicher von aussen erreichbar machen; ein Backup-Konzept erstellen, das auch einen Ausfall ueberlebt. Eingerichtet werden ausserdem DHCP, DNS, Docker, VPN und weiteres. Wichtig: Im Anschluss ist laufende Wartung und Ueberwachung moeglich - also nicht nur aufbauen und weg sein, sondern dranbleiben und melden, wenn eine Platte stirbt oder eine Sicherung nicht durchlaeuft. Kernbotschaft: Ein Backup, das noch nie zurueckgespielt wurde, ist kein Backup.",
+    "produkt": "Synology-NAS einrichten, umziehen und richtig absichern - damit die Daten zentral liegen und wirklich gesichert sind.",
+    "path": "nas-und-backup-service.html",
+    "assets": [
+      "assets/nas-und-backup-service/hero_bild.png",
+      "assets/nas-und-backup-service/zweitbild.png",
+      "assets/nas-und-backup-service/hintergrund_bild.png"
+    ],
+    "hero_titel": "Ein Ort für alle Daten - und ein Backup, das wirklich hält",
+    "bildrichtung": "Aufsicht von schräg oben auf eine Rack-Reihe, geometrische Muster, dezentes Türkis",
+    "erstellt": "2026-08-07T23:07:52"
   }
 }
