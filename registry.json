@@ -4,5 +4,11 @@
     "brief": "Interner Testlauf zur Funktionsprüfung – bitte ignorieren.",
     "path": "carlos-selbsttest.html",
     "assets": []
+  },
+  "sicherheitscheck-von-au-en-gratis-pentest": {
+    "topic": "Sicherheitscheck von außen - Gratis Pentest",
+    "brief": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen",
+    "path": "sicherheitscheck-von-au-en-gratis-pentest.html",
+    "assets": []
   }
 }
