@@ -56,5 +56,20 @@
     "hero_titel": "Ein Ort für alle Daten - und ein Backup, das wirklich hält",
     "bildrichtung": "Aufsicht von schräg oben auf eine Rack-Reihe, geometrische Muster, dezentes Türkis",
     "erstellt": "2026-08-07T23:07:52"
+  },
+  "e-mail-sicherheitscheck": {
+    "titel": "E-Mail-Sicherheitscheck",
+    "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: konkret und ohne Panikmache. Ein Check, kein Cybersecurity-Consulting.",
+    "thema": "Geprueft werden: SPF, DKIM, DMARC, die DNS-Eintraege, die Microsoft-365-Konfiguration, die Mehr-Faktor-Anmeldung, eingerichtete Weiterleitungen und verdaechtige Postfachregeln (ein Klassiker nach einem gehackten Konto) sowie die grundlegende Mail-Sicherheit. Das ist ein festes, abgeschlossenes Produkt - keine Beratung nach Stunden. KEINE Preise nennen, nur 'Festpreis auf Anfrage'. Danach ist die Umsetzung moeglich: entweder mit Trend Micro als Schutzloesung inklusive Lizenzen und Wartungsvertrag, oder als Schulung, damit Ihr das Werkzeug selbst verwalten koennt - beide Wege gehoeren gleichwertig auf die Seite. Verstaendlich erklaeren, WARUM das wichtig ist: Ohne SPF/DKIM/DMARC kann jeder Mails im Namen der Firma verschicken - an Kunden, an die Buchhaltung, mit geaenderter Bankverbindung.",
+    "produkt": "Pruefung, ob in Eurem Namen Mails verschickt werden koennen und ob Euer Postfach sauber eingestellt ist.",
+    "path": "e-mail-sicherheitscheck.html",
+    "assets": [
+      "assets/e-mail-sicherheitscheck/hero_bild.png",
+      "assets/e-mail-sicherheitscheck/zweitbild.png",
+      "assets/e-mail-sicherheitscheck/hintergrund_bild.png"
+    ],
+    "hero_titel": "Kann jemand Mails in Eurem Namen verschicken? Wir pruefen es",
+    "bildrichtung": "Glasfaser-Bündel im Vordergrund unscharf, dahinter Serverschrank, tiefes Violett",
+    "erstellt": "2026-08-07T23:10:30"
   }
 }
