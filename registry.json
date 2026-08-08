@@ -45,12 +45,13 @@
       "assets/microsoft-365-service/zweitbild.png",
       "assets/microsoft-365-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Microsoft 365 im Griff statt irgendwie gewachsen",
-    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
+    "hero_titel": "Microsoft 365 prüfen - Ampel statt Blindflug",
+    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
     "erstellt": "2026-08-07T23:05:04",
-    "ueberarbeitet": "2026-08-08T11:31:14",
-    "aufbau": "bild_oben",
-    "kategorie": "Microsoft 365"
+    "ueberarbeitet": "2026-08-08T12:41:01",
+    "aufbau": "klassisch",
+    "kategorie": "Microsoft 365",
+    "kurzbeschreibung": "Microsoft 365 wird geprüft, Sie bekommen eine verständliche Ampel-Liste, was passt und was zu tun ist."
   },
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
