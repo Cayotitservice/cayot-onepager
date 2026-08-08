@@ -41,7 +41,7 @@
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: Ordnung schaffen, wo ueber Jahre gewachsen wurde.",
-    "thema": "Wir schauen uns an: Benutzerkonten, Mehr-Faktor-Anmeldung (MFA), Adminrollen, alte Benutzer die niemand geloescht hat, Lizenzen (wofuer wird eigentlich bezahlt), Entra, Geraete, OneDrive, SharePoint, Defender, Mailweiterleitungen und die grundlegende Sicherheit. Es gibt das als laufende Betreuung nach Aufwand ODER als festes Paket 'M365 Quick Check'. Beim Quick Check bekommt der Kunde danach eine kurze, verstaendliche Liste mit Ampel-Bewertung: gruen = passt, gelb = sollte geaendert werden, rot = dringend. Die Umsetzung der Punkte wird danach getrennt beauftragt und berechnet - das gehoert klar gesagt, damit niemand ueberrascht ist. KEINE Preise nennen, auch keinen Festpreis - nur 'Festpreis auf Anfrage'. Das Ampel-Ergebnis ist der Star der Seite: kurz, verstaendlich, kein Fachbericht, den niemand liest.",
+    "thema": "Wir schauen uns an: Benutzerkonten, Mehr-Faktor-Anmeldung (MFA), Adminrollen, alte Benutzer die niemand geloescht hat, Lizenzen (wofuer wird eigentlich bezahlt), Entra, Geraete, OneDrive, SharePoint, Defender, Mailweiterleitungen und die grundlegende Sicherheit. Es gibt das als laufende Betreuung nach Aufwand ODER als festes Paket 'M365 Quick Check'. Beim Quick Check bekommt der Kunde danach eine kurze, verstaendliche Liste mit Ampel-Bewertung: gruen = passt, gelb = sollte geaendert werden, rot = dringend. Die Umsetzung der Punkte wird danach getrennt beauftragt und berechnet - das gehoert klar gesagt, damit niemand ueberrascht ist. KEINE Preise nennen, auch keinen Festpreis - nur 'Festpreis auf Anfrage'. Das Ampel-Ergebnis ist der Star der Seite: kurz, verstaendlich, kein Fachbericht, den niemand liest.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Der Abschnitt fuer wen das gemacht ist soll konkreter auf Microsoft-365-Betriebe zugeschnitten sein - nenne dort echte Situationen statt allgemeiner Zielgruppen.",
     "produkt": "Microsoft 365 pruefen, aufraeumen und sicher einstellen - fuer Betriebe mit 2 bis 20 Mitarbeitern.",
     "path": "microsoft-365-service.html",
     "assets": [
@@ -49,13 +49,15 @@
       "assets/microsoft-365-service/zweitbild.png",
       "assets/microsoft-365-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Ordnung und Sicherheit in Ihrem Microsoft 365",
-    "bildrichtung": "Strenges, sich wiederholendes Raster im Detail, Grau mit einem einzelnen grünen Akzent",
+    "hero_titel": "Klarheit über Ihr Microsoft 365",
+    "bildrichtung": "Ein einzelner heller Lichtpunkt im halbdunklen Raum, starker Kontrast, alles andere ruhig",
     "erstellt": "2026-08-07T23:05:04",
-    "ueberarbeitet": "2026-08-08T13:18:23",
-    "aufbau": "wechsel",
+    "ueberarbeitet": "2026-08-08T15:13:53",
+    "aufbau": "bild_oben",
     "kategorie": "Microsoft 365",
-    "kurzbeschreibung": "Prüfung Ihrer Microsoft 365 Umgebung mit verständlicher Ampel-Liste - grün, gelb, rot statt Fachbericht."
+    "kurzbeschreibung": "Prüfung Ihres Microsoft 365 mit verständlicher Ampel-Liste - grün, gelb, rot statt Fachbericht.",
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "karten"
   },
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
