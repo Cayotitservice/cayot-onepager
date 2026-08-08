@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Technisch startklar für Eure Cyberversicherung | Cayot IT Service</title>
-<meta name="description" content="Ist-Zustand prüfen, Anforderungen der Cyberversicherung technisch erfüllen und dokumentieren - Abschluss bei Eurem Makler oder Versicherer." />
-<meta property="og:title" content="Technisch startklar für Eure Cyberversicherung | Cayot IT Service" />
-<meta property="og:description" content="Ist-Zustand prüfen, Anforderungen der Cyberversicherung technisch erfüllen und dokumentieren - Abschluss bei Eurem Makler oder Versicherer." />
+<title>Bereit für die Cyberversicherung | Cayot IT Service</title>
+<meta name="description" content="Wir prüfen Ihre IT auf die Anforderungen der Cyberversicherung, setzen Lücken um und dokumentieren alles - Abschluss bei Ihrem Makler." />
+<meta property="og:title" content="Bereit für die Cyberversicherung | Cayot IT Service" />
+<meta property="og:description" content="Wir prüfen Ihre IT auf die Anforderungen der Cyberversicherung, setzen Lücken um und dokumentieren alles - Abschluss bei Ihrem Makler." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/cyberversicherung-vorbereiten/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
@@ -19,7 +19,12 @@ body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,
 img{max-width:100%;display:block}
 a{color:#29a8ff;text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+/* Ueberschriften brechen an sinnvollen Stellen um (Chef 08.08.2026: "er trennt die
+   Ueberschrift an den falschen Stellen"). `balance` verteilt die Zeilen gleichmaessig, statt
+   ein einzelnes Wort in die zweite Zeile zu haengen; `hyphens:manual` verbietet dem Browser,
+   deutsche Woerter selbst zu trennen - das trifft er bei Fachbegriffen regelmaessig daneben. */
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;text-wrap:balance;hyphens:manual;
+ overflow-wrap:break-word}
 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
@@ -64,6 +69,18 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .karte h3{font-size:1.15rem;color:#29a8ff}
 .karte p{margin:0;color:#a2abbd}
 .block.problem .karte h3{color:#f0b429}
+
+/* Zwei weitere KACHEL-ARTEN (Chef 08.08.2026: "der Aufbau an sich und die Art der Kacheln"
+   sind noch zu gleich). Dieselbe Farbwelt, deutlich andere Anmutung: */
+/* flach - kein Kasten, nur eine feine Trennlinie oben. Wirkt luftig, fast wie Zeitungsspalten */
+.raster.flach .karte{background:none;border:none;border-top:2px solid #29a8ff;
+ border-radius:0;padding:1.25rem 0 0}
+.block.problem .raster.flach .karte{border-top-color:#f0b429}
+/* gross - breite Kacheln mit viel Luft, hoechstens zwei nebeneinander */
+.raster.gross{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.raster.gross .karte{padding:2.25rem 2rem;border-radius:20px;
+ background:linear-gradient(160deg,#0d121f,#101625)}
+.raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
 .ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
 .ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
@@ -201,51 +218,52 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero gross">
+<section class="hero">
   <div class="hero-text">
-    <h1>Technisch startklar für Eure Cyberversicherung</h1>
-    <p class="unterzeile">Wir prüfen, ob Eure IT das erfüllt, was Versicherer heute verlangen - MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe. So bestätigt Ihr im Fragebogen nur, was tatsächlich läuft.</p>
-    <ul class="fuer-wen"><li>Einzelunternehmer und Selbstständige, die eine Cyberversicherung abschließen wollen</li><li>Handwerksbetriebe ohne eigene IT-Abteilung, die einen Fragebogen vor sich liegen haben</li><li>Firmen, deren bestehende Police im Schadensfall greifen soll</li><li>Privatleute mit Homeoffice, die ihre Absicherung ernsthaft prüfen wollen</li></ul>
+    <h1>Bereit für die Cyberversicherung</h1>
+    <p class="unterzeile">Wir prüfen, ob Ihre IT das kann, was der Fragebogen behauptet - und setzen um, was fehlt. Verkauft wird die Versicherung bei Ihrem Makler, nicht bei uns.</p>
+    <ul class="fuer-wen"><li>Einzelunternehmer und Selbständige vor Vertragsabschluss</li><li>Handwerksbetriebe, die einen Fragebogen ehrlich beantworten wollen</li><li>Kleine Firmen ohne eigene IT-Abteilung</li><li>Privatpersonen mit eigenem Gewerbe oder Homeoffice</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
     </div></div>
-</section>
-
-<section class="block">
-  <h2>Was Ihr davon habt</h2>
-  <ul class="zahlen"><li><span class="zahl">01</span><h3>Ehrliche Angaben im Antrag</h3><p>Ihr bestätigt nur, was tatsächlich eingerichtet ist - keine Lücke zwischen Papier und Realität.</p></li><li><span class="zahl">02</span><h3>Schutz im Schadensfall</h3><p>Weil die Angaben stimmen, gibt es keinen Grund zur Ablehnung wegen fehlender Umsetzung.</p></li><li><span class="zahl">03</span><h3>Weniger Rückfragen</h3><p>Eine saubere Dokumentation macht die Prüfung durch Makler oder Versicherer einfacher.</p></li><li><span class="zahl">04</span><h3>Laufende Begleitung</h3><p>Wenn sich Anforderungen ändern, passen wir Eure IT entsprechend an - nicht nur einmalig.</p></li></ul>
-</section>
-
-<section class="bildband">
-  <img src="assets/cyberversicherung-vorbereiten/hero_bild.png" alt="Cyberversicherung vorbereiten" />
+  <div class="hero-bild"><img src="assets/cyberversicherung-vorbereiten/hero_bild.png" alt="Cyberversicherung vorbereiten" /></div>
 </section>
 
 <section class="block problem">
-  <h2>Warum viele Anträge scheitern - oder die Police im Ernstfall nicht zahlt</h2>
-  <div class="raster"><article class="karte"><h3>Fragebogen ausgefüllt, Technik nicht dahinter</h3><p>Im Antrag wird MFA, Backup oder ein Notfallplan bestätigt, ohne dass es wirklich eingerichtet ist. Merkt der Versicherer das im Schadensfall, kann er die Zahlung verweigern.</p></article><article class="karte"><h3>Unklar, was genau verlangt wird</h3><p>Die Fragebögen der Versicherer wirken technisch und wenig greifbar. Ohne IT-Hintergrund ist schwer einzuschätzen, was davon bei Euch schon steht und was fehlt.</p></article><article class="karte"><h3>Lücken werden erst im Schadensfall sichtbar</h3><p>Ein Virenschutz ohne aktuelle Updates oder eine Rechtevergabe, die jeder Zugriff auf alles hat - solche Dinge fallen oft erst auf, wenn es zu spät ist.</p></article></div>
+  <h2>Wenn der Fragebogen mehr verspricht, als die IT hält</h2>
+  <div class="raster "><article class="karte"><h3>Häkchen ohne Substanz</h3><p>Im Antrag wird Multi-Faktor-Authentisierung, Backup und Virenschutz bestätigt - ob das technisch wirklich läuft, prüft vorher kaum jemand. Im Schadenfall wird genau das nachgeprüft.</p></article><article class="karte"><h3>Ablehnung im Ernstfall</h3><p>Versicherer schauen im Schadenfall genau hin, was im Antrag zugesichert wurde. Stimmt die Realität nicht damit überein, zahlt die Police nicht - oder der Vertrag kommt gar nicht erst zustande.</p></article><article class="karte"><h3>Kein Überblick über die eigene IT</h3><p>Viele wissen nicht genau, wie ihre Rechtevergabe aussieht oder ob ein Notfallplan existiert. Ohne diesen Überblick lässt sich der Fragebogen nicht ehrlich beantworten.</p></article></div>
 </section>
 
-<section class="block wechsel ">
-  <h2>Was wir konkret für Euch tun</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Ist-Zustand prüfen</h3><p>Wir schauen uns Eure IT genau an: Backup, MFA, Virenschutz, Rechtevergabe, Notfallplan. Ihr bekommt eine ehrliche Einschätzung, wo Ihr steht.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Lücken schließen</h3><p>Wir setzen um, was den Anforderungen der Versicherer entspricht - von Zwei-Faktor-Anmeldung bis zu einem funktionierenden Backup-Konzept.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Nachvollziehbar dokumentieren</h3><p>Jede Maßnahme wird schriftlich festgehalten. Diese Dokumentation nehmt Ihr mit zu Eurem Makler oder Versicherer - abgeschlossen wird dort, nicht bei uns.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Begleitung danach</h3><p>Die Bedrohungslage ändert sich, Anforderungen auch. Wir bleiben dran und passen Eure Absicherung bei Bedarf an.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+<section class="bildband">
+  <img src="assets/cyberversicherung-vorbereiten/zweitbild.png" alt="Cyberversicherung vorbereiten" />
+</section>
+
+<section class="block ">
+  <h2>Wir bringen Ihre IT auf den Stand, den der Antrag verlangt</h2>
+  <div class="raster gross"><article class="karte"><h3>Ist-Zustand prüfen</h3><p>Wir schauen uns Ihre aktuelle IT an: MFA, Backup, Virenschutz, Rechtevergabe, Notfallplan. Sie wissen danach genau, wo Sie stehen, bevor Sie etwas unterschreiben.</p></article><article class="karte"><h3>Lücken schließen</h3><p>Was fehlt, setzen wir gemeinsam mit Ihnen um. Aus einer Zusage im Formular wird eine tatsächlich funktionierende Maßnahme.</p></article><article class="karte"><h3>Nachvollziehbar dokumentieren</h3><p>Sie bekommen eine Dokumentation, die Sie Ihrem Makler oder Versicherer vorlegen können - belegte Fakten statt vager Angaben.</p></article><article class="karte"><h3>Abschluss bei Ihrem Makler</h3><p>Wir vermitteln und verkaufen keine Versicherungen. Wir bereiten die Technik vor und dokumentieren sie - abgeschlossen wird bei Ihrem Makler oder Versicherer Ihrer Wahl.</p></article></div>
 </section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="stufen"><li><span class="nr">1</span><h3>Bestandsaufnahme</h3><p>Wir prüfen vor Ort oder per Fernwartung, was in Eurer IT bereits vorhanden ist.</p></li><li><span class="nr">2</span><h3>Abgleich mit den Anforderungen</h3><p>Wir gleichen den Ist-Zustand mit dem ab, was Versicherer aktuell im Fragebogen verlangen.</p></li><li><span class="nr">3</span><h3>Umsetzung der Lücken</h3><p>Fehlende Maßnahmen werden eingerichtet - MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe.</p></li><li><span class="nr">4</span><h3>Dokumentation und Übergabe</h3><p>Ihr bekommt eine nachvollziehbare Unterlage für Euren Makler oder Versicherer - der Abschluss läuft dort.</p></li></ol>
+  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Bestandsaufnahme</h3><p>Wir prüfen Ihre IT anhand der Anforderungen, die Versicherer heute üblicherweise stellen.</p></div></li><li><span class="nr">2</span><div><h3>Abgleich mit dem Fragebogen</h3><p>Wir zeigen Ihnen konkret, wo Antrag und tatsächlicher Zustand auseinanderliegen.</p></div></li><li><span class="nr">3</span><div><h3>Umsetzung der Lücken</h3><p>Fehlende Maßnahmen wie MFA, Backup oder ein Notfallplan setzen wir gemeinsam mit Ihnen um.</p></div></li><li><span class="nr">4</span><div><h3>Dokumentation und Begleitung</h3><p>Sie erhalten die Unterlagen für Makler oder Versicherer. Wir bleiben danach an Ihrer Seite, wenn sich Anforderungen oder Bedrohungslage ändern.</p></div></li></ol>
+</section>
+
+<section class="block ">
+  <h2>Ihr Nutzen</h2>
+  <div class="raster flach"><article class="karte"><h3>Ehrlicher Antrag</h3><p>Sie bestätigen im Fragebogen nur, was auch tatsächlich läuft.</p></article><article class="karte"><h3>Weniger Ablehnungsrisiko</h3><p>Nachvollziehbare Dokumentation statt vager Zusagen im Schadenfall.</p></article><article class="karte"><h3>Laufende Begleitung</h3><p>Wir bleiben auch nach Vertragsabschluss dran, wenn sich die Bedrohungslage ändert.</p></article><article class="karte"><h3>Klare Zuständigkeit</h3><p>Technik und Umsetzung von uns, Vertrag und Beratung bei Ihrem Makler - ohne Vermischung.</p></article></div>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Verkauft Ihr auch die Cyberversicherung?</summary><p>Nein. Wir vermitteln und verkaufen keine Versicherungen. Wir prüfen und dokumentieren die technischen Voraussetzungen - abgeschlossen wird bei Eurem Makler oder Versicherer.</p></details><details><summary>Wir haben schon einen Makler - reicht das nicht?</summary><p>Der Makler kennt die Vertragsseite, nicht Eure technische Umsetzung. Wir liefern die Nachweise, die er für den Antrag braucht.</p></details><details><summary>Was, wenn wir nicht alle Anforderungen sofort erfüllen können?</summary><p>Wir zeigen, was fehlt und setzen um, was möglich ist. Was zeitlich nicht sofort geht, wird klar dokumentiert und geplant.</p></details><details><summary>Wie lange dauert die Vorbereitung?</summary><p>Das hängt vom Ist-Zustand ab. Nach der Bestandsaufnahme sagen wir Euch, wie viel Aufwand realistisch ansteht.</p></details><details><summary>Was kostet das?</summary><p>Festpreis auf Anfrage, abgestimmt auf den tatsächlichen Aufwand bei Euch.</p></details></div>
+  <div class="faq"><details><summary>Verkaufen Sie auch die Versicherung?</summary><p>Nein. Wir prüfen und verbessern Ihre technische Ausgangslage. Abgeschlossen wird bei Ihrem Makler oder Versicherer.</p></details><details><summary>Was passiert, wenn im Fragebogen etwas nicht stimmt?</summary><p>Wir zeigen die Lücke auf und setzen die Maßnahme um, bevor Sie unterschreiben. So bestätigen Sie nur, was auch tatsächlich läuft.</p></details><details><summary>Wie lange dauert die Vorbereitung?</summary><p>Das hängt vom Ist-Zustand Ihrer IT ab. Nach der Prüfung sagen wir Ihnen, was zu tun ist und wie lange es dauert.</p></details><details><summary>Gilt das auch für kleine Betriebe ohne IT-Abteilung?</summary><p>Ja. Gerade Betriebe ohne eigene IT-Abteilung profitieren von einer klaren Bestandsaufnahme und konkreten Schritten.</p></details><details><summary>Was passiert nach Abschluss der Versicherung?</summary><p>Wir begleiten Sie weiter, damit die Maßnahmen aktuell bleiben und Sie auf neue Bedrohungen reagieren können.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Jetzt Ist-Zustand prüfen lassen</h2>
-  <p class="unterzeile">Je früher die Lücken bekannt sind, desto entspannter läuft der Antrag bei Eurem Versicherer.</p>
+  <h2>Machen Sie Ihre IT versicherungsreif</h2>
+  <p class="unterzeile">Vereinbaren Sie eine Prüfung, bevor Sie den Fragebogen unterschreiben.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
@@ -265,7 +283,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
     </div>
     <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
     <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
-    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+    <p class="hinweis">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage.
       Es werden keine Daten auf dieser Seite gespeichert.</p>
   </form>
 </section>
