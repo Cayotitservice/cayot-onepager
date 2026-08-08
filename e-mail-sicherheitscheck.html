@@ -246,6 +246,9 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
   .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wechsel-reihe.voll{grid-template-columns:1fr}
+.wechsel-reihe.voll .wechsel-text p{max-width:70ch}
 </style>
 </head>
 <body>
@@ -291,7 +294,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="block wechsel ">
   <h2>Erst prüfen, dann sauber einrichten</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Vollständige Prüfung</h3><p>Wir schauen uns SPF, DKIM, DMARC, die DNS-Einträge, Ihre Microsoft-365-Konfiguration, die Mehr-Faktor-Anmeldung, eingerichtete Weiterleitungen und Postfachregeln an.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Einträge sauber setzen</h3><p>Fehlt etwas oder ist es falsch eingestellt, tragen wir SPF, DKIM und DMARC korrekt in Ihre DNS-Zone ein. Kein Rätselraten mit Fachbegriffen - wir übernehmen das.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Wirkung kontrollieren</h3><p>Nach dem Einrichten prüfen wir, ob die Einträge tatsächlich greifen und Mails korrekt geprüft werden. Erst wenn das passt, ist die Arbeit abgeschlossen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Zwei Wege zur Umsetzung</h3><p>Danach entscheiden Sie: Trend Micro als Schutzlösung mit Lizenzen und Wartungsvertrag, oder eine Schulung, damit Sie Ihr Postfach künftig selbst verwalten.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+  <div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Vollständige Prüfung</h3><p>Wir schauen uns SPF, DKIM, DMARC, die DNS-Einträge, Ihre Microsoft-365-Konfiguration, die Mehr-Faktor-Anmeldung, eingerichtete Weiterleitungen und Postfachregeln an.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Einträge sauber setzen</h3><p>Fehlt etwas oder ist es falsch eingestellt, tragen wir SPF, DKIM und DMARC korrekt in Ihre DNS-Zone ein. Kein Rätselraten mit Fachbegriffen - wir übernehmen das.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Wirkung kontrollieren</h3><p>Nach dem Einrichten prüfen wir, ob die Einträge tatsächlich greifen und Mails korrekt geprüft werden. Erst wenn das passt, ist die Arbeit abgeschlossen.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Zwei Wege zur Umsetzung</h3><p>Danach entscheiden Sie: Trend Micro als Schutzlösung mit Lizenzen und Wartungsvertrag, oder eine Schulung, damit Sie Ihr Postfach künftig selbst verwalten.</p></div></div>
 </section>
 
 <section class="block">
