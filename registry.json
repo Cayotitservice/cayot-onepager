@@ -74,9 +74,11 @@
       "assets/e-mail-sicherheitscheck/zweitbild.png",
       "assets/e-mail-sicherheitscheck/hintergrund_bild.png"
     ],
-    "hero_titel": "Kann jemand Mails in Eurem Namen verschicken? Wir pruefen es",
-    "bildrichtung": "Glasfaser-Bündel im Vordergrund unscharf, dahinter Serverschrank, tiefes Violett",
-    "erstellt": "2026-08-07T23:10:30"
+    "hero_titel": "Kann jemand in Eurem Namen Mails verschicken? Wir pruefen das.",
+    "bildrichtung": "Weite Nachtaufnahme mit vielen kleinen Lichtpunkten, dunkles Indigo, viel Ruhe im Bild",
+    "erstellt": "2026-08-07T23:10:30",
+    "ueberarbeitet": "2026-08-08T10:44:24",
+    "aufbau": "problem_zuerst"
   },
   "it-checkup-fuer-kleine-unternehmen": {
     "titel": "IT-Checkup für kleine Unternehmen",
