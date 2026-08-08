@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="assets/marke/favicon.png" />
 <style>
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,.82) 40%,rgba(5,7,12,.94) 100%),url('assets/it-dokumente/hintergrund_bild.png') center/cover fixed no-repeat;background-color:#05070c;color:#edf1f7;
+body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,.82) 40%,rgba(5,7,12,.94) 100%),url('assets/security-paket-fuer-unternehmen/hintergrund_bild.png') center/cover fixed no-repeat;background-color:#05070c;color:#edf1f7;
  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
  -webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -54,6 +54,29 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .fuer-wen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:999px;
  padding:.4rem 1rem;font-size:.9rem;color:#a2abbd}
 
+/* Kundenbeispiele - vier Formen, je Seite eine andere (Chef 08.08.2026: "die Beispiele fuer
+   Kunden oben anders darstellen", und auf jeder Seite anders, nicht doppelt). */
+.fuer-wen.zeilen{display:grid;gap:.45rem;justify-content:start;margin-top:1.4rem}
+.fuer-wen.zeilen li{background:none;border:none;border-radius:0;padding:0 0 0 1.5rem;
+ position:relative;color:#a2abbd;font-size:.95rem}
+.fuer-wen.zeilen li::before{content:"";position:absolute;left:2px;top:.55em;width:7px;height:7px;
+ border-top:2px solid #29a8ff;border-right:2px solid #29a8ff;transform:rotate(45deg)}
+.hero.oben .fuer-wen.zeilen,.hero.gross .fuer-wen.zeilen{justify-content:center;text-align:left}
+
+.fuer-wen.strich{margin:1.4rem 0 0;color:#a2abbd;font-size:.95rem;display:flex;
+ flex-wrap:wrap;gap:.5rem;align-items:baseline}
+.fuer-wen.strich span span{color:rgba(255,255,255,0.10)}
+.fuer-wen-label{text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;
+ color:#29a8ff;margin-right:.3rem}
+.hero.oben .fuer-wen.strich,.hero.gross .fuer-wen.strich{justify-content:center}
+
+.fuer-wen.kaertchen{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+ gap:.6rem;margin-top:1.5rem;max-width:620px}
+.fuer-wen.kaertchen li{background:#101625;border:1px solid rgba(255,255,255,0.10);
+ border-radius:12px;padding:.75rem .9rem;font-size:.88rem;text-align:left;
+ border-left:3px solid #29a8ff}
+.hero.oben .fuer-wen.kaertchen,.hero.gross .fuer-wen.kaertchen{margin-left:auto;margin-right:auto}
+
 /* Nicht alles linksbuendig (Chef 07.08.2026). Ueberschriften und Einleitungen stehen
    mittig, der Fliesstext in den Karten bleibt linksbuendig - alles zentriert liest sich
    schlecht. */
@@ -80,13 +103,53 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
  background:linear-gradient(160deg,#0d121f,#101625)}
 .raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
-.ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
-.ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
- border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:1.35rem}
-.ablauf h3{margin:0 0 .25rem;font-size:1.1rem}
-.ablauf p{margin:0;color:#a2abbd}
-.nr{flex:0 0 2.25rem;height:2.25rem;border-radius:50%;display:grid;place-items:center;font-weight:700;
- background:linear-gradient(135deg,#29a8ff,#1c6fa8);color:#031018}
+/* --- Ablauf: Reihenfolge ueber die FORM, nie ueber Ziffern -------------------------------
+   Chef 08.08.2026: "Die runden 1 2 3 4 Punkte sind haesslich, mach da coole Pfeile rein" und
+   "die Boxen mit Zahlen nie wieder verwenden, sieht aus wie Paint". */
+
+/* (a) Pfeilkette: waagerecht, dazwischen ein Pfeil nach rechts */
+.pfeilkette{list-style:none;padding:0;margin:2.5rem 0 0;display:flex;flex-wrap:wrap;
+ align-items:stretch;justify-content:center;gap:.75rem}
+.pfeilkette .pfeil-schritt{flex:1 1 220px;max-width:300px;text-align:left;
+ background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:1.4rem 1.35rem}
+.pfeilkette .pfeil-schritt h3{font-size:1.05rem;margin:0 0 .35rem;color:#29a8ff}
+.pfeilkette .pfeil-schritt p{margin:0;color:#a2abbd;font-size:.95rem}
+.pfeilkette .pfeil{flex:0 0 auto;align-self:center;width:26px;height:26px;position:relative}
+.pfeilkette .pfeil::after{content:"";position:absolute;inset:0;margin:auto;width:13px;height:13px;
+ border-top:2px solid #29a8ff;border-right:2px solid #29a8ff;transform:rotate(45deg)}
+
+/* (b) Winkelkette: jeder Schritt ist selbst pfeilfoermig und zeigt zum naechsten */
+.winkelkette{list-style:none;padding:0;margin:2.5rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem}
+.winkelkette .winkel-schritt{flex:1 1 230px;text-align:left;padding:1.5rem 2.4rem 1.5rem 1.5rem;
+ background:linear-gradient(135deg,#0d121f,#101625);
+ border:1px solid rgba(255,255,255,0.10);
+ clip-path:polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 22px 50%)}
+.winkelkette .winkel-schritt:first-child{clip-path:polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+ border-radius:14px 0 0 14px;padding-left:1.6rem}
+.winkelkette h3{font-size:1.05rem;margin:0 0 .3rem;color:#29a8ff}
+.winkelkette p{margin:0;color:#a2abbd;font-size:.94rem}
+
+/* (c) Strang: senkrechte Linie, der Pfeil sitzt darauf */
+.strang{list-style:none;padding:0;margin:2.5rem auto 0;max-width:760px;display:grid;gap:0;
+ text-align:left;position:relative}
+.strang li{display:grid;grid-template-columns:2rem 1fr;gap:1.25rem;padding:0 0 1.9rem}
+.strang li:last-child{padding-bottom:0}
+.strang .strang-punkt{position:relative;width:2rem}
+.strang li:not(:last-child) .strang-punkt::before{content:"";position:absolute;left:calc(50% - 1px);
+ top:1.5rem;bottom:-1.9rem;width:2px;background:rgba(255,255,255,0.10)}
+.strang .strang-punkt::after{content:"";position:absolute;left:50%;top:.35rem;
+ width:11px;height:11px;margin-left:-6px;
+ border-right:2px solid #29a8ff;border-bottom:2px solid #29a8ff;transform:rotate(45deg)}
+.strang h3{font-size:1.08rem;margin:0 0 .3rem}
+.strang p{margin:0;color:#a2abbd}
+
+/* Nutzen - ohne Ziffern (die suggerierten eine Rangfolge, die es nicht gibt) */
+.nutzen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.25rem}
+.nutzen li{border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:1.75rem 1.5rem;text-align:left;
+ background:#0d121f;border-top:3px solid #29a8ff}
+.nutzen h3{font-size:1.1rem;margin:0 0 .4rem}
+.nutzen p{margin:0;color:#a2abbd}
 
 .bildband{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)}
 .bildband img{border-radius:18px;border:1px solid rgba(255,255,255,0.10);width:100%;object-fit:cover;max-height:420px}
@@ -118,25 +181,6 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
  background:linear-gradient(135deg,#0d121f,#101625);position:relative;overflow:hidden}
 .wechsel-deko::after{content:"";position:absolute;inset:-40% -10% auto auto;width:70%;height:170%;
  background:radial-gradient(closest-side,rgba(41,168,255,.20),transparent);transform:rotate(18deg)}
-
-/* Ablauf als waagerechte Stufen statt untereinander */
-.stufen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
- grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;counter-reset:stufe}
-.stufen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;
- padding:1.5rem 1.25rem;text-align:left;position:relative}
-.stufen h3{font-size:1.05rem;margin:.9rem 0 .3rem}
-.stufen p{margin:0;color:#a2abbd;font-size:.95rem}
-
-/* Nutzen als grosse durchnummerierte Kacheln */
-.zahlen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
- grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
-.zahlen li{border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:1.75rem 1.5rem;text-align:left;
- background:#0d121f}
-.zahlen .zahl{display:block;font-size:2.4rem;font-weight:800;line-height:1;letter-spacing:-.03em;
- background:linear-gradient(135deg,#29a8ff,#1c6fa8);
- -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:.6rem}
-.zahlen h3{font-size:1.1rem;margin:0 0 .35rem}
-.zahlen p{margin:0;color:#a2abbd}
 
 /* Schmale Liste mit Randlinie statt Karten */
 .kompakt{list-style:none;padding:0;margin:2rem auto 0;max-width:820px;display:grid;gap:0;text-align:left}
@@ -304,6 +348,14 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
           <span class="angebot-kurz">Wir prüfen Ihre IT-Sicherheit auf die Anforderungen der Cyberversicherung und dokumentieren den Ist-Zustand nachvollziehbar.</span>
           <span class="angebot-name">Cyberversicherung vorbereiten</span>
         </span>
+      </a>
+      <a class="angebot" href="security-paket-fuer-unternehmen.html">
+        <span class="angebot-bild"><img src="assets/security-paket-fuer-unternehmen/hero_bild.png" alt="" loading="lazy" /></span>
+        <span class="angebot-text">
+          <strong>Drei Schutzschichten. Ein Ansprechpartner.</strong>
+          <span class="angebot-kurz">E-Mail-Sicherheit, Endgeräteschutz und Firewall aus einer Hand, betreut von einem Ansprechpartner.</span>
+          <span class="angebot-name">Security-Paket für Unternehmen</span>
+        </span>
       </a></div>
   </section>
   <section class="block">
@@ -378,6 +430,6 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
   </div>
   <p class="copy">© Marcel Cayot · Cayot IT Service</p>
 </footer>
-<!-- 9 Angebot(e), automatisch erzeugt - nicht von Hand bearbeiten. -->
+<!-- 10 Angebot(e), automatisch erzeugt - nicht von Hand bearbeiten. -->
 </body>
 </html>
