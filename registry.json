@@ -40,9 +40,11 @@
       "assets/microsoft-365-service/zweitbild.png",
       "assets/microsoft-365-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Microsoft 365 prüfen lassen - Ampel statt Fachbericht",
-    "bildrichtung": "Nahaufnahme eines Patchfeldes, hunderte farbige Kabel, geringe Schärfentiefe, warmes Bernstein",
-    "erstellt": "2026-08-07T23:05:04"
+    "hero_titel": "Ordnung und Sicherheit in Eurem Microsoft 365",
+    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
+    "erstellt": "2026-08-07T23:05:04",
+    "ueberarbeitet": "2026-08-08T10:38:56",
+    "aufbau": "wechsel"
   },
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
