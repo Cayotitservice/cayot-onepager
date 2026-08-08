@@ -108,11 +108,9 @@
       "assets/eure-it-abteilung/zweitbild.png",
       "assets/eure-it-abteilung/hintergrund_bild.png"
     ],
-    "hero_titel": "Feste Ansprechperson fuer Eure IT - ohne Neueinstellung",
-    "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
-    "erstellt": "2026-08-07T23:16:32",
-    "ueberarbeitet": "2026-08-08T10:49:42",
-    "aufbau": "wechsel"
+    "hero_titel": "Eure IT-Abteilung, ohne jemanden einzustellen",
+    "bildrichtung": "Detail einer Serverfront mit Lüftungsgittern, strenges Raster, Grau mit einem grünen Akzent",
+    "erstellt": "2026-08-07T23:16:32"
   },
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
@@ -142,9 +140,10 @@
       "assets/it-dokumente/zweitbild.png",
       "assets/it-dokumente/hintergrund_bild.png"
     ],
-    "hero_titel": "Papiere fuer Eure IT, die im Ernstfall tragen",
-    "bildrichtung": "Weitwinkel eines Rechenzentrums bei Nacht, viele kleine Statuslichter, dunkles Indigo",
+    "hero_titel": "IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt",
+    "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
     "erstellt": "2026-08-07T23:21:58",
-    "ueberarbeitet": "2026-08-08T10:03:48"
+    "ueberarbeitet": "2026-08-08T10:52:31",
+    "aufbau": "wechsel"
   }
 }
