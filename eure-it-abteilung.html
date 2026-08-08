@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Eure IT-Abteilung, ohne jemanden einzustellen | Cayot IT Service</title>
-<meta name="description" content="Beratungsvertrag mit festem Stundenkontingent: feste IT-Ansprechperson fuer Alltag und Strategie, ohne eigene IT-Abteilung. Fuer Betriebe aus Bad Kreuznach und Umgebung." />
-<meta property="og:title" content="Eure IT-Abteilung, ohne jemanden einzustellen | Cayot IT Service" />
-<meta property="og:description" content="Beratungsvertrag mit festem Stundenkontingent: feste IT-Ansprechperson fuer Alltag und Strategie, ohne eigene IT-Abteilung. Fuer Betriebe aus Bad Kreuznach und Umgebung." />
+<title>Feste Ansprechperson fuer Eure IT - ohne Neueinstellung | Cayot IT Service</title>
+<meta name="description" content="IT-Abteilung ohne eigene Stelle: festes Stundenkontingent, feste Ansprechperson - von Alltagsfragen bis Digitalisierung. Cayot IT Service, Bad Kreuznach." />
+<meta property="og:title" content="Feste Ansprechperson fuer Eure IT - ohne Neueinstellung | Cayot IT Service" />
+<meta property="og:description" content="IT-Abteilung ohne eigene Stelle: festes Stundenkontingent, feste Ansprechperson - von Alltagsfragen bis Digitalisierung. Cayot IT Service, Bad Kreuznach." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/eure-it-abteilung/hero_bild.png" />
-<link rel="icon" href="assets/marke/logo.png" />
+<link rel="icon" type="image/png" href="assets/marke/favicon.png" />
+<link rel="apple-touch-icon" href="assets/marke/favicon.png" />
 <style>
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,.82) 40%,rgba(5,7,12,.94) 100%),url('assets/eure-it-abteilung/hintergrund_bild.png') center/cover fixed no-repeat;background-color:#05070c;color:#edf1f7;
@@ -75,6 +76,68 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .bildband{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)}
 .bildband img{border-radius:18px;border:1px solid rgba(255,255,255,0.10);width:100%;object-fit:cover;max-height:420px}
 
+/* --- Bausteine der uebrigen Aufbauten (Chef 08.08.2026: "wirkliche Abwechslung") --------- */
+
+/* Kopf mit breitem Bild UEBER dem Text ("aber lieber drueber") */
+.hero.oben{grid-template-columns:1fr;text-align:center}
+.hero.oben .hero-bild.breit img{width:100%;max-height:min(46vh,420px);object-fit:cover;
+ border-radius:20px;border:1px solid rgba(255,255,255,0.10);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.hero.oben .unterzeile,.hero.gross .unterzeile{margin-left:auto;margin-right:auto}
+.hero.oben .knopfreihe,.hero.gross .knopfreihe{justify-content:center}
+.hero.oben .fuer-wen,.hero.gross .fuer-wen{justify-content:center}
+
+/* Kopf ganz ohne eigenes Bild - der Seitenhintergrund traegt, dafuer sehr grosse Schrift */
+.hero.gross{grid-template-columns:1fr;text-align:center;
+ padding-top:clamp(3.5rem,11vw,8rem);padding-bottom:clamp(3rem,8vw,6rem)}
+.hero.gross h1{font-size:clamp(2.4rem,7vw,4.6rem);max-width:18ch;margin-left:auto;margin-right:auto}
+
+/* Abwechselnde Reihen: Text links, dann Text rechts */
+.wechsel-reihe{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.25rem,4vw,3rem);
+ align-items:center;margin-top:2rem;text-align:left}
+.wechsel-reihe.rechts .wechsel-text{order:2}
+.wechsel-text h3{font-size:clamp(1.25rem,2.4vw,1.7rem);color:#29a8ff}
+.wechsel-text p{color:#a2abbd;margin:0;max-width:52ch}
+.wechsel-bild img{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,0.10);
+ max-height:340px;object-fit:cover;box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.wechsel-deko{min-height:180px;border-radius:18px;border:1px solid rgba(255,255,255,0.10);
+ background:linear-gradient(135deg,#0d121f,#101625);position:relative;overflow:hidden}
+.wechsel-deko::after{content:"";position:absolute;inset:-40% -10% auto auto;width:70%;height:170%;
+ background:radial-gradient(closest-side,rgba(41,168,255,.20),transparent);transform:rotate(18deg)}
+
+/* Ablauf als waagerechte Stufen statt untereinander */
+.stufen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;counter-reset:stufe}
+.stufen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;
+ padding:1.5rem 1.25rem;text-align:left;position:relative}
+.stufen h3{font-size:1.05rem;margin:.9rem 0 .3rem}
+.stufen p{margin:0;color:#a2abbd;font-size:.95rem}
+
+/* Nutzen als grosse durchnummerierte Kacheln */
+.zahlen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
+.zahlen li{border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:1.75rem 1.5rem;text-align:left;
+ background:#0d121f}
+.zahlen .zahl{display:block;font-size:2.4rem;font-weight:800;line-height:1;letter-spacing:-.03em;
+ background:linear-gradient(135deg,#29a8ff,#1c6fa8);
+ -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:.6rem}
+.zahlen h3{font-size:1.1rem;margin:0 0 .35rem}
+.zahlen p{margin:0;color:#a2abbd}
+
+/* Schmale Liste mit Randlinie statt Karten */
+.kompakt{list-style:none;padding:0;margin:2rem auto 0;max-width:820px;display:grid;gap:0;text-align:left}
+.kompakt li{padding:1.35rem 0 1.35rem 1.5rem;border-left:2px solid rgba(255,255,255,0.10);
+ border-bottom:1px solid rgba(255,255,255,0.10)}
+.kompakt li:last-child{border-bottom:none}
+.kompakt h3{font-size:1.1rem;margin:0 0 .3rem;color:#29a8ff}
+.block.problem .kompakt h3{color:#f0b429}
+.kompakt p{margin:0;color:#a2abbd}
+
+/* Eine grosse Aussage ueber die volle Breite - setzt einen Absatz im Lesefluss */
+.aussage{border-top:1px solid rgba(255,255,255,0.10);border-bottom:1px solid rgba(255,255,255,0.10);
+ background:#101625;padding:clamp(2.5rem,6vw,4.5rem) clamp(1rem,4vw,3rem);margin:1rem 0}
+.aussage p{max-width:24ch;margin:0 auto;text-align:center;font-weight:600;line-height:1.3;
+ font-size:clamp(1.5rem,3.6vw,2.4rem);letter-spacing:-.01em}
+
 .faq{margin-top:1.5rem;display:grid;gap:.75rem}
 details{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:12px;padding:1rem 1.25rem}
 summary{cursor:pointer;font-weight:600}
@@ -115,6 +178,11 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 @media(max-width:860px){
   .hero{grid-template-columns:1fr}
   .hero-bild{order:-1}
+  /* Auf dem Handy stehen die Wechselreihen wieder untereinander - und zwar IMMER Text zuerst,
+     sonst schoebe `order:2` bei jeder zweiten Reihe das Bild vor den Text. */
+  .wechsel-reihe,.wechsel-reihe.rechts{grid-template-columns:1fr}
+  .wechsel-reihe.rechts .wechsel-text{order:0}
+  .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -135,51 +203,48 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="hero">
   <div class="hero-text">
-    <h1>Eure IT-Abteilung, ohne jemanden einzustellen</h1>
-    <p class="unterzeile">Ihr bucht ein festes Stundenkontingent im Monat und habt damit eine Ansprechperson, die Eure Umgebung kennt - vom Drucker, der nicht will, bis zur Frage, wie Ihr digitalisiert und Eure Daten absichert.</p>
-    <ul class="fuer-wen"><li>Handwerksbetriebe ohne eigene IT-Stelle</li><li>Einzelunternehmer und Selbststaendige, die ihre IT nebenbei selbst stemmen</li><li>Kleine Firmen, die zwischen mehreren IT-Dienstleistern hin- und herspringen</li><li>Buerobetriebe wie Steuerkanzleien oder Praxen mit wenigen, aber wichtigen Systemen</li></ul>
+    <h1>Feste Ansprechperson fuer Eure IT - ohne Neueinstellung</h1>
+    <p class="unterzeile">Ihr bucht ein monatliches Stundenkontingent und habt damit jemanden, der Euren Betrieb kennt - vom Drucker, der nicht will, bis zur Frage, wohin sich Eure IT entwickeln soll.</p>
+    <ul class="fuer-wen"><li>Handwerksbetriebe ohne eigene IT-Stelle</li><li>Einzelunternehmer und Selbststaendige</li><li>Kleine Firmen, die IT-Fragen bisher nebenbei loesen</li><li>Buero-Teams, Kanzleien und Praxen mit wenigen Arbeitsplaetzen</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
-    </div>
-  </div>
+    </div></div>
   <div class="hero-bild"><img src="assets/eure-it-abteilung/hero_bild.png" alt="Eure IT-Abteilung" /></div>
 </section>
 
 <section class="block problem">
-  <h2>Ohne feste IT wird jede Kleinigkeit zum Projekt</h2>
-  <div class="raster"><article class="karte"><h3>Jeder Anruf beginnt von vorne</h3><p>Ihr ruft einen anderen IT-Menschen an, erklaert wieder die ganze Struktur und wartet, bis er sich eingearbeitet hat. Das kostet Zeit, die Ihr eigentlich fuer Euren Betrieb braucht.</p></article><article class="karte"><h3>Kleine Probleme, grosse Wartezeit</h3><p>Ein neues Passwort, ein Drucker, der spinnt, ein neuer Mitarbeiter, der einen Zugang braucht - alles Kleinigkeiten, die trotzdem liegen bleiben, weil niemand zustaendig ist.</p></article><article class="karte"><h3>Strategische Fragen bleiben offen</h3><p>Welche Software lohnt sich, wie sichert Ihr Eure Daten ab, was braucht Ihr wirklich beim naechsten Rechnerkauf? Solche Fragen stellt sich niemand, weil einfach keine Zeit dafuer da ist.</p></article></div>
+  <h2>Wenn niemand fuer die IT zustaendig ist</h2>
+  <ul class="kompakt"><li><h3>Jedes Mal von vorne</h3><p>Beim naechsten IT-Problem ruft Ihr wieder wen anderen an, der Eure Umgebung nicht kennt. Ihr erklaert erst mal, was Ihr fuer Geraete habt und wie alles verkabelt ist, bevor ueberhaupt jemand helfen kann.</p></li><li><h3>Nur Feuerwehr, keine Richtung</h3><p>Es wird geloest, wenn etwas kaputt ist - aber niemand denkt mit, ob Eure Software noch zu Eurer Firmengroesse passt oder wo Sicherheitsluecken drohen. Dafuer fehlt einfach die Zeit und die feste Person.</p></li><li><h3>Eigene IT-Stelle lohnt sich nicht</h3><p>Fuer eine volle Stelle habt Ihr zu wenig laufende Themen, aber fuer null Unterstuetzung zu viele. Zwischen diesen beiden Punkten gibt es bisher kein passendes Angebot.</p></li></ul>
 </section>
 
-<section class="bildband">
-  <img src="assets/eure-it-abteilung/zweitbild.png" alt="Eure IT-Abteilung" />
+<section class="block wechsel ">
+  <h2>Eure IT-Abteilung auf Abruf</h2>
+  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Festes Stundenkontingent pro Monat</h3><p>Ihr bucht ein Kontingent, das zu Eurem Betrieb passt. Innerhalb dieser Stunden kuemmern wir uns um alles, was anfaellt - von Alltagsfragen bis zu groesseren Themen.</p></div><div class="wechsel-bild"><img src="assets/eure-it-abteilung/zweitbild.png" alt="Eure IT-Abteilung" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Eine Person, die Eure Umgebung kennt</h3><p>Statt bei jedem Anruf neu zu erklaeren, sprecht Ihr mit jemandem, der weiss, welche Geraete Ihr habt, wer bei Euch arbeitet und wie Euer Netzwerk aufgebaut ist.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Alltag und Strategie unter einem Dach</h3><p>Drucker, Passwoerter, neue Mitarbeiter einrichten - genauso wie Fragen zum Einkauf neuer Geraete, zur Digitalisierung oder zur Absicherung Eurer Daten. Beides gehoert zum selben Vertrag.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Keine Festanstellung noetig</h3><p>Ihr braucht niemanden einzustellen, kein Buero freizuhalten und keine Urlaubsvertretung zu organisieren. Die Betreuung laeuft weiter, egal was bei Euch gerade los ist.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
 </section>
 
-<section class="block ">
-  <h2>Eine feste Ansprechperson fuer alles, was mit IT zu tun hat</h2>
-  <div class="raster"><article class="karte"><h3>Festes Stundenkontingent im Monat</h3><p>Ihr bucht ein Kontingent, das zu Eurer Betriebsgroesse passt. Es wird verbraucht, wenn Bedarf ist - vom Alltagsproblem bis zur groesseren Frage.</p></article><article class="karte"><h3>Wir kennen Eure Umgebung</h3><p>Wir wissen, welche Systeme bei Euch laufen, wer wo Zugriff hat und was zuletzt besprochen wurde. Keine Wiederholungsschleifen bei jedem Kontakt.</p></article><article class="karte"><h3>Alltag und Strategie in einem</h3><p>First-Level-Themen wie Passwoerter oder neue Mitarbeiter laufen genauso ueber uns wie Fragen zu Einkauf, Digitalisierung oder Security-Strategie.</p></article><article class="karte"><h3>Kein Personal, keine Bindung</h3><p>Ihr braucht niemanden einzustellen und keine eigene IT-Stelle aufzubauen. Das Kontingent laesst sich anpassen, wenn sich Euer Bedarf aendert.</p></article></div>
-</section>
+<section class="aussage"><p>Ein kurzes Gespraech zeigt, welches Stundenkontingent zu Eurem Betrieb passt.</p></section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Erstgespraech</h3><p>Wir schauen uns Eure aktuelle IT-Situation an und besprechen, welches Stundenkontingent zu Euch passt.</p></div></li><li><span class="nr">2</span><div><h3>Einrichtung</h3><p>Wir lernen Eure Systeme, Nutzer und Ablaeufe kennen, damit wir ab Tag eins wissen, worum es geht.</p></div></li><li><span class="nr">3</span><div><h3>Laufender Betrieb</h3><p>Ihr meldet Euch bei Bedarf - per Telefon, WhatsApp oder Formular - und wir kuemmern uns, egal ob klein oder gross.</p></div></li><li><span class="nr">4</span><div><h3>Regelmaessiger Ueberblick</h3><p>Wir besprechen in Abstaenden, wo Ihr steht und was als naechstes sinnvoll waere, damit die IT mit Eurem Betrieb mitwaechst.</p></div></li></ol>
+  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Bestandsaufnahme</h3><p>Wir schauen uns Eure aktuelle IT an: welche Geraete, welche Software, welche Probleme es gerade gibt.</p></div></li><li><span class="nr">2</span><div><h3>Kontingent festlegen</h3><p>Gemeinsam legen wir fest, wie viele Stunden im Monat zu Eurem Betrieb passen - anpassbar, wenn sich etwas aendert.</p></div></li><li><span class="nr">3</span><div><h3>Laufende Betreuung</h3><p>Ab sofort meldet Ihr Euch bei Eurer festen Ansprechperson - telefonisch, per Fernzugriff oder vor Ort, je nach Thema.</p></div></li><li><span class="nr">4</span><div><h3>Regelmaessiger Austausch</h3><p>In festen Abstaenden besprechen wir, wo Eure IT steht und was als naechstes sinnvoll ist - nicht nur, wenn etwas kaputt ist.</p></div></li></ol>
 </section>
 
 <section class="block ">
-  <h2>Ihr Nutzen</h2>
-  <div class="raster"><article class="karte"><h3>Verlaesslichkeit</h3><p>Immer dieselbe Ansprechperson, die Eure Umgebung kennt und nicht bei null anfaengt.</p></article><article class="karte"><h3>Kein Einstellungsrisiko</h3><p>Ihr bekommt IT-Kompetenz ohne Personalkosten, Urlaubsvertretung oder Kuendigungsfristen.</p></article><article class="karte"><h3>Planbarer Aufwand</h3><p>Ein festes Kontingent im Monat statt ueberraschender Rechnungen fuer jeden Einzeleinsatz.</p></article><article class="karte"><h3>Alltag und Zukunft gleichzeitig im Blick</h3><p>Von der Druckerstoerung bis zur Security-Strategie deckt ein Vertrag beides ab.</p></article></div>
+  <h2>Was Ihr davon habt</h2>
+  <div class="raster"><article class="karte"><h3>Planbare Betreuung</h3><p>Ihr wisst, wie viel Zeit Euch im Monat zur Verfuegung steht, statt jedes Mal neu zu verhandeln.</p></article><article class="karte"><h3>Weniger Erklaeraufwand</h3><p>Weil Eure Ansprechperson die Umgebung kennt, geht die Klaerung von Problemen schneller als bei staendig wechselnden Kontakten.</p></article><article class="karte"><h3>Alltag und Zukunft gleichzeitig abgedeckt</h3><p>Ihr habt einen Kanal fuer akute Fragen und fuer laengerfristige Themen wie Einkauf oder Sicherheitsstrategie.</p></article><article class="karte"><h3>Keine Fixkosten fuer eine Stelle</h3><p>Ihr bezahlt fuer vereinbarte Leistung statt fuer ein volles Gehalt inklusive Urlaub und Krankheit.</p></article></div>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Ersetzt das eine eigene IT-Abteilung?</summary><p>Nein, das ist ehrlich gesagt nicht das Ziel. Fuer Betriebe ohne eigene IT ist es aber genau das, was fehlt: eine feste, kompetente Ansprechperson im Hintergrund.</p></details><details><summary>Was passiert, wenn das Kontingent nicht ausreicht?</summary><p>Wir sprechen das offen an und passen das Kontingent an Euren tatsaechlichen Bedarf an - nach oben wie nach unten.</p></details><details><summary>Was, wenn das Kontingent in einem Monat nicht gebraucht wird?</summary><p>Das besprechen wir individuell. Wichtig ist, dass die Ansprechperson und das Wissen ueber Eure Umgebung erhalten bleiben, auch in ruhigeren Monaten.</p></details><details><summary>Koennen wir auch strategische Themen besprechen, nicht nur Stoerungen?</summary><p>Ja, genau dafuer ist das Kontingent auch da. Einkauf, Digitalisierung, Security-Strategie - alles kann eingebracht werden.</p></details><details><summary>Was kostet das?</summary><p>Das haengt von Groesse und Bedarf Eures Betriebs ab. Wir erstellen einen Festpreis auf Anfrage, nachdem wir Euren Bedarf kennen.</p></details></div>
+  <div class="faq"><details><summary>Was passiert, wenn das Stundenkontingent nicht reicht?</summary><p>Wir sprechen darueber, bevor es kritisch wird. Zusaetzlicher Bedarf laesst sich anpassen oder gesondert abrechnen - es gibt keine Ueberraschungen.</p></details><details><summary>Ersetzt das eine eigene IT-Abteilung?</summary><p>Fuer eine grosse Firma mit vielen parallelen Projekten ersetzt es das nicht. Fuer einen Betrieb ohne eigene IT ist es genau das, was sonst fehlt - eine feste, verlaessliche Anlaufstelle.</p></details><details><summary>Koennen wir den Vertrag kuendigen oder anpassen?</summary><p>Ja. Wenn sich Euer Bedarf aendert, passen wir das Kontingent an oder besprechen eine neue Grundlage - der Vertrag ist auf Euren Betrieb zugeschnitten, nicht umgekehrt.</p></details><details><summary>Was zaehlt zu den Aufgaben - nur akute Probleme?</summary><p>Nein. Von Alltagsthemen wie Drucker oder neuen Mitarbeitern bis zu Fragen zu Einkauf, Digitalisierung und Sicherheit - alles findet in diesem Rahmen Platz.</p></details><details><summary>Wie schnell bekommen wir Hilfe bei einem akuten Problem?</summary><p>Das legen wir im Erstgespraech fest, abgestimmt auf Euren Betrieb und das gebuchte Kontingent.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Sichert Euch eine feste IT-Ansprechperson</h2>
-  <p class="unterzeile">Lasst uns in einem kurzen Gespraech klaeren, welches Stundenkontingent zu Eurem Betrieb passt.</p>
+  <h2>Sprecht mit uns ueber Euer IT-Kontingent</h2>
+  <p class="unterzeile">Ein kurzes Gespraech zeigt, welches Stundenkontingent zu Eurem Betrieb passt.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
