@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Papiere fuer Eure IT, die im Ernstfall tragen | Cayot IT Service</title>
-<meta name="description" content="Administrationskonzept, Security-Roadmap, Risikobewertung, Onboarding-Checklisten - zugeschnitten auf Euren Betrieb. Von Cayot IT Service." />
-<meta property="og:title" content="Papiere fuer Eure IT, die im Ernstfall tragen | Cayot IT Service" />
-<meta property="og:description" content="Administrationskonzept, Security-Roadmap, Risikobewertung, Onboarding-Checklisten - zugeschnitten auf Euren Betrieb. Von Cayot IT Service." />
+<title>IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt | Cayot IT Service</title>
+<meta name="description" content="Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - individuell erstellt fuer Euren Betrieb, Bad Kreuznach." />
+<meta property="og:title" content="IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt | Cayot IT Service" />
+<meta property="og:description" content="Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - individuell erstellt fuer Euren Betrieb, Bad Kreuznach." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/it-dokumente/hero_bild.png" />
-<link rel="icon" href="assets/marke/logo.png" />
+<link rel="icon" type="image/png" href="assets/marke/favicon.png" />
+<link rel="apple-touch-icon" href="assets/marke/favicon.png" />
 <style>
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,.82) 40%,rgba(5,7,12,.94) 100%),url('assets/it-dokumente/hintergrund_bild.png') center/cover fixed no-repeat;background-color:#05070c;color:#edf1f7;
@@ -75,6 +76,68 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .bildband{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)}
 .bildband img{border-radius:18px;border:1px solid rgba(255,255,255,0.10);width:100%;object-fit:cover;max-height:420px}
 
+/* --- Bausteine der uebrigen Aufbauten (Chef 08.08.2026: "wirkliche Abwechslung") --------- */
+
+/* Kopf mit breitem Bild UEBER dem Text ("aber lieber drueber") */
+.hero.oben{grid-template-columns:1fr;text-align:center}
+.hero.oben .hero-bild.breit img{width:100%;max-height:min(46vh,420px);object-fit:cover;
+ border-radius:20px;border:1px solid rgba(255,255,255,0.10);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.hero.oben .unterzeile,.hero.gross .unterzeile{margin-left:auto;margin-right:auto}
+.hero.oben .knopfreihe,.hero.gross .knopfreihe{justify-content:center}
+.hero.oben .fuer-wen,.hero.gross .fuer-wen{justify-content:center}
+
+/* Kopf ganz ohne eigenes Bild - der Seitenhintergrund traegt, dafuer sehr grosse Schrift */
+.hero.gross{grid-template-columns:1fr;text-align:center;
+ padding-top:clamp(3.5rem,11vw,8rem);padding-bottom:clamp(3rem,8vw,6rem)}
+.hero.gross h1{font-size:clamp(2.4rem,7vw,4.6rem);max-width:18ch;margin-left:auto;margin-right:auto}
+
+/* Abwechselnde Reihen: Text links, dann Text rechts */
+.wechsel-reihe{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.25rem,4vw,3rem);
+ align-items:center;margin-top:2rem;text-align:left}
+.wechsel-reihe.rechts .wechsel-text{order:2}
+.wechsel-text h3{font-size:clamp(1.25rem,2.4vw,1.7rem);color:#29a8ff}
+.wechsel-text p{color:#a2abbd;margin:0;max-width:52ch}
+.wechsel-bild img{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,0.10);
+ max-height:340px;object-fit:cover;box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.wechsel-deko{min-height:180px;border-radius:18px;border:1px solid rgba(255,255,255,0.10);
+ background:linear-gradient(135deg,#0d121f,#101625);position:relative;overflow:hidden}
+.wechsel-deko::after{content:"";position:absolute;inset:-40% -10% auto auto;width:70%;height:170%;
+ background:radial-gradient(closest-side,rgba(41,168,255,.20),transparent);transform:rotate(18deg)}
+
+/* Ablauf als waagerechte Stufen statt untereinander */
+.stufen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;counter-reset:stufe}
+.stufen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;
+ padding:1.5rem 1.25rem;text-align:left;position:relative}
+.stufen h3{font-size:1.05rem;margin:.9rem 0 .3rem}
+.stufen p{margin:0;color:#a2abbd;font-size:.95rem}
+
+/* Nutzen als grosse durchnummerierte Kacheln */
+.zahlen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
+.zahlen li{border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:1.75rem 1.5rem;text-align:left;
+ background:#0d121f}
+.zahlen .zahl{display:block;font-size:2.4rem;font-weight:800;line-height:1;letter-spacing:-.03em;
+ background:linear-gradient(135deg,#29a8ff,#1c6fa8);
+ -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:.6rem}
+.zahlen h3{font-size:1.1rem;margin:0 0 .35rem}
+.zahlen p{margin:0;color:#a2abbd}
+
+/* Schmale Liste mit Randlinie statt Karten */
+.kompakt{list-style:none;padding:0;margin:2rem auto 0;max-width:820px;display:grid;gap:0;text-align:left}
+.kompakt li{padding:1.35rem 0 1.35rem 1.5rem;border-left:2px solid rgba(255,255,255,0.10);
+ border-bottom:1px solid rgba(255,255,255,0.10)}
+.kompakt li:last-child{border-bottom:none}
+.kompakt h3{font-size:1.1rem;margin:0 0 .3rem;color:#29a8ff}
+.block.problem .kompakt h3{color:#f0b429}
+.kompakt p{margin:0;color:#a2abbd}
+
+/* Eine grosse Aussage ueber die volle Breite - setzt einen Absatz im Lesefluss */
+.aussage{border-top:1px solid rgba(255,255,255,0.10);border-bottom:1px solid rgba(255,255,255,0.10);
+ background:#101625;padding:clamp(2.5rem,6vw,4.5rem) clamp(1rem,4vw,3rem);margin:1rem 0}
+.aussage p{max-width:24ch;margin:0 auto;text-align:center;font-weight:600;line-height:1.3;
+ font-size:clamp(1.5rem,3.6vw,2.4rem);letter-spacing:-.01em}
+
 .faq{margin-top:1.5rem;display:grid;gap:.75rem}
 details{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:12px;padding:1rem 1.25rem}
 summary{cursor:pointer;font-weight:600}
@@ -115,6 +178,11 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 @media(max-width:860px){
   .hero{grid-template-columns:1fr}
   .hero-bild{order:-1}
+  /* Auf dem Handy stehen die Wechselreihen wieder untereinander - und zwar IMMER Text zuerst,
+     sonst schoebe `order:2` bei jeder zweiten Reihe das Bild vor den Text. */
+  .wechsel-reihe,.wechsel-reihe.rechts{grid-template-columns:1fr}
+  .wechsel-reihe.rechts .wechsel-text{order:0}
+  .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -135,51 +203,48 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="hero">
   <div class="hero-text">
-    <h1>Papiere fuer Eure IT, die im Ernstfall tragen</h1>
-    <p class="unterzeile">Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - zugeschnitten auf Euren Betrieb. Keine Vorlage von der Stange, sondern Dokumente, die Ihr wirklich benutzen koennt.</p>
-    <ul class="fuer-wen"><li>Einzelunternehmer und Selbststaendige, die fuer einen Auftrag oder eine Foerderung ein Konzept vorlegen muessen</li><li>Handwerksbetriebe, die bei Uebergabe oder Mitarbeiterwechsel den Ueberblick behalten wollen</li><li>Firmen ohne eigene IT-Abteilung, die fuer Audit oder Versicherung etwas Schriftliches brauchen</li><li>Privatleute, die ihr Heimnetz und ihre Geraete einmal ordentlich dokumentiert haben wollen</li></ul>
+    <h1>IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt</h1>
+    <p class="unterzeile">Administrationskonzept, Security-Roadmap, Risikobewertung oder Onboarding-Checkliste - massgeschneidert fuer Euren Betrieb, nicht aus einer Vorlage mit fremdem Firmennamen. Fertig, wenn Audit, Versicherung oder Mitarbeiterwechsel danach fragen.</p>
+    <ul class="fuer-wen"><li>Handwerksbetriebe mit mehreren Standorten oder wachsendem Team</li><li>Firmen ohne eigene IT-Abteilung, die im Audit oder bei der Versicherung Nachweise brauchen</li><li>Einzelunternehmer und Selbstaendige, die Verantwortung tragen, aber kein IT-Team im Ruecken haben</li><li>Privatleute mit umfangreicher Technik im Haus, die Ordnung und einen Notfallplan wollen</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
-    </div>
-  </div>
+    </div></div>
   <div class="hero-bild"><img src="assets/it-dokumente/hero_bild.png" alt="IT-Dokumente" /></div>
 </section>
 
 <section class="block problem">
-  <h2>Wenn&#x27;s drauf ankommt, fehlt das Papier</h2>
-  <div class="raster"><article class="karte"><h3>Nichts Schriftliches</h3><p>Vieles laeuft nach Erfahrung und im Kopf einzelner Mitarbeiter. Sobald jemand geht oder ausfaellt, ist das Wissen weg - und bei einer Pruefung gibt es nichts vorzuzeigen.</p></article><article class="karte"><h3>Vorlage von der Stange</h3><p>Vorlagen aus dem Internet passen selten zum eigenen Betrieb, manchmal steht sogar noch der Name einer fremden Firma drin. Versicherung oder Auditor merken das sofort.</p></article><article class="karte"><h3>Keine Zeit fuer sowas</h3><p>Zwischen Tagesgeschaeft und Kundendienst bleibt kaum Zeit, ein Konzept selbst zu schreiben. Am Ende wird es aufgeschoben, bis es dringend gebraucht wird.</p></article></div>
+  <h2>Wenn danach gefragt wird, ist nichts da</h2>
+  <ul class="kompakt"><li><h3>Keine Nachweise beim Audit</h3><p>Die Versicherung oder ein Pruefer fragt nach dem Administrationskonzept - und Ihr habt nichts Schriftliches. Improvisierte Antworten wirken schlecht und kosten im Zweifel Geld.</p></li><li><h3>Chaos beim Mitarbeiterwechsel</h3><p>Neue Leute starten ohne klare Checkliste, alte Zugaenge werden vergessen abzuschalten. Jeder macht es ein bisschen anders, niemand weiss genau, wer wofuer zustaendig ist.</p></li><li><h3>Risiken werden erst im Ernstfall sichtbar</h3><p>Ein neues Projekt startet, ohne dass vorher jemand die Risiken schriftlich bewertet hat. Wenn dann etwas ausfaellt, fehlt die Grundlage, um schnell und richtig zu reagieren.</p></li></ul>
 </section>
 
-<section class="bildband">
-  <img src="assets/it-dokumente/zweitbild.png" alt="IT-Dokumente" />
+<section class="block wechsel ">
+  <h2>Dokumente, die zu Eurem Betrieb passen</h2>
+  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Administrationskonzept</h3><p>Wir halten fest, wer welche Systeme betreut, wie Zugriffe vergeben werden und was im Vertretungsfall passiert. Aufgeschrieben in Euren Begriffen, nicht in generischem IT-Jargon.</p></div><div class="wechsel-bild"><img src="assets/it-dokumente/zweitbild.png" alt="IT-Dokumente" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Security-Roadmap</h3><p>Ein realistischer Plan, was als naechstes an der IT-Sicherheit verbessert wird - mit klaren Schritten statt einer langen Wunschliste. So wisst Ihr, wo Ihr steht und was als naechstes drankommt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Risikobewertung fuer Euer Projekt</h3><p>Vor dem Start eines Projekts schauen wir, wo es klemmen kann - technisch und organisatorisch. Das Ergebnis ist ein Dokument, das Ihr vorlegen und auf das Ihr Euch beziehen koennt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Onboarding-Checklisten</h3><p>Eine feste Liste, was beim Start und beim Ausscheiden eines Mitarbeiters zu tun ist - Zugaenge, Geraete, Berechtigungen. Damit nichts vom Zufall abhaengt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
 </section>
 
-<section class="block ">
-  <h2>Dokumente, zugeschnitten auf Euren Betrieb</h2>
-  <div class="raster"><article class="karte"><h3>Administrationskonzept</h3><p>Wir halten fest, wer worauf Zugriff hat, wie Systeme verwaltet werden und wer im Ausfall einspringt - schriftlich, nachvollziehbar, auf Eure Struktur gemuenzt.</p></article><article class="karte"><h3>Security-Roadmap</h3><p>Eine klare Reihenfolge, welche Massnahmen sinnvoll sind und wann - abgestimmt auf Euer Budget und Euer Risiko, nicht auf eine generische Checkliste.</p></article><article class="karte"><h3>Risikobewertung</h3><p>Fuer ein einzelnes Projekt oder den gesamten Betrieb: Wir listen Risiken auf, bewerten sie und zeigen, was zuerst angegangen werden sollte.</p></article><article class="karte"><h3>Onboarding-Checklisten</h3><p>Neue Mitarbeiter bekommen von Tag eins an, was sie brauchen - vom Zugang bis zum Passwort-Tresor, ohne dass jemand es lange aus dem Kopf erklaeren muss.</p></article></div>
-</section>
+<section class="aussage"><p>Meldet Euch, bevor Audit, Versicherung oder der naechste Mitarbeiterwechsel danach fragen.</p></section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Gespraech</h3><p>Wir sprechen durch, was Ihr braucht und wie Euer Betrieb aufgestellt ist.</p></div></li><li><span class="nr">2</span><div><h3>Bestandsaufnahme</h3><p>Wir schauen uns Eure IT, Prozesse und vorhandene Unterlagen an.</p></div></li><li><span class="nr">3</span><div><h3>Entwurf</h3><p>Ihr bekommt einen Entwurf, den wir gemeinsam durchgehen und anpassen.</p></div></li><li><span class="nr">4</span><div><h3>Uebergabe</h3><p>Das fertige Dokument geht an Euch - druckreif, einsatzbereit, direkt in Eure Ablage.</p></div></li></ol>
+  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Bestandsaufnahme</h3><p>Wir sprechen mit Euch ueber Eure Systeme, Abteilungen und Ablaeufe - vor Ort oder per Videocall.</p></div></li><li><span class="nr">2</span><div><h3>Entwurf</h3><p>Wir erstellen einen ersten Entwurf des Dokuments, zugeschnitten auf das, was Ihr uns geschildert habt.</p></div></li><li><span class="nr">3</span><div><h3>Abstimmung</h3><p>Ihr prueft den Entwurf, wir passen an, bis alles zu Eurem Betrieb passt und niemand raten muss.</p></div></li><li><span class="nr">4</span><div><h3>Uebergabe</h3><p>Ihr bekommt das fertige Dokument in einem Format, das Ihr direkt nutzen und bei Bedarf selbst weiterpflegen koennt.</p></div></li></ol>
 </section>
 
 <section class="block ">
-  <h2>Ihr Nutzen</h2>
-  <div class="raster"><article class="karte"><h3>Einsatzbereit</h3><p>Dokumente, die Ihr bei Audit, Versicherung oder Mitarbeiterwechsel direkt vorlegen koennt.</p></article><article class="karte"><h3>Auf Euch zugeschnitten</h3><p>Keine generische Vorlage, sondern Inhalte, die zu Eurer IT und Eurem Betrieb passen.</p></article><article class="karte"><h3>Wissen gesichert</h3><p>Auch wenn jemand ausfaellt oder geht, bleibt das Vorgehen schriftlich nachvollziehbar.</p></article><article class="karte"><h3>Klar strukturiert</h3><p>Nachvollziehbar aufgebaut, sodass sich auch Aussenstehende - Auditor, Versicherung, neuer Mitarbeiter - schnell zurechtfinden.</p></article></div>
+  <h2>Was Ihr davon habt</h2>
+  <div class="raster"><article class="karte"><h3>Sofort vorzeigbar</h3><p>Im Audit oder bei der Versicherung liegt das passende Dokument bereit, statt erst improvisiert werden zu muessen.</p></article><article class="karte"><h3>Kein Suchen bei Personalwechsel</h3><p>Eine feste Checkliste sorgt dafuer, dass Zugaenge und Geraete beim Ein- und Austritt zuverlaessig abgearbeitet werden.</p></article><article class="karte"><h3>Klarer Blick vor dem Projektstart</h3><p>Die Risikobewertung liegt vor, bevor investiert wird - nicht erst, wenn etwas schiefgelaufen ist.</p></article><article class="karte"><h3>Auf Euren Betrieb zugeschnitten</h3><p>Kein generischer Text mit fremdem Firmennamen, sondern ein Dokument mit Euren Systemen, Euren Ablaeufen und Eurer Sprache.</p></article></div>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Ist das eine Rechtsberatung?</summary><p>Nein. Wir erstellen die Dokumente nach anerkannten Best Practices der IT-Administration - keine anwaltliche Beratung. Bei kundenspezifischen rechtlichen Anforderungen empfehlen wir ausdruecklich eine Pruefung durch einen Anwalt vor dem Einsatz.</p></details><details><summary>Fuer welche Anlaesse eignen sich die Dokumente?</summary><p>Fuer Audits, Versicherungsanfragen, Foerderantraege, Systemausfaelle und den Wechsel von Mitarbeitern - ueberall dort, wo jemand schriftlich nachvollziehen muss, wie Eure IT aufgestellt ist.</p></details><details><summary>Muss ich schon IT-Unterlagen haben?</summary><p>Nein. Wir erheben den Ist-Stand gemeinsam mit Euch, auch wenn bisher nichts dokumentiert ist.</p></details><details><summary>Wie lange dauert die Erstellung?</summary><p>Das haengt vom Umfang ab - ein Administrationskonzept braucht mehr Abstimmung als eine Onboarding-Checkliste. Nach dem ersten Gespraech nennen wir Euch einen realistischen Zeitrahmen.</p></details><details><summary>Was kostet das?</summary><p>Preis nach Aufwand, auf Anfrage - abhaengig davon, welche Dokumente Ihr braucht und wie umfangreich Euer Betrieb ist.</p></details></div>
+  <div class="faq"><details><summary>Ist das eine Rechtsberatung?</summary><p>Nein. Wir erstellen die Dokumente nach Best Practice aus der IT-Praxis, keine juristische Pruefung. Fuer rechtlich verbindliche Anforderungen empfehlen wir ausdruecklich vorab eine anwaltliche Pruefung.</p></details><details><summary>Was braucht Ihr von uns, um zu starten?</summary><p>Ein Gespraech ueber Eure Systeme, Ablaeufe und was Ihr konkret vorlegen muesst - Details klaeren wir gemeinsam im ersten Termin.</p></details><details><summary>Koennt Ihr auch ein bestehendes Dokument ueberarbeiten?</summary><p>Ja. Oft ist eine veraltete Vorlage vorhanden, die wir pruefen, aktualisieren und an Euren aktuellen Stand anpassen.</p></details><details><summary>Wie lange dauert die Erstellung?</summary><p>Das haengt vom Umfang ab - eine Onboarding-Checkliste geht schneller als eine vollstaendige Security-Roadmap. Nach der Bestandsaufnahme nennen wir einen realistischen Zeitrahmen.</p></details><details><summary>Was kostet das?</summary><p>Preis nach Aufwand, je nach Umfang und Anzahl der Dokumente. Ihr bekommt vorab einen Festpreis auf Anfrage, keine Ueberraschungen.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Holt Euch Papier, das im Ernstfall traegt</h2>
-  <p class="unterzeile">Ein Gespraech reicht, um zu klaeren, welche Dokumente Euer Betrieb wirklich braucht.</p>
+  <h2>Holt Euch das Dokument, das im Ernstfall wirklich zaehlt</h2>
+  <p class="unterzeile">Meldet Euch, bevor Audit, Versicherung oder der naechste Mitarbeiterwechsel danach fragen.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
