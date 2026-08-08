@@ -125,7 +125,7 @@
   "eure-it-abteilung": {
     "titel": "Ihre IT-Abteilung",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: Partnerschaft auf Dauer, nicht Feuerwehreinsatz.",
-    "thema": "Ihr bucht ein monatliches Stundenkontingent und habt damit eine feste Ansprechperson - vom ganz normalen Alltagsproblem (First Level: Drucker, Passwort, neuer Mitarbeiter) bis zur strategischen Beratung: Einkauf, Ausrichtung der Digitalisierung und der Security-Strategie. Alles kann besprochen werden. Der Nutzen ist die Verlaesslichkeit: Es gibt jemanden, der Eure Umgebung KENNT und nicht bei jedem Anruf von vorne anfaengt - und man muss niemanden fest einstellen. KEINE Preise und keine Stundensaetze nennen. Ehrlich bleiben: Das ersetzt keine grosse IT-Abteilung, aber fuer Betriebe ohne eigene IT ist es genau das, was fehlt.",
+    "thema": "Ihr bucht ein monatliches Stundenkontingent und habt damit eine feste Ansprechperson - vom ganz normalen Alltagsproblem (First Level: Drucker, Passwort, neuer Mitarbeiter) bis zur strategischen Beratung: Einkauf, Ausrichtung der Digitalisierung und der Security-Strategie. Alles kann besprochen werden. Der Nutzen ist die Verlaesslichkeit: Es gibt jemanden, der Eure Umgebung KENNT und nicht bei jedem Anruf von vorne anfaengt - und man muss niemanden fest einstellen. KEINE Preise und keine Stundensaetze nennen. Ehrlich bleiben: Das ersetzt keine grosse IT-Abteilung, aber fuer Betriebe ohne eigene IT ist es genau das, was fehlt.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret zuschneiden: Betriebe, bei denen bisher der Chef oder der technikaffine Mitarbeiter nebenher die IT macht.",
     "produkt": "Keine eigene IT? Kein Problem - Beratungsvertrag mit festem Stundenkontingent.",
     "path": "eure-it-abteilung.html",
     "assets": [
@@ -133,13 +133,15 @@
       "assets/eure-it-abteilung/zweitbild.png",
       "assets/eure-it-abteilung/hintergrund_bild.png"
     ],
-    "hero_titel": "Feste Ansprechperson für Ihre komplette IT",
-    "bildrichtung": "Glas und Spiegelungen, klare Linien, helles Blaugrau, viel Tageslicht",
+    "hero_titel": "Feste IT-Ansprechperson ohne eigene Abteilung",
+    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
     "erstellt": "2026-08-07T23:16:32",
-    "ueberarbeitet": "2026-08-08T13:29:27",
-    "aufbau": "ruhig",
+    "ueberarbeitet": "2026-08-08T15:27:56",
+    "aufbau": "problem_zuerst",
     "kategorie": "Beratung & Dokumente",
-    "kurzbeschreibung": "Ein monatliches Stundenkontingent mit fester Ansprechperson - für Alltagsfragen und strategische IT-Entscheidungen."
+    "kurzbeschreibung": "Ein monatliches Stundenkontingent mit fester Ansprechperson - für alles von Drucker-Problemen bis zur IT-Strategie.",
+    "ablauf_art": "strang",
+    "fuer_wen_art": "chips"
   },
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
