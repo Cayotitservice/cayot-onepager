@@ -3,23 +3,28 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Endlich wissen, wo Eure IT wirklich steht | Cayot IT Service</title>
-<meta name="description" content="IT-Checkup für Firmen und Privatleute: ein Termin, 20 Maßnahmen nach Dringlichkeit sortiert, mit Kostenrahmen. Festpreis auf Anfrage." />
-<meta property="og:title" content="Endlich wissen, wo Eure IT wirklich steht | Cayot IT Service" />
-<meta property="og:description" content="IT-Checkup für Firmen und Privatleute: ein Termin, 20 Maßnahmen nach Dringlichkeit sortiert, mit Kostenrahmen. Festpreis auf Anfrage." />
+<title>Endlich wissen, wo Ihre IT wirklich steht | Cayot IT Service</title>
+<meta name="description" content="IT-Checkup für Unternehmen und Privathaushalte: ehrliche Bestandsaufnahme Ihrer IT mit Maßnahmen nach Dringlichkeit und Kostenrahmen." />
+<meta property="og:title" content="Endlich wissen, wo Ihre IT wirklich steht | Cayot IT Service" />
+<meta property="og:description" content="IT-Checkup für Unternehmen und Privathaushalte: ehrliche Bestandsaufnahme Ihrer IT mit Maßnahmen nach Dringlichkeit und Kostenrahmen." />
 <meta property="og:type" content="website" />
-
+<meta property="og:image" content="assets/it-checkup-fuer-kleine-unternehmen/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
 <link rel="apple-touch-icon" href="assets/marke/favicon.png" />
 <style>
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:#05070c;background-color:#05070c;color:#edf1f7;
+body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,.82) 40%,rgba(5,7,12,.94) 100%),url('assets/it-checkup-fuer-kleine-unternehmen/hintergrund_bild.png') center/cover fixed no-repeat;background-color:#05070c;color:#edf1f7;
  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
  -webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:#29a8ff;text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+/* Ueberschriften brechen an sinnvollen Stellen um (Chef 08.08.2026: "er trennt die
+   Ueberschrift an den falschen Stellen"). `balance` verteilt die Zeilen gleichmaessig, statt
+   ein einzelnes Wort in die zweite Zeile zu haengen; `hyphens:manual` verbietet dem Browser,
+   deutsche Woerter selbst zu trennen - das trifft er bei Fachbegriffen regelmaessig daneben. */
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;text-wrap:balance;hyphens:manual;
+ overflow-wrap:break-word}
 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
@@ -64,6 +69,18 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .karte h3{font-size:1.15rem;color:#29a8ff}
 .karte p{margin:0;color:#a2abbd}
 .block.problem .karte h3{color:#f0b429}
+
+/* Zwei weitere KACHEL-ARTEN (Chef 08.08.2026: "der Aufbau an sich und die Art der Kacheln"
+   sind noch zu gleich). Dieselbe Farbwelt, deutlich andere Anmutung: */
+/* flach - kein Kasten, nur eine feine Trennlinie oben. Wirkt luftig, fast wie Zeitungsspalten */
+.raster.flach .karte{background:none;border:none;border-top:2px solid #29a8ff;
+ border-radius:0;padding:1.25rem 0 0}
+.block.problem .raster.flach .karte{border-top-color:#f0b429}
+/* gross - breite Kacheln mit viel Luft, hoechstens zwei nebeneinander */
+.raster.gross{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.raster.gross .karte{padding:2.25rem 2rem;border-radius:20px;
+ background:linear-gradient(160deg,#0d121f,#101625)}
+.raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
 .ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
 .ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
@@ -201,50 +218,51 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero">
+<section class="hero gross">
   <div class="hero-text">
-    <h1>Endlich wissen, wo Eure IT wirklich steht</h1>
-    <p class="unterzeile">Ein Nachmittag, ein ehrlicher Blick auf alles, was mit Eurer Technik zu tun hat - Netzwerk, Rechner, Backup, Zugänge. Am Ende habt Ihr eine Liste der 20 wichtigsten Punkte, sortiert nach Dringlichkeit, mit realistischem Kostenrahmen.</p>
-    <ul class="fuer-wen"><li>Privatleute mit eigenem Netzwerk, NAS oder mehreren Rechnern zuhause</li><li>Handwerksbetriebe, die sich noch nie systematisch mit ihrer IT befasst haben</li><li>Einzelunternehmer und Selbstständige ohne Zeit für IT-Fragen</li><li>Kleine Firmen bis etwa 15 Mitarbeiter ohne eigene IT-Abteilung</li></ul>
+    <h1>Endlich wissen, wo Ihre IT wirklich steht</h1>
+    <p class="unterzeile">Wir schauen uns Ihre komplette IT einmal in Ruhe an und sagen Ihnen, was in Ordnung ist, was dringend ist und was es ungefähr kostet. Danach entscheiden Sie, was passiert - und wer es macht.</p>
+    <ul class="fuer-wen"><li>Kleine Unternehmen bis etwa 15 Mitarbeiter ohne eigene IT-Abteilung</li><li>Handwerksbetriebe, die sich auf ihr Geschäft statt auf Technik konzentrieren wollen</li><li>Einzelunternehmer und Selbständige, die auf ihre Technik angewiesen sind</li><li>Privathaushalte mit mehreren Rechnern, NAS oder Smart-Home-Geräten</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
     </div></div>
-  
 </section>
 
-<section class="aussage"><p>Ein Nachmittag, ein ehrlicher Blick auf alles, was mit Eurer Technik zu tun hat - Netzwerk, Rechner, Backup, Zugänge. Am Ende habt Ihr eine Liste der 20 wichtigsten Punkte, sortiert nach Dringlichkeit, mit realistischem Kostenrahmen.</p></section>
-
-<section class="block wechsel problem">
-  <h2>Keiner weiß so genau, wie es um die eigene IT steht</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Gefühl statt Wissen</h3><p>Läuft ja irgendwie - aber ob das Backup wirklich funktioniert, ob Updates fehlen oder wer noch alles Zugriff auf Eure Daten hat, weiß niemand so richtig. Man merkt es meist erst, wenn etwas schiefgeht.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Angebote ohne Grundlage</h3><p>Irgendwer will Euch eine neue Firewall, eine Cloud-Lösung oder ein Backup-System verkaufen - aber ob Ihr das wirklich braucht und was zuerst dran ist, bleibt unklar.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Zu viele Baustellen, keine Reihenfolge</h3><p>Passwörter, WLAN, Datenschutz, Benutzerrechte - überall könnte etwas im Argen liegen. Ohne Überblick weiß man nicht, wo man anfangen soll und was wirklich dringend ist.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+<section class="block">
+  <h2>Ihr Nutzen</h2>
+  <ul class="zahlen"><li><span class="zahl">01</span><h3>Klarheit statt Rätselraten</h3><p>Sie wissen erstmals genau, welche Risiken bestehen und wie dringend sie sind.</p></li><li><span class="zahl">02</span><h3>Realistische Kosten statt böser Überraschungen</h3><p>Zu jeder Maßnahme steht ein Kostenrahmen dabei, damit Sie planen können.</p></li><li><span class="zahl">03</span><h3>Unabhängige Grundlage</h3><p>Der Bericht gehört Ihnen. Sie können ihn für Ihre eigene IT nutzen oder an jeden Dienstleister weitergeben.</p></li><li><span class="zahl">04</span><h3>Ein fester Ansprechpartner</h3><p>Statt vieler Einzelmeinungen bekommen Sie eine zusammenhängende Bestandsaufnahme aus einer Hand.</p></li></ul>
 </section>
 
-<section class="block ">
-  <h2>Ein Termin, ein vollständiger Bericht</h2>
-  <div class="raster"><article class="karte"><h3>Drei bis fünf Stunden vor Ort oder aus der Ferne</h3><p>Wir schauen uns Internetanschluss und Firewall an, die Rechner, Updates und Virenschutz, das Backup, WLAN und NAS, Microsoft 365, Passwörter und Mehr-Faktor-Anmeldung, Benutzerrechte und Eure Notfallvorsorge.</p></article><article class="karte"><h3>20 Punkte, sortiert nach Dringlichkeit</h3><p>Am Ende steht keine graue Theorie, sondern eine klare Liste: was zuerst erledigt werden sollte, was Zeit hat - und was es realistisch kosten würde, es in Ordnung zu bringen.</p></article><article class="karte"><h3>Ausgearbeitete Unterlagen zum Nachlesen</h3><p>Ihr bekommt Dokumente, die Ihr behaltet und mit anderen teilen könnt - auch mit einem anderen Dienstleister, falls Ihr die Umsetzung nicht bei uns machen lassen wollt.</p></article><article class="karte"><h3>Ihr entscheidet, was passiert</h3><p>Kein Verkaufsgespräch, kein Druck. Ihr bekommt eine ehrliche Bestandsaufnahme und könnt danach frei wählen, wer die Maßnahmen umsetzt.</p></article></div>
+<section class="bildband">
+  <img src="assets/it-checkup-fuer-kleine-unternehmen/hero_bild.png" alt="IT-Checkup für kleine Unternehmen" />
+</section>
+
+<section class="block problem">
+  <h2>Niemand weiß so richtig, wie es um die eigene IT steht</h2>
+  <div class="raster "><article class="karte"><h3>Gefühltes Wissen statt echtem Überblick</h3><p>Läuft ja alles - bis es nicht mehr läuft. Ob Backup, Virenschutz oder Passwörter wirklich in Ordnung sind, weiß meistens niemand genau.</p></article><article class="karte"><h3>Investitionen ohne Plan</h3><p>Mal wird ein neuer Router gekauft, mal ein Programm abonniert - ohne dass klar ist, ob das eigentliche Problem woanders liegt. Am Ende ist viel Geld ausgegeben und wenig gewonnen.</p></article><article class="karte"><h3>Sorge vor Datenschutz und Ausfall</h3><p>Was passiert, wenn ein Laptop gestohlen wird oder die Festplatte kaputtgeht? Viele ahnen, dass da eine Lücke ist, aber keiner hat je genau hingeschaut.</p></article></div>
+</section>
+
+<section class="block wechsel ">
+  <h2>Ein Termin, ein ehrlicher Blick, ein klarer Plan</h2>
+  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Drei bis fünf Stunden vor Ort</h3><p>Wir prüfen Internetanschluss und Firewall, alle Rechner, Updates und Virenschutz, das Backup, Microsoft 365, Passwörter und Mehr-Faktor-Anmeldung, das NAS, das WLAN sowie Benutzerrechte und Notfallvorsorge.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>20 Maßnahmen, sortiert nach Dringlichkeit</h3><p>Sie bekommen keine Liste voller Fachbegriffe, sondern eine klare Reihenfolge: was zuerst erledigt werden sollte, was warten kann - jeweils mit einem realistischen Kostenrahmen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Dokumente zum Nachschlagen</h3><p>Alle Ergebnisse werden ausgearbeitet und übergeben. Sie haben schriftlich, was Sie haben - und was es kosten würde, es in Ordnung zu bringen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Sie entscheiden, wer umsetzt</h3><p>Der Checkup ist unabhängig von der Umsetzung. Ob wir das erledigen oder jemand anderes - das bleibt Ihre Entscheidung.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
 </section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="stufen"><li><span class="nr">1</span><h3>Termin vereinbaren</h3><p>Wir klären kurz, worum es bei Euch geht - Firma oder privates Zuhause - und was wir uns ansehen sollen.</p></li><li><span class="nr">2</span><h3>Der Check</h3><p>Vor Ort oder per Fernzugriff gehen wir systematisch alle Bereiche durch, von der Firewall bis zum Passwort-Umgang.</p></li><li><span class="nr">3</span><h3>Auswertung</h3><p>Wir tragen die Ergebnisse zusammen und ordnen sie nach Dringlichkeit und Kostenrahmen.</p></li><li><span class="nr">4</span><h3>Übergabe und Gespräch</h3><p>Ihr bekommt den vollständigen Bericht und besprecht mit uns in Ruhe, was zuerst angegangen werden sollte.</p></li></ol>
-</section>
-
-<section class="block ">
-  <h2>Was Ihr davon habt</h2>
-  <ul class="kompakt"><li><h3>Klarheit statt Vermutung</h3><p>Ihr wisst danach schwarz auf weiß, wo Eure IT wirklich steht - nicht nur gefühlt.</p></li><li><h3>Kostenrahmen statt Blindflug</h3><p>Zu jeder Maßnahme gibt es eine realistische Einschätzung, was die Umsetzung kosten würde.</p></li><li><h3>Klare Reihenfolge</h3><p>Ihr wisst, was dringend ist und was warten kann - statt überall gleichzeitig anzufangen.</p></li><li><h3>Unabhängig von uns nutzbar</h3><p>Die Unterlagen gehören Euch und funktionieren auch, wenn ein anderer Dienstleister die Umsetzung macht.</p></li></ul>
+  <ol class="stufen"><li><span class="nr">1</span><h3>Termin vereinbaren</h3><p>Sie sagen uns, worum es geht und wie groß Ihre Umgebung ist. Wir stimmen einen Termin ab.</p></li><li><span class="nr">2</span><h3>Der Checkup selbst</h3><p>Vor Ort oder per Fernzugriff prüfen wir alle Bereiche - von der Firewall bis zum Backup.</p></li><li><span class="nr">3</span><h3>Auswertung</h3><p>Wir tragen die Ergebnisse zusammen und bringen sie in eine Reihenfolge nach Dringlichkeit.</p></li><li><span class="nr">4</span><h3>Übergabe</h3><p>Sie erhalten die Dokumente und besprechen mit uns, was als Nächstes sinnvoll ist.</p></li></ol>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Lohnt sich der Checkup auch für privat, nicht nur für Firmen?</summary><p>Ja. Wenn Ihr zuhause ein NAS, mehrere Rechner oder ein eigenes Netzwerk habt, schauen wir uns das genauso an wie bei einem Betrieb - nur eben in kleinerem Rahmen.</p></details><details><summary>Wie lange dauert der Termin?</summary><p>In der Regel drei bis fünf Stunden, je nachdem wie viele Geräte und Systeme es zu prüfen gibt.</p></details><details><summary>Muss ich vorher etwas vorbereiten?</summary><p>Nein. Es hilft, wenn Zugangsdaten griffbereit sind, aber wir finden auch sonst unseren Weg durch Eure Systeme.</p></details><details><summary>Was kostet der Checkup?</summary><p>Festpreis auf Anfrage - wir nennen Euch vorab einen klaren Preis, keine versteckten Zusatzkosten.</p></details><details><summary>Muss ich die Maßnahmen dann bei Euch umsetzen lassen?</summary><p>Nein. Ihr bekommt die vollständigen Unterlagen und entscheidet frei, wer die Umsetzung macht - auch wir sind dabei nur eine Option.</p></details></div>
+  <div class="faq"><details><summary>Lohnt sich das auch für ein Ein-Personen-Unternehmen oder privat?</summary><p>Ja. Der Umfang richtet sich nach Ihrer Umgebung - bei einem Privathaushalt oder Einzelunternehmen dauert der Checkup entsprechend kürzer, das Vorgehen ist aber dasselbe.</p></details><details><summary>Wie lange dauert der Checkup?</summary><p>Bei kleinen Unternehmen typischerweise drei bis fünf Stunden. Danach folgt die Auswertung, die wir separat durchführen.</p></details><details><summary>Müssen wir etwas vorbereiten?</summary><p>Nein. Es hilft, wenn jemand vor Ort Zugriff auf die wichtigsten Systeme geben kann, mehr ist nicht nötig.</p></details><details><summary>Setzen Sie die Maßnahmen danach auch um?</summary><p>Wenn Sie möchten, gerne. Sie sind aber nicht dazu verpflichtet - der Bericht gehört Ihnen und ist unabhängig von einer Umsetzung durch uns.</p></details><details><summary>Was kostet der Checkup?</summary><p>Das hängt von der Größe Ihrer Umgebung ab. Wir nennen Ihnen einen Festpreis, sobald wir wissen, worum es geht.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Verschafft Euch Klarheit über Eure IT</h2>
-  <p class="unterzeile">Ein Termin genügt, um endlich zu wissen, was Sache ist und was es kostet, es in Ordnung zu bringen.</p>
+  <h2>Jetzt IT-Checkup anfragen</h2>
+  <p class="unterzeile">Schreiben Sie uns kurz, worum es geht - wir sagen Ihnen, was der Checkup für Sie umfasst.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
@@ -264,7 +282,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
     </div>
     <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
     <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
-    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+    <p class="hinweis">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage.
       Es werden keine Daten auf dieser Seite gespeichert.</p>
   </form>
 </section>
