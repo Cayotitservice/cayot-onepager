@@ -168,5 +168,25 @@
     "aufbau": "klassisch",
     "kategorie": "Beratung & Dokumente",
     "kurzbeschreibung": "Individuell erstellte IT-Dokumente - vom Administrationskonzept bis zur Onboarding-Checkliste, einsatzbereit für den Ernstfall."
+  },
+  "security-paket-fuer-unternehmen": {
+    "titel": "Security-Paket für Unternehmen",
+    "stil": "Sachlich und ruhig, kein Angstverkauf. Sicherheit ist Handwerk, kein Drama. KEINE Preise, keine Euro-Beträge.",
+    "thema": "Das volle Sicherheitspaket, drei Bausteine, die zusammengehören und aufeinander abgestimmt sind:\n1. E-MAIL-SICHERHEIT: Schutz vor Phishing, gefälschten Absendern und Schadanhängen. Dazu gehören SPF, DKIM und DMARC, damit niemand in Ihrem Namen schreiben kann.\n2. ENDGERÄTESCHUTZ (Endpoint): moderner Schutz auf jedem Rechner und Server, der nicht nur bekannte Viren erkennt, sondern auch verdächtiges Verhalten - inklusive Überwachung, damit ein Vorfall auffällt, während er passiert, und nicht Wochen später.\n3. FIREWALL: der Schutz an der Grenze zwischen Ihrem Netz und dem Internet. WAHLWEISE als Gerät bei Ihnen im Haus (on premise), zum Beispiel Sophos - für Betriebe, die ihre Absicherung im eigenen Serverschrank haben wollen.\n\nDer eigentliche Verkaufspunkt ist das ZUSAMMENSPIEL: Die drei Bausteine reden miteinander und werden von EINER Stelle betreut. Wer sich E-Mail-Schutz beim einen, Virenschutz beim anderen und die Firewall beim dritten holt, hat drei Rechnungen, drei Ansprechpartner - und im Ernstfall zeigt jeder auf den anderen.\n\nEhrlich dazusagen: Es gibt keinen hundertprozentigen Schutz. Was es gibt, ist die Kombination aus Abwehr, Erkennung und jemandem, der hinschaut.\n\nKEINE Preise nennen - Paketpreis auf Anfrage, weil er von der Zahl der Geräte und Postfächer abhängt.",
+    "produkt": "Rundumschutz aus einer Hand: E-Mail-Sicherheit, Endgeräteschutz und Firewall.",
+    "path": "security-paket-fuer-unternehmen.html",
+    "assets": [
+      "assets/security-paket-fuer-unternehmen/hero_bild.png",
+      "assets/security-paket-fuer-unternehmen/zweitbild.png",
+      "assets/security-paket-fuer-unternehmen/hintergrund_bild.png"
+    ],
+    "hero_titel": "Drei Schutzschichten. Ein Ansprechpartner.",
+    "kategorie": "Sicherheit",
+    "kurzbeschreibung": "E-Mail-Sicherheit, Endgeräteschutz und Firewall aus einer Hand, betreut von einem Ansprechpartner.",
+    "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
+    "aufbau": "wechsel",
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "chips",
+    "erstellt": "2026-08-08T15:04:08"
   }
 }
