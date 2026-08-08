@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Microsoft 365 im Griff statt irgendwie gewachsen | Cayot IT Service</title>
-<meta name="description" content="Microsoft 365 pruefen lassen: Konten, MFA, Lizenzen und Sicherheit im Check mit verstaendlicher Ampel-Liste. Fuer Betriebe mit 2 bis 20 Mitarbeitern." />
-<meta property="og:title" content="Microsoft 365 im Griff statt irgendwie gewachsen | Cayot IT Service" />
-<meta property="og:description" content="Microsoft 365 pruefen lassen: Konten, MFA, Lizenzen und Sicherheit im Check mit verstaendlicher Ampel-Liste. Fuer Betriebe mit 2 bis 20 Mitarbeitern." />
+<title>Microsoft 365 prüfen - Ampel statt Blindflug | Cayot IT Service</title>
+<meta name="description" content="Microsoft 365 Quick Check für kleine Betriebe: Konten, Sicherheit und Lizenzen geprüft - mit verständlicher Ampel-Liste statt Fachbericht." />
+<meta property="og:title" content="Microsoft 365 prüfen - Ampel statt Blindflug | Cayot IT Service" />
+<meta property="og:description" content="Microsoft 365 Quick Check für kleine Betriebe: Konten, Sicherheit und Lizenzen geprüft - mit verständlicher Ampel-Liste statt Fachbericht." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/microsoft-365-service/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
@@ -19,7 +19,12 @@ body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,
 img{max-width:100%;display:block}
 a{color:#29a8ff;text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+/* Ueberschriften brechen an sinnvollen Stellen um (Chef 08.08.2026: "er trennt die
+   Ueberschrift an den falschen Stellen"). `balance` verteilt die Zeilen gleichmaessig, statt
+   ein einzelnes Wort in die zweite Zeile zu haengen; `hyphens:manual` verbietet dem Browser,
+   deutsche Woerter selbst zu trennen - das trifft er bei Fachbegriffen regelmaessig daneben. */
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;text-wrap:balance;hyphens:manual;
+ overflow-wrap:break-word}
 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
@@ -64,6 +69,18 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .karte h3{font-size:1.15rem;color:#29a8ff}
 .karte p{margin:0;color:#a2abbd}
 .block.problem .karte h3{color:#f0b429}
+
+/* Zwei weitere KACHEL-ARTEN (Chef 08.08.2026: "der Aufbau an sich und die Art der Kacheln"
+   sind noch zu gleich). Dieselbe Farbwelt, deutlich andere Anmutung: */
+/* flach - kein Kasten, nur eine feine Trennlinie oben. Wirkt luftig, fast wie Zeitungsspalten */
+.raster.flach .karte{background:none;border:none;border-top:2px solid #29a8ff;
+ border-radius:0;padding:1.25rem 0 0}
+.block.problem .raster.flach .karte{border-top-color:#f0b429}
+/* gross - breite Kacheln mit viel Luft, hoechstens zwei nebeneinander */
+.raster.gross{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.raster.gross .karte{padding:2.25rem 2rem;border-radius:20px;
+ background:linear-gradient(160deg,#0d121f,#101625)}
+.raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
 .ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
 .ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
@@ -201,50 +218,52 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero oben">
-  <div class="hero-bild breit"><img src="assets/microsoft-365-service/hero_bild.png" alt="Microsoft 365 Service" /></div>
+<section class="hero">
   <div class="hero-text">
-    <h1>Microsoft 365 im Griff statt irgendwie gewachsen</h1>
-    <p class="unterzeile">Wir pruefen Eure Microsoft-365-Umgebung von Benutzerkonten bis Sicherheitseinstellungen und zeigen Euch in einer klaren Ampel-Liste, wo es passt und wo Handlungsbedarf besteht.</p>
-    <ul class="fuer-wen"><li>Handwerksbetriebe, die Microsoft 365 nutzen, aber nie richtig eingerichtet haben</li><li>Einzelunternehmer und Selbstaendige mit eigenem Tenant ohne Zeit fuer IT-Feinschliff</li><li>Firmen mit 2 bis 20 Mitarbeitern ohne eigene IT-Abteilung</li><li>Buerobetriebe, bei denen ueber Jahre Konten, Lizenzen und Rechte gewachsen sind</li></ul>
+    <h1>Microsoft 365 prüfen - Ampel statt Blindflug</h1>
+    <p class="unterzeile">Wir prüfen Ihre Microsoft-365-Umgebung und zeigen Ihnen in einer verständlichen Ampel-Liste, wo es passt, wo Handlungsbedarf besteht und wo es dringend ist. Sie wissen danach genau, woran Sie sind.</p>
+    <ul class="fuer-wen"><li>Handwerksbetriebe mit Microsoft 365 im Büro</li><li>Einzelunternehmer und Selbständige, die Microsoft 365 nutzen</li><li>Kleine Büros und Kanzleien ohne eigene IT-Abteilung</li><li>Betriebe mit 2 bis 20 Mitarbeitern, die gewachsen sind</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
     </div></div>
+  <div class="hero-bild"><img src="assets/microsoft-365-service/hero_bild.png" alt="Microsoft 365 Service" /></div>
+</section>
+
+<section class="block problem">
+  <h2>Gewachsen, aber nie aufgeräumt</h2>
+  <div class="raster "><article class="karte"><h3>Alte Konten, offene Türen</h3><p>Mitarbeiter sind gegangen, ihre Benutzerkonten aber nicht. Jedes vergessene Konto ist ein Zugang, den niemand mehr braucht - aber jeder ausnutzen könnte.</p></article><article class="karte"><h3>Lizenzen ohne Überblick</h3><p>Niemand weiß mehr genau, wer welche Lizenz hat und wofür eigentlich bezahlt wird. Manche Funktionen werden nie genutzt, andere fehlen dort, wo sie gebraucht würden.</p></article><article class="karte"><h3>Sicherheit nach Gefühl</h3><p>Mehr-Faktor-Anmeldung, Adminrechte und Mailweiterleitungen wurden irgendwann eingerichtet und seitdem nie wieder angeschaut. Ob das noch passt, weiß keiner so genau.</p></article></div>
+</section>
+
+<section class="bildband">
+  <img src="assets/microsoft-365-service/zweitbild.png" alt="Microsoft 365 Service" />
+</section>
+
+<section class="block ">
+  <h2>Der M365 Quick Check</h2>
+  <div class="raster gross"><article class="karte"><h3>Vollständige Durchsicht</h3><p>Wir schauen uns Benutzerkonten, Adminrollen, MFA, Geräte, OneDrive, SharePoint, Defender und Mailweiterleitungen an - alles, was zu Ihrer Microsoft-365-Umgebung gehört.</p></article><article class="karte"><h3>Ampel statt Fachbericht</h3><p>Sie bekommen eine kurze, verständliche Liste mit drei Farben: Grün passt, Gelb sollte geändert werden, Rot ist dringend. Kein Papierstapel, den niemand liest.</p></article><article class="karte"><h3>Umsetzung getrennt beauftragt</h3><p>Der Check zeigt, was zu tun ist. Die Umsetzung der Punkte beauftragen Sie danach separat - Festpreis auf Anfrage, ohne Überraschungen.</p></article><article class="karte"><h3>Laufende Betreuung möglich</h3><p>Wer nicht nur einmal prüfen, sondern dauerhaft sauber halten möchte, bucht die laufende Betreuung nach Aufwand.</p></article></div>
 </section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="stufen"><li><span class="nr">1</span><h3>Kurzes Gespraech</h3><p>Wir klaeren, wie viele Benutzer, welche Lizenzen und was Euch besonders wichtig ist.</p></li><li><span class="nr">2</span><h3>Pruefung Eurer M365-Umgebung</h3><p>Wir schauen uns Konten, MFA, Rollen, Geraete und Sicherheitseinstellungen in Ruhe an.</p></li><li><span class="nr">3</span><h3>Ampel-Liste erhalten</h3><p>Ihr bekommt eine kurze Liste mit gruen, gelb und rot - verstaendlich und ohne Fachchinesisch.</p></li><li><span class="nr">4</span><h3>Umsetzung besprechen</h3><p>Ihr entscheidet, welche Punkte angegangen werden. Die Umsetzung wird getrennt beauftragt und berechnet.</p></li></ol>
-</section>
-
-<section class="block">
-  <h2>Was Ihr davon habt</h2>
-  <ul class="zahlen"><li><span class="zahl">01</span><h3>Ueberblick statt Rateraten</h3><p>Ihr wisst danach genau, wer Zugriff auf was hat und wofuer Ihr eigentlich bezahlt.</p></li><li><span class="zahl">02</span><h3>Sicherheitsluecken sichtbar gemacht</h3><p>Fehlende MFA, ueberzaehige Adminrechte und vergessene Mailweiterleitungen kommen ans Licht, bevor sie zum Problem werden.</p></li><li><span class="zahl">03</span><h3>Verstaendliches Ergebnis</h3><p>Die Ampel-Liste koennt Ihr direkt lesen und entscheiden, keine Uebersetzung noetig.</p></li><li><span class="zahl">04</span><h3>Keine versteckten Ueberraschungen</h3><p>Pruefung und Umsetzung sind klar getrennt - Ihr wisst immer, wofuer Ihr gerade bezahlt.</p></li></ul>
-</section>
-
-<section class="aussage"><p>Fragt jetzt an und findet heraus, wo Euer M365 steht - bevor eine Luecke zum Problem wird.</p></section>
-
-<section class="block problem">
-  <h2>Gewachsen, aber nie aufgeraeumt</h2>
-  <ul class="kompakt"><li><h3>Niemand weiss, wer noch Zugriff hat</h3><p>Mitarbeiter sind laengst weg, ihre Konten aber noch aktiv. Wer da noch auf Eure Mails oder Dateien zugreifen kann, weiss oft keiner mehr genau.</p></li><li><h3>Lizenzen, die keiner mehr zuordnen kann</h3><p>Ueber die Jahre kommen Lizenzen dazu, werden umgestellt oder vergessen. Am Ende zahlt Ihr fuer Dinge, die niemand nutzt - oder es fehlt genau das, was gebraucht wuerde.</p></li><li><h3>Sicherheit auf Zuruf statt nach Plan</h3><p>Mehr-Faktor-Anmeldung ist mal eingerichtet, mal nicht. Adminrechte hat, wer sie mal gebraucht hat. Im Ernstfall merkt man erst, wo die Luecken waren.</p></li></ul>
+  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Erstgespräch</h3><p>Sie schildern uns kurz, wie Ihr Microsoft 365 aufgebaut ist und was Sie beschäftigt.</p></div></li><li><span class="nr">2</span><div><h3>Prüfung</h3><p>Wir sehen uns Konten, Rechte, Geräte, Lizenzen und Sicherheitseinstellungen an.</p></div></li><li><span class="nr">3</span><div><h3>Ampel-Liste</h3><p>Sie erhalten eine übersichtliche Liste mit Grün, Gelb und Rot - klar sortiert nach Dringlichkeit.</p></div></li><li><span class="nr">4</span><div><h3>Umsetzung nach Wunsch</h3><p>Sie entscheiden, was umgesetzt wird. Wir machen Ihnen dafür ein Angebot - Festpreis auf Anfrage.</p></div></li></ol>
 </section>
 
 <section class="block ">
-  <h2>Der M365 Quick Check bringt Klarheit</h2>
-  <div class="raster"><article class="karte"><h3>Vollstaendige Bestandsaufnahme</h3><p>Wir gehen Benutzerkonten, Adminrollen, Entra, Geraete, OneDrive, SharePoint, Defender und Mailweiterleitungen systematisch durch. Nichts wird uebersehen, weil wir eine feste Pruefliste abarbeiten.</p></article><article class="karte"><h3>Ampel-Liste statt Fachbericht</h3><p>Am Ende bekommt Ihr eine kurze, verstaendliche Liste: gruen heisst passt, gelb heisst sollte geaendert werden, rot heisst dringend. Kein seitenlanges Dokument, das niemand liest.</p></article><article class="karte"><h3>Umsetzung getrennt und auf Wunsch</h3><p>Der Quick Check zeigt die Lage, ohne dass automatisch etwas veraendert wird. Was Ihr umsetzen wollt, wird danach separat besprochen und beauftragt - Festpreis auf Anfrage.</p></article><article class="karte"><h3>Laufende Betreuung nach Aufwand</h3><p>Wer nicht nur einmal pruefen, sondern dauerhaft im Blick behalten will, bucht die laufende Betreuung. Wir kuemmern uns dann regelmaessig um Konten, Lizenzen und Sicherheit.</p></article></div>
+  <h2>Ihr Nutzen</h2>
+  <div class="raster flach"><article class="karte"><h3>Klarer Überblick</h3><p>Sie wissen genau, welche Konten, Rechte und Geräte in Ihrem Microsoft 365 aktiv sind.</p></article><article class="karte"><h3>Lizenzen im Blick</h3><p>Sie sehen, wofür Sie zahlen und ob es noch zu Ihrem Betrieb passt.</p></article><article class="karte"><h3>Sicherheit auf dem Stand von heute</h3><p>MFA, Adminrollen und Mailweiterleitungen sind geprüft statt geraten.</p></article><article class="karte"><h3>Keine Überraschung beim Preis</h3><p>Der Check ist klar von der Umsetzung getrennt - Sie entscheiden, was als Nächstes passiert.</p></article></div>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Aendert Ihr bei der Pruefung schon etwas an unserem System?</summary><p>Nein. Der Quick Check ist eine reine Bestandsaufnahme. Veraendert wird nichts, ohne dass Ihr das vorher besprochen und beauftragt habt.</p></details><details><summary>Was kostet der M365 Quick Check?</summary><p>Das besprechen wir individuell - Festpreis auf Anfrage, passend zu Eurer Anzahl an Benutzern und Lizenzen.</p></details><details><summary>Was passiert mit den roten Punkten aus der Liste?</summary><p>Die zeigen dringenden Handlungsbedarf. Die Umsetzung besprechen wir danach separat und beauftragen sie getrennt vom Check.</p></details><details><summary>Wir haben keine eigene IT-Abteilung - reicht das trotzdem?</summary><p>Genau fuer solche Betriebe ist der Quick Check gemacht. Ihr braucht kein IT-Wissen, um die Ampel-Liste zu verstehen.</p></details><details><summary>Koennen wir statt eines einmaligen Checks auch laufende Betreuung buchen?</summary><p>Ja, das geht als laufende Betreuung nach Aufwand statt als einmaliges Paket.</p></details></div>
+  <div class="faq"><details><summary>Was genau prüfen Sie beim Quick Check?</summary><p>Benutzerkonten, MFA, Adminrollen, alte Benutzer, Lizenzen, Entra, Geräte, OneDrive, SharePoint, Defender und Mailweiterleitungen - die zentralen Punkte Ihrer Microsoft-365-Umgebung.</p></details><details><summary>Was kostet der Quick Check?</summary><p>Der Quick Check ist ein festes Paket, Festpreis auf Anfrage. Sie wissen vorher, woran Sie sind.</p></details><details><summary>Wird die Umsetzung automatisch mit erledigt?</summary><p>Nein. Der Check liefert Ihnen die Ampel-Liste. Was Sie umsetzen möchten, beauftragen Sie danach getrennt - so behalten Sie die Kontrolle über Aufwand und Reihenfolge.</p></details><details><summary>Für wie viele Mitarbeiter lohnt sich das?</summary><p>Der Quick Check ist für Betriebe mit 2 bis 20 Mitarbeitern gedacht. Auch als Einzelunternehmer mit wenigen Konten profitieren Sie davon.</p></details><details><summary>Können Sie Microsoft 365 auch dauerhaft betreuen?</summary><p>Ja. Neben dem Quick Check bieten wir laufende Betreuung nach Aufwand an, wenn Sie Ihr Microsoft 365 dauerhaft sauber halten möchten.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Holt Euch Klarheit ueber Eure Microsoft-365-Umgebung</h2>
-  <p class="unterzeile">Fragt jetzt an und findet heraus, wo Euer M365 steht - bevor eine Luecke zum Problem wird.</p>
+  <h2>Jetzt Microsoft 365 prüfen lassen</h2>
+  <p class="unterzeile">Fragen Sie den Quick Check unverbindlich an und bekommen Sie Klarheit über Ihre Microsoft-365-Umgebung.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
@@ -264,7 +283,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
     </div>
     <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
     <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
-    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+    <p class="hinweis">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage.
       Es werden keine Daten auf dieser Seite gespeichert.</p>
   </form>
 </section>
