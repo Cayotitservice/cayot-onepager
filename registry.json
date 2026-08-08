@@ -8,14 +8,16 @@
       "assets/sicherheitscheck-von-au-en-gratis-pentest/zweitbild.png",
       "assets/sicherheitscheck-von-au-en-gratis-pentest/hintergrund_bild.png"
     ],
-    "hero_titel": "Ihre Domain aus Sicht eines Angreifers",
-    "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Etwas professioneller und konkreter wirken.",
-    "ueberarbeitet": "2026-08-08T13:37:56",
-    "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
-    "aufbau": "ruhig",
+    "hero_titel": "So sehen Angreifer Ihre Domain von außen",
+    "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Etwas professioneller und konkreter wirken.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret auf die Situation zuschneiden (wer sollte wissen, was von aussen sichtbar ist).",
+    "ueberarbeitet": "2026-08-08T15:19:31",
+    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
+    "aufbau": "klassisch",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Ein passiver Scan zeigt, welche Schwachstellen Ihrer Domain öffentlich sichtbar sind.",
-    "titel": "Sicherheitscheck von außen"
+    "kurzbeschreibung": "Ein passiver Scan zeigt, welche Schwachstellen zu Ihrer Domain öffentlich sichtbar sind - inklusive verständlichem Bericht.",
+    "titel": "Sicherheitscheck von außen",
+    "ablauf_art": "strang",
+    "fuer_wen_art": "zeilen"
   },
   "lokaler-it-notdienst": {
     "titel": "Lokaler IT-Notdienst",
