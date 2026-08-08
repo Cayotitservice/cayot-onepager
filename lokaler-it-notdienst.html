@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>IT-Notdienst in Bad Kreuznach - schnell da, schnell geloest | Cayot IT Service</title>
-<meta name="description" content="IT-Notdienst in Bad Kreuznach: schnelle Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Drucker-Problemen. Fuer Privatleute und Selbstaendige." />
-<meta property="og:title" content="IT-Notdienst in Bad Kreuznach - schnell da, schnell geloest | Cayot IT Service" />
-<meta property="og:description" content="IT-Notdienst in Bad Kreuznach: schnelle Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Drucker-Problemen. Fuer Privatleute und Selbstaendige." />
+<title>Wenn der Rechner spinnt, sind wir schnell da | Cayot IT Service</title>
+<meta name="description" content="IT-Notdienst in Bad Kreuznach: schnelle Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Drucker-Problemen. Für Privat und Beruf." />
+<meta property="og:title" content="Wenn der Rechner spinnt, sind wir schnell da | Cayot IT Service" />
+<meta property="og:description" content="IT-Notdienst in Bad Kreuznach: schnelle Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Drucker-Problemen. Für Privat und Beruf." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/lokaler-it-notdienst/hero_bild.png" />
-<link rel="icon" href="assets/marke/logo.png" />
+<link rel="icon" type="image/png" href="assets/marke/favicon.png" />
+<link rel="apple-touch-icon" href="assets/marke/favicon.png" />
 <style>
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,.82) 40%,rgba(5,7,12,.94) 100%),url('assets/lokaler-it-notdienst/hintergrund_bild.png') center/cover fixed no-repeat;background-color:#05070c;color:#edf1f7;
@@ -75,6 +76,68 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .bildband{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)}
 .bildband img{border-radius:18px;border:1px solid rgba(255,255,255,0.10);width:100%;object-fit:cover;max-height:420px}
 
+/* --- Bausteine der uebrigen Aufbauten (Chef 08.08.2026: "wirkliche Abwechslung") --------- */
+
+/* Kopf mit breitem Bild UEBER dem Text ("aber lieber drueber") */
+.hero.oben{grid-template-columns:1fr;text-align:center}
+.hero.oben .hero-bild.breit img{width:100%;max-height:min(46vh,420px);object-fit:cover;
+ border-radius:20px;border:1px solid rgba(255,255,255,0.10);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.hero.oben .unterzeile,.hero.gross .unterzeile{margin-left:auto;margin-right:auto}
+.hero.oben .knopfreihe,.hero.gross .knopfreihe{justify-content:center}
+.hero.oben .fuer-wen,.hero.gross .fuer-wen{justify-content:center}
+
+/* Kopf ganz ohne eigenes Bild - der Seitenhintergrund traegt, dafuer sehr grosse Schrift */
+.hero.gross{grid-template-columns:1fr;text-align:center;
+ padding-top:clamp(3.5rem,11vw,8rem);padding-bottom:clamp(3rem,8vw,6rem)}
+.hero.gross h1{font-size:clamp(2.4rem,7vw,4.6rem);max-width:18ch;margin-left:auto;margin-right:auto}
+
+/* Abwechselnde Reihen: Text links, dann Text rechts */
+.wechsel-reihe{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.25rem,4vw,3rem);
+ align-items:center;margin-top:2rem;text-align:left}
+.wechsel-reihe.rechts .wechsel-text{order:2}
+.wechsel-text h3{font-size:clamp(1.25rem,2.4vw,1.7rem);color:#29a8ff}
+.wechsel-text p{color:#a2abbd;margin:0;max-width:52ch}
+.wechsel-bild img{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,0.10);
+ max-height:340px;object-fit:cover;box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.wechsel-deko{min-height:180px;border-radius:18px;border:1px solid rgba(255,255,255,0.10);
+ background:linear-gradient(135deg,#0d121f,#101625);position:relative;overflow:hidden}
+.wechsel-deko::after{content:"";position:absolute;inset:-40% -10% auto auto;width:70%;height:170%;
+ background:radial-gradient(closest-side,rgba(41,168,255,.20),transparent);transform:rotate(18deg)}
+
+/* Ablauf als waagerechte Stufen statt untereinander */
+.stufen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;counter-reset:stufe}
+.stufen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;
+ padding:1.5rem 1.25rem;text-align:left;position:relative}
+.stufen h3{font-size:1.05rem;margin:.9rem 0 .3rem}
+.stufen p{margin:0;color:#a2abbd;font-size:.95rem}
+
+/* Nutzen als grosse durchnummerierte Kacheln */
+.zahlen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
+.zahlen li{border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:1.75rem 1.5rem;text-align:left;
+ background:#0d121f}
+.zahlen .zahl{display:block;font-size:2.4rem;font-weight:800;line-height:1;letter-spacing:-.03em;
+ background:linear-gradient(135deg,#29a8ff,#1c6fa8);
+ -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:.6rem}
+.zahlen h3{font-size:1.1rem;margin:0 0 .35rem}
+.zahlen p{margin:0;color:#a2abbd}
+
+/* Schmale Liste mit Randlinie statt Karten */
+.kompakt{list-style:none;padding:0;margin:2rem auto 0;max-width:820px;display:grid;gap:0;text-align:left}
+.kompakt li{padding:1.35rem 0 1.35rem 1.5rem;border-left:2px solid rgba(255,255,255,0.10);
+ border-bottom:1px solid rgba(255,255,255,0.10)}
+.kompakt li:last-child{border-bottom:none}
+.kompakt h3{font-size:1.1rem;margin:0 0 .3rem;color:#29a8ff}
+.block.problem .kompakt h3{color:#f0b429}
+.kompakt p{margin:0;color:#a2abbd}
+
+/* Eine grosse Aussage ueber die volle Breite - setzt einen Absatz im Lesefluss */
+.aussage{border-top:1px solid rgba(255,255,255,0.10);border-bottom:1px solid rgba(255,255,255,0.10);
+ background:#101625;padding:clamp(2.5rem,6vw,4.5rem) clamp(1rem,4vw,3rem);margin:1rem 0}
+.aussage p{max-width:24ch;margin:0 auto;text-align:center;font-weight:600;line-height:1.3;
+ font-size:clamp(1.5rem,3.6vw,2.4rem);letter-spacing:-.01em}
+
 .faq{margin-top:1.5rem;display:grid;gap:.75rem}
 details{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:12px;padding:1rem 1.25rem}
 summary{cursor:pointer;font-weight:600}
@@ -115,6 +178,11 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 @media(max-width:860px){
   .hero{grid-template-columns:1fr}
   .hero-bild{order:-1}
+  /* Auf dem Handy stehen die Wechselreihen wieder untereinander - und zwar IMMER Text zuerst,
+     sonst schoebe `order:2` bei jeder zweiten Reihe das Bild vor den Text. */
+  .wechsel-reihe,.wechsel-reihe.rechts{grid-template-columns:1fr}
+  .wechsel-reihe.rechts .wechsel-text{order:0}
+  .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -135,22 +203,21 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="hero">
   <div class="hero-text">
-    <h1>IT-Notdienst in Bad Kreuznach - schnell da, schnell geloest</h1>
-    <p class="unterzeile">Wenn der PC streikt, das WLAN aussetzt oder der Drucker nicht mehr will, kommen wir vorbei oder schalten uns per Fernwartung auf. Euer Problem ist unser Termin, nicht unsere Warteliste.</p>
-    <ul class="fuer-wen"><li>Privatleute, deren Rechner oder WLAN zuhause streikt</li><li>Einzelunternehmer, die ohne PC keinen Umsatz machen</li><li>Handwerksbetriebe ohne eigene IT-Abteilung</li><li>Kleine Firmen, die schnelle Hilfe statt Warteschleife brauchen</li></ul>
+    <h1>Wenn der Rechner spinnt, sind wir schnell da</h1>
+    <p class="unterzeile">Ob PC, WLAN, Drucker oder Outlook - wir helfen vor Ort in Bad Kreuznach oder per Fernwartung, je nachdem was schneller geht. Euer Problem ist meistens noch am selben Tag gelöst.</p>
+    <ul class="fuer-wen"><li>Privatleute, deren Computer oder WLAN nicht mehr mitspielt</li><li>Einzelunternehmer, die auf einen laufenden Rechner angewiesen sind</li><li>Handwerksbetriebe ohne eigene IT-Abteilung</li><li>Kleine Firmen, die schnelle Hilfe statt langer Warteschleifen brauchen</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
-    </div>
-  </div>
+    </div></div>
   <div class="hero-bild"><img src="assets/lokaler-it-notdienst/hero_bild.png" alt="Lokaler IT-Notdienst" /></div>
 </section>
 
 <section class="block problem">
   <h2>Wenn nichts mehr geht</h2>
-  <div class="raster"><article class="karte"><h3>Der PC startet nicht mehr</h3><p>Der Bildschirm bleibt schwarz, und Eure Unterlagen, Fotos oder Angebote sind erstmal nicht erreichbar. Genau dann zaehlt jede Stunde, besonders wenn Ihr davon lebt.</p></article><article class="karte"><h3>WLAN, Drucker, Outlook - irgendwas klemmt immer</h3><p>Mal ist das Netzwerk weg, mal druckt nichts mehr, mal kommen keine Mails an. Einzeln klingt das klein, im Alltag bremst es Euch komplett aus.</p></article><article class="karte"><h3>Keine Zeit fuer stundenlange Fehlersuche</h3><p>Ihr wollt nicht selbst im Geraetemanager herumklicken oder Foren durchsuchen. Ihr wollt, dass jemand kommt, der es kennt und es loest.</p></article></div>
+  <div class="raster"><article class="karte"><h3>Der PC startet einfach nicht mehr</h3><p>Der Bildschirm bleibt schwarz, und ihr wisst nicht, ob es an der Festplatte, dem Netzteil oder etwas ganz anderem liegt. Jede Stunde ohne Rechner kostet Zeit und Nerven.</p></article><article class="karte"><h3>WLAN und Netzwerk streiken</h3><p>Das Internet bricht ständig ab, der Drucker findet den Rechner nicht mehr, und niemand im Haus oder Büro weiß, wo der Fehler steckt. Am Telefon mit der Hotline kommt ihr trotzdem nicht weiter.</p></article><article class="karte"><h3>Neuer Rechner, alte Daten</h3><p>Ein neuer PC steht da, aber Mails, Fotos und Dokumente vom alten Gerät sind noch nicht überall. Ohne Erfahrung dauert die Umstellung schnell einen ganzen Tag - oder es geht etwas verloren.</p></article></div>
 </section>
 
 <section class="bildband">
@@ -158,28 +225,28 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </section>
 
 <section class="block ">
-  <h2>So bekommt Ihr Euer Geraet wieder zum Laufen</h2>
-  <div class="raster"><article class="karte"><h3>Vor Ort oder per Fernwartung</h3><p>Je nachdem, was schneller geht, kommen wir zu Euch nach Bad Kreuznach und Umgebung oder schalten uns direkt auf Euren Rechner auf. Ihr entscheidet, was Euch lieber ist.</p></article><article class="karte"><h3>Neue Geraete, alte Daten</h3><p>Wir richten neue PCs ein und holen Eure Dateien, Mails und Einstellungen vom alten Rechner rueber. Danach koennt Ihr sofort weiterarbeiten, als waere nichts passiert.</p></article><article class="karte"><h3>Netzwerk, NAS und Konten in Ordnung bringen</h3><p>WLAN, NAS-Speicher, Microsoft-Konto oder Outlook - wir schauen uns Euer Setup an und bringen es wieder zum Laufen. Auf Wunsch richten wir auch ein Backup ein, damit Euch das naechste Mal nichts verloren geht.</p></article><article class="karte"><h3>Klare Ansage statt Ueberraschung</h3><p>Wir sagen Euch vorab, was wir vermuten und was das ungefaehr bedeutet. Keine boesen Ueberraschungen bei der Rechnung.</p></article></div>
+  <h2>Hilfe, die ankommt - persönlich oder per Fernwartung</h2>
+  <div class="raster"><article class="karte"><h3>Vor Ort in Bad Kreuznach und Umgebung</h3><p>Wir kommen zu Euch nach Hause oder ins Büro, schauen uns das Problem direkt am Gerät an und beheben es meistens gleich vor Ort.</p></article><article class="karte"><h3>Fernwartung, wenn es schneller geht</h3><p>Bei vielen Problemen reicht ein sicherer Fernzugriff auf Euren Rechner. Das spart Anfahrtszeit und ist oft die schnellere Lösung.</p></article><article class="karte"><h3>Von PC-Neustart bis Datenumzug</h3><p>Ob PC-Einrichtung, Datenübernahme vom alten Rechner, NAS-Einrichtung, Backup oder repariertes Microsoft-Konto - wir kümmern uns um das komplette Problem, nicht nur um Symptome.</p></article><article class="karte"><h3>Outlook, Drucker und Co. wieder im Griff</h3><p>Auch wenn Outlook keine Mails mehr abruft oder der Drucker nur noch Fehlermeldungen ausgibt, finden wir die Ursache und richten alles wieder sauber ein.</p></article></div>
 </section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Anruf oder Anfrage</h3><p>Ihr schildert kurz, was nicht funktioniert - wir sagen Euch, ob es per Fernwartung geht oder ein Besuch sinnvoller ist.</p></div></li><li><span class="nr">2</span><div><h3>Termin vereinbaren</h3><p>Wir vereinbaren einen Zeitpunkt, der zu Euch passt, oft noch am selben Tag.</p></div></li><li><span class="nr">3</span><div><h3>Problem loesen</h3><p>Vor Ort oder aus der Ferne kuemmern wir uns um Euer Geraet, bis es wieder laeuft. Berechnet wird mindestens eine halbe Stunde, danach nach tatsaechlichem Aufwand.</p></div></li><li><span class="nr">4</span><div><h3>Kurzer Bericht</h3><p>Ihr erfahrt, was das Problem war und wie Ihr es kuenftig vermeiden koennt.</p></div></li></ol>
+  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Kurz schildern, was los ist</h3><p>Ihr beschreibt uns das Problem per Anruf, WhatsApp oder Formular - wir sagen Euch direkt, ob Fernwartung reicht oder ein Besuch nötig ist.</p></div></li><li><span class="nr">2</span><div><h3>Termin am selben oder nächsten Tag</h3><p>In der Regel sind wir noch am selben Tag per Fernwartung dabei oder kommen kurzfristig vorbei.</p></div></li><li><span class="nr">3</span><div><h3>Problem wird behoben</h3><p>Wir reparieren, richten ein oder retten Eure Daten - und erklären dabei, was passiert ist, damit es nicht gleich wieder auftritt.</p></div></li><li><span class="nr">4</span><div><h3>Abrechnung nach tatsächlichem Aufwand</h3><p>Berechnet wird mindestens eine halbe Stunde, danach nach dem tatsächlichen Zeitaufwand - transparent und ohne versteckte Posten.</p></div></li></ol>
 </section>
 
 <section class="block ">
-  <h2>Ihr Nutzen</h2>
-  <div class="raster"><article class="karte"><h3>Schnell erreichbar</h3><p>Kurze Wege in und um Bad Kreuznach bedeuten kurze Wartezeiten bis zur Hilfe.</p></article><article class="karte"><h3>Vor Ort oder Fernwartung</h3><p>Ihr bekommt die Loesung, die gerade schneller geht - ohne unnoetigen Aufwand.</p></article><article class="karte"><h3>Offene Abrechnung</h3><p>Mindestens eine halbe Stunde, danach nach tatsaechlichem Aufwand - keine versteckten Pauschalen.</p></article><article class="karte"><h3>Fuer alle da</h3><p>Egal ob privater Rechner oder Firmen-PC - Eure IT bekommt die gleiche Aufmerksamkeit.</p></article></div>
+  <h2>Was Ihr davon habt</h2>
+  <div class="raster"><article class="karte"><h3>Schnell vor Ort</h3><p>Kurze Wege in Bad Kreuznach und Umgebung bedeuten kurze Wartezeit bis zur Hilfe.</p></article><article class="karte"><h3>Vor Ort oder aus der Ferne</h3><p>Wir wählen den Weg, der für Euer Problem am schnellsten zum Ziel führt.</p></article><article class="karte"><h3>Faire Abrechnung</h3><p>Mindestens eine halbe Stunde, danach nach echtem Aufwand - ihr wisst vorher, woran ihr seid.</p></article><article class="karte"><h3>Für Privat und Beruf</h3><p>Vom privaten Laptop bis zum Firmennetzwerk im Kleinbetrieb - wir kennen beide Welten.</p></article></div>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Was kostet der Einsatz?</summary><p>Berechnet wird mindestens eine halbe Stunde, danach nach tatsaechlichem Aufwand. Vorab sagen wir Euch, womit ungefaehr zu rechnen ist.</p></details><details><summary>Kommt Ihr auch zu Privatleuten nach Hause?</summary><p>Ja, wir helfen sowohl Privatleuten als auch Selbstaendigen und Firmen - vor Ort oder per Fernwartung.</p></details><details><summary>Was, wenn mein PC gar nicht mehr startet?</summary><p>Dann kommen wir meist vorbei, weil Fernwartung ohne laufendes System nicht moeglich ist. Wir schauen uns die Hardware an und sagen Euch, was zu tun ist.</p></details><details><summary>Koennt Ihr auch ein Backup fuer mich einrichten?</summary><p>Ja, das gehoert zu unseren Standardaufgaben. So sind Eure Daten beim naechsten Problem bereits gesichert.</p></details><details><summary>Wie schnell seid Ihr da?</summary><p>In Bad Kreuznach und Umgebung sind wir meist noch am selben Tag vor Ort oder per Fernwartung erreichbar.</p></details></div>
+  <div class="faq"><details><summary>Wie schnell könnt ihr da sein?</summary><p>In vielen Fällen noch am selben Tag - per Fernwartung sofort, vor Ort meist kurzfristig, je nach Termin und Entfernung.</p></details><details><summary>Was kostet der Einsatz?</summary><p>Berechnet wird mindestens eine halbe Stunde, danach nach tatsächlichem Aufwand. Für größere Vorhaben nennen wir Euch vorab einen Festpreis auf Anfrage.</p></details><details><summary>Kommt ihr auch zu Privatpersonen?</summary><p>Ja, ausdrücklich. Wir helfen genauso Privatleuten wie Einzelunternehmern und kleinen Firmen.</p></details><details><summary>Muss ich meinen Rechner vorbeibringen?</summary><p>Nein, in der Regel kommen wir zu Euch oder lösen das Problem per Fernwartung direkt an Eurem Gerät.</p></details><details><summary>Was, wenn ihr das Problem per Fernwartung nicht lösen könnt?</summary><p>Dann vereinbaren wir einen Vor-Ort-Termin - ohne doppelte Berechnung für den bisherigen Aufwand.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Ruft an, wir kuemmern uns</h2>
-  <p class="unterzeile">Je frueher Ihr Bescheid gebt, desto schneller laeuft Euer PC wieder.</p>
+  <h2>Jetzt Hilfe anfordern</h2>
+  <p class="unterzeile">Schildert kurz Euer Problem, und wir sagen Euch, wie schnell wir helfen können.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
