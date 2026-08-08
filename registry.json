@@ -64,12 +64,13 @@
       "assets/nas-und-backup-service/zweitbild.png",
       "assets/nas-und-backup-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Eure Daten an einem Ort - und wirklich gesichert",
-    "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
+    "hero_titel": "Ihre Daten zentral, gesichert und wirklich wiederherstellbar",
+    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:07:52",
-    "ueberarbeitet": "2026-08-08T10:41:46",
-    "aufbau": "ruhig",
-    "kategorie": "Netzwerk & Daten"
+    "ueberarbeitet": "2026-08-08T12:43:41",
+    "aufbau": "bild_oben",
+    "kategorie": "Netzwerk & Daten",
+    "kurzbeschreibung": "Wir richten Ihre Synology-NAS ein, sichern all Ihre Geräte automatisch und prüfen, dass die Wiederherstellung im Ernstfall wirklich funktioniert."
   },
   "e-mail-sicherheitscheck": {
     "titel": "E-Mail-Sicherheitscheck",
