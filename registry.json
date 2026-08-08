@@ -109,8 +109,10 @@
       "assets/eure-it-abteilung/hintergrund_bild.png"
     ],
     "hero_titel": "Eure IT-Abteilung, ohne jemanden einzustellen",
-    "bildrichtung": "Detail einer Serverfront mit Lüftungsgittern, strenges Raster, Grau mit einem grünen Akzent",
-    "erstellt": "2026-08-07T23:16:32"
+    "bildrichtung": "Ein einzelner heller Lichtpunkt im halbdunklen Raum, starker Kontrast, alles andere ruhig",
+    "erstellt": "2026-08-07T23:16:32",
+    "ueberarbeitet": "2026-08-08T11:02:48",
+    "aufbau": "bild_oben"
   },
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
