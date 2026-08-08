@@ -108,9 +108,11 @@
       "assets/eure-it-abteilung/zweitbild.png",
       "assets/eure-it-abteilung/hintergrund_bild.png"
     ],
-    "hero_titel": "Eure IT-Abteilung, ohne jemanden einzustellen",
-    "bildrichtung": "Detail einer Serverfront mit Lüftungsgittern, strenges Raster, Grau mit einem grünen Akzent",
-    "erstellt": "2026-08-07T23:16:32"
+    "hero_titel": "Feste Ansprechperson fuer Eure IT - ohne Neueinstellung",
+    "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
+    "erstellt": "2026-08-07T23:16:32",
+    "ueberarbeitet": "2026-08-08T10:49:42",
+    "aufbau": "wechsel"
   },
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
