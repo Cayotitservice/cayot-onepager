@@ -177,13 +177,15 @@
       "assets/it-dokumente/zweitbild.png",
       "assets/it-dokumente/hintergrund_bild.png"
     ],
-    "hero_titel": "Dokumente, die im Ernstfall wirklich helfen",
-    "bildrichtung": "Weite Nachtaufnahme mit vielen kleinen Lichtpunkten, dunkles Indigo, viel Ruhe im Bild",
+    "hero_titel": "Dokumente, auf die Sie sich verlassen können",
+    "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
     "erstellt": "2026-08-07T23:21:58",
-    "ueberarbeitet": "2026-08-08T13:35:03",
-    "aufbau": "klassisch",
+    "ueberarbeitet": "2026-08-08T15:35:55",
+    "aufbau": "problem_zuerst",
     "kategorie": "Beratung & Dokumente",
-    "kurzbeschreibung": "Individuell erstellte IT-Dokumente - vom Administrationskonzept bis zur Onboarding-Checkliste, einsatzbereit für den Ernstfall."
+    "kurzbeschreibung": "Individuell erstellte IT-Dokumente - Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten für Ihren Betrieb.",
+    "ablauf_art": "winkel",
+    "fuer_wen_art": "trennstrich"
   },
   "security-paket-fuer-unternehmen": {
     "titel": "Security-Paket für Unternehmen",
