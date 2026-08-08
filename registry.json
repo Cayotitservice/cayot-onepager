@@ -91,10 +91,11 @@
       "assets/it-checkup-fuer-kleine-unternehmen/zweitbild.png",
       "assets/it-checkup-fuer-kleine-unternehmen/hintergrund_bild.png"
     ],
-    "hero_titel": "Endlich wissen, wo Eure IT wirklich steht",
-    "bildrichtung": "Abstrakte Lichtspuren von Netzwerkverkehr über unscharfer Hardware, Cyan auf Anthrazit",
+    "hero_titel": "Eure IT im Klarblick: Was ist wirklich dringend?",
+    "bildrichtung": "Strenges, sich wiederholendes Raster im Detail, Grau mit einem einzelnen grünen Akzent",
     "erstellt": "2026-08-07T23:13:46",
-    "ueberarbeitet": "2026-08-07T23:26:55"
+    "ueberarbeitet": "2026-08-08T10:46:54",
+    "aufbau": "klassisch"
   },
   "eure-it-abteilung": {
     "titel": "Eure IT-Abteilung",
