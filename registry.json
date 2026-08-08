@@ -14,7 +14,8 @@
     "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
     "aufbau": "wechsel",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Kostenloser, passiver Scan Ihrer Domain mit Bericht über öffentlich sichtbare Schwachstellen."
+    "kurzbeschreibung": "Kostenloser, passiver Scan Ihrer Domain mit Bericht über öffentlich sichtbare Schwachstellen.",
+    "titel": "Sicherheitscheck von außen"
   },
   "lokaler-it-notdienst": {
     "titel": "Lokaler IT-Notdienst",
@@ -112,7 +113,7 @@
     "kurzbeschreibung": "Ein ehrlicher Blick auf Ihre gesamte IT - mit klarer Liste, was dringend ist und was es kostet."
   },
   "eure-it-abteilung": {
-    "titel": "Eure IT-Abteilung",
+    "titel": "Ihre IT-Abteilung",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: Partnerschaft auf Dauer, nicht Feuerwehreinsatz.",
     "thema": "Ihr bucht ein monatliches Stundenkontingent und habt damit eine feste Ansprechperson - vom ganz normalen Alltagsproblem (First Level: Drucker, Passwort, neuer Mitarbeiter) bis zur strategischen Beratung: Einkauf, Ausrichtung der Digitalisierung und der Security-Strategie. Alles kann besprochen werden. Der Nutzen ist die Verlaesslichkeit: Es gibt jemanden, der Eure Umgebung KENNT und nicht bei jedem Anruf von vorne anfaengt - und man muss niemanden fest einstellen. KEINE Preise und keine Stundensaetze nennen. Ehrlich bleiben: Das ersetzt keine grosse IT-Abteilung, aber fuer Betriebe ohne eigene IT ist es genau das, was fehlt.",
     "produkt": "Keine eigene IT? Kein Problem - Beratungsvertrag mit festem Stundenkontingent.",
