@@ -28,13 +28,13 @@
       "assets/lokaler-it-notdienst/zweitbild.png",
       "assets/lokaler-it-notdienst/hintergrund_bild.png"
     ],
-    "hero_titel": "Schnelle IT-Hilfe direkt bei Ihnen",
-    "bildrichtung": "Strenges, sich wiederholendes Raster im Detail, Grau mit einem einzelnen grünen Akzent",
+    "hero_titel": "Schnelle IT-Hilfe in Bad Kreuznach",
+    "bildrichtung": "Ein einzelner heller Lichtpunkt im halbdunklen Raum, starker Kontrast, alles andere ruhig",
     "erstellt": "2026-08-07T23:00:34",
-    "ueberarbeitet": "2026-08-08T12:37:53",
-    "aufbau": "wechsel",
+    "ueberarbeitet": "2026-08-08T13:14:43",
+    "aufbau": "bild_oben",
     "kategorie": "Soforthilfe",
-    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Drucker-Problemen in Bad Kreuznach."
+    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Druckerproblemen in Bad Kreuznach."
   },
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
