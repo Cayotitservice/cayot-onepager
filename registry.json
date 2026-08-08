@@ -142,13 +142,13 @@
       "assets/cyberversicherung-vorbereiten/zweitbild.png",
       "assets/cyberversicherung-vorbereiten/hintergrund_bild.png"
     ],
-    "hero_titel": "Bereit für die Cyberversicherung",
-    "bildrichtung": "Weite Nachtaufnahme mit vielen kleinen Lichtpunkten, dunkles Indigo, viel Ruhe im Bild",
+    "hero_titel": "Ihre IT bereit für die Cyberversicherung",
+    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
     "erstellt": "2026-08-07T23:19:19",
-    "ueberarbeitet": "2026-08-08T12:32:54",
-    "aufbau": "klassisch",
+    "ueberarbeitet": "2026-08-08T13:32:17",
+    "aufbau": "problem_zuerst",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Wir bringen Ihre IT auf den Stand, den Ihre Cyberversicherung verlangt - dokumentiert und nachvollziehbar."
+    "kurzbeschreibung": "Wir prüfen Ihre IT-Sicherheit auf die Anforderungen der Cyberversicherung und dokumentieren den Ist-Zustand nachvollziehbar."
   },
   "it-dokumente": {
     "titel": "IT-Dokumente",
