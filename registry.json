@@ -226,5 +226,156 @@
     "ablauf_art": "winkel",
     "fuer_wen_art": "zeilen",
     "erstellt": "2026-08-08T15:07:11"
+  },
+  "digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer": {
+    "titel": "Digitale Tafeln für Besprechungsraum und Klassenzimmer",
+    "stil": "sachlich, bodenständig, keine Werbefloskeln - der Leser soll merken, dass hier jemand die Dinger wirklich aufhängt und einrichtet",
+    "thema": "WAS WIR ANBIETEN: interaktive Displays von Kindermann - vom einzelnen Board bis zum komplett ausgestatteten Besprechungsraum oder Klassenzimmer.\n\nMONTAGE: fest an der Wand oder freistehend auf einem Rollwagen. Auf Wunsch höhenverstellbar - manuell oder elektrisch. Das ist kein Zubehör-Detail: eine Tafel auf fester Höhe passt entweder den Kindern oder den Erwachsenen, nie beiden.\n\nDRAHTLOS PRÄSENTIEREN: Klick&Show. Sender an den eigenen Laptop stecken, Knopf drücken, Bild ist auf dem Display. Kein Kabelsuchen, keine Software-Installation, kein WLAN-Passwort für Gäste.\n\nBYOM - die eigene Videokonferenz mitbringen: Kamera und Mikrofon des Raums lassen sich drahtlos mit dem eigenen Teams-, Zoom- oder Webex-Konto nutzen. Der Gast startet seine Besprechung wie immer vom eigenen Laptop und benutzt trotzdem die Raumtechnik.\n\nTON: auf Wunsch mit Lautsprecher-Tischvariante, damit man am anderen Ende auch verstanden wird - der eingebaute Laptop-Ton reicht in einem echten Raum nicht.\n\nGRÖSSEN: verschiedene Diagonalen, passend zum Raum. Welche die richtige ist, hängt vom Abstand der hintersten Reihe ab - das schauen wir uns vor Ort an.\n\nWAS WIR DABEI MACHEN: Beratung zur Größe und Montageart, Lieferung, Aufbau, Einrichtung im Netzwerk, Anbindung an die vorhandene Umgebung - und eine Schulung, damit das Gerät danach auch benutzt wird und nicht als teure Tafel an der Wand hängt.\n\nFÜR WEN: Schulen und Bildungseinrichtungen, Praxen, Handwerks- und Industriebetriebe, Büros mit Besprechungsräumen.\n\nDER TYPISCHE ANLASS: Der Beamer ist alt, das Bild blass, jede Besprechung fängt mit zehn Minuten Kabelsuchen an - oder es steht ein neuer Raum an und man will es diesmal richtig machen. Wer schon ein Board hat, das keiner benutzt, ist auch richtig bei uns: meistens fehlt nur die Einrichtung und eine Stunde Einweisung.\n\nTONFALL: keine Preise nennen, keine technischen Datenblätter, keine Superlative. Wer hier liest, will wissen, ob wir das für ihn übernehmen - nicht, wie viele Berührpunkte der Bildschirm erkennt.",
+    "produkt": "Kindermann Displays und Zubehör",
+    "path": "digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer.html",
+    "assets": [
+      "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/hero_bild.png",
+      "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/zweitbild.png",
+      "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/hintergrund_bild.png",
+      "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_0.png",
+      "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_1.png",
+      "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_2.png",
+      "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_3.png"
+    ],
+    "inhalt": {
+      "kategorie": "Beratung & Dokumente",
+      "hero_titel": "Displays, die wirklich benutzt werden",
+      "hero_unterzeile": "Interaktive Displays von Kindermann für Besprechungsraum und Klassenzimmer - mit Beratung, Montage, Einrichtung und Schulung aus einer Hand, damit das Gerät danach auch wirklich läuft.",
+      "fuer_wen": [
+        "Schulen und Bildungseinrichtungen",
+        "Arztpraxen und andere Praxen",
+        "Handwerks- und Industriebetriebe",
+        "Büros mit Besprechungsräumen"
+      ],
+      "problem_ueberschrift": "Der alte Beamer bremst jede Besprechung",
+      "problem": [
+        {
+          "titel": "Zehn Minuten Kabelsuche",
+          "text": "Jede Besprechung beginnt gleich: der richtige Adapter fehlt, das Kabel ist zu kurz, jemand muss erst zum Nachbarraum laufen. Am Ende ist die halbe Zeit schon weg."
+        },
+        {
+          "titel": "Bild ist blass und klein",
+          "text": "In der hintersten Reihe kann keiner mehr lesen, was auf der Leinwand steht. Bei Tageslicht wird es noch schlechter, also müssen zusätzlich die Rollos runter."
+        },
+        {
+          "titel": "Das Board hängt nur an der Wand",
+          "text": "Ein interaktives Board wurde angeschafft, aber nie richtig eingerichtet. Jetzt nutzt es kaum jemand, weil keiner weiß, wie man es bedient."
+        }
+      ],
+      "loesung_ueberschrift": "So wird aus einer Tafel ein Werkzeug, das läuft",
+      "loesung": [
+        {
+          "titel": "Montage, die zum Raum passt",
+          "text": "Fest an der Wand oder auf einem Rollwagen, bei Bedarf höhenverstellbar - manuell oder elektrisch. So passt das Display Kindern in der Klasse ebenso wie Erwachsenen im Besprechungsraum.",
+          "bild": "Ein Display an einer Wandhalterung mit sichtbarer Höhenverstellung, eine Hand an der Kurbel, das Gerät steht zwischen einer niedrigen und einer hohen Markierung",
+          "bild_pfad": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_0.png"
+        },
+        {
+          "titel": "Präsentieren ohne Kabelsuche",
+          "text": "Sender an den eigenen Laptop stecken, Knopf drücken, das Bild ist auf dem Display. Kein Kabelsuchen, keine Software, kein WLAN-Passwort für Gäste.",
+          "bild": "Nahaufnahme einer Hand, die einen kleinen Sender in den USB-Anschluss eines Laptops steckt, im Hintergrund ein Display leicht unscharf",
+          "bild_pfad": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_1.png"
+        },
+        {
+          "titel": "Eigene Videokonferenz mitbringen",
+          "text": "Kamera und Mikrofon des Raums lassen sich drahtlos mit dem eigenen Teams-, Zoom- oder Webex-Konto nutzen. Der Gast startet die Besprechung wie gewohnt von seinem Laptop und nutzt trotzdem die Raumtechnik.",
+          "bild": "Blick auf die Kamera- und Mikrofonleiste über einem großen Display, davor ein aufgeklappter Laptop auf einem Besprechungstisch",
+          "bild_pfad": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_2.png"
+        },
+        {
+          "titel": "Ton, der im Raum ankommt",
+          "text": "Auf Wunsch mit Lautsprecher-Tischvariante, damit man auch am anderen Ende der Leitung verstanden wird. Der eingebaute Laptop-Ton reicht in einem echten Raum einfach nicht.",
+          "bild": "Ein flacher Tischlautsprecher vor einem Besprechungstisch, ordentlich verlegtes Kabel führt zum Display im Hintergrund",
+          "bild_pfad": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_3.png"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Beratung vor Ort",
+          "text": "Wir schauen uns den Raum an, messen den Abstand zur hintersten Reihe und legen gemeinsam Größe und Montageart fest."
+        },
+        {
+          "titel": "Lieferung und Aufbau",
+          "text": "Wir bringen das Display, montieren es fest an der Wand oder auf dem Rollwagen und richten die Höhenverstellung ein."
+        },
+        {
+          "titel": "Einrichtung im Netzwerk",
+          "text": "Wir binden das Gerät an Ihr Netzwerk und Ihre vorhandene Umgebung an, inklusive Klick&Show und Videokonferenz-Anbindung."
+        },
+        {
+          "titel": "Schulung",
+          "text": "Wir zeigen Ihnen und Ihrem Team, wie das Display bedient wird - damit es danach auch benutzt wird und nicht als teure Tafel an der Wand hängt."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Keine Kabelsuche mehr",
+          "text": "Präsentation läuft über Klick&Show, jede Besprechung fängt sofort mit dem Inhalt an, nicht mit Technikproblemen."
+        },
+        {
+          "titel": "Passt Kindern und Erwachsenen",
+          "text": "Höhenverstellbare Montage macht ein und dasselbe Gerät für Klassenzimmer und Besprechungsraum nutzbar."
+        },
+        {
+          "titel": "Eigene Videokonferenz nutzbar",
+          "text": "Gäste starten ihre gewohnte Teams-, Zoom- oder Webex-Sitzung vom eigenen Laptop und nutzen trotzdem Kamera und Mikrofon des Raums."
+        },
+        {
+          "titel": "Wird wirklich benutzt",
+          "text": "Durch Einrichtung und Schulung wird aus der Anschaffung ein Werkzeug im Alltag, kein Gerät, das nach zwei Wochen ausgeschaltet bleibt."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Wir haben schon ein Board, das kaum jemand nutzt - können Sie das übernehmen?",
+          "antwort": "Ja, das ist einer unserer häufigsten Aufträge. Meistens fehlt nur die richtige Einrichtung und eine Stunde Einweisung."
+        },
+        {
+          "frage": "Welche Displaygröße brauchen wir?",
+          "antwort": "Das hängt vom Abstand der hintersten Reihe zum Gerät ab. Wir schauen uns den Raum vor Ort an und schlagen die passende Diagonale vor."
+        },
+        {
+          "frage": "Funktioniert das mit Teams, Zoom und Webex?",
+          "antwort": "Ja. Über BYOM nutzen Gäste Kamera und Mikrofon des Raums drahtlos mit ihrem eigenen Konto, egal welcher Dienst genutzt wird."
+        },
+        {
+          "frage": "Muss das Display fest an der Wand hängen?",
+          "antwort": "Nein. Es geht auch freistehend auf einem Rollwagen, mit manueller oder elektrischer Höhenverstellung."
+        },
+        {
+          "frage": "Brauchen Gäste ein WLAN-Passwort, um zu präsentieren?",
+          "antwort": "Nein. Mit Klick&Show stecken Gäste einen Sender an ihren Laptop und drücken einen Knopf - kein Passwort, keine Installation."
+        }
+      ],
+      "cta_titel": "Jetzt Raum planen lassen",
+      "cta_text": "Wir schauen uns Ihren Raum an und sagen Ihnen, welche Größe und Montage wirklich passt.",
+      "seo_beschreibung": "Interaktive Displays von Kindermann für Besprechungsraum und Klassenzimmer - Beratung, Montage, Einrichtung und Schulung aus einer Hand.",
+      "kurzbeschreibung": "Interaktive Displays für Besprechungsraum und Klassenzimmer, komplett montiert, eingerichtet und mit Schulung.",
+      "hero_bild": "Ein großes interaktives Display an der Wand eines Besprechungsraums, eine Hand berührt den unteren Bildschirmrand, im Hintergrund Stühle um einen Tisch",
+      "zweitbild": "Nahaufnahme einer Hand, die einen kleinen Sender in den Anschluss eines Laptops steckt, im Hintergrund ein Display leicht unscharf",
+      "hintergrund_bild": "Weite Nachtaufnahme eines Bürogebäudes mit vielen erleuchteten Fensterreihen, jedes Fenster ein kleiner Lichtpunkt in dunklem Indigo, ruhige stille Szene ohne Bewegung"
+    },
+    "bilder": {
+      "hero_bild": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/hero_bild.png",
+      "zweitbild": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/zweitbild.png",
+      "hintergrund_bild": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/hintergrund_bild.png",
+      "reihe_0": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_0.png",
+      "reihe_1": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_1.png",
+      "reihe_2": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_2.png",
+      "reihe_3": "assets/digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer/reihe_3.png"
+    },
+    "hero_titel": "Displays, die wirklich benutzt werden",
+    "kategorie": "Beratung & Dokumente",
+    "kurzbeschreibung": "Interaktive Displays für Besprechungsraum und Klassenzimmer, komplett montiert, eingerichtet und mit Schulung.",
+    "bildrichtung": "Weite Nachtaufnahme mit vielen kleinen Lichtpunkten, dunkles Indigo, viel Ruhe im Bild",
+    "aufbau": "klassisch",
+    "ablauf_art": "strang",
+    "fuer_wen_art": "karten",
+    "erstellt": "2026-08-08T22:49:33"
   }
 }
