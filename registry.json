@@ -57,9 +57,11 @@
       "assets/nas-und-backup-service/zweitbild.png",
       "assets/nas-und-backup-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Ein Ort für alle Daten - und ein Backup, das wirklich hält",
-    "bildrichtung": "Aufsicht von schräg oben auf eine Rack-Reihe, geometrische Muster, dezentes Türkis",
-    "erstellt": "2026-08-07T23:07:52"
+    "hero_titel": "Eure Daten an einem Ort - und wirklich gesichert",
+    "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
+    "erstellt": "2026-08-07T23:07:52",
+    "ueberarbeitet": "2026-08-08T10:41:46",
+    "aufbau": "ruhig"
   },
   "e-mail-sicherheitscheck": {
     "titel": "E-Mail-Sicherheitscheck",
