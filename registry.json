@@ -144,7 +144,7 @@
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: nuechtern und ehrlich. Kein Angstverkauf, sondern Hausaufgaben machen.",
-    "thema": "WICHTIG - genau so formulieren, nicht anders: Wir vermitteln und verkaufen KEINE Versicherungen. Wir pruefen den Ist-Zustand, arbeiten die Anforderungen ab, die Versicherer heute stellen (MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe), dokumentieren das nachvollziehbar und begleiten Euch - abgeschlossen wird bei Eurem Makler oder Versicherer. Das gehoert klar und selbstbewusst auf die Seite, nicht als Kleingedrucktes. Der Grund ist ein echter Nutzen fuer den Kunden: Viele Antraege scheitern oder die Police zahlt im Schadensfall nicht, weil im Fragebogen Dinge bestaetigt wurden, die technisch gar nicht umgesetzt sind. Genau das verhindern wir. Danach: Umsetzung von Massnahmen zur Vorbeugung und Begleitung im Umgang mit der aktuellen Bedrohungslage. KEINE Preise nennen.",
+    "thema": "WICHTIG - genau so formulieren, nicht anders: Wir vermitteln und verkaufen KEINE Versicherungen. Wir pruefen den Ist-Zustand, arbeiten die Anforderungen ab, die Versicherer heute stellen (MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe), dokumentieren das nachvollziehbar und begleiten Euch - abgeschlossen wird bei Eurem Makler oder Versicherer. Das gehoert klar und selbstbewusst auf die Seite, nicht als Kleingedrucktes. Der Grund ist ein echter Nutzen fuer den Kunden: Viele Antraege scheitern oder die Police zahlt im Schadensfall nicht, weil im Fragebogen Dinge bestaetigt wurden, die technisch gar nicht umgesetzt sind. Genau das verhindern wir. Danach: Umsetzung von Massnahmen zur Vorbeugung und Begleitung im Umgang mit der aktuellen Bedrohungslage. KEINE Preise nennen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret auf die Versicherungssituation zuschneiden (wer gerade einen Antrag ausfuellt oder eine Police hat, deren Anforderungen er nicht erfuellt).",
     "produkt": "Den Ist-Zustand pruefen, die Anforderungen des Versicherers erfuellen und Euch zum Abschluss begleiten.",
     "path": "cyberversicherung-vorbereiten.html",
     "assets": [
@@ -152,13 +152,15 @@
       "assets/cyberversicherung-vorbereiten/zweitbild.png",
       "assets/cyberversicherung-vorbereiten/hintergrund_bild.png"
     ],
-    "hero_titel": "Ihre IT bereit für die Cyberversicherung",
-    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
+    "hero_titel": "Bereit für Ihre Cyberversicherung",
+    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:19:19",
-    "ueberarbeitet": "2026-08-08T13:32:17",
-    "aufbau": "problem_zuerst",
+    "ueberarbeitet": "2026-08-08T15:25:04",
+    "aufbau": "bild_oben",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Wir prüfen Ihre IT-Sicherheit auf die Anforderungen der Cyberversicherung und dokumentieren den Ist-Zustand nachvollziehbar."
+    "kurzbeschreibung": "Wir prüfen und dokumentieren, ob Ihre IT die Anforderungen Ihrer Cyberversicherung wirklich erfüllt.",
+    "ablauf_art": "winkel",
+    "fuer_wen_art": "karten"
   },
   "it-dokumente": {
     "titel": "IT-Dokumente",
