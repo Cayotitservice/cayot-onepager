@@ -23,9 +23,11 @@
       "assets/lokaler-it-notdienst/zweitbild.png",
       "assets/lokaler-it-notdienst/hintergrund_bild.png"
     ],
-    "hero_titel": "IT-Notdienst in Bad Kreuznach - schnell da, schnell geloest",
-    "bildrichtung": "Blick durch einen langen Gang zwischen zwei Rack-Reihen, starke Fluchtlinien, kühles Blau",
-    "erstellt": "2026-08-07T23:00:34"
+    "hero_titel": "Wenn der Rechner spinnt, sind wir schnell da",
+    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
+    "erstellt": "2026-08-07T23:00:34",
+    "ueberarbeitet": "2026-08-08T10:36:03",
+    "aufbau": "klassisch"
   },
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
