@@ -246,6 +246,9 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
   .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wechsel-reihe.voll{grid-template-columns:1fr}
+.wechsel-reihe.voll .wechsel-text p{max-width:70ch}
 </style>
 </head>
 <body>
@@ -283,7 +286,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="block wechsel ">
   <h2>Ein Paket, drei Bausteine</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>E-Mail-Sicherheit</h3><p>Schutz vor Phishing, gefälschten Absendern und Schadanhängen. SPF, DKIM und DMARC sorgen dafür, dass niemand unter Ihrem Namen schreiben kann.</p></div><div class="wechsel-bild"><img src="assets/security-paket-fuer-unternehmen/zweitbild.png" alt="Security-Paket für Unternehmen" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Endgeräteschutz</h3><p>Moderner Schutz auf jedem Rechner und Server, der nicht nur bekannte Viren erkennt, sondern auch verdächtiges Verhalten. Ein Vorfall fällt auf, während er passiert - nicht Wochen später.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Firewall</h3><p>Der Schutz an der Grenze zwischen Ihrem Netz und dem Internet, wahlweise als Gerät bei Ihnen im Haus, zum Beispiel von Sophos. Für Betriebe, die ihre Absicherung im eigenen Serverschrank haben wollen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Ein Ansprechpartner für alles</h3><p>Die drei Bausteine sind aufeinander abgestimmt und werden von einer Stelle betreut. Sie haben eine Rechnung und einen Kontakt, der die ganze Umgebung kennt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+  <div class="wechsel-reihe voll"><div class="wechsel-text"><h3>E-Mail-Sicherheit</h3><p>Schutz vor Phishing, gefälschten Absendern und Schadanhängen. SPF, DKIM und DMARC sorgen dafür, dass niemand unter Ihrem Namen schreiben kann.</p></div><div class="wechsel-bild"><img src="assets/security-paket-fuer-unternehmen/zweitbild.png" alt="Security-Paket für Unternehmen" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Endgeräteschutz</h3><p>Moderner Schutz auf jedem Rechner und Server, der nicht nur bekannte Viren erkennt, sondern auch verdächtiges Verhalten. Ein Vorfall fällt auf, während er passiert - nicht Wochen später.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Firewall</h3><p>Der Schutz an der Grenze zwischen Ihrem Netz und dem Internet, wahlweise als Gerät bei Ihnen im Haus, zum Beispiel von Sophos. Für Betriebe, die ihre Absicherung im eigenen Serverschrank haben wollen.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Ein Ansprechpartner für alles</h3><p>Die drei Bausteine sind aufeinander abgestimmt und werden von einer Stelle betreut. Sie haben eine Rechnung und einen Kontakt, der die ganze Umgebung kennt.</p></div></div>
 </section>
 
 <section class="aussage"><p>Vereinbaren Sie eine Bestandsaufnahme und erfahren Sie, wie die drei Bausteine für Ihren Betrieb zusammenpassen.</p></section>
