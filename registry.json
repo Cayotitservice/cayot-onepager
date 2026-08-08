@@ -12,7 +12,8 @@
     "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Etwas professioneller und konkreter wirken.",
     "ueberarbeitet": "2026-08-08T11:31:26",
     "bildrichtung": "Ein einzelner heller Lichtpunkt im halbdunklen Raum, starker Kontrast, alles andere ruhig",
-    "aufbau": "bild_oben"
+    "aufbau": "bild_oben",
+    "kategorie": "Sicherheit"
   },
   "lokaler-it-notdienst": {
     "titel": "Lokaler IT-Notdienst",
@@ -29,7 +30,8 @@
     "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
     "erstellt": "2026-08-07T23:00:34",
     "ueberarbeitet": "2026-08-08T11:28:47",
-    "aufbau": "ruhig"
+    "aufbau": "ruhig",
+    "kategorie": "Soforthilfe"
   },
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
@@ -46,7 +48,8 @@
     "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:05:04",
     "ueberarbeitet": "2026-08-08T11:31:14",
-    "aufbau": "bild_oben"
+    "aufbau": "bild_oben",
+    "kategorie": "Microsoft 365"
   },
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
@@ -63,7 +66,8 @@
     "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
     "erstellt": "2026-08-07T23:07:52",
     "ueberarbeitet": "2026-08-08T10:41:46",
-    "aufbau": "ruhig"
+    "aufbau": "ruhig",
+    "kategorie": "Netzwerk & Daten"
   },
   "e-mail-sicherheitscheck": {
     "titel": "E-Mail-Sicherheitscheck",
@@ -80,7 +84,8 @@
     "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
     "erstellt": "2026-08-07T23:10:30",
     "ueberarbeitet": "2026-08-08T11:28:41",
-    "aufbau": "ruhig"
+    "aufbau": "ruhig",
+    "kategorie": "Sicherheit"
   },
   "it-checkup-fuer-kleine-unternehmen": {
     "titel": "IT-Checkup für kleine Unternehmen",
@@ -93,7 +98,8 @@
     "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
     "erstellt": "2026-08-07T23:13:46",
     "ueberarbeitet": "2026-08-08T11:44:50",
-    "aufbau": "problem_zuerst"
+    "aufbau": "problem_zuerst",
+    "kategorie": "Beratung & Dokumente"
   },
   "eure-it-abteilung": {
     "titel": "Eure IT-Abteilung",
@@ -110,7 +116,8 @@
     "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
     "erstellt": "2026-08-07T23:16:32",
     "ueberarbeitet": "2026-08-08T11:28:09",
-    "aufbau": "ruhig"
+    "aufbau": "ruhig",
+    "kategorie": "Beratung & Dokumente"
   },
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
@@ -127,7 +134,8 @@
     "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
     "erstellt": "2026-08-07T23:19:19",
     "ueberarbeitet": "2026-08-08T11:28:28",
-    "aufbau": "ruhig"
+    "aufbau": "ruhig",
+    "kategorie": "Sicherheit"
   },
   "it-dokumente": {
     "titel": "IT-Dokumente",
@@ -144,6 +152,7 @@
     "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
     "erstellt": "2026-08-07T23:21:58",
     "ueberarbeitet": "2026-08-08T10:52:31",
-    "aufbau": "wechsel"
+    "aufbau": "wechsel",
+    "kategorie": "Beratung & Dokumente"
   }
 }
