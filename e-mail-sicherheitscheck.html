@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Kann jemand Mails in Ihrem Namen verschicken? | Cayot IT Service</title>
-<meta name="description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC, Microsoft 365 und Postfachregeln im Test. Festpreis auf Anfrage." />
-<meta property="og:title" content="Kann jemand Mails in Ihrem Namen verschicken? | Cayot IT Service" />
-<meta property="og:description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC, Microsoft 365 und Postfachregeln im Test. Festpreis auf Anfrage." />
+<title>Schutz vor gefälschten Mails in Ihrem Namen | Cayot IT Service</title>
+<meta name="description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC prüfen, korrekt einrichten und kontrollieren. Festpreis auf Anfrage, für Firmen und Selbständige." />
+<meta property="og:title" content="Schutz vor gefälschten Mails in Ihrem Namen | Cayot IT Service" />
+<meta property="og:description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC prüfen, korrekt einrichten und kontrollieren. Festpreis auf Anfrage, für Firmen und Selbständige." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/e-mail-sicherheitscheck/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
@@ -56,6 +56,29 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .fuer-wen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:999px;
  padding:.4rem 1rem;font-size:.9rem;color:#a2abbd}
 
+/* Kundenbeispiele - vier Formen, je Seite eine andere (Chef 08.08.2026: "die Beispiele fuer
+   Kunden oben anders darstellen", und auf jeder Seite anders, nicht doppelt). */
+.fuer-wen.zeilen{display:grid;gap:.45rem;justify-content:start;margin-top:1.4rem}
+.fuer-wen.zeilen li{background:none;border:none;border-radius:0;padding:0 0 0 1.5rem;
+ position:relative;color:#a2abbd;font-size:.95rem}
+.fuer-wen.zeilen li::before{content:"";position:absolute;left:2px;top:.55em;width:7px;height:7px;
+ border-top:2px solid #29a8ff;border-right:2px solid #29a8ff;transform:rotate(45deg)}
+.hero.oben .fuer-wen.zeilen,.hero.gross .fuer-wen.zeilen{justify-content:center;text-align:left}
+
+.fuer-wen.strich{margin:1.4rem 0 0;color:#a2abbd;font-size:.95rem;display:flex;
+ flex-wrap:wrap;gap:.5rem;align-items:baseline}
+.fuer-wen.strich span span{color:rgba(255,255,255,0.10)}
+.fuer-wen-label{text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;
+ color:#29a8ff;margin-right:.3rem}
+.hero.oben .fuer-wen.strich,.hero.gross .fuer-wen.strich{justify-content:center}
+
+.fuer-wen.kaertchen{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+ gap:.6rem;margin-top:1.5rem;max-width:620px}
+.fuer-wen.kaertchen li{background:#101625;border:1px solid rgba(255,255,255,0.10);
+ border-radius:12px;padding:.75rem .9rem;font-size:.88rem;text-align:left;
+ border-left:3px solid #29a8ff}
+.hero.oben .fuer-wen.kaertchen,.hero.gross .fuer-wen.kaertchen{margin-left:auto;margin-right:auto}
+
 /* Nicht alles linksbuendig (Chef 07.08.2026). Ueberschriften und Einleitungen stehen
    mittig, der Fliesstext in den Karten bleibt linksbuendig - alles zentriert liest sich
    schlecht. */
@@ -82,13 +105,53 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
  background:linear-gradient(160deg,#0d121f,#101625)}
 .raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
-.ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
-.ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
- border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:1.35rem}
-.ablauf h3{margin:0 0 .25rem;font-size:1.1rem}
-.ablauf p{margin:0;color:#a2abbd}
-.nr{flex:0 0 2.25rem;height:2.25rem;border-radius:50%;display:grid;place-items:center;font-weight:700;
- background:linear-gradient(135deg,#29a8ff,#1c6fa8);color:#031018}
+/* --- Ablauf: Reihenfolge ueber die FORM, nie ueber Ziffern -------------------------------
+   Chef 08.08.2026: "Die runden 1 2 3 4 Punkte sind haesslich, mach da coole Pfeile rein" und
+   "die Boxen mit Zahlen nie wieder verwenden, sieht aus wie Paint". */
+
+/* (a) Pfeilkette: waagerecht, dazwischen ein Pfeil nach rechts */
+.pfeilkette{list-style:none;padding:0;margin:2.5rem 0 0;display:flex;flex-wrap:wrap;
+ align-items:stretch;justify-content:center;gap:.75rem}
+.pfeilkette .pfeil-schritt{flex:1 1 220px;max-width:300px;text-align:left;
+ background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;padding:1.4rem 1.35rem}
+.pfeilkette .pfeil-schritt h3{font-size:1.05rem;margin:0 0 .35rem;color:#29a8ff}
+.pfeilkette .pfeil-schritt p{margin:0;color:#a2abbd;font-size:.95rem}
+.pfeilkette .pfeil{flex:0 0 auto;align-self:center;width:26px;height:26px;position:relative}
+.pfeilkette .pfeil::after{content:"";position:absolute;inset:0;margin:auto;width:13px;height:13px;
+ border-top:2px solid #29a8ff;border-right:2px solid #29a8ff;transform:rotate(45deg)}
+
+/* (b) Winkelkette: jeder Schritt ist selbst pfeilfoermig und zeigt zum naechsten */
+.winkelkette{list-style:none;padding:0;margin:2.5rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem}
+.winkelkette .winkel-schritt{flex:1 1 230px;text-align:left;padding:1.5rem 2.4rem 1.5rem 1.5rem;
+ background:linear-gradient(135deg,#0d121f,#101625);
+ border:1px solid rgba(255,255,255,0.10);
+ clip-path:polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 22px 50%)}
+.winkelkette .winkel-schritt:first-child{clip-path:polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+ border-radius:14px 0 0 14px;padding-left:1.6rem}
+.winkelkette h3{font-size:1.05rem;margin:0 0 .3rem;color:#29a8ff}
+.winkelkette p{margin:0;color:#a2abbd;font-size:.94rem}
+
+/* (c) Strang: senkrechte Linie, der Pfeil sitzt darauf */
+.strang{list-style:none;padding:0;margin:2.5rem auto 0;max-width:760px;display:grid;gap:0;
+ text-align:left;position:relative}
+.strang li{display:grid;grid-template-columns:2rem 1fr;gap:1.25rem;padding:0 0 1.9rem}
+.strang li:last-child{padding-bottom:0}
+.strang .strang-punkt{position:relative;width:2rem}
+.strang li:not(:last-child) .strang-punkt::before{content:"";position:absolute;left:calc(50% - 1px);
+ top:1.5rem;bottom:-1.9rem;width:2px;background:rgba(255,255,255,0.10)}
+.strang .strang-punkt::after{content:"";position:absolute;left:50%;top:.35rem;
+ width:11px;height:11px;margin-left:-6px;
+ border-right:2px solid #29a8ff;border-bottom:2px solid #29a8ff;transform:rotate(45deg)}
+.strang h3{font-size:1.08rem;margin:0 0 .3rem}
+.strang p{margin:0;color:#a2abbd}
+
+/* Nutzen - ohne Ziffern (die suggerierten eine Rangfolge, die es nicht gibt) */
+.nutzen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.25rem}
+.nutzen li{border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:1.75rem 1.5rem;text-align:left;
+ background:#0d121f;border-top:3px solid #29a8ff}
+.nutzen h3{font-size:1.1rem;margin:0 0 .4rem}
+.nutzen p{margin:0;color:#a2abbd}
 
 .bildband{max-width:1200px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)}
 .bildband img{border-radius:18px;border:1px solid rgba(255,255,255,0.10);width:100%;object-fit:cover;max-height:420px}
@@ -120,25 +183,6 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
  background:linear-gradient(135deg,#0d121f,#101625);position:relative;overflow:hidden}
 .wechsel-deko::after{content:"";position:absolute;inset:-40% -10% auto auto;width:70%;height:170%;
  background:radial-gradient(closest-side,rgba(41,168,255,.20),transparent);transform:rotate(18deg)}
-
-/* Ablauf als waagerechte Stufen statt untereinander */
-.stufen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
- grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;counter-reset:stufe}
-.stufen li{background:#0d121f;border:1px solid rgba(255,255,255,0.10);border-radius:14px;
- padding:1.5rem 1.25rem;text-align:left;position:relative}
-.stufen h3{font-size:1.05rem;margin:.9rem 0 .3rem}
-.stufen p{margin:0;color:#a2abbd;font-size:.95rem}
-
-/* Nutzen als grosse durchnummerierte Kacheln */
-.zahlen{list-style:none;padding:0;margin:2rem 0 0;display:grid;
- grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
-.zahlen li{border:1px solid rgba(255,255,255,0.10);border-radius:16px;padding:1.75rem 1.5rem;text-align:left;
- background:#0d121f}
-.zahlen .zahl{display:block;font-size:2.4rem;font-weight:800;line-height:1;letter-spacing:-.03em;
- background:linear-gradient(135deg,#29a8ff,#1c6fa8);
- -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:.6rem}
-.zahlen h3{font-size:1.1rem;margin:0 0 .35rem}
-.zahlen p{margin:0;color:#a2abbd}
 
 /* Schmale Liste mit Randlinie statt Karten */
 .kompakt{list-style:none;padding:0;margin:2rem auto 0;max-width:820px;display:grid;gap:0;text-align:left}
@@ -218,12 +262,11 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero oben">
-  <div class="hero-bild breit"><img src="assets/e-mail-sicherheitscheck/hero_bild.png" alt="E-Mail-Sicherheitscheck" /></div>
+<section class="hero gross">
   <div class="hero-text">
-    <h1>Kann jemand Mails in Ihrem Namen verschicken?</h1>
-    <p class="unterzeile">Wir prüfen, ob Ihr Postfach und Ihre Domain sauber abgesichert sind - damit niemand in Ihrem Namen Rechnungen oder Zahlungsaufforderungen verschickt.</p>
-    <ul class="fuer-wen"><li>Einzelunternehmer, die ihre eigene Domain für E-Mails nutzen</li><li>Handwerksbetriebe ohne eigene IT-Abteilung</li><li>Firmen, die mit Microsoft 365 arbeiten</li><li>Privatleute mit eigener Domain oder wichtigem Postfach</li></ul>
+    <h1>Schutz vor gefälschten Mails in Ihrem Namen</h1>
+    <p class="unterzeile">Wir prüfen, ob jemand E-Mails in Ihrem Namen verschicken kann, und richten SPF, DKIM und DMARC sauber ein. So bekommt Ihr Postfach den Schutz, den es braucht.</p>
+    <p class="fuer-wen strich"><span class="fuer-wen-label">Für</span><span>Einzelunternehmer, die Rechnungen und Angebote per Mail verschicken</span> <span>·</span> <span>Handwerksbetriebe mit täglichem Mailkontakt zu Kunden und Lieferanten</span> <span>·</span> <span>Firmen ohne eigene IT-Abteilung, die Microsoft 365 nutzen</span> <span>·</span> <span>Buchhaltung und Verwaltung, die Zahlungsdaten per Mail austauschen</span></p>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
@@ -233,35 +276,37 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </section>
 
 <section class="block">
-  <h2>So läuft es ab</h2>
-  <ol class="stufen"><li><span class="nr">1</span><h3>Kurzes Gespräch</h3><p>Wir klären, welche Domains und Postfächer geprüft werden sollen.</p></li><li><span class="nr">2</span><h3>Prüfung</h3><p>Wir kontrollieren DNS-Einträge, Microsoft-365-Einstellungen, Anmeldung und Postfachregeln.</p></li><li><span class="nr">3</span><h3>Bericht</h3><p>Sie erhalten die Ergebnisse und konkrete Empfehlungen, verständlich zusammengefasst.</p></li><li><span class="nr">4</span><h3>Umsetzung (optional)</h3><p>Auf Wunsch richten wir Trend Micro als Schutzlösung inklusive Lizenzen und Wartung ein - oder schulen Sie, damit Sie die Einstellungen selbst pflegen können.</p></li></ol>
+  <h2>Ihr Nutzen</h2>
+  <ul class="nutzen"><li><h3>Kein Mail-Betrug mehr in Ihrem Namen</h3><p>SPF, DKIM und DMARC verhindern, dass Fremde erfolgreich Mails mit Ihrem Absender verschicken.</p></li><li><h3>Versteckte Regeln aufgedeckt</h3><p>Verdächtige Weiterleitungen und Postfachregeln aus einem früheren Hack werden gefunden und entfernt.</p></li><li><h3>Fester Umfang, klarer Abschluss</h3><p>Ein abgeschlossenes Produkt mit Festpreis auf Anfrage - keine offene Stundenabrechnung.</p></li><li><h3>Zwei Wege, ein Ziel</h3><p>Ob Trend Micro mit Wartungsvertrag oder Schulung in Eigenregie - Sie entscheiden, wie es weitergeht.</p></li></ul>
+</section>
+
+<section class="bildband">
+  <img src="assets/e-mail-sicherheitscheck/hero_bild.png" alt="E-Mail-Sicherheitscheck" />
+</section>
+
+<section class="block problem">
+  <h2>Ihr Postfach ist offener, als Sie denken</h2>
+  <div class="raster "><article class="karte"><h3>Gefälschte Absender</h3><p>Ohne die richtigen DNS-Einträge kann jeder eine Mail verschicken, die aussieht, als käme sie von Ihrer Firma. Kunden, Lieferanten oder die Buchhaltung bekommen dann eine Rechnung mit geänderter Bankverbindung - angeblich von Ihnen.</p></article><article class="karte"><h3>Unbemerkte Weiterleitungen</h3><p>Nach einem gehackten Konto legen Angreifer oft stille Postfachregeln an: Mails werden weitergeleitet oder verschwinden im Papierkorb. Das fällt oft erst auf, wenn schon Schaden entstanden ist.</p></article><article class="karte"><h3>Unklare Einstellungen</h3><p>Viele wissen nicht, ob die Mehr-Faktor-Anmeldung wirklich aktiv ist oder ob die DNS-Einträge für die Mail-Sicherheit überhaupt gesetzt sind. Ohne Prüfung bleibt das reine Vermutung.</p></article></div>
+</section>
+
+<section class="block wechsel ">
+  <h2>Erst prüfen, dann sauber einrichten</h2>
+  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Vollständige Prüfung</h3><p>Wir schauen uns SPF, DKIM, DMARC, die DNS-Einträge, Ihre Microsoft-365-Konfiguration, die Mehr-Faktor-Anmeldung, eingerichtete Weiterleitungen und Postfachregeln an.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Einträge sauber setzen</h3><p>Fehlt etwas oder ist es falsch eingestellt, tragen wir SPF, DKIM und DMARC korrekt in Ihre DNS-Zone ein. Kein Rätselraten mit Fachbegriffen - wir übernehmen das.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Wirkung kontrollieren</h3><p>Nach dem Einrichten prüfen wir, ob die Einträge tatsächlich greifen und Mails korrekt geprüft werden. Erst wenn das passt, ist die Arbeit abgeschlossen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Zwei Wege zur Umsetzung</h3><p>Danach entscheiden Sie: Trend Micro als Schutzlösung mit Lizenzen und Wartungsvertrag, oder eine Schulung, damit Sie Ihr Postfach künftig selbst verwalten.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
 </section>
 
 <section class="block">
-  <h2>Ihr Nutzen</h2>
-  <ul class="zahlen"><li><span class="zahl">01</span><h3>Klarheit statt Vermutung</h3><p>Sie wissen genau, ob Ihre Domain gegen gefälschte Absender abgesichert ist.</p></li><li><span class="zahl">02</span><h3>Aufgedeckte Altlasten</h3><p>Verdächtige Weiterleitungen und Regeln aus früheren Vorfällen werden sichtbar gemacht.</p></li><li><span class="zahl">03</span><h3>Fester Umfang</h3><p>Ein abgeschlossenes Produkt mit klarem Prüfumfang - kein offenes Stundenkonto.</p></li><li><span class="zahl">04</span><h3>Zwei Wege danach</h3><p>Sie entscheiden, ob wir absichern oder Sie selbst schulen lassen.</p></li></ul>
-</section>
-
-<section class="aussage"><p>Fragen Sie den E-Mail-Sicherheitscheck jetzt an, bevor jemand anderes Ihre Adresse missbraucht.</p></section>
-
-<section class="block problem">
-  <h2>Wenn die eigene Adresse zur Waffe wird</h2>
-  <ul class="kompakt"><li><h3>Gefälschte Rechnungen</h3><p>Ohne die richtigen DNS-Einträge kann jede fremde Person eine Mail so verschicken, als käme sie von Ihnen. Kunden und Lieferanten bekommen dann Rechnungen mit einer fremden Bankverbindung - und merken es oft zu spät.</p></li><li><h3>Postfach nach einem Angriff</h3><p>Nach einem gehackten Konto bleiben oft unbemerkte Weiterleitungen oder Regeln zurück, die Mails heimlich umleiten. Diese Spuren findet man ohne gezielte Prüfung kaum.</p></li><li><h3>Unklare Absicherung</h3><p>Viele wissen nicht, ob ihre Microsoft-365-Anmeldung wirklich mit einem zweiten Faktor geschützt ist. Das merkt man meist erst, wenn schon etwas passiert ist.</p></li></ul>
-</section>
-
-<section class="block ">
-  <h2>Was wir prüfen</h2>
-  <div class="raster flach"><article class="karte"><h3>SPF, DKIM und DMARC</h3><p>Wir prüfen Ihre DNS-Einträge und stellen fest, ob Ihre Domain gegen gefälschte Absenderadressen abgesichert ist.</p></article><article class="karte"><h3>Microsoft 365 und Anmeldung</h3><p>Wir kontrollieren die Konfiguration Ihres Microsoft-365-Postfachs und ob die Mehr-Faktor-Anmeldung aktiv ist.</p></article><article class="karte"><h3>Weiterleitungen und Regeln</h3><p>Wir durchsuchen Ihr Postfach nach verdächtigen Weiterleitungen und Regeln, die nach einem Einbruch oft übersehen werden.</p></article><article class="karte"><h3>Bericht mit klaren Ergebnissen</h3><p>Sie erhalten eine verständliche Übersicht: was in Ordnung ist, was fehlt und was Sie als nächstes tun können.</p></article></div>
+  <h2>So läuft es ab</h2>
+  <ol class="pfeilkette"><li class="pfeil-schritt"><h3>Erste Prüfung</h3><p>Wir kontrollieren DNS-Einträge, Microsoft 365, Mehr-Faktor-Anmeldung, Weiterleitungen und Postfachregeln.</p></li><li class="pfeil" aria-hidden="true"></li><li class="pfeil-schritt"><h3>Bericht</h3><p>Sie erhalten eine klare Übersicht, was fehlt, was falsch eingestellt ist und wo Handlungsbedarf besteht.</p></li><li class="pfeil" aria-hidden="true"></li><li class="pfeil-schritt"><h3>SPF, DKIM, DMARC setzen</h3><p>Wir tragen die fehlenden oder fehlerhaften Einträge korrekt in Ihre DNS-Zone ein.</p></li><li class="pfeil" aria-hidden="true"></li><li class="pfeil-schritt"><h3>Kontrolle und weiterer Schutz</h3><p>Wir prüfen, ob alles wirkt, und richten anschließend Trend Micro ein oder schulen Sie im eigenständigen Verwalten.</p></li></ol>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Was ist SPF, DKIM und DMARC?</summary><p>Das sind drei technische Einträge in Ihrer Domain, die festlegen, wer im Namen Ihrer Adresse Mails verschicken darf. Fehlen sie, kann sich jeder als Absender ausgeben.</p></details><details><summary>Wir nutzen Microsoft 365 - reicht das nicht als Schutz?</summary><p>Microsoft 365 bringt viele Schutzfunktionen mit, sie sind aber nicht automatisch richtig eingestellt. Wir prüfen genau das.</p></details><details><summary>Was passiert, wenn Sie etwas finden?</summary><p>Sie bekommen einen Bericht mit den Ergebnissen. Die Umsetzung ist ein eigener Schritt - entweder mit einer Schutzlösung durch uns oder als Schulung für Ihr Team.</p></details><details><summary>Wie lange dauert die Prüfung?</summary><p>Das hängt von der Anzahl Ihrer Domains und Postfächer ab. Den genauen Rahmen klären wir vorher mit Ihnen.</p></details><details><summary>Was kostet der Check?</summary><p>Der E-Mail-Sicherheitscheck ist ein Festpreis auf Anfrage, abgestimmt auf Ihre Domains und Postfächer.</p></details></div>
+  <div class="faq"><details><summary>Was bedeuten SPF, DKIM und DMARC eigentlich?</summary><p>Das sind drei Einträge in Ihrer Domain, die festlegen, wer in Ihrem Namen Mails verschicken darf und wie andere Postfächer das prüfen können. Ohne sie kann jeder eine Mail schicken, die scheinbar von Ihnen kommt.</p></details><details><summary>Was passiert, wenn diese Einträge fehlen?</summary><p>Dann kann jemand eine gefälschte Rechnung oder Zahlungsaufforderung mit Ihrem Firmennamen verschicken. Empfänger haben kaum eine Chance, das als Fälschung zu erkennen.</p></details><details><summary>Wird nur geprüft oder auch eingerichtet?</summary><p>Beides. Wir prüfen zuerst den Ist-Zustand, setzen dann SPF, DKIM und DMARC sauber ein und kontrollieren anschließend, ob alles greift.</p></details><details><summary>Was kommt nach dem Check?</summary><p>Sie wählen zwischen Trend Micro als fertiger Schutzlösung inklusive Lizenzen und Wartungsvertrag, oder einer Schulung, damit Sie die Verwaltung selbst übernehmen können.</p></details><details><summary>Was kostet der E-Mail-Sicherheitscheck?</summary><p>Es handelt sich um ein festes, abgeschlossenes Produkt mit Festpreis auf Anfrage - kein Stundensatz und keine offene Beratung.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Lassen Sie Ihre Domain prüfen</h2>
-  <p class="unterzeile">Fragen Sie den E-Mail-Sicherheitscheck jetzt an, bevor jemand anderes Ihre Adresse missbraucht.</p>
+  <h2>Lassen Sie Ihr Postfach jetzt prüfen</h2>
+  <p class="unterzeile">Fragen Sie den E-Mail-Sicherheitscheck an und schließen Sie die Lücke, bevor jemand anderes sie nutzt.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
