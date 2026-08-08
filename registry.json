@@ -127,12 +127,13 @@
       "assets/cyberversicherung-vorbereiten/zweitbild.png",
       "assets/cyberversicherung-vorbereiten/hintergrund_bild.png"
     ],
-    "hero_titel": "Technisch startklar für Eure Cyberversicherung",
-    "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
+    "hero_titel": "Bereit für die Cyberversicherung",
+    "bildrichtung": "Weite Nachtaufnahme mit vielen kleinen Lichtpunkten, dunkles Indigo, viel Ruhe im Bild",
     "erstellt": "2026-08-07T23:19:19",
-    "ueberarbeitet": "2026-08-08T11:28:28",
-    "aufbau": "ruhig",
-    "kategorie": "Sicherheit"
+    "ueberarbeitet": "2026-08-08T12:32:54",
+    "aufbau": "klassisch",
+    "kategorie": "Sicherheit",
+    "kurzbeschreibung": "Wir bringen Ihre IT auf den Stand, den Ihre Cyberversicherung verlangt - dokumentiert und nachvollziehbar."
   },
   "it-dokumente": {
     "titel": "IT-Dokumente",
