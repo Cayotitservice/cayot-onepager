@@ -246,6 +246,9 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
   .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wechsel-reihe.voll{grid-template-columns:1fr}
+.wechsel-reihe.voll .wechsel-text p{max-width:70ch}
 </style>
 </head>
 <body>
@@ -280,7 +283,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="block wechsel problem">
   <h2>Die IT läuft immer nur nebenbei</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Zwischen zwei Terminen erledigt</h3><p>Der Chef oder ein technikaffiner Mitarbeiter kümmert sich um Drucker, Passwörter und neue Rechner - zwischen den eigentlichen Aufgaben. Für strategische Fragen wie Einkauf oder Digitalisierung bleibt dabei keine Zeit.</p></div><div class="wechsel-bild"><img src="assets/eure-it-abteilung/zweitbild.png" alt="Ihre IT-Abteilung" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Jeder Anruf beginnt von vorne</h3><p>Wechselnde externe Dienstleister kennen Ihre Umgebung nicht. Bei jedem Anruf müssen Sie erst erklären, welche Geräte Sie haben und wie alles zusammenhängt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Das Wissen sitzt in einem Kopf</h3><p>Wenn die eine technikaffine Person krank ist oder das Unternehmen verlässt, weiß plötzlich niemand mehr, wie das WLAN eingerichtet wurde oder wo die Zugangsdaten liegen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+  <div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Zwischen zwei Terminen erledigt</h3><p>Der Chef oder ein technikaffiner Mitarbeiter kümmert sich um Drucker, Passwörter und neue Rechner - zwischen den eigentlichen Aufgaben. Für strategische Fragen wie Einkauf oder Digitalisierung bleibt dabei keine Zeit.</p></div><div class="wechsel-bild"><img src="assets/eure-it-abteilung/zweitbild.png" alt="Ihre IT-Abteilung" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Jeder Anruf beginnt von vorne</h3><p>Wechselnde externe Dienstleister kennen Ihre Umgebung nicht. Bei jedem Anruf müssen Sie erst erklären, welche Geräte Sie haben und wie alles zusammenhängt.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Das Wissen sitzt in einem Kopf</h3><p>Wenn die eine technikaffine Person krank ist oder das Unternehmen verlässt, weiß plötzlich niemand mehr, wie das WLAN eingerichtet wurde oder wo die Zugangsdaten liegen.</p></div></div>
 </section>
 
 <section class="block ">
