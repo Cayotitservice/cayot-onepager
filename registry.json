@@ -40,11 +40,11 @@
       "assets/microsoft-365-service/zweitbild.png",
       "assets/microsoft-365-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Ordnung und Sicherheit in Eurem Microsoft 365",
-    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
+    "hero_titel": "Microsoft 365 im Griff statt irgendwie gewachsen",
+    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:05:04",
-    "ueberarbeitet": "2026-08-08T10:38:56",
-    "aufbau": "wechsel"
+    "ueberarbeitet": "2026-08-08T11:31:14",
+    "aufbau": "bild_oben"
   },
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
