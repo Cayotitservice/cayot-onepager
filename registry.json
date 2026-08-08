@@ -114,9 +114,11 @@
       "assets/cyberversicherung-vorbereiten/zweitbild.png",
       "assets/cyberversicherung-vorbereiten/hintergrund_bild.png"
     ],
-    "hero_titel": "Fit für die Cyberversicherung - technisch und im Nachweis",
-    "bildrichtung": "Kabeltrasse an der Decke, Blick nach oben, Perspektive von unten, Stahlblau",
-    "erstellt": "2026-08-07T23:19:19"
+    "hero_titel": "Fit für die Cyberversicherung – ohne falsche Angaben",
+    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
+    "erstellt": "2026-08-07T23:19:19",
+    "ueberarbeitet": "2026-08-08T10:20:22",
+    "aufbau": "klassisch"
   },
   "it-dokumente": {
     "titel": "IT-Dokumente",
