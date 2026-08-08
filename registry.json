@@ -121,12 +121,13 @@
       "assets/eure-it-abteilung/zweitbild.png",
       "assets/eure-it-abteilung/hintergrund_bild.png"
     ],
-    "hero_titel": "Eine feste Ansprechperson für Eure ganze IT",
-    "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
+    "hero_titel": "Ihre IT-Abteilung, ohne Neueinstellung",
+    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
     "erstellt": "2026-08-07T23:16:32",
-    "ueberarbeitet": "2026-08-08T11:28:09",
-    "aufbau": "ruhig",
-    "kategorie": "Beratung & Dokumente"
+    "ueberarbeitet": "2026-08-08T12:51:44",
+    "aufbau": "problem_zuerst",
+    "kategorie": "Beratung & Dokumente",
+    "kurzbeschreibung": "Ein monatliches Stundenkontingent mit fester Ansprechperson für alle IT-Fragen - vom Alltag bis zur Strategie."
   },
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
