@@ -20,7 +20,7 @@
   "lokaler-it-notdienst": {
     "titel": "Lokaler IT-Notdienst",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: der Nachbar, der sich wirklich auskennt und schnell da ist.",
-    "thema": "Typische Faelle: PC startet nicht mehr; WLAN funktioniert nicht; der Drucker spinnt; ein neuer PC muss eingerichtet werden; Daten vom alten Rechner uebernehmen; NAS einrichten; Microsoft-Konto reparieren; Outlook funktioniert nicht; Backup einrichten. GANZ WICHTIG und muss klar auf der Seite stehen: Es wird mindestens eine halbe Stunde berechnet, danach nach tatsaechlichem Aufwand. Das gehoert offen kommuniziert, am besten in den Ablauf oder die FAQ - nicht verstecken. Wir kommen persoenlich vorbei oder helfen per Fernwartung, je nachdem was schneller geht. Zielgruppe sind ausdruecklich auch Privatleute und Einzelunternehmer, nicht nur Firmen.",
+    "thema": "Typische Faelle: PC startet nicht mehr; WLAN funktioniert nicht; der Drucker spinnt; ein neuer PC muss eingerichtet werden; Daten vom alten Rechner uebernehmen; NAS einrichten; Microsoft-Konto reparieren; Outlook funktioniert nicht; Backup einrichten. GANZ WICHTIG und muss klar auf der Seite stehen: Es wird mindestens eine halbe Stunde berechnet, danach nach tatsaechlichem Aufwand. Das gehoert offen kommuniziert, am besten in den Ablauf oder die FAQ - nicht verstecken. Wir kommen persoenlich vorbei oder helfen per Fernwartung, je nachdem was schneller geht. Zielgruppe sind ausdruecklich auch Privatleute und Einzelunternehmer, nicht nur Firmen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Einzugsgebiet klar benennen: Bad Kreuznach und rund 100 km Umkreis. Abrechnung klar sagen: Berechnet wird mindestens die erste halbe Stunde plus Anfahrt. Die Formulierung 'je nachdem, was schneller geht' zum Thema vor Ort oder Fernwartung BITTE WEGLASSEN - wir kommen vor Ort oder helfen aus der Ferne, das entscheiden wir gemeinsam mit dem Kunden, ohne diese Floskel.",
     "produkt": "Schnelle IT-Hilfe vor Ort und per Fernwartung in Bad Kreuznach und Umgebung.",
     "path": "lokaler-it-notdienst.html",
     "assets": [
@@ -29,12 +29,14 @@
       "assets/lokaler-it-notdienst/hintergrund_bild.png"
     ],
     "hero_titel": "Schnelle IT-Hilfe in Bad Kreuznach",
-    "bildrichtung": "Ein einzelner heller Lichtpunkt im halbdunklen Raum, starker Kontrast, alles andere ruhig",
+    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:00:34",
-    "ueberarbeitet": "2026-08-08T13:14:43",
-    "aufbau": "bild_oben",
+    "ueberarbeitet": "2026-08-08T15:11:13",
+    "aufbau": "wechsel",
     "kategorie": "Soforthilfe",
-    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Druckerproblemen in Bad Kreuznach."
+    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung in Bad Kreuznach und rund 100 km Umkreis.",
+    "ablauf_art": "strang",
+    "fuer_wen_art": "trennstrich"
   },
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
