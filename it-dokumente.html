@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt | Cayot IT Service</title>
-<meta name="description" content="Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - individuell erstellt fuer Euren Betrieb, Bad Kreuznach." />
-<meta property="og:title" content="IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt | Cayot IT Service" />
-<meta property="og:description" content="Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - individuell erstellt fuer Euren Betrieb, Bad Kreuznach." />
+<title>Dokumente, die im Ernstfall tragen | Cayot IT Service</title>
+<meta name="description" content="Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - individuell erstellt, vorzeigbar im Ernstfall. Keine Vorlage von der Stange." />
+<meta property="og:title" content="Dokumente, die im Ernstfall tragen | Cayot IT Service" />
+<meta property="og:description" content="Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - individuell erstellt, vorzeigbar im Ernstfall. Keine Vorlage von der Stange." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/it-dokumente/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
@@ -19,7 +19,12 @@ body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,
 img{max-width:100%;display:block}
 a{color:#29a8ff;text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+/* Ueberschriften brechen an sinnvollen Stellen um (Chef 08.08.2026: "er trennt die
+   Ueberschrift an den falschen Stellen"). `balance` verteilt die Zeilen gleichmaessig, statt
+   ein einzelnes Wort in die zweite Zeile zu haengen; `hyphens:manual` verbietet dem Browser,
+   deutsche Woerter selbst zu trennen - das trifft er bei Fachbegriffen regelmaessig daneben. */
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;text-wrap:balance;hyphens:manual;
+ overflow-wrap:break-word}
 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
@@ -64,6 +69,18 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .karte h3{font-size:1.15rem;color:#29a8ff}
 .karte p{margin:0;color:#a2abbd}
 .block.problem .karte h3{color:#f0b429}
+
+/* Zwei weitere KACHEL-ARTEN (Chef 08.08.2026: "der Aufbau an sich und die Art der Kacheln"
+   sind noch zu gleich). Dieselbe Farbwelt, deutlich andere Anmutung: */
+/* flach - kein Kasten, nur eine feine Trennlinie oben. Wirkt luftig, fast wie Zeitungsspalten */
+.raster.flach .karte{background:none;border:none;border-top:2px solid #29a8ff;
+ border-radius:0;padding:1.25rem 0 0}
+.block.problem .raster.flach .karte{border-top-color:#f0b429}
+/* gross - breite Kacheln mit viel Luft, hoechstens zwei nebeneinander */
+.raster.gross{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.raster.gross .karte{padding:2.25rem 2rem;border-radius:20px;
+ background:linear-gradient(160deg,#0d121f,#101625)}
+.raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
 .ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
 .ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
@@ -201,50 +218,51 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero">
+<section class="hero gross">
   <div class="hero-text">
-    <h1>IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt</h1>
-    <p class="unterzeile">Administrationskonzept, Security-Roadmap, Risikobewertung oder Onboarding-Checkliste - massgeschneidert fuer Euren Betrieb, nicht aus einer Vorlage mit fremdem Firmennamen. Fertig, wenn Audit, Versicherung oder Mitarbeiterwechsel danach fragen.</p>
-    <ul class="fuer-wen"><li>Handwerksbetriebe mit mehreren Standorten oder wachsendem Team</li><li>Firmen ohne eigene IT-Abteilung, die im Audit oder bei der Versicherung Nachweise brauchen</li><li>Einzelunternehmer und Selbstaendige, die Verantwortung tragen, aber kein IT-Team im Ruecken haben</li><li>Privatleute mit umfangreicher Technik im Haus, die Ordnung und einen Notfallplan wollen</li></ul>
+    <h1>Dokumente, die im Ernstfall tragen</h1>
+    <p class="unterzeile">Administrationskonzept, Security-Roadmap, Risikobewertung oder Onboarding-Checkliste - erstellt nach Ihrem Betrieb, nicht nach Schema. Papier, das Sie bei Audit, Versicherung oder Mitarbeiterwechsel wirklich vorzeigen können.</p>
+    <ul class="fuer-wen"><li>Handwerksbetriebe mit mehreren Mitarbeitern</li><li>Einzelunternehmer und Selbständige</li><li>Firmen ohne eigene IT-Abteilung</li><li>Betriebe vor einem Audit oder einer Versicherungsprüfung</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
     </div></div>
-  <div class="hero-bild"><img src="assets/it-dokumente/hero_bild.png" alt="IT-Dokumente" /></div>
+</section>
+
+<section class="block">
+  <h2>Ihr Nutzen</h2>
+  <ul class="zahlen"><li><span class="zahl">01</span><h3>Vorzeigbar im Ernstfall</h3><p>Beim Audit, bei der Versicherung oder nach einem Ausfall liegt ein Dokument vor, das Ihre tatsächliche Situation beschreibt.</p></li><li><span class="zahl">02</span><h3>Kein Copy-Paste</h3><p>Jedes Dokument wird für Ihren Betrieb erstellt, nicht aus einer fremden Vorlage kopiert.</p></li><li><span class="zahl">03</span><h3>Klarheit beim Onboarding</h3><p>Neue Mitarbeiter finden sich schneller zurecht, weil Abläufe schriftlich festgehalten sind.</p></li><li><span class="zahl">04</span><h3>Grundlage für Entscheidungen</h3><p>Eine Risikobewertung oder Roadmap gibt Ihnen eine schriftliche Basis, bevor Sie investieren oder priorisieren.</p></li></ul>
+</section>
+
+<section class="bildband">
+  <img src="assets/it-dokumente/hero_bild.png" alt="IT-Dokumente" />
 </section>
 
 <section class="block problem">
-  <h2>Wenn danach gefragt wird, ist nichts da</h2>
-  <ul class="kompakt"><li><h3>Keine Nachweise beim Audit</h3><p>Die Versicherung oder ein Pruefer fragt nach dem Administrationskonzept - und Ihr habt nichts Schriftliches. Improvisierte Antworten wirken schlecht und kosten im Zweifel Geld.</p></li><li><h3>Chaos beim Mitarbeiterwechsel</h3><p>Neue Leute starten ohne klare Checkliste, alte Zugaenge werden vergessen abzuschalten. Jeder macht es ein bisschen anders, niemand weiss genau, wer wofuer zustaendig ist.</p></li><li><h3>Risiken werden erst im Ernstfall sichtbar</h3><p>Ein neues Projekt startet, ohne dass vorher jemand die Risiken schriftlich bewertet hat. Wenn dann etwas ausfaellt, fehlt die Grundlage, um schnell und richtig zu reagieren.</p></li></ul>
+  <h2>Wenn es drauf ankommt, fehlt das Papier</h2>
+  <div class="raster "><article class="karte"><h3>Vorlage von der Stange</h3><p>Im Internet gefundene Muster passen selten zum eigenen Betrieb - manchmal steht sogar noch der Name einer fremden Firma drin. Im Ernstfall fällt das auf und hilft niemandem.</p></article><article class="karte"><h3>Kein Nachweis zur Hand</h3><p>Beim Audit, bei der Versicherung oder nach einem Ausfall wird nach Konzepten und Nachweisen gefragt. Wer nichts Schriftliches hat, steht mit leeren Händen da.</p></article><article class="karte"><h3>Wissen nur im Kopf</h3><p>Neue Mitarbeiter bekommen keine klare Checkliste, Zugänge und Abläufe werden mündlich erklärt. Bei einem Wechsel geht Wissen verloren, das nirgends aufgeschrieben war.</p></article></div>
 </section>
 
 <section class="block wechsel ">
-  <h2>Dokumente, die zu Eurem Betrieb passen</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Administrationskonzept</h3><p>Wir halten fest, wer welche Systeme betreut, wie Zugriffe vergeben werden und was im Vertretungsfall passiert. Aufgeschrieben in Euren Begriffen, nicht in generischem IT-Jargon.</p></div><div class="wechsel-bild"><img src="assets/it-dokumente/zweitbild.png" alt="IT-Dokumente" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Security-Roadmap</h3><p>Ein realistischer Plan, was als naechstes an der IT-Sicherheit verbessert wird - mit klaren Schritten statt einer langen Wunschliste. So wisst Ihr, wo Ihr steht und was als naechstes drankommt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Risikobewertung fuer Euer Projekt</h3><p>Vor dem Start eines Projekts schauen wir, wo es klemmen kann - technisch und organisatorisch. Das Ergebnis ist ein Dokument, das Ihr vorlegen und auf das Ihr Euch beziehen koennt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Onboarding-Checklisten</h3><p>Eine feste Liste, was beim Start und beim Ausscheiden eines Mitarbeiters zu tun ist - Zugaenge, Geraete, Berechtigungen. Damit nichts vom Zufall abhaengt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+  <h2>Dokumente, zugeschnitten auf Ihren Betrieb</h2>
+  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Administrationskonzept</h3><p>Wir beschreiben Ihre IT-Struktur, Zuständigkeiten und Zugriffsrechte so, wie sie tatsächlich bei Ihnen aussehen. Nachvollziehbar für alle, die es lesen müssen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Security-Roadmap</h3><p>Ein Plan mit klaren Schritten und Prioritäten, wie Sicherheit in Ihrem Betrieb ausgebaut wird. Kein abstraktes Konzept, sondern eine Liste, die abgearbeitet werden kann.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Risikobewertung</h3><p>Für ein Projekt, eine Investition oder einen möglichen Ausfall bewerten wir die konkreten Risiken - bezogen auf Ihre Situation, nicht auf ein allgemeines Schema.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Onboarding-Checkliste</h3><p>Eine Checkliste für neue Mitarbeiter: Geräte, Zugänge, Abläufe, alles der Reihe nach. Der erste Arbeitstag läuft ohne Chaos ab.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
 </section>
-
-<section class="aussage"><p>Meldet Euch, bevor Audit, Versicherung oder der naechste Mitarbeiterwechsel danach fragen.</p></section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="ablauf"><li><span class="nr">1</span><div><h3>Bestandsaufnahme</h3><p>Wir sprechen mit Euch ueber Eure Systeme, Abteilungen und Ablaeufe - vor Ort oder per Videocall.</p></div></li><li><span class="nr">2</span><div><h3>Entwurf</h3><p>Wir erstellen einen ersten Entwurf des Dokuments, zugeschnitten auf das, was Ihr uns geschildert habt.</p></div></li><li><span class="nr">3</span><div><h3>Abstimmung</h3><p>Ihr prueft den Entwurf, wir passen an, bis alles zu Eurem Betrieb passt und niemand raten muss.</p></div></li><li><span class="nr">4</span><div><h3>Uebergabe</h3><p>Ihr bekommt das fertige Dokument in einem Format, das Ihr direkt nutzen und bei Bedarf selbst weiterpflegen koennt.</p></div></li></ol>
-</section>
-
-<section class="block ">
-  <h2>Was Ihr davon habt</h2>
-  <div class="raster"><article class="karte"><h3>Sofort vorzeigbar</h3><p>Im Audit oder bei der Versicherung liegt das passende Dokument bereit, statt erst improvisiert werden zu muessen.</p></article><article class="karte"><h3>Kein Suchen bei Personalwechsel</h3><p>Eine feste Checkliste sorgt dafuer, dass Zugaenge und Geraete beim Ein- und Austritt zuverlaessig abgearbeitet werden.</p></article><article class="karte"><h3>Klarer Blick vor dem Projektstart</h3><p>Die Risikobewertung liegt vor, bevor investiert wird - nicht erst, wenn etwas schiefgelaufen ist.</p></article><article class="karte"><h3>Auf Euren Betrieb zugeschnitten</h3><p>Kein generischer Text mit fremdem Firmennamen, sondern ein Dokument mit Euren Systemen, Euren Ablaeufen und Eurer Sprache.</p></article></div>
+  <ol class="stufen"><li><span class="nr">1</span><h3>Gespräch</h3><p>Wir schauen uns Ihren Betrieb an und klären, welches Dokument Sie brauchen und was hinein muss.</p></li><li><span class="nr">2</span><h3>Entwurf</h3><p>Sie erhalten einen ersten Entwurf, formuliert in klarer Sprache, aufgebaut auf Ihre tatsächliche Situation.</p></li><li><span class="nr">3</span><h3>Abstimmung</h3><p>Sie prüfen den Entwurf, wir passen an, bis das Dokument zu Ihrem Betrieb passt.</p></li><li><span class="nr">4</span><h3>Übergabe</h3><p>Sie erhalten das fertige Dokument in einem Format, das Sie weiterverwenden und später selbst aktualisieren können.</p></li></ol>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Ist das eine Rechtsberatung?</summary><p>Nein. Wir erstellen die Dokumente nach Best Practice aus der IT-Praxis, keine juristische Pruefung. Fuer rechtlich verbindliche Anforderungen empfehlen wir ausdruecklich vorab eine anwaltliche Pruefung.</p></details><details><summary>Was braucht Ihr von uns, um zu starten?</summary><p>Ein Gespraech ueber Eure Systeme, Ablaeufe und was Ihr konkret vorlegen muesst - Details klaeren wir gemeinsam im ersten Termin.</p></details><details><summary>Koennt Ihr auch ein bestehendes Dokument ueberarbeiten?</summary><p>Ja. Oft ist eine veraltete Vorlage vorhanden, die wir pruefen, aktualisieren und an Euren aktuellen Stand anpassen.</p></details><details><summary>Wie lange dauert die Erstellung?</summary><p>Das haengt vom Umfang ab - eine Onboarding-Checkliste geht schneller als eine vollstaendige Security-Roadmap. Nach der Bestandsaufnahme nennen wir einen realistischen Zeitrahmen.</p></details><details><summary>Was kostet das?</summary><p>Preis nach Aufwand, je nach Umfang und Anzahl der Dokumente. Ihr bekommt vorab einen Festpreis auf Anfrage, keine Ueberraschungen.</p></details></div>
+  <div class="faq"><details><summary>Ist das eine Rechtsberatung?</summary><p>Nein. Wir erstellen Dokumente nach anerkannter Praxis, keine Rechtsberatung. Eine anwaltliche Prüfung Ihrer kundenspezifischen Anforderungen empfehlen wir ausdrücklich im Vorfeld.</p></details><details><summary>Was kostet die Erstellung?</summary><p>Der Preis richtet sich nach Umfang und Aufwand. Nach dem ersten Gespräch nennen wir Ihnen einen Festpreis auf Anfrage.</p></details><details><summary>Wie lange dauert die Erstellung?</summary><p>Das hängt vom Umfang des Dokuments und von der Größe Ihres Betriebs ab. Im Erstgespräch klären wir den zeitlichen Rahmen.</p></details><details><summary>Bekomme ich das Dokument in meinem Format?</summary><p>Ja. Sie erhalten das Dokument in einem gängigen, bearbeitbaren Format, damit Sie es selbst pflegen können.</p></details><details><summary>Was, wenn sich mein Betrieb später ändert?</summary><p>Dokumente lassen sich anpassen. Melden Sie sich, wenn sich etwas ändert, und wir bringen das Dokument auf den aktuellen Stand.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Holt Euch das Dokument, das im Ernstfall wirklich zaehlt</h2>
-  <p class="unterzeile">Meldet Euch, bevor Audit, Versicherung oder der naechste Mitarbeiterwechsel danach fragen.</p>
+  <h2>Fordern Sie Ihr Dokument an</h2>
+  <p class="unterzeile">Schildern Sie uns kurz, welches Dokument Sie brauchen - wir melden uns mit den nächsten Schritten.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
@@ -264,7 +282,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
     </div>
     <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
     <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
-    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+    <p class="hinweis">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage.
       Es werden keine Daten auf dieser Seite gespeichert.</p>
   </form>
 </section>
