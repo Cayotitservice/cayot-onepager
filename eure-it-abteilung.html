@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Eine feste Ansprechperson für Eure ganze IT | Cayot IT Service</title>
-<meta name="description" content="Beratungsvertrag mit festem Stundenkontingent: eine feste Ansprechperson für Eure IT - vom Alltagsproblem bis zur Strategie. Ohne eigene IT-Abteilung." />
-<meta property="og:title" content="Eine feste Ansprechperson für Eure ganze IT | Cayot IT Service" />
-<meta property="og:description" content="Beratungsvertrag mit festem Stundenkontingent: eine feste Ansprechperson für Eure IT - vom Alltagsproblem bis zur Strategie. Ohne eigene IT-Abteilung." />
+<title>Ihre IT-Abteilung, ohne Neueinstellung | Cayot IT Service</title>
+<meta name="description" content="Feste IT-Ansprechperson für Betriebe ohne eigene IT-Abteilung. Monatliches Stundenkontingent für Alltag und Strategie. Jetzt anfragen." />
+<meta property="og:title" content="Ihre IT-Abteilung, ohne Neueinstellung | Cayot IT Service" />
+<meta property="og:description" content="Feste IT-Ansprechperson für Betriebe ohne eigene IT-Abteilung. Monatliches Stundenkontingent für Alltag und Strategie. Jetzt anfragen." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/eure-it-abteilung/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
@@ -19,7 +19,12 @@ body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,
 img{max-width:100%;display:block}
 a{color:#29a8ff;text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+/* Ueberschriften brechen an sinnvollen Stellen um (Chef 08.08.2026: "er trennt die
+   Ueberschrift an den falschen Stellen"). `balance` verteilt die Zeilen gleichmaessig, statt
+   ein einzelnes Wort in die zweite Zeile zu haengen; `hyphens:manual` verbietet dem Browser,
+   deutsche Woerter selbst zu trennen - das trifft er bei Fachbegriffen regelmaessig daneben. */
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;text-wrap:balance;hyphens:manual;
+ overflow-wrap:break-word}
 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
@@ -64,6 +69,18 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .karte h3{font-size:1.15rem;color:#29a8ff}
 .karte p{margin:0;color:#a2abbd}
 .block.problem .karte h3{color:#f0b429}
+
+/* Zwei weitere KACHEL-ARTEN (Chef 08.08.2026: "der Aufbau an sich und die Art der Kacheln"
+   sind noch zu gleich). Dieselbe Farbwelt, deutlich andere Anmutung: */
+/* flach - kein Kasten, nur eine feine Trennlinie oben. Wirkt luftig, fast wie Zeitungsspalten */
+.raster.flach .karte{background:none;border:none;border-top:2px solid #29a8ff;
+ border-radius:0;padding:1.25rem 0 0}
+.block.problem .raster.flach .karte{border-top-color:#f0b429}
+/* gross - breite Kacheln mit viel Luft, hoechstens zwei nebeneinander */
+.raster.gross{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.raster.gross .karte{padding:2.25rem 2rem;border-radius:20px;
+ background:linear-gradient(160deg,#0d121f,#101625)}
+.raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
 .ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
 .ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
@@ -201,51 +218,50 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero gross">
+<section class="hero">
   <div class="hero-text">
-    <h1>Eine feste Ansprechperson für Eure ganze IT</h1>
-    <p class="unterzeile">Ihr bucht ein monatliches Stundenkontingent und habt damit jemanden, der Eure Technik kennt - vom Drucker, der spinnt, bis zur Frage, wie Ihr Euch digital aufstellt. Ohne dass Ihr jemanden einstellen müsst.</p>
-    <ul class="fuer-wen"><li>Handwerksbetriebe ohne eigenen IT-Menschen im Haus</li><li>Einzelunternehmer und Selbstständige, die ihre Zeit fürs Kerngeschäft brauchen</li><li>Kleine Firmen, denen eine eigene IT-Abteilung schlicht zu groß wäre</li><li>Privatleute mit mehreren Geräten, die einfach zuverlässig laufen sollen</li></ul>
+    <h1>Ihre IT-Abteilung, ohne Neueinstellung</h1>
+    <p class="unterzeile">Ein festes monatliches Stundenkontingent für alle IT-Fragen - vom klemmenden Drucker bis zur Digitalstrategie. Sie haben eine Ansprechperson, die Ihre Umgebung kennt.</p>
+    <ul class="fuer-wen"><li>Handwerksbetriebe ohne eigene IT-Abteilung</li><li>Einzelunternehmer und Selbständige</li><li>Kleine Büros, Kanzleien und Praxen</li><li>Wachsende Firmen, denen noch niemand für IT-Fragen zuständig ist</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
     </div></div>
+  <div class="hero-bild"><img src="assets/eure-it-abteilung/hero_bild.png" alt="Eure IT-Abteilung" /></div>
 </section>
 
-<section class="block">
-  <h2>Was Ihr davon habt</h2>
-  <ul class="zahlen"><li><span class="zahl">01</span><h3>Eine Person kennt Eure Umgebung</h3><p>Kein Erklären von vorne, weil wir wissen, welche Geräte und Programme bei Euch laufen.</p></li><li><span class="zahl">02</span><h3>Alltag und Strategie aus einer Hand</h3><p>Vom Drucker bis zur Digitalisierungsfrage - ein Ansprechpartner für alles, was mit IT zu tun hat.</p></li><li><span class="zahl">03</span><h3>Planbarer Aufwand</h3><p>Ihr wisst, wie viele Stunden im Monat für Euch reserviert sind, statt bei jedem Problem neu zu verhandeln.</p></li><li><span class="zahl">04</span><h3>Keine Festanstellung nötig</h3><p>Ihr bekommt IT-Unterstützung, ohne eine eigene Stelle schaffen oder besetzen zu müssen.</p></li></ul>
+<section class="aussage"><p>Ein festes monatliches Stundenkontingent für alle IT-Fragen - vom klemmenden Drucker bis zur Digitalstrategie. Sie haben eine Ansprechperson, die Ihre Umgebung kennt.</p></section>
+
+<section class="block wechsel problem">
+  <h2>Wenn niemand Ihre IT kennt</h2>
+  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Jedes Mal von vorne</h3><p>Sie rufen bei Bedarf irgendeinen Dienstleister an und erklären erst einmal die ganze Umgebung. Das kostet Zeit, und die Lösung passt selten wirklich zu dem, was bei Ihnen gewachsen ist.</p></div><div class="wechsel-bild"><img src="assets/eure-it-abteilung/zweitbild.png" alt="Eure IT-Abteilung" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Grundsatzfragen bleiben liegen</h3><p>Neue Geräte, eine Sicherheitsstrategie, die Frage nach Cloud oder eigenem Server - solche Themen brauchen jemanden, der mitdenkt. Ohne feste Ansprechperson bleiben sie einfach liegen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Eine eigene Stelle lohnt sich nicht</h3><p>Für eine volle IT-Stelle ist der Betrieb zu klein. Trotzdem sind die Fragen da - jede Woche ein bisschen, mal mehr, mal weniger.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
 </section>
 
-<section class="bildband">
-  <img src="assets/eure-it-abteilung/hero_bild.png" alt="Eure IT-Abteilung" />
-</section>
-
-<section class="block problem">
-  <h2>Wenn niemand richtig zuständig ist</h2>
-  <div class="raster"><article class="karte"><h3>Jedes Mal von vorne erklären</h3><p>Bei jedem IT-Problem ruft Ihr einen anderen Dienstleister an und müsst erst mal erklären, was Ihr überhaupt für Geräte und Programme habt. Das kostet Zeit, bevor überhaupt geholfen wird.</p></article><article class="karte"><h3>Alltag frisst den Tag</h3><p>Ein Passwort ist weg, der Drucker streikt, ein neuer Mitarbeiter braucht einen Zugang - solche Kleinigkeiten liegen bei Euch selbst auf dem Tisch, obwohl sie nicht Euer Fachgebiet sind.</p></article><article class="karte"><h3>Strategie bleibt liegen</h3><p>Fragen wie Digitalisierung, Einkauf neuer Geräte oder wie sicher Eure Daten wirklich sind, werden ständig verschoben, weil dafür weder Zeit noch ein Ansprechpartner da ist.</p></article></div>
-</section>
-
-<section class="block wechsel ">
-  <h2>Eine Ansprechperson, ein Kontingent, alles drin</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Feste Stundenzahl pro Monat</h3><p>Ihr bucht ein Kontingent, das zu Eurem Betrieb passt. Diese Stunden könnt Ihr für alles nutzen, was gerade ansteht - egal ob klein oder groß.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Alltag und Strategie unter einem Dach</h3><p>Vom Passwort-Reset bis zur Frage, welche Software sich lohnt oder wie Ihr Eure Daten besser schützt - alles läuft über dieselbe Person, die Eure Umgebung kennt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Kein Neuanfang bei jedem Anruf</h3><p>Wir kennen Eure Geräte, Eure Programme und Eure Eigenheiten. Das spart Erklärzeit und sorgt dafür, dass Lösungen schneller passen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Kein Personal, keine Fixkosten für eine ganze Stelle</h3><p>Ihr bekommt IT-Unterstützung auf Abruf, ohne jemanden fest einzustellen oder eine eigene Abteilung aufzubauen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+<section class="block ">
+  <h2>Ein fester Ansprechpartner, der Sie kennt</h2>
+  <div class="raster flach"><article class="karte"><h3>Monatliches Stundenkontingent</h3><p>Sie buchen ein festes Kontingent an Stunden im Monat. Wir setzen es dort ein, wo es gerade nötig ist - egal ob Alltag oder größeres Vorhaben.</p></article><article class="karte"><h3>Alltag und Strategie aus einer Hand</h3><p>Drucker, Passwörter, neuer Mitarbeiter mit neuem Rechner - genauso wie Einkaufsentscheidungen, Digitalisierung und Sicherheitsfragen. Alles läuft über dieselbe Stelle.</p></article><article class="karte"><h3>Wir kennen Ihre Umgebung</h3><p>Kein Erklären von vorne. Wir wissen, welche Geräte bei Ihnen laufen, welche Software Sie nutzen und was schon einmal Probleme gemacht hat.</p></article><article class="karte"><h3>Ehrlich begrenzt</h3><p>Das ersetzt keine große IT-Abteilung mit mehreren Mitarbeitern. Für Betriebe ohne eigene IT ist es aber genau das, was bisher gefehlt hat.</p></article></div>
 </section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="stufen"><li><span class="nr">1</span><h3>Bestandsaufnahme</h3><p>Wir schauen uns Eure aktuelle IT an - Geräte, Programme, Netzwerk - und verschaffen uns einen Überblick.</p></li><li><span class="nr">2</span><h3>Kontingent festlegen</h3><p>Gemeinsam legen wir fest, wie viele Stunden im Monat zu Eurem Betrieb passen. Das lässt sich später anpassen.</p></li><li><span class="nr">3</span><h3>Laufende Betreuung</h3><p>Ihr meldet Euch bei Bedarf - per Anruf, WhatsApp oder Formular. Wir kümmern uns um Alltagsfragen und größere Themen gleichermaßen.</p></li><li><span class="nr">4</span><h3>Regelmäßiger Austausch</h3><p>In festen Abständen sprechen wir über den Stand Eurer IT und was als Nächstes sinnvoll wäre - bevor es brennt.</p></li></ol>
+  <ol class="stufen"><li><span class="nr">1</span><h3>Kennenlernen</h3><p>Wir schauen uns Ihre IT-Umgebung an: Geräte, Software, aktuelle Baustellen und was Ihnen wichtig ist.</p></li><li><span class="nr">2</span><h3>Kontingent festlegen</h3><p>Gemeinsam legen wir fest, wie viele Stunden im Monat zu Ihrem Betrieb passen. Das kann sich später anpassen.</p></li><li><span class="nr">3</span><h3>Feste Ansprechperson</h3><p>Sie bekommen einen direkten Kontakt, der Ihre Umgebung kennt und bei Anfragen sofort weiß, worum es geht.</p></li><li><span class="nr">4</span><h3>Laufende Abstimmung</h3><p>In regelmäßigen Abständen sprechen wir über größere Themen: Anschaffungen, Sicherheit, wie es weitergeht.</p></li></ol>
+</section>
+
+<section class="block ">
+  <h2>Ihr Nutzen</h2>
+  <ul class="kompakt"><li><h3>Immer dieselbe Ansprechperson</h3><p>Kein Erklären von vorne bei jedem Anruf, weil wir Ihre Umgebung kennen.</p></li><li><h3>Keine Neueinstellung nötig</h3><p>Sie bekommen IT-Kompetenz, ohne eine feste Stelle zu schaffen.</p></li><li><h3>Alltag und Strategie gedeckt</h3><p>Vom Drucker bis zur Sicherheitsstrategie - ein Kontingent für alles.</p></li><li><h3>Planbarer Aufwand</h3><p>Ein festes Kontingent statt einer Rechnung pro Anruf - Sie wissen, woran Sie sind.</p></li></ul>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Ersetzt das eine eigene IT-Abteilung?</summary><p>Bei größeren Firmen mit vielen eigenen Systemen ersetzt es das nicht vollständig. Für Betriebe ohne eigene IT ist es aber genau das, was sonst fehlt - eine feste, kompetente Anlaufstelle.</p></details><details><summary>Was zählt alles zum Stundenkontingent?</summary><p>Alltagsprobleme wie Drucker, Passwörter oder neue Mitarbeiter genauso wie strategische Themen: Einkauf von Geräten, Digitalisierung, Security-Fragen.</p></details><details><summary>Was passiert, wenn ich mehr Stunden brauche als vereinbart?</summary><p>Wir sprechen das offen an. Entweder wird das Kontingent angepasst oder der Mehraufwand wird gesondert abgerechnet - nichts läuft ohne Absprache.</p></details><details><summary>Kann ich das Kontingent später ändern?</summary><p>Ja. Wenn sich Euer Bedarf ändert, passen wir die Stundenzahl an - nach oben wie nach unten.</p></details><details><summary>Wie schnell bekomme ich Hilfe bei einem akuten Problem?</summary><p>Ihr meldet Euch über Anruf, WhatsApp oder Formular. Da wir Eure Umgebung bereits kennen, geht die Klärung meist deutlich schneller als bei einem fremden Dienstleister.</p></details></div>
+  <div class="faq"><details><summary>Was passiert, wenn das Kontingent in einem Monat nicht reicht?</summary><p>Wir sprechen das offen an und finden eine Lösung - entweder wird das Kontingent angepasst oder wir setzen Prioritäten gemeinsam mit Ihnen.</p></details><details><summary>Was passiert, wenn Stunden übrig bleiben?</summary><p>Das besprechen wir individuell. Oft nutzen wir übrige Zeit für Themen, die sonst liegen bleiben, etwa vorausschauende Wartung oder Sicherheitschecks.</p></details><details><summary>Ersetzt das eine eigene IT-Abteilung?</summary><p>Nein. Für größere Betriebe mit mehreren IT-Mitarbeitern ist das kein Ersatz. Für Betriebe ohne eigene IT ist es aber genau das, was bisher gefehlt hat.</p></details><details><summary>Wie schnell bekomme ich Hilfe bei einem akuten Problem?</summary><p>Da wir Ihre Umgebung kennen, geht die Klärung meist schnell. Für echte Notfälle gibt es zusätzlich unseren Soforthilfe-Service.</p></details><details><summary>Kann ich das Kontingent später ändern?</summary><p>Ja. Wenn sich Ihr Bedarf ändert, passen wir das monatliche Kontingent gemeinsam an.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Sprecht mit uns über Euer Stundenkontingent</h2>
-  <p class="unterzeile">Je früher Ihr eine feste Ansprechperson habt, desto weniger Zeit verliert Ihr mit IT-Problemen, die nicht Euer Kerngeschäft sind.</p>
+  <h2>Lernen Sie Ihre feste IT-Ansprechperson kennen</h2>
+  <p class="unterzeile">Schildern Sie uns Ihre Situation - wir sagen Ihnen, wie ein passendes Kontingent für Sie aussehen kann.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
@@ -265,7 +281,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
     </div>
     <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
     <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
-    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+    <p class="hinweis">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage.
       Es werden keine Daten auf dieser Seite gespeichert.</p>
   </form>
 </section>
