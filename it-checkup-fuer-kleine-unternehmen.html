@@ -246,6 +246,9 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
   .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wechsel-reihe.voll{grid-template-columns:1fr}
+.wechsel-reihe.voll .wechsel-text p{max-width:70ch}
 </style>
 </head>
 <body>
@@ -291,7 +294,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="block wechsel ">
   <h2>Ein Termin, eine ehrliche Bestandsaufnahme</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Vor Ort, drei bis fünf Stunden</h3><p>Wir prüfen Internetanschluss und Firewall, PCs, Updates, Virenschutz und Backup, Microsoft 365, Passwörter und Mehr-Faktor-Anmeldung, das NAS, das WLAN, Benutzerrechte und Ihre Notfallvorsorge.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>20 Maßnahmen, sortiert nach Dringlichkeit</h3><p>Sie bekommen keine lange Mängelliste, sondern eine klare Reihenfolge: was zuerst, was später, was Sie auch einfach so lassen können - jeweils mit realistischem Kostenrahmen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Ausgearbeitete Dokumente</h3><p>Sie erhalten schriftliche Unterlagen zu Ihrer IT-Umgebung und einen Vorschlag, in welcher Reihenfolge Sie vorgehen sollten - zum Nachlesen und Weitergeben.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Sie entscheiden, wer umsetzt</h3><p>Der Checkup ist unabhängig von der Umsetzung. Ob Sie damit zu uns kommen oder zu jemand anderem gehen - das Ergebnis gehört Ihnen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+  <div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Vor Ort, drei bis fünf Stunden</h3><p>Wir prüfen Internetanschluss und Firewall, PCs, Updates, Virenschutz und Backup, Microsoft 365, Passwörter und Mehr-Faktor-Anmeldung, das NAS, das WLAN, Benutzerrechte und Ihre Notfallvorsorge.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>20 Maßnahmen, sortiert nach Dringlichkeit</h3><p>Sie bekommen keine lange Mängelliste, sondern eine klare Reihenfolge: was zuerst, was später, was Sie auch einfach so lassen können - jeweils mit realistischem Kostenrahmen.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Ausgearbeitete Dokumente</h3><p>Sie erhalten schriftliche Unterlagen zu Ihrer IT-Umgebung und einen Vorschlag, in welcher Reihenfolge Sie vorgehen sollten - zum Nachlesen und Weitergeben.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Sie entscheiden, wer umsetzt</h3><p>Der Checkup ist unabhängig von der Umsetzung. Ob Sie damit zu uns kommen oder zu jemand anderem gehen - das Ergebnis gehört Ihnen.</p></div></div>
 </section>
 
 <section class="block">
