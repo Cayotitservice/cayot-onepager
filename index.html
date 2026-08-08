@@ -210,8 +210,11 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 .angebot-bild img{width:100%;height:170px;object-fit:cover}
 .angebot-text{display:grid;gap:.35rem;padding:1.25rem 1.4rem 1.5rem}
 .angebot-text strong{font-size:1.15rem;line-height:1.3;color:#29a8ff}
-.angebot-name{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;
- color:#a2abbd}
+/* Der Produktname steht klein UNTER der Beschreibung - vorher stand er darueber, in
+   Grossbuchstaben und auseinandergezogen. Bei einer Seite ohne gepflegten Titel rutschte dort
+   das Adress-Kuerzel hin und wurde zu "SICHERHEITSCHECK-VON-AU-EN-GRATIS-PENTEST"
+   (Chef 08.08.2026: "das ist grauenhaft"). Jetzt normal geschrieben - und ohne Titel gar nicht. */
+.angebot-name{font-size:.82rem;color:#a2abbd;opacity:.75;margin-top:.15rem}
 .angebot-kurz{color:#a2abbd;font-size:.95rem}
 .uebersicht-kopf{max-width:1200px;margin:0 auto;padding:clamp(2.5rem,7vw,5rem) clamp(1rem,4vw,3rem) 1rem;
  text-align:center}
@@ -232,10 +235,11 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
   <section class="uebersicht-kopf">
-    <h1>Unsere Angebote auf einen Blick</h1>
-    <p class="unterzeile" style="margin:0 auto">Jedes Angebot auf einer eigenen Seite - was es
-      ist, für wen es gemacht ist und wie es abläuft. Suchen Sie sich aus, was passt – und wenn
-      Sie nicht sicher sind, rufen Sie einfach an.</p>
+    <h1>Was wir für Sie tun können</h1>
+    <p class="unterzeile" style="margin:0 auto">Vom schnellen Notdienst bis zum kompletten
+      IT-Check – hier finden Sie unsere Leistungen für Privatkunden, Handwerksbetriebe und
+      Firmen ohne eigene IT-Abteilung. Wenn Sie nicht sicher sind, was zu Ihnen passt:
+      rufen Sie an, wir sortieren das gemeinsam.</p>
   </section>
 
   <section class="block">
@@ -245,8 +249,8 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
         <span class="angebot-bild"><img src="assets/lokaler-it-notdienst/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Schnelle IT-Hilfe direkt bei Ihnen</strong>
-          <span class="angebot-name">Lokaler IT-Notdienst</span>
           <span class="angebot-kurz">Schnelle IT-Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Drucker-Problemen in Bad Kreuznach.</span>
+          <span class="angebot-name">Lokaler IT-Notdienst</span>
         </span>
       </a></div>
   </section>
@@ -257,8 +261,8 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
         <span class="angebot-bild"><img src="assets/microsoft-365-service/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Microsoft 365 prüfen - Ampel statt Blindflug</strong>
-          <span class="angebot-name">Microsoft 365 Service</span>
           <span class="angebot-kurz">Microsoft 365 wird geprüft, Sie bekommen eine verständliche Ampel-Liste, was passt und was zu tun ist.</span>
+          <span class="angebot-name">Microsoft 365 Service</span>
         </span>
       </a></div>
   </section>
@@ -269,8 +273,8 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
         <span class="angebot-bild"><img src="assets/nas-und-backup-service/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Ihre Daten zentral, gesichert und wirklich wiederherstellbar</strong>
-          <span class="angebot-name">NAS und Backup Service</span>
           <span class="angebot-kurz">Wir richten Ihre Synology-NAS ein, sichern all Ihre Geräte automatisch und prüfen, dass die Wiederherstellung im Ernstfall wirklich funktioniert.</span>
+          <span class="angebot-name">NAS und Backup Service</span>
         </span>
       </a></div>
   </section>
@@ -281,24 +285,24 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
         <span class="angebot-bild"><img src="assets/sicherheitscheck-von-au-en-gratis-pentest/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Schwachstellen erkennen, bevor es andere tun</strong>
-          <span class="angebot-name">sicherheitscheck-von-au-en-gratis-pentest</span>
           <span class="angebot-kurz">Kostenloser, passiver Scan Ihrer Domain mit Bericht über öffentlich sichtbare Schwachstellen.</span>
+          <span class="angebot-name">Sicherheitscheck von außen</span>
         </span>
       </a>
       <a class="angebot" href="e-mail-sicherheitscheck.html">
         <span class="angebot-bild"><img src="assets/e-mail-sicherheitscheck/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Wer schreibt wirklich in Ihrem Namen?</strong>
-          <span class="angebot-name">E-Mail-Sicherheitscheck</span>
           <span class="angebot-kurz">Ein fester Check, der prüft, ob Ihre Mail-Adresse gegen Fälschung und Ihr Postfach gegen Missbrauch abgesichert ist.</span>
+          <span class="angebot-name">E-Mail-Sicherheitscheck</span>
         </span>
       </a>
       <a class="angebot" href="cyberversicherung-vorbereiten.html">
         <span class="angebot-bild"><img src="assets/cyberversicherung-vorbereiten/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Bereit für die Cyberversicherung</strong>
-          <span class="angebot-name">Cyberversicherung vorbereiten</span>
           <span class="angebot-kurz">Wir bringen Ihre IT auf den Stand, den Ihre Cyberversicherung verlangt - dokumentiert und nachvollziehbar.</span>
+          <span class="angebot-name">Cyberversicherung vorbereiten</span>
         </span>
       </a></div>
   </section>
@@ -309,24 +313,24 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
         <span class="angebot-bild"><img src="assets/it-checkup-fuer-kleine-unternehmen/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Endlich wissen, wo Ihre IT wirklich steht</strong>
-          <span class="angebot-name">IT-Checkup für kleine Unternehmen</span>
           <span class="angebot-kurz">Ein ehrlicher Blick auf Ihre gesamte IT - mit klarer Liste, was dringend ist und was es kostet.</span>
+          <span class="angebot-name">IT-Checkup für kleine Unternehmen</span>
         </span>
       </a>
       <a class="angebot" href="eure-it-abteilung.html">
         <span class="angebot-bild"><img src="assets/eure-it-abteilung/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Ihre IT-Abteilung, ohne Neueinstellung</strong>
-          <span class="angebot-name">Eure IT-Abteilung</span>
           <span class="angebot-kurz">Ein monatliches Stundenkontingent mit fester Ansprechperson für alle IT-Fragen - vom Alltag bis zur Strategie.</span>
+          <span class="angebot-name">Ihre IT-Abteilung</span>
         </span>
       </a>
       <a class="angebot" href="it-dokumente.html">
         <span class="angebot-bild"><img src="assets/it-dokumente/hero_bild.png" alt="" loading="lazy" /></span>
         <span class="angebot-text">
           <strong>Dokumente, die im Ernstfall tragen</strong>
-          <span class="angebot-name">IT-Dokumente</span>
           <span class="angebot-kurz">Individuell erstellte IT-Dokumente wie Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checkliste - passend zu Ihrem Betrieb.</span>
+          <span class="angebot-name">IT-Dokumente</span>
         </span>
       </a></div>
   </section>
