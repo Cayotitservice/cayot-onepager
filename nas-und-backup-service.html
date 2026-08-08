@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Eure Daten an einem Ort - und wirklich gesichert | Cayot IT Service</title>
-<meta name="description" content="Synology-NAS einrichten, umziehen und absichern: zentrale Datenablage, getestetes Backup fuer PCs und Microsoft 365, sicherer Fernzugriff, laufende Betreuung." />
-<meta property="og:title" content="Eure Daten an einem Ort - und wirklich gesichert | Cayot IT Service" />
-<meta property="og:description" content="Synology-NAS einrichten, umziehen und absichern: zentrale Datenablage, getestetes Backup fuer PCs und Microsoft 365, sicherer Fernzugriff, laufende Betreuung." />
+<title>Ihre Daten zentral, gesichert und wirklich wiederherstellbar | Cayot IT Service</title>
+<meta name="description" content="Synology-NAS einrichten, umziehen und absichern: automatische Backups, Sicherung von Microsoft 365 und geprüfte Wiederherstellung." />
+<meta property="og:title" content="Ihre Daten zentral, gesichert und wirklich wiederherstellbar | Cayot IT Service" />
+<meta property="og:description" content="Synology-NAS einrichten, umziehen und absichern: automatische Backups, Sicherung von Microsoft 365 und geprüfte Wiederherstellung." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/nas-und-backup-service/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
@@ -19,7 +19,12 @@ body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,
 img{max-width:100%;display:block}
 a{color:#29a8ff;text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+/* Ueberschriften brechen an sinnvollen Stellen um (Chef 08.08.2026: "er trennt die
+   Ueberschrift an den falschen Stellen"). `balance` verteilt die Zeilen gleichmaessig, statt
+   ein einzelnes Wort in die zweite Zeile zu haengen; `hyphens:manual` verbietet dem Browser,
+   deutsche Woerter selbst zu trennen - das trifft er bei Fachbegriffen regelmaessig daneben. */
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;text-wrap:balance;hyphens:manual;
+ overflow-wrap:break-word}
 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
@@ -64,6 +69,18 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .karte h3{font-size:1.15rem;color:#29a8ff}
 .karte p{margin:0;color:#a2abbd}
 .block.problem .karte h3{color:#f0b429}
+
+/* Zwei weitere KACHEL-ARTEN (Chef 08.08.2026: "der Aufbau an sich und die Art der Kacheln"
+   sind noch zu gleich). Dieselbe Farbwelt, deutlich andere Anmutung: */
+/* flach - kein Kasten, nur eine feine Trennlinie oben. Wirkt luftig, fast wie Zeitungsspalten */
+.raster.flach .karte{background:none;border:none;border-top:2px solid #29a8ff;
+ border-radius:0;padding:1.25rem 0 0}
+.block.problem .raster.flach .karte{border-top-color:#f0b429}
+/* gross - breite Kacheln mit viel Luft, hoechstens zwei nebeneinander */
+.raster.gross{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.raster.gross .karte{padding:2.25rem 2rem;border-radius:20px;
+ background:linear-gradient(160deg,#0d121f,#101625)}
+.raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
 .ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
 .ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
@@ -201,11 +218,12 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero gross">
+<section class="hero oben">
+  <div class="hero-bild breit"><img src="assets/nas-und-backup-service/hero_bild.png" alt="NAS und Backup Service" /></div>
   <div class="hero-text">
-    <h1>Eure Daten an einem Ort - und wirklich gesichert</h1>
-    <p class="unterzeile">Wir richten Euer Synology-NAS ein, ziehen es von der alten Kiste um und sorgen dafuer, dass die Sicherung im Ernstfall auch tatsaechlich zurueckspielt. Fotos, Dokumente, Mails und OneDrive liegen an einem Ort, den Ihr kontrolliert.</p>
-    <ul class="fuer-wen"><li>Familien, die Fotos und Dokumente nicht mehr auf fuenf Geraeten verstreut haben wollen</li><li>Handwerksbetriebe mit Auftraegen, Rechnungen und Plaenen auf mehreren Rechnern</li><li>Einzelunternehmer und Selbststaendige, die ihre Buchhaltung und Kundendaten nicht verlieren duerfen</li><li>Firmen ohne eigene IT-Abteilung, die eine zentrale, verlaessliche Ablage brauchen</li></ul>
+    <h1>Ihre Daten zentral, gesichert und wirklich wiederherstellbar</h1>
+    <p class="unterzeile">Wir richten Ihre Synology-NAS ein, ziehen bestehende Daten um und bauen ein Backup-Konzept, das auch bei einem Ausfall hält. Sie bekommen einen Speicherort, dem Sie vertrauen können.</p>
+    <ul class="fuer-wen"><li>Familien, die Fotos und Dokumente nicht mehr auf zehn verschiedenen Geräten verstreut haben wollen</li><li>Selbständige, die ihre Buchhaltung und Kundendaten zentral und gesichert brauchen</li><li>Handwerksbetriebe ohne eigene IT, die einfach wissen wollen, dass ihre Daten sicher liegen</li><li>Kleine Firmen, die Microsoft 365 nutzen und zusätzlich eine eigene Kopie ihrer Mails und Dateien wollen</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
@@ -215,37 +233,35 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </section>
 
 <section class="block">
-  <h2>Was Ihr davon habt</h2>
-  <ul class="zahlen"><li><span class="zahl">01</span><h3>Ein Ort statt zehn</h3><p>Alle Fotos, Dokumente und Mails liegen zentral auf dem NAS statt verstreut auf einzelnen Rechnern.</p></li><li><span class="zahl">02</span><h3>Getestete Ruecksicherung</h3><p>Das Backup wird nicht nur eingerichtet, sondern einmal wirklich zurueckgespielt - damit Ihr wisst, dass es im Ernstfall funktioniert.</p></li><li><span class="zahl">03</span><h3>Sicherer statt offener Zugriff</h3><p>Fernzugriff laeuft ueber VPN statt ueber offene Ports, die niemand mehr kontrolliert.</p></li><li><span class="zahl">04</span><h3>Jemand behaelt es im Blick</h3><p>Bei laufender Betreuung meldet sich jemand, wenn eine Platte Probleme macht oder eine Sicherung ausbleibt - nicht erst nach dem Datenverlust.</p></li></ul>
-</section>
-
-<section class="bildband">
-  <img src="assets/nas-und-backup-service/hero_bild.png" alt="NAS und Backup Service" />
-</section>
-
-<section class="block problem">
-  <h2>Wenn niemand genau weiss, wo die Daten wirklich liegen</h2>
-  <div class="raster"><article class="karte"><h3>Verstreut auf zehn Rechnern</h3><p>Jeder speichert lokal, jeder hat eine andere Version. Wenn ein Laptop kaputtgeht oder gestohlen wird, ist unklar, was davon noch irgendwo existiert.</p></article><article class="karte"><h3>Ein Backup, das niemand geprueft hat</h3><p>Eine externe Festplatte oder eine alte Synology laeuft seit Jahren mit - ob die Sicherung noch funktioniert, hat nie jemand getestet. Im Ernstfall zeigt sich dann, dass die Datei von vor drei Jahren ist.</p></article><article class="karte"><h3>Von aussen erreichbar, aber offen wie ein Scheunentor</h3><p>Damit man von unterwegs an die Daten kommt, wurde irgendwann ein Port geoeffnet. Das funktioniert - und ist gleichzeitig ein offenes Einfallstor, von dem niemand mehr weiss, dass es noch da ist.</p></article></div>
-</section>
-
-<section class="block wechsel ">
-  <h2>Ein NAS, das eingerichtet, geprueft und betreut wird</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Einrichtung oder Umzug</h3><p>Neue Synology aufsetzen oder die alte samt Daten und Einstellungen auf ein neues Geraet umziehen - ohne dass Euch dabei etwas verloren geht.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Backup-Konzept statt einzelner Kopie</h3><p>PCs, Microsoft 365 (Mails, OneDrive, SharePoint), Fotos und Dokumente laufen automatisch auf dem NAS zusammen. Wir legen fest, wie oft gesichert wird und wohin die zweite Kopie geht, damit ein Ausfall der Synology nicht alles mitreisst.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Sicherer Zugriff von unterwegs</h3><p>Statt offener Ports richten wir VPN, DNS und die noetigen Netzwerkeinstellungen so ein, dass Ihr von aussen rankommt, ohne das NAS angreifbar zu machen.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Laufende Ueberwachung</h3><p>Wir bleiben dran: Wenn eine Festplatte Fehler meldet oder eine Sicherung nicht durchgelaufen ist, bekommen wir das mit - nicht erst, wenn der Schaden schon da ist.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+  <h2>So läuft es ab</h2>
+  <ol class="stufen"><li><span class="nr">1</span><h3>Bestandsaufnahme</h3><p>Wir schauen uns an, wo Ihre Daten aktuell liegen, welche Geräte gesichert werden müssen und was Sie im Ernstfall wiederherstellen können müssen.</p></li><li><span class="nr">2</span><h3>Einrichtung oder Umzug</h3><p>Wir installieren und konfigurieren die NAS, übernehmen bestehende Daten und richten die automatische Sicherung aller Geräte ein.</p></li><li><span class="nr">3</span><h3>Testlauf mit echter Wiederherstellung</h3><p>Wir spielen probeweise Daten zurück, damit Sie sicher sein können, dass das Backup im Ernstfall auch wirklich funktioniert.</p></li><li><span class="nr">4</span><h3>Laufende Wartung</h3><p>Auf Wunsch überwachen wir die NAS weiter und melden uns, wenn eine Platte Anzeichen von Verschleiß zeigt oder eine Sicherung nicht durchläuft.</p></li></ol>
 </section>
 
 <section class="block">
-  <h2>So läuft es ab</h2>
-  <ol class="stufen"><li><span class="nr">1</span><h3>Bestandsaufnahme</h3><p>Wir schauen uns an, was an Geraeten, Daten und alten Backups vorhanden ist, und besprechen, was wirklich gesichert werden muss.</p></li><li><span class="nr">2</span><h3>Einrichtung oder Migration</h3><p>Das NAS wird eingerichtet oder die alte Synology umgezogen, inklusive Docker, DHCP, DNS und VPN, soweit gebraucht.</p></li><li><span class="nr">3</span><h3>Backup einrichten und testen</h3><p>PCs und Microsoft 365 werden angebunden, die Sicherung eingerichtet und mit einer echten Ruecksicherung geprueft - nicht nur gestartet.</p></li><li><span class="nr">4</span><h3>Betreuung im laufenden Betrieb</h3><p>Auf Wunsch behalten wir Plattenzustand und Sicherungen im Blick und melden uns, sobald etwas nicht passt.</p></li></ol>
+  <h2>Ihr Nutzen</h2>
+  <ul class="zahlen"><li><span class="zahl">01</span><h3>Ein zentraler Speicherort</h3><p>Alle Fotos, Dokumente und Dateien liegen an einem Ort statt verstreut auf mehreren Geräten.</p></li><li><span class="zahl">02</span><h3>Geprüfte Wiederherstellung</h3><p>Wir testen die Rücksicherung, statt nur die Sicherung einzurichten und zu hoffen, dass sie funktioniert.</p></li><li><span class="zahl">03</span><h3>Unabhängige Kopie von Microsoft 365</h3><p>Mails und Dokumente aus der Cloud liegen zusätzlich auf Ihrer eigenen NAS, unabhängig vom Cloud-Anbieter.</p></li><li><span class="zahl">04</span><h3>Dranbleiben statt einmal einrichten</h3><p>Nach der Einrichtung überwachen wir auf Wunsch weiter und melden uns, bevor aus einem kleinen Problem ein Datenverlust wird.</p></li></ul>
+</section>
+
+<section class="aussage"><p>Schreiben Sie uns, wir schauen uns Ihre Situation an und sagen Ihnen, was für Ihre Daten sinnvoll ist.</p></section>
+
+<section class="block problem">
+  <h2>Woran es meistens hakt</h2>
+  <ul class="kompakt"><li><h3>Daten verstreut auf vielen Geräten</h3><p>Fotos liegen auf dem Handy, Dokumente auf drei verschiedenen Laptops, alte Rechnungen irgendwo auf einer externen Festplatte. Niemand weiß mehr genau, wo was liegt und ob es überhaupt gesichert ist.</p></li><li><h3>Backup vorhanden, aber nie geprüft</h3><p>Es läuft eine Sicherung, vielleicht sogar automatisch. Aber ob sie im Ernstfall auch wieder zurückspielbar ist, hat noch nie jemand getestet. Genau das merkt man erst, wenn es zu spät ist.</p></li><li><h3>Microsoft 365 gilt als sicher genug</h3><p>Mails, OneDrive und SharePoint liegen in der Cloud, das fühlt sich sicher an. Bei versehentlichem Löschen, einem Fehler in der Synchronisation oder einem gekündigten Konto gibt es aber keine eigene Kopie, auf die man zugreifen kann.</p></li></ul>
+</section>
+
+<section class="block ">
+  <h2>Was wir für Sie einrichten</h2>
+  <div class="raster flach"><article class="karte"><h3>NAS einrichten oder umziehen</h3><p>Wir richten Ihre neue Synology komplett ein oder übernehmen den Umzug von einer alten Synology auf eine neue - inklusive aller Freigaben, Benutzer und Einstellungen.</p></article><article class="karte"><h3>Automatische Sicherung aller Geräte</h3><p>PCs im Haus oder Büro werden automatisch auf die NAS gesichert. Sie müssen nichts manuell anstoßen, die Sicherung läuft im Hintergrund.</p></article><article class="karte"><h3>Microsoft 365 auf die NAS sichern</h3><p>Mails, OneDrive und SharePoint werden zusätzlich auf Ihre eigene NAS gesichert. Damit haben Sie eine Kopie, die unabhängig von Ihrem Cloud-Anbieter existiert.</p></article><article class="karte"><h3>Sicherer Fernzugriff und Zusatzdienste</h3><p>Wir richten den sicheren Zugriff von unterwegs ein und, falls gewünscht, DHCP, DNS, Docker oder VPN auf der NAS - passend zu dem, was Sie tatsächlich brauchen.</p></article></div>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Welche Synology passt zu mir?</summary><p>Das haengt davon ab, wie viele Geraete gesichert werden sollen und wie viel Platz Ihr braucht. Wir schauen uns Euren Bedarf an und schlagen ein passendes Modell vor, statt pauschal das groesste zu verkaufen.</p></details><details><summary>Was passiert, wenn eine Festplatte im NAS ausfaellt?</summary><p>Richtig eingerichtet laeuft das NAS mit mehreren Platten im Verbund weiter, waehrend die defekte getauscht wird. Bei laufender Ueberwachung merken wir den Fehler meist, bevor er zum Problem wird.</p></details><details><summary>Ist mein NAS sicher von unterwegs erreichbar?</summary><p>Ja, dafuer richten wir einen VPN-Zugang statt offener Ports ein. Damit kommt Ihr von aussen ran, ohne das Netzwerk angreifbar zu machen.</p></details><details><summary>Sichert Ihr auch Microsoft 365?</summary><p>Ja. Mails, OneDrive und SharePoint lassen sich automatisch auf das NAS sichern, damit Ihr bei einem Problem beim Anbieter nicht ohne Kopie dasteht.</p></details><details><summary>Was kostet die Einrichtung?</summary><p>Das haengt vom Umfang ab - eine einfache Einrichtung ist etwas anderes als ein Umzug mit Backup-Konzept und laufender Betreuung. Wir nennen Euch einen Festpreis nach Aufwand, sobald wir wissen, was gebraucht wird.</p></details></div>
+  <div class="faq"><details><summary>Ich habe schon eine Synology, aber niemand hat sie richtig eingerichtet. Können Sie das übernehmen?</summary><p>Ja. Wir schauen uns die bestehende Einrichtung an, räumen auf, richten fehlende Sicherungen ein und dokumentieren, was wie eingestellt ist.</p></details><details><summary>Wie migrieren Sie eine alte Synology auf eine neue?</summary><p>Wir übertragen alle Daten, Freigaben, Benutzer und Einstellungen auf das neue Gerät und prüfen anschließend, dass alles vollständig übernommen wurde.</p></details><details><summary>Reicht Microsoft 365 als Backup nicht aus?</summary><p>Microsoft 365 schützt vor Ausfällen der Cloud-Infrastruktur, aber nicht vor versehentlichem Löschen oder einem gekündigten Konto. Eine zusätzliche Sicherung auf Ihrer eigenen NAS deckt genau diese Fälle ab.</p></details><details><summary>Woher weiß ich, dass mein Backup im Ernstfall wirklich funktioniert?</summary><p>Wir spielen nach der Einrichtung testweise Daten zurück. Erst wenn diese Wiederherstellung geklappt hat, gilt die Sicherung für uns als fertig eingerichtet.</p></details><details><summary>Können Sie sich auch dauerhaft um die NAS kümmern?</summary><p>Ja, das ist auf Wunsch möglich. Wir überwachen die NAS und melden uns, wenn eine Festplatte Probleme zeigt oder eine Sicherung nicht durchläuft.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Lasst Euer NAS einmal richtig einrichten</h2>
-  <p class="unterzeile">Meldet Euch, bevor der erste Datenverlust zeigt, ob das Backup wirklich funktioniert hat.</p>
+  <h2>Lassen Sie uns Ihre Daten sichern</h2>
+  <p class="unterzeile">Schreiben Sie uns, wir schauen uns Ihre Situation an und sagen Ihnen, was für Ihre Daten sinnvoll ist.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
@@ -265,7 +281,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
     </div>
     <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
     <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
-    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+    <p class="hinweis">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage.
       Es werden keine Daten auf dieser Seite gespeichert.</p>
   </form>
 </section>
