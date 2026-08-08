@@ -85,13 +85,13 @@
       "assets/e-mail-sicherheitscheck/zweitbild.png",
       "assets/e-mail-sicherheitscheck/hintergrund_bild.png"
     ],
-    "hero_titel": "Wer schreibt wirklich in Ihrem Namen?",
-    "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
+    "hero_titel": "Kann jemand Mails in Ihrem Namen verschicken?",
+    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:10:30",
-    "ueberarbeitet": "2026-08-08T12:46:26",
-    "aufbau": "problem_zuerst",
+    "ueberarbeitet": "2026-08-08T13:23:59",
+    "aufbau": "bild_oben",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Ein fester Check, der prüft, ob Ihre Mail-Adresse gegen Fälschung und Ihr Postfach gegen Missbrauch abgesichert ist."
+    "kurzbeschreibung": "Ein fester Check, ob Ihre Domain und Ihr Postfach gegen gefälschte Absender abgesichert sind."
   },
   "it-checkup-fuer-kleine-unternehmen": {
     "titel": "IT-Checkup für kleine Unternehmen",
