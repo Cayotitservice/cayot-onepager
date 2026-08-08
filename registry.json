@@ -21,14 +21,18 @@
     "thema": "Typische Faelle: PC startet nicht mehr; WLAN funktioniert nicht; der Drucker spinnt; ein neuer PC muss eingerichtet werden; Daten vom alten Rechner uebernehmen; NAS einrichten; Microsoft-Konto reparieren; Outlook funktioniert nicht; Backup einrichten. GANZ WICHTIG und muss klar auf der Seite stehen: Es wird mindestens eine halbe Stunde berechnet, danach nach tatsaechlichem Aufwand. Das gehoert offen kommuniziert, am besten in den Ablauf oder die FAQ - nicht verstecken. Wir kommen persoenlich vorbei oder helfen per Fernwartung, je nachdem was schneller geht. Zielgruppe sind ausdruecklich auch Privatleute und Einzelunternehmer, nicht nur Firmen.",
     "produkt": "Schnelle IT-Hilfe vor Ort und per Fernwartung in Bad Kreuznach und Umgebung.",
     "path": "lokaler-it-notdienst.html",
-    "assets": [],
-    "hero_titel": "Schnelle Hilfe, wenn der Rechner streikt",
-    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
+    "assets": [
+      "assets/lokaler-it-notdienst/hero_bild.png",
+      "assets/lokaler-it-notdienst/zweitbild.png",
+      "assets/lokaler-it-notdienst/hintergrund_bild.png"
+    ],
+    "hero_titel": "Schnelle IT-Hilfe direkt bei Ihnen",
+    "bildrichtung": "Strenges, sich wiederholendes Raster im Detail, Grau mit einem einzelnen grünen Akzent",
     "erstellt": "2026-08-07T23:00:34",
-    "ueberarbeitet": "2026-08-08T11:56:20",
-    "aufbau": "klassisch",
+    "ueberarbeitet": "2026-08-08T12:37:53",
+    "aufbau": "wechsel",
     "kategorie": "Soforthilfe",
-    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort in Bad Kreuznach oder per Fernwartung, bei PC-, WLAN-, Drucker- und Datenproblemen."
+    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung bei PC-, WLAN- und Drucker-Problemen in Bad Kreuznach."
   },
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
