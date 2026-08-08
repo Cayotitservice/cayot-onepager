@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Schützt Euren Namen im E-Mail-Verkehr | Cayot IT Service</title>
-<meta name="description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC, Microsoft 365 und Postfachregeln geprüft. Festpreis auf Anfrage, klarer Bericht für Betriebe ohne eigene IT." />
-<meta property="og:title" content="Schützt Euren Namen im E-Mail-Verkehr | Cayot IT Service" />
-<meta property="og:description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC, Microsoft 365 und Postfachregeln geprüft. Festpreis auf Anfrage, klarer Bericht für Betriebe ohne eigene IT." />
+<title>Wer schreibt wirklich in Ihrem Namen? | Cayot IT Service</title>
+<meta name="description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC, Microsoft 365 und Postfach im Test. Festpreis auf Anfrage. Klarer Bericht, konkrete Empfehlungen." />
+<meta property="og:title" content="Wer schreibt wirklich in Ihrem Namen? | Cayot IT Service" />
+<meta property="og:description" content="E-Mail-Sicherheitscheck: SPF, DKIM, DMARC, Microsoft 365 und Postfach im Test. Festpreis auf Anfrage. Klarer Bericht, konkrete Empfehlungen." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/e-mail-sicherheitscheck/hero_bild.png" />
 <link rel="icon" type="image/png" href="assets/marke/favicon.png" />
@@ -19,7 +19,12 @@ body{margin:0;background:linear-gradient(180deg,rgba(5,7,12,.90) 0%,rgba(5,7,12,
 img{max-width:100%;display:block}
 a{color:#29a8ff;text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+/* Ueberschriften brechen an sinnvollen Stellen um (Chef 08.08.2026: "er trennt die
+   Ueberschrift an den falschen Stellen"). `balance` verteilt die Zeilen gleichmaessig, statt
+   ein einzelnes Wort in die zweite Zeile zu haengen; `hyphens:manual` verbietet dem Browser,
+   deutsche Woerter selbst zu trennen - das trifft er bei Fachbegriffen regelmaessig daneben. */
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em;text-wrap:balance;hyphens:manual;
+ overflow-wrap:break-word}
 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}
 h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .unterzeile{color:#a2abbd;font-size:clamp(1.05rem,2vw,1.25rem);max-width:60ch}
@@ -64,6 +69,18 @@ h2{font-size:clamp(1.5rem,3.2vw,2.2rem);letter-spacing:-.01em}
 .karte h3{font-size:1.15rem;color:#29a8ff}
 .karte p{margin:0;color:#a2abbd}
 .block.problem .karte h3{color:#f0b429}
+
+/* Zwei weitere KACHEL-ARTEN (Chef 08.08.2026: "der Aufbau an sich und die Art der Kacheln"
+   sind noch zu gleich). Dieselbe Farbwelt, deutlich andere Anmutung: */
+/* flach - kein Kasten, nur eine feine Trennlinie oben. Wirkt luftig, fast wie Zeitungsspalten */
+.raster.flach .karte{background:none;border:none;border-top:2px solid #29a8ff;
+ border-radius:0;padding:1.25rem 0 0}
+.block.problem .raster.flach .karte{border-top-color:#f0b429}
+/* gross - breite Kacheln mit viel Luft, hoechstens zwei nebeneinander */
+.raster.gross{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.raster.gross .karte{padding:2.25rem 2rem;border-radius:20px;
+ background:linear-gradient(160deg,#0d121f,#101625)}
+.raster.gross .karte h3{font-size:1.35rem;margin-bottom:.6rem}
 
 .ablauf{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
 .ablauf li{display:flex;gap:1.25rem;align-items:flex-start;background:#0d121f;
@@ -201,51 +218,50 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 </header>
 <main>
 
-<section class="hero gross">
+<section class="hero">
   <div class="hero-text">
-    <h1>Schützt Euren Namen im E-Mail-Verkehr</h1>
-    <p class="unterzeile">Ein fester Check zeigt, ob jemand Fremdes Mails in Eurem Namen verschicken kann und ob Euer Postfach sauber eingestellt ist. Ihr bekommt einen klaren Bericht statt Fachbegriffe ohne Erklärung.</p>
-    <ul class="fuer-wen"><li>Privatleute mit eigenem Mail-Postfach, die wissen wollen, ob es sicher eingerichtet ist</li><li>Handwerksbetriebe, die per Mail Rechnungen und Angebote verschicken</li><li>Firmen ohne eigene IT-Abteilung, die Microsoft 365 nutzen</li><li>Einzelunternehmer und Selbstständige, deren Mail-Adresse ihr Aushängeschild ist</li></ul>
+    <h1>Wer schreibt wirklich in Ihrem Namen?</h1>
+    <p class="unterzeile">Wir prüfen, ob Ihre Domain und Ihr Postfach gegen gefälschte Absender abgesichert sind - mit einem klaren Bericht statt vager Vermutungen.</p>
+    <ul class="fuer-wen"><li>Einzelunternehmer und Selbständige mit eigener Firmen-Mailadresse</li><li>Handwerksbetriebe, die Rechnungen und Angebote per Mail verschicken</li><li>Kleine Firmen ohne eigene IT-Abteilung</li><li>Firmen, deren Postfach schon einmal betroffen war</li></ul>
     <div class="knopfreihe">
       <a class="knopf haupt" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
         Jetzt per WhatsApp anfragen</a>
       <a class="knopf" href="tel:+4917620740729">Anrufen</a>
       <a class="knopf leer" href="#anfrage">Rückruf anfordern</a>
     </div></div>
+  <div class="hero-bild"><img src="assets/e-mail-sicherheitscheck/hero_bild.png" alt="E-Mail-Sicherheitscheck" /></div>
 </section>
 
-<section class="block">
-  <h2>Was Ihr davon habt</h2>
-  <ul class="zahlen"><li><span class="zahl">01</span><h3>Klarer Befund</h3><p>Ihr wisst schwarz auf weiß, ob jemand in Eurem Namen Mails verschicken kann.</p></li><li><span class="zahl">02</span><h3>Festpreis</h3><p>Ein abgeschlossenes Produkt zum Festpreis auf Anfrage, keine Abrechnung nach Stunden.</p></li><li><span class="zahl">03</span><h3>Zwei Wege</h3><p>Schutz mit Trend Micro oder Schulung - Ihr entscheidet, was zu Eurem Betrieb passt.</p></li><li><span class="zahl">04</span><h3>Schnell erledigt</h3><p>Die Prüfung läuft ohne Betriebsunterbrechung, Euer Postfach bleibt während des Checks nutzbar.</p></li></ul>
+<section class="aussage"><p>Wir prüfen, ob Ihre Domain und Ihr Postfach gegen gefälschte Absender abgesichert sind - mit einem klaren Bericht statt vager Vermutungen.</p></section>
+
+<section class="block wechsel problem">
+  <h2>Das Einfallstor, das niemand sieht</h2>
+  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Gefälschte Rechnungen</h3><p>Betrüger schicken Mails, die aussehen, als kämen sie von Ihnen - oft mit geänderter Bankverbindung. Ihre Kunden merken davon nichts, bis das Geld auf einem fremden Konto liegt.</p></div><div class="wechsel-bild"><img src="assets/e-mail-sicherheitscheck/zweitbild.png" alt="E-Mail-Sicherheitscheck" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Ungeschützte Domain</h3><p>Ohne SPF, DKIM und DMARC kann fast jeder Mails verschicken, die wie von Ihrer Adresse wirken. Die meisten Firmen wissen gar nicht, ob diese Einträge bei ihnen überhaupt gesetzt sind.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Spuren nach einem Hack</h3><p>Nach einem gehackten Postfach bleiben oft unauffällige Weiterleitungen oder Regeln zurück, die Mails heimlich weiterleiten. Im Alltag fällt das kaum auf - bis es zu spät ist.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
 </section>
 
-<section class="bildband">
-  <img src="assets/e-mail-sicherheitscheck/hero_bild.png" alt="E-Mail-Sicherheitscheck" />
-</section>
-
-<section class="block problem">
-  <h2>Wenn die eigene Mail-Adresse zur Waffe wird</h2>
-  <div class="raster"><article class="karte"><h3>Gefälschte Rechnungen</h3><p>Ohne die richtigen DNS-Einträge kann jeder eine Mail so aussehen lassen, als käme sie von Eurer Adresse - mit geänderter Bankverbindung an Kunden oder die Buchhaltung. Der Schaden trifft Euren Namen, auch wenn Ihr nichts falsch gemacht habt.</p></article><article class="karte"><h3>Postfachregeln, die niemand sieht</h3><p>Nach einem gehackten Konto legen Angreifer oft unauffällige Regeln an, die Mails weiterleiten oder löschen, bevor Ihr sie lesen könnt. Das bleibt oft monatelang unentdeckt.</p></article><article class="karte"><h3>Unklare Konfiguration</h3><p>Viele Microsoft-365-Postfächer laufen mit Standardeinstellungen, die nie geprüft wurden. Niemand weiß, ob Weiterleitungen aktiv sind oder die Mehr-Faktor-Anmeldung wirklich greift.</p></article></div>
-</section>
-
-<section class="block wechsel ">
-  <h2>Ein fester Check, klare Ergebnisse</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>SPF, DKIM, DMARC im Blick</h3><p>Wir prüfen die DNS-Einträge, die festlegen, wer in Eurem Namen Mails verschicken darf, und ob eingehende Fälschungen erkannt und abgewiesen werden.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Microsoft 365 durchleuchtet</h3><p>Wir schauen uns die Konfiguration Eures Postfachs an: Mehr-Faktor-Anmeldung, Weiterleitungen und verdächtige Regeln, die nach einem Konto-Diebstahl oft übersehen werden.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Ein Bericht statt Fachbegriffe</h3><p>Am Ende steht ein verständlicher Bericht, was in Ordnung ist, was fehlt und was als Nächstes sinnvoll ist - ohne Rätselraten.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Zwei Wege zur Umsetzung</h3><p>Danach entscheidet Ihr: Schutz über Trend Micro mit Lizenzen und Wartungsvertrag, oder eine Schulung, damit Ihr die Einstellungen selbst pflegt.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+<section class="block ">
+  <h2>Der E-Mail-Sicherheitscheck</h2>
+  <div class="raster flach"><article class="karte"><h3>DNS-Einträge im Detail</h3><p>Wir prüfen SPF, DKIM und DMARC für Ihre Domain und zeigen, ob und wie Ihre Adresse gegen Fälschung abgesichert ist.</p></article><article class="karte"><h3>Microsoft 365 und Anmeldung</h3><p>Wir kontrollieren Ihre Microsoft-365-Konfiguration und ob die Mehr-Faktor-Anmeldung aktiv und richtig eingerichtet ist.</p></article><article class="karte"><h3>Weiterleitungen und Postfachregeln</h3><p>Wir suchen gezielt nach verdächtigen Weiterleitungen und Regeln - ein klassisches Zeichen für ein bereits kompromittiertes Konto.</p></article><article class="karte"><h3>Schriftlicher Bericht</h3><p>Sie erhalten eine klare Liste: was in Ordnung ist, was fehlt und was Sie als nächstes tun sollten.</p></article></div>
 </section>
 
 <section class="block">
   <h2>So läuft es ab</h2>
-  <ol class="stufen"><li><span class="nr">1</span><h3>Anfrage</h3><p>Ihr schickt uns Eure Domain und den Zugang zu Microsoft 365 - Festpreis auf Anfrage.</p></li><li><span class="nr">2</span><h3>Prüfung</h3><p>Wir kontrollieren DNS-Einträge, Postfach-Konfiguration, Mehr-Faktor-Anmeldung, Weiterleitungen und Regeln.</p></li><li><span class="nr">3</span><h3>Bericht</h3><p>Ihr bekommt einen klaren Bericht mit Befund und Empfehlung, ohne Fachbegriffe ohne Erklärung.</p></li><li><span class="nr">4</span><h3>Umsetzung</h3><p>Auf Wunsch richten wir Trend Micro mit Lizenzen und Wartungsvertrag ein oder schulen Euer Team im eigenen Umgang mit den Einstellungen.</p></li></ol>
+  <ol class="stufen"><li><span class="nr">1</span><h3>Anfrage stellen</h3><p>Sie schildern uns kurz Ihre Mail-Umgebung, zum Beispiel Microsoft 365 oder einen anderen Anbieter.</p></li><li><span class="nr">2</span><h3>Prüfung</h3><p>Wir kontrollieren DNS-Einträge, Konfiguration, Anmeldung, Weiterleitungen und Postfachregeln.</p></li><li><span class="nr">3</span><h3>Bericht</h3><p>Sie bekommen die Ergebnisse verständlich zusammengefasst, mit konkreten Empfehlungen.</p></li><li><span class="nr">4</span><h3>Umsetzung nach Wahl</h3><p>Wir richten die Schutzmaßnahmen mit Trend Micro inklusive Lizenzen und Wartungsvertrag ein - oder schulen Sie, damit Sie es selbst verwalten.</p></li></ol>
+</section>
+
+<section class="block ">
+  <h2>Ihr Nutzen</h2>
+  <ul class="kompakt"><li><h3>Klare Bestandsaufnahme</h3><p>Sie wissen genau, wo Ihre Mail-Sicherheit steht - schwarz auf weiß.</p></li><li><h3>Festes Produkt, fester Rahmen</h3><p>Kein offenes Beratungshonorar nach Stunden - ein abgeschlossener Check zum Festpreis auf Anfrage.</p></li><li><h3>Zwei Wege zur Umsetzung</h3><p>Fertige Lösung mit Trend Micro oder Schulung für die eigene Verwaltung - Sie entscheiden.</p></li><li><h3>Schutz vor Betrug im eigenen Namen</h3><p>Gefälschte Rechnungen und Mails mit falscher Bankverbindung werden deutlich schwerer.</p></li></ul>
 </section>
 
 <section class="block">
   <h2>Häufige Fragen</h2>
-  <div class="faq"><details><summary>Was passiert, wenn SPF, DKIM oder DMARC fehlen?</summary><p>Dann kann grundsätzlich jeder Mails verschicken, die aussehen, als kämen sie von Eurer Adresse - zum Beispiel an Kunden mit einer geänderten Bankverbindung. Der Check zeigt, ob und wie gut Ihr dagegen abgesichert seid.</p></details><details><summary>Reicht der Check oder brauchen wir danach noch etwas?</summary><p>Der Check selbst ist ein abgeschlossenes Produkt und zeigt Euch den Ist-Zustand. Für die Umsetzung bieten wir Trend Micro als Schutzlösung oder eine Schulung an - beides ist freiwillig.</p></details><details><summary>Wir nutzen Microsoft 365 - reicht das nicht als Schutz?</summary><p>Microsoft 365 bringt viele Sicherheitsfunktionen mit, die aber oft nicht aktiviert oder falsch eingestellt sind. Genau das prüfen wir.</p></details><details><summary>Woher wisst Ihr, ob unser Konto schon gehackt wurde?</summary><p>Ein Klassiker nach einem Konto-Diebstahl sind unauffällige Postfachregeln, die Mails weiterleiten oder löschen. Wir suchen gezielt danach.</p></details><details><summary>Was kostet der Check?</summary><p>Der E-Mail-Sicherheitscheck ist ein Festpreis auf Anfrage - kein Stundensatz, keine versteckten Kosten.</p></details></div>
+  <div class="faq"><details><summary>Was ist SPF, DKIM und DMARC eigentlich?</summary><p>Das sind drei technische Einträge in Ihrer Domain, die festlegen, welche Server im Namen Ihrer Adresse Mails verschicken dürfen. Fehlen sie, kann praktisch jeder Mails verschicken, die wie von Ihnen aussehen.</p></details><details><summary>Wir nutzen Microsoft 365 - reicht das nicht als Schutz?</summary><p>Microsoft 365 bringt viele Schutzfunktionen mit, sie sind aber oft nicht vollständig eingerichtet. Genau das prüfen wir - inklusive Mehr-Faktor-Anmeldung und Postfachregeln.</p></details><details><summary>Was passiert, wenn Sie etwas Verdächtiges finden?</summary><p>Wir nennen es Ihnen sofort und klar im Bericht, zum Beispiel eine unbekannte Weiterleitung. Die Umsetzung der Lösung ist ein eigener Schritt, den Sie danach beauftragen können.</p></details><details><summary>Was kostet der Check?</summary><p>Der E-Mail-Sicherheitscheck ist ein Festpreis auf Anfrage - kein offenes Stundenhonorar. Sie erfahren den Preis, bevor wir starten.</p></details><details><summary>Müssen wir danach etwas kaufen?</summary><p>Nein. Sie bekommen den Bericht und entscheiden selbst, ob und wie Sie die Empfehlungen umsetzen - mit unserer Hilfe über Trend Micro oder in einer Schulung für sich selbst.</p></details></div>
 </section>
 
 <section class="block anfrage" id="anfrage">
-  <h2>Jetzt E-Mail-Sicherheitscheck anfragen</h2>
-  <p class="unterzeile">Je länger eine Lücke unentdeckt bleibt, desto größer das Risiko für Euren Namen und Eure Kunden.</p>
+  <h2>Lassen Sie Ihre Mail-Sicherheit prüfen</h2>
+  <p class="unterzeile">Fragen Sie den E-Mail-Sicherheitscheck jetzt an - Festpreis auf Anfrage, klarer Bericht in kurzer Zeit.</p>
 
   <div class="wege">
     <a class="weg whatsapp" href="https://api.whatsapp.com/send?phone=4917620740729" target="_blank" rel="noopener">
@@ -265,7 +281,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
     </div>
     <label>Worum geht es?<textarea name="nachricht" rows="4"></textarea></label>
     <button type="submit" class="knopf haupt breit">Anfrage absenden</button>
-    <p class="hinweis">Beim Absenden öffnet sich Euer E-Mail-Programm mit der fertigen Anfrage.
+    <p class="hinweis">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der fertigen Anfrage.
       Es werden keine Daten auf dieser Seite gespeichert.</p>
   </form>
 </section>
