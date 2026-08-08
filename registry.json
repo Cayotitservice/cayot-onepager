@@ -62,7 +62,7 @@
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: ruhig und gruendlich. Daten sind das, was man nicht nachkaufen kann.",
-    "thema": "Typische Auftraege: neue Synology einrichten; alte Synology auf eine neue migrieren; PCs automatisch sichern; Microsoft 365 auf die Synology sichern (Mails, OneDrive, SharePoint); Fotos und Dokumente zentral speichern statt auf zehn Rechnern; das NAS sicher von aussen erreichbar machen; ein Backup-Konzept erstellen, das auch einen Ausfall ueberlebt. Eingerichtet werden ausserdem DHCP, DNS, Docker, VPN und weiteres. Wichtig: Im Anschluss ist laufende Wartung und Ueberwachung moeglich - also nicht nur aufbauen und weg sein, sondern dranbleiben und melden, wenn eine Platte stirbt oder eine Sicherung nicht durchlaeuft. Kernbotschaft: Ein Backup, das noch nie zurueckgespielt wurde, ist kein Backup.",
+    "thema": "Typische Auftraege: neue Synology einrichten; alte Synology auf eine neue migrieren; PCs automatisch sichern; Microsoft 365 auf die Synology sichern (Mails, OneDrive, SharePoint); Fotos und Dokumente zentral speichern statt auf zehn Rechnern; das NAS sicher von aussen erreichbar machen; ein Backup-Konzept erstellen, das auch einen Ausfall ueberlebt. Eingerichtet werden ausserdem DHCP, DNS, Docker, VPN und weiteres. Wichtig: Im Anschluss ist laufende Wartung und Ueberwachung moeglich - also nicht nur aufbauen und weg sein, sondern dranbleiben und melden, wenn eine Platte stirbt oder eine Sicherung nicht durchlaeuft. Kernbotschaft: Ein Backup, das noch nie zurueckgespielt wurde, ist kein Backup.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: WICHTIG: Nicht so stark auf Backup stuerzen. Die Sicherung ist nur EINE von vielen Sachen, die ein NAS kann. Gleichrangig behandeln: zentrale Dateiablage statt Daten auf zehn Rechnern, Fotos und Dokumente an einem Ort, Zugriff von unterwegs, Rechte je Mitarbeiter, DHCP/DNS/Docker/VPN, Ueberwachung. Backup ist ein Punkt davon, nicht das Thema der Seite. Die Zielgruppen konkret auf NAS-Situationen zuschneiden.",
     "produkt": "Synology-NAS einrichten, umziehen und richtig absichern - damit die Daten zentral liegen und wirklich gesichert sind.",
     "path": "nas-und-backup-service.html",
     "assets": [
@@ -70,13 +70,15 @@
       "assets/nas-und-backup-service/zweitbild.png",
       "assets/nas-und-backup-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Ein NAS, das Ihre Daten wirklich sichert",
-    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
+    "hero_titel": "Alle Daten an einem Ort - sicher erreichbar",
+    "bildrichtung": "Strenges, sich wiederholendes Raster im Detail, Grau mit einem einzelnen grünen Akzent",
     "erstellt": "2026-08-07T23:07:52",
-    "ueberarbeitet": "2026-08-08T13:21:17",
-    "aufbau": "klassisch",
+    "ueberarbeitet": "2026-08-08T15:16:36",
+    "aufbau": "bild_oben",
     "kategorie": "Netzwerk & Daten",
-    "kurzbeschreibung": "Ihr NAS wird eingerichtet, sicher abgesichert und die Sicherung laufend überwacht - damit Ihre Daten wirklich geschützt sind."
+    "kurzbeschreibung": "Ihr Synology-NAS eingerichtet, umgezogen und laufend betreut - für zentrale Dateien, Zugriff von unterwegs und funktionierende Sicherung.",
+    "ablauf_art": "winkel",
+    "fuer_wen_art": "chips"
   },
   "e-mail-sicherheitscheck": {
     "titel": "E-Mail-Sicherheitscheck",
