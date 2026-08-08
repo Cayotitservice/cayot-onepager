@@ -106,7 +106,7 @@
   "it-checkup-fuer-kleine-unternehmen": {
     "titel": "IT-Checkup für kleine Unternehmen",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: Klarheit statt Angst. Endlich mal eine ehrliche Bestandsaufnahme.",
-    "thema": "Fuer Unternehmen bis etwa 15 Mitarbeiter. Wir nehmen uns typischerweise drei bis fuenf Stunden und schauen uns an: Internetanschluss und Firewall, die PCs, Updates, Virenschutz, Backup, Microsoft 365, Passwoerter und Mehr-Faktor-Anmeldung, Datenschutz-Risiken, das NAS, das WLAN, Benutzerrechte und die Notfallvorsorge. Das Ergebnis ist das eigentliche Produkt: die 20 wichtigsten Massnahmen, sortiert nach Dringlichkeit, jeweils mit einem realistischen Kostenrahmen. Dazu ausgearbeitete Dokumente und ein Vorschlag, in welcher Reihenfolge man vorgeht. KEINE Preise nennen, nur 'Festpreis auf Anfrage'. Der Kunde soll danach zum ersten Mal wissen, was er hat und was es kostet, das in Ordnung zu bringen - und er kann selbst entscheiden, wer es umsetzt.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Nenn die Sete einfach nur *IT-Checkup* es soll auch für Privatpersonen interessant werden.",
+    "thema": "Fuer Unternehmen bis etwa 15 Mitarbeiter. Wir nehmen uns typischerweise drei bis fuenf Stunden und schauen uns an: Internetanschluss und Firewall, die PCs, Updates, Virenschutz, Backup, Microsoft 365, Passwoerter und Mehr-Faktor-Anmeldung, Datenschutz-Risiken, das NAS, das WLAN, Benutzerrechte und die Notfallvorsorge. Das Ergebnis ist das eigentliche Produkt: die 20 wichtigsten Massnahmen, sortiert nach Dringlichkeit, jeweils mit einem realistischen Kostenrahmen. Dazu ausgearbeitete Dokumente und ein Vorschlag, in welcher Reihenfolge man vorgeht. KEINE Preise nennen, nur 'Festpreis auf Anfrage'. Der Kunde soll danach zum ersten Mal wissen, was er hat und was es kostet, das in Ordnung zu bringen - und er kann selbst entscheiden, wer es umsetzt.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Nenn die Sete einfach nur *IT-Checkup* es soll auch für Privatpersonen interessant werden.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Ueberarbeiten: konkreter machen, Zielgruppen auf echte Situationen zuschneiden.",
     "produkt": "Einmal komplett draufschauen: Wo steht Eure IT wirklich - und was ist wirklich dringend?",
     "path": "it-checkup-fuer-kleine-unternehmen.html",
     "assets": [
@@ -114,13 +114,15 @@
       "assets/it-checkup-fuer-kleine-unternehmen/zweitbild.png",
       "assets/it-checkup-fuer-kleine-unternehmen/hintergrund_bild.png"
     ],
-    "hero_titel": "Endlich wissen, wo Ihre IT wirklich steht",
-    "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
+    "hero_titel": "Klarheit über Ihre IT - in einem Termin",
+    "bildrichtung": "Glas und Spiegelungen, klare Linien, helles Blaugrau, viel Tageslicht",
     "erstellt": "2026-08-07T23:13:46",
-    "ueberarbeitet": "2026-08-08T13:26:44",
-    "aufbau": "problem_zuerst",
+    "ueberarbeitet": "2026-08-08T15:30:48",
+    "aufbau": "ruhig",
     "kategorie": "Beratung & Dokumente",
-    "kurzbeschreibung": "Einmalige Bestandsaufnahme Ihrer IT mit den 20 wichtigsten Maßnahmen, sortiert nach Dringlichkeit und mit Kostenrahmen."
+    "kurzbeschreibung": "Ein Termin, eine ehrliche Bestandsaufnahme Ihrer IT - mit priorisierter Maßnahmenliste und Kostenrahmen.",
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "zeilen"
   },
   "eure-it-abteilung": {
     "titel": "Ihre IT-Abteilung",
