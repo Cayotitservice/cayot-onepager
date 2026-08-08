@@ -159,11 +159,12 @@
       "assets/it-dokumente/zweitbild.png",
       "assets/it-dokumente/hintergrund_bild.png"
     ],
-    "hero_titel": "IT-Dokumente, die Ihr im Ernstfall wirklich vorzeigen koennt",
-    "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
+    "hero_titel": "Dokumente, die im Ernstfall tragen",
+    "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
     "erstellt": "2026-08-07T23:21:58",
-    "ueberarbeitet": "2026-08-08T10:52:31",
-    "aufbau": "wechsel",
-    "kategorie": "Beratung & Dokumente"
+    "ueberarbeitet": "2026-08-08T12:54:11",
+    "aufbau": "ruhig",
+    "kategorie": "Beratung & Dokumente",
+    "kurzbeschreibung": "Individuell erstellte IT-Dokumente wie Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checkliste - passend zu Ihrem Betrieb."
   }
 }
