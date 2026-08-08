@@ -97,13 +97,18 @@
     "thema": "Fuer Unternehmen bis etwa 15 Mitarbeiter. Wir nehmen uns typischerweise drei bis fuenf Stunden und schauen uns an: Internetanschluss und Firewall, die PCs, Updates, Virenschutz, Backup, Microsoft 365, Passwoerter und Mehr-Faktor-Anmeldung, Datenschutz-Risiken, das NAS, das WLAN, Benutzerrechte und die Notfallvorsorge. Das Ergebnis ist das eigentliche Produkt: die 20 wichtigsten Massnahmen, sortiert nach Dringlichkeit, jeweils mit einem realistischen Kostenrahmen. Dazu ausgearbeitete Dokumente und ein Vorschlag, in welcher Reihenfolge man vorgeht. KEINE Preise nennen, nur 'Festpreis auf Anfrage'. Der Kunde soll danach zum ersten Mal wissen, was er hat und was es kostet, das in Ordnung zu bringen - und er kann selbst entscheiden, wer es umsetzt.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Nenn die Sete einfach nur *IT-Checkup* es soll auch für Privatpersonen interessant werden.",
     "produkt": "Einmal komplett draufschauen: Wo steht Eure IT wirklich - und was ist wirklich dringend?",
     "path": "it-checkup-fuer-kleine-unternehmen.html",
-    "assets": [],
-    "hero_titel": "Endlich wissen, wo Eure IT wirklich steht",
-    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
+    "assets": [
+      "assets/it-checkup-fuer-kleine-unternehmen/hero_bild.png",
+      "assets/it-checkup-fuer-kleine-unternehmen/zweitbild.png",
+      "assets/it-checkup-fuer-kleine-unternehmen/hintergrund_bild.png"
+    ],
+    "hero_titel": "Endlich wissen, wo Ihre IT wirklich steht",
+    "bildrichtung": "Glas und Spiegelungen, klare Linien, helles Blaugrau, viel Tageslicht",
     "erstellt": "2026-08-07T23:13:46",
-    "ueberarbeitet": "2026-08-08T11:44:50",
-    "aufbau": "problem_zuerst",
-    "kategorie": "Beratung & Dokumente"
+    "ueberarbeitet": "2026-08-08T12:49:03",
+    "aufbau": "ruhig",
+    "kategorie": "Beratung & Dokumente",
+    "kurzbeschreibung": "Ein ehrlicher Blick auf Ihre gesamte IT - mit klarer Liste, was dringend ist und was es kostet."
   },
   "eure-it-abteilung": {
     "titel": "Eure IT-Abteilung",
