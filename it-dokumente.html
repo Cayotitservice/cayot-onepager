@@ -246,6 +246,9 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
   .wechsel-deko{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wechsel-reihe.voll{grid-template-columns:1fr}
+.wechsel-reihe.voll .wechsel-text p{max-width:70ch}
 </style>
 </head>
 <body>
@@ -280,7 +283,7 @@ input:focus,textarea:focus{outline:2px solid #29a8ff;outline-offset:1px}
 
 <section class="block wechsel problem">
   <h2>Wenn im Ernstfall niemand ein Dokument findet</h2>
-  <div class="wechsel-reihe links"><div class="wechsel-text"><h3>Wissen nur im Kopf einer Person</h3><p>Nur eine Person weiß, wie das Netzwerk aufgebaut ist, wer welche Zugänge hat und was bei einem Ausfall zu tun ist. Fällt sie aus oder verlässt sie den Betrieb, steht alles still.</p></div><div class="wechsel-bild"><img src="assets/it-dokumente/zweitbild.png" alt="IT-Dokumente" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Vorlage von der Stange</h3><p>Im Internet gefundene Muster tragen noch den Namen einer fremden Firma oder passen nicht zur eigenen IT. Bei einer Prüfung fällt das sofort auf.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div><div class="wechsel-reihe links"><div class="wechsel-text"><h3>Kein Nachweis im Schadensfall</h3><p>Nach einem Sicherheitsvorfall oder bei einer Versicherungsprüfung fehlt ein Dokument, das zeigt, welche Vorkehrungen tatsächlich getroffen wurden. Das kann teuer werden.</p></div><div class="wechsel-deko" aria-hidden="true"></div></div>
+  <div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Wissen nur im Kopf einer Person</h3><p>Nur eine Person weiß, wie das Netzwerk aufgebaut ist, wer welche Zugänge hat und was bei einem Ausfall zu tun ist. Fällt sie aus oder verlässt sie den Betrieb, steht alles still.</p></div><div class="wechsel-bild"><img src="assets/it-dokumente/zweitbild.png" alt="IT-Dokumente" /></div></div><div class="wechsel-reihe rechts"><div class="wechsel-text"><h3>Vorlage von der Stange</h3><p>Im Internet gefundene Muster tragen noch den Namen einer fremden Firma oder passen nicht zur eigenen IT. Bei einer Prüfung fällt das sofort auf.</p></div></div><div class="wechsel-reihe voll"><div class="wechsel-text"><h3>Kein Nachweis im Schadensfall</h3><p>Nach einem Sicherheitsvorfall oder bei einer Versicherungsprüfung fehlt ein Dokument, das zeigt, welche Vorkehrungen tatsächlich getroffen wurden. Das kann teuer werden.</p></div></div>
 </section>
 
 <section class="block ">
