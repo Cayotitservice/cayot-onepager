@@ -1121,7 +1121,7 @@
   "it-dokumente": {
     "titel": "IT-Dokumente",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: handwerklich sauber. Papier, das im Ernstfall traegt.",
-    "thema": "Ihr braucht ein Administrationskonzept? Eine Security-Roadmap? Eine Risikobewertung fuer ein Projekt? Oder einfach nur ordentliche Onboarding-Checklisten fuer neue Mitarbeiter? Wir stellen alles bereit, angepasst an Eure Wuensche und Euren Betrieb - keine Vorlage von der Stange, in der noch der Name einer anderen Firma steht. WICHTIG, muss klar auf der Seite stehen (eigener Abschnitt oder FAQ): Das ist KEINE Rechtsberatung, sondern reine Erstellung nach Best Practice. Eine anwaltliche Pruefung der kundenspezifischen Anforderungen empfehlen wir ausdruecklich im Vorfeld. KEINE Preise nennen. Nutzen: Dokumente, die man im Ernstfall - Audit, Versicherung, Ausfall, Mitarbeiterwechsel - wirklich vorzeigen und benutzen kann.",
+    "thema": "Ihr braucht ein Administrationskonzept? Eine Security-Roadmap? Eine Risikobewertung fuer ein Projekt? Oder einfach nur ordentliche Onboarding-Checklisten fuer neue Mitarbeiter? Wir stellen alles bereit, angepasst an Eure Wuensche und Euren Betrieb - keine Vorlage von der Stange, in der noch der Name einer anderen Firma steht. WICHTIG, muss klar auf der Seite stehen (eigener Abschnitt oder FAQ): Das ist KEINE Rechtsberatung, sondern reine Erstellung nach Best Practice. Eine anwaltliche Pruefung der kundenspezifischen Anforderungen empfehlen wir ausdruecklich im Vorfeld. KEINE Preise nennen. Nutzen: Dokumente, die man im Ernstfall - Audit, Versicherung, Ausfall, Mitarbeiterwechsel - wirklich vorzeigen und benutzen kann.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Administrationskonzept, Security-Roadmap, Risikobewertung, Onboarding-Checklisten - auf Euren Betrieb zugeschnitten.",
     "path": "it-dokumente.html",
     "assets": [
@@ -1129,15 +1129,134 @@
       "assets/it-dokumente/zweitbild.png",
       "assets/it-dokumente/hintergrund_bild.png"
     ],
-    "hero_titel": "Dokumente, auf die Sie sich verlassen können",
-    "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
+    "hero_titel": "IT-Unterlagen, die im Ernstfall Bestand haben",
+    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:21:58",
-    "ueberarbeitet": "2026-08-08T15:35:55",
-    "aufbau": "problem_zuerst",
+    "ueberarbeitet": "2026-08-10T00:44:23",
+    "aufbau": "bild_oben",
     "kategorie": "Beratung & Dokumente",
-    "kurzbeschreibung": "Individuell erstellte IT-Dokumente - Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten für Ihren Betrieb.",
-    "ablauf_art": "winkel",
-    "fuer_wen_art": "trennstrich"
+    "kurzbeschreibung": "Individuell erstellte IT-Dokumente wie Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checkliste, passend zu Ihrem Betrieb.",
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "karten",
+    "inhalt": {
+      "kategorie": "Beratung & Dokumente",
+      "hero_titel": "IT-Unterlagen, die im Ernstfall Bestand haben",
+      "hero_unterzeile": "Administrationskonzept, Security-Roadmap, Risikobewertung oder Onboarding-Checkliste - erstellt nach Ihrer tatsächlichen Struktur, nicht nach einer fremden Vorlage. So haben Sie im Audit, bei der Versicherung oder beim Mitarbeiterwechsel etwas Vorzeigbares in der Hand.",
+      "fuer_wen": [
+        "Handwerksbetriebe, die für ein Audit oder eine Versicherung eine schriftliche Grundlage brauchen",
+        "Einzelunternehmer und Selbständige, die eine klare Struktur für Zugänge und Rollen dokumentieren wollen",
+        "Firmen ohne eigene IT-Abteilung, die eine Security-Roadmap für einen Kunden oder Fördergeber vorlegen müssen",
+        "Betriebe mit Mitarbeiterwechsel, die eine geordnete Onboarding-Checkliste statt loser Zettel brauchen"
+      ],
+      "problem_ueberschrift": "Wenn die Unterlagen fehlen",
+      "problem": [
+        {
+          "titel": "Vorlage aus dem Internet",
+          "text": "Eine heruntergeladene Vorlage klingt zunächst passend, steht aber noch mit fremdem Firmennamen im Kopf da. Die Struktur passt selten zu den eigenen Systemen und Rollen, und im Ernstfall fällt das genau dann auf, wenn es zählt."
+        },
+        {
+          "titel": "Kein Nachweis im Ernstfall",
+          "text": "Ein Prüfer, eine Versicherung oder ein Kunde fragt nach der IT-Struktur oder dem Sicherheitskonzept - und es gibt nichts Schriftliches vorzuzeigen. Mündliche Erklärungen reichen dann oft nicht aus."
+        },
+        {
+          "titel": "Wissen nur im Kopf eines Mitarbeiters",
+          "text": "Wer Zugänge verwaltet und was bei einem neuen Mitarbeiter einzurichten ist, weiß häufig nur eine Person. Fällt sie aus oder verlässt den Betrieb, fehlt die Übersicht - genau dann, wenn sie gebraucht wird."
+        }
+      ],
+      "loesung_ueberschrift": "Was wir für Sie erstellen",
+      "loesung": [
+        {
+          "titel": "Administrationskonzept",
+          "text": "Wir dokumentieren, welche Systeme, Konten und Berechtigungen in Ihrem Betrieb existieren und wer worauf Zugriff hat. Das Ergebnis ist eine schriftliche Übersicht, die auch jemand anderes als der bisherige Ansprechpartner lesen und nutzen kann.",
+          "bild": "Zwei Hände über einem ausgedruckten Organigramm mit handschriftlichen Markierungen, warmes Licht auf dem Papier, Stift liegt daneben"
+        },
+        {
+          "titel": "Security-Roadmap",
+          "text": "Wir nehmen den aktuellen Stand Ihrer IT auf und legen fest, welche Sicherheitsmaßnahmen zuerst sinnvoll sind und welche später folgen können. Sie erhalten einen zeitlich geordneten Plan statt einer losen Liste von Vorschlägen.",
+          "bild": "Ein bedrucktes Blatt mit Zeitleiste und farbigen Markierungen auf einem Besprechungstisch, eine Hand zeigt mit einem Stift auf einen Abschnitt"
+        },
+        {
+          "titel": "Risikobewertung",
+          "text": "Für ein Projekt oder ein neues System listen wir die relevanten Risiken auf, bewerten sie nachvollziehbar und schlagen begründete Maßnahmen vor. Das Dokument lässt sich bei Nachfragen direkt vorlegen.",
+          "bild": "Nahaufnahme einer Tabelle mit angekreuzten und farbig hervorgehobenen Zeilen, ein Finger folgt einer Zeile"
+        },
+        {
+          "titel": "Onboarding-Checkliste",
+          "text": "Wir legen fest, welche Schritte bei einem neuen Mitarbeiter in welcher Reihenfolge nötig sind - von der Kontoerstellung bis zur Geräteübergabe. Nichts wird vergessen, weil es niemand mehr im Kopf behalten muss.",
+          "bild": "Klemmbrett mit gedruckter Checkliste, eine Hand hakt mit einem Kugelschreiber einen Punkt ab"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Erstgespräch",
+          "text": "Wir sprechen mit Ihnen über Ihre Struktur, Ihre Systeme und darüber, wofür das Dokument später gebraucht wird."
+        },
+        {
+          "titel": "Bestandsaufnahme",
+          "text": "Wir sichten vorhandene Unterlagen und fragen gezielt nach, wo Informationen fehlen oder veraltet sind."
+        },
+        {
+          "titel": "Entwurf",
+          "text": "Wir erstellen einen Entwurf, der zu Ihrem Betrieb passt - keine Vorlage von der Stange."
+        },
+        {
+          "titel": "Abstimmung und Übergabe",
+          "text": "Sie prüfen den Entwurf, wir passen ihn nach Ihren Rückmeldungen an und übergeben Ihnen das fertige Dokument."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Zum eigenen Betrieb passend",
+          "text": "Keine Vorlage mit fremdem Firmennamen im Kopf, sondern eine Struktur, die zu Ihren tatsächlichen Systemen und Rollen passt."
+        },
+        {
+          "titel": "Vorzeigbar im Ernstfall",
+          "text": "Das Dokument hält einem Audit, einer Versicherungsanfrage oder einem Systemausfall stand, weil es die reale Lage abbildet."
+        },
+        {
+          "titel": "Wissen unabhängig von einer Person",
+          "text": "Die Struktur bleibt erhalten, auch wenn ein Mitarbeiter ausfällt oder den Betrieb verlässt."
+        },
+        {
+          "titel": "Klarer Ablauf beim Onboarding",
+          "text": "Neue Mitarbeiter erhalten Zugänge und Geräte in einer festen Reihenfolge, ohne dass etwas vergessen wird."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Ist das eine rechtliche Beratung?",
+          "antwort": "Nein. Wir erstellen die Dokumente nach anerkannten fachlichen Standards, das ist keine Rechtsberatung. Wir empfehlen ausdrücklich, die Unterlagen vor der Verwendung von einer Anwältin oder einem Anwalt prüfen zu lassen, besonders wenn rechtlich bindende Anforderungen betroffen sind."
+        },
+        {
+          "frage": "Wie lange dauert die Erstellung?",
+          "antwort": "Das hängt vom Umfang und der Ausgangslage ab. Nach dem Erstgespräch nennen wir Ihnen einen realistischen Zeitrahmen."
+        },
+        {
+          "frage": "Was, wenn wir schon Unterlagen haben?",
+          "antwort": "Wir sichten vorhandene Dokumente und bauen darauf auf, statt bei Null anzufangen."
+        },
+        {
+          "frage": "Bekommen wir eine fertige Vorlage oder ein individuelles Dokument?",
+          "antwort": "Ein individuelles Dokument, abgestimmt auf Ihre Struktur, Ihre Systeme und Ihre Rollen. Keine Vorlage von der Stange."
+        },
+        {
+          "frage": "Was kostet die Erstellung?",
+          "antwort": "Der Aufwand richtet sich nach Umfang und Ausgangslage. Nach dem Erstgespräch erhalten Sie einen Festpreis auf Anfrage."
+        }
+      ],
+      "cta_titel": "Jetzt Dokumentation anfragen",
+      "cta_text": "Schildern Sie uns kurz, welches Dokument Sie brauchen, und wir melden uns mit einem Vorschlag für das weitere Vorgehen.",
+      "seo_beschreibung": "Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checklisten - erstellt nach Ihrer Struktur, keine Vorlage von der Stange.",
+      "kurzbeschreibung": "Individuell erstellte IT-Dokumente wie Administrationskonzept, Security-Roadmap, Risikobewertung und Onboarding-Checkliste, passend zu Ihrem Betrieb.",
+      "hero_bild": "Zwei Personen an einem Besprechungstisch, eine Hand zeigt mit einem Stift auf ein ausgedrucktes Organigramm, warmes Licht fällt auf das Papier",
+      "zweitbild": "Nahaufnahme einer Hand, die mit einem Kugelschreiber einen Punkt auf einer gedruckten Checkliste abhakt",
+      "hintergrund_bild": "Nahaufnahme eines Stapels bedruckter Dokumente mit einem darauf liegenden Stift, geringe Schärfentiefe, warmes Bernsteinlicht, weich verschwommener Hintergrund"
+    },
+    "bilder": {
+      "hero_bild": "assets/it-dokumente/hero_bild.png",
+      "zweitbild": "assets/it-dokumente/zweitbild.png",
+      "hintergrund_bild": "assets/it-dokumente/hintergrund_bild.png"
+    }
   },
   "security-paket-fuer-unternehmen": {
     "titel": "Security-Paket für Unternehmen",
