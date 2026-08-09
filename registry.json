@@ -841,7 +841,7 @@
   "eure-it-abteilung": {
     "titel": "Ihre IT-Abteilung",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: Partnerschaft auf Dauer, nicht Feuerwehreinsatz.",
-    "thema": "Ihr bucht ein monatliches Stundenkontingent und habt damit eine feste Ansprechperson - vom ganz normalen Alltagsproblem (First Level: Drucker, Passwort, neuer Mitarbeiter) bis zur strategischen Beratung: Einkauf, Ausrichtung der Digitalisierung und der Security-Strategie. Alles kann besprochen werden. Der Nutzen ist die Verlaesslichkeit: Es gibt jemanden, der Eure Umgebung KENNT und nicht bei jedem Anruf von vorne anfaengt - und man muss niemanden fest einstellen. KEINE Preise und keine Stundensaetze nennen. Ehrlich bleiben: Das ersetzt keine grosse IT-Abteilung, aber fuer Betriebe ohne eigene IT ist es genau das, was fehlt.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret zuschneiden: Betriebe, bei denen bisher der Chef oder der technikaffine Mitarbeiter nebenher die IT macht.",
+    "thema": "Ihr bucht ein monatliches Stundenkontingent und habt damit eine feste Ansprechperson - vom ganz normalen Alltagsproblem (First Level: Drucker, Passwort, neuer Mitarbeiter) bis zur strategischen Beratung: Einkauf, Ausrichtung der Digitalisierung und der Security-Strategie. Alles kann besprochen werden. Der Nutzen ist die Verlaesslichkeit: Es gibt jemanden, der Eure Umgebung KENNT und nicht bei jedem Anruf von vorne anfaengt - und man muss niemanden fest einstellen. KEINE Preise und keine Stundensaetze nennen. Ehrlich bleiben: Das ersetzt keine grosse IT-Abteilung, aber fuer Betriebe ohne eigene IT ist es genau das, was fehlt.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret zuschneiden: Betriebe, bei denen bisher der Chef oder der technikaffine Mitarbeiter nebenher die IT macht.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Keine eigene IT? Kein Problem - Beratungsvertrag mit festem Stundenkontingent.",
     "path": "eure-it-abteilung.html",
     "assets": [
@@ -849,15 +849,134 @@
       "assets/eure-it-abteilung/zweitbild.png",
       "assets/eure-it-abteilung/hintergrund_bild.png"
     ],
-    "hero_titel": "Feste IT-Ansprechperson ohne eigene Abteilung",
-    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
+    "hero_titel": "Eine IT-Abteilung, ohne sie einzustellen",
+    "bildrichtung": "Glas und Spiegelungen, klare Linien, helles Blaugrau, viel Tageslicht",
     "erstellt": "2026-08-07T23:16:32",
-    "ueberarbeitet": "2026-08-08T15:27:56",
-    "aufbau": "problem_zuerst",
+    "ueberarbeitet": "2026-08-10T00:41:50",
+    "aufbau": "ruhig",
     "kategorie": "Beratung & Dokumente",
-    "kurzbeschreibung": "Ein monatliches Stundenkontingent mit fester Ansprechperson - für alles von Drucker-Problemen bis zur IT-Strategie.",
-    "ablauf_art": "strang",
-    "fuer_wen_art": "chips"
+    "kurzbeschreibung": "Ein monatliches Stundenkontingent mit fester Ansprechperson für alle IT-Fragen, ohne eigene IT-Stelle einzurichten.",
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "zeilen",
+    "inhalt": {
+      "kategorie": "Beratung & Dokumente",
+      "hero_titel": "Eine IT-Abteilung, ohne sie einzustellen",
+      "hero_unterzeile": "Sie buchen ein festes Stundenkontingent im Monat und haben damit eine feste Ansprechperson für Ihre IT. Vom Drucker, der nicht mehr will, bis zur Frage, welche Software als nächstes angeschafft wird.",
+      "fuer_wen": [
+        "Handwerksbetriebe, in denen der Chef nach Feierabend die IT nebenbei erledigt",
+        "Kleine Kanzleien und Praxen ohne eigene IT-Stelle",
+        "Betriebe, in denen ein technikaffiner Mitarbeiter die IT zusätzlich zu seiner eigentlichen Arbeit mitmacht",
+        "Selbständige und Einzelunternehmer, die niemanden fest einstellen wollen, aber verlässliche Unterstützung brauchen"
+      ],
+      "problem_ueberschrift": "Wenn die IT bei jemandem hängen bleibt, der eigentlich anderes zu tun hat",
+      "problem": [
+        {
+          "titel": "Der Chef als IT-Support",
+          "text": "Ein Mitarbeiter kommt mit einem Druckerproblem, gleichzeitig klemmt das Passwort im Warenwirtschaftssystem. Wer die IT nebenbei macht, unterbricht ständig die eigentliche Arbeit und kommt selten zu den größeren Fragen."
+        },
+        {
+          "titel": "Immer wieder von vorne erklären",
+          "text": "Ruft man bei wechselnden externen Helfern an, muss jedes Mal die ganze Umgebung neu erklärt werden: welche Programme laufen, wie das Netzwerk aufgebaut ist, was letztes Mal schon versucht wurde. Das kostet Zeit, bevor überhaupt geholfen wird."
+        },
+        {
+          "titel": "Keine Zeit für die großen Fragen",
+          "text": "Neue Software, ein zweiter Standort, die Frage nach Sicherheit bei Homeoffice - solche Themen bleiben liegen, weil schon das Tagesgeschäft die IT-Zeit aufbraucht. Entschieden wird dann oft aus dem Bauch heraus, nicht auf Basis einer echten Einschätzung."
+        }
+      ],
+      "loesung_ueberschrift": "Eine feste Ansprechperson, die Ihre Umgebung kennt",
+      "loesung": [
+        {
+          "titel": "Festes Stundenkontingent im Monat",
+          "text": "Sie vereinbaren ein monatliches Stundenkontingent. Innerhalb dieses Rahmens rufen Sie an, wenn etwas ist - für kleine Alltagsfragen genauso wie für längere Gespräche. Nicht genutzte Zeit verfällt nicht einfach ungenutzt, sie wird gemeinsam sinnvoll eingeteilt.",
+          "bild": "Ein Kalenderblatt mit handschriftlich markierten Stunden liegt auf einem Besprechungstisch, eine Hand hält daneben einen Stift"
+        },
+        {
+          "titel": "Eine Person, die Bescheid weiß",
+          "text": "Sie sprechen nicht bei jedem Anruf mit jemand anderem. Ihre Ansprechperson kennt Ihre Programme, Ihr Netzwerk und die Entscheidungen der letzten Monate. Das spart Erklärzeit und führt schneller zu einer brauchbaren Antwort.",
+          "bild": "Ein Aktenordner mit beschriftetem Rücken steht in einem Regal, eine Hand zieht ihn gerade heraus"
+        },
+        {
+          "titel": "Vom Drucker bis zur Digitalisierung",
+          "text": "Ein neues Passwort, ein neuer Mitarbeiter, der Zugang braucht, aber auch die Frage nach dem nächsten Software-Einkauf oder der Ausrichtung Ihrer Security - alles findet in denselben Gesprächen Platz. Sie müssen nicht entscheiden, was wichtig genug für einen Anruf ist.",
+          "bild": "Eine Hand hakt Punkte auf einer Checkliste ab, die auf einem Besprechungstisch liegt, im unscharfen Hintergrund steht ein Drucker"
+        },
+        {
+          "titel": "Ehrlich über die Grenzen",
+          "text": "Eine große, mehrköpfige IT-Abteilung ersetzt das nicht. Für einen Betrieb ohne eigene IT ist es aber genau die Lücke, die vorher offen war: jemand, der zuständig ist, ohne dass Sie jemanden einstellen müssen.",
+          "bild": "Zwei Personen stehen vor einem Flipchart mit einer einfachen Skizze aus Kästchen und Pfeilen, eine zeigt mit dem Finger darauf"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Bestandsaufnahme",
+          "text": "Wir schauen uns Ihre Geräte, Programme und Abläufe an, um zu verstehen, wo Sie stehen und was regelmäßig anfällt."
+        },
+        {
+          "titel": "Stundenkontingent festlegen",
+          "text": "Gemeinsam legen wir fest, wie viele Stunden im Monat zu Ihrem Betrieb passen. Das kann sich später anpassen, wenn sich Ihr Bedarf ändert."
+        },
+        {
+          "titel": "Laufender Kontakt",
+          "text": "Sie rufen an, schreiben oder wir schalten uns per Fernwartung auf einen Rechner - je nachdem, was das Thema erfordert."
+        },
+        {
+          "titel": "Regelmäßiger Rückblick",
+          "text": "In festen Abständen sprechen wir durch, was anstand, was noch offen ist und was strategisch als Nächstes sinnvoll wäre."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Gleiche Ansprechperson",
+          "text": "Sie erklären Ihre Umgebung nicht bei jedem Anruf neu, weil dieselbe Person Ihren Betrieb kennt."
+        },
+        {
+          "titel": "Kein Personalrisiko",
+          "text": "Keine Festanstellung, kein Ausfall durch Urlaub oder Krankheit, keine Suche nach einer Fachkraft."
+        },
+        {
+          "titel": "Alltag und Strategie in einem",
+          "text": "Dieselben Stunden decken das kleine Drucker-Problem und das Gespräch über die nächste Software-Anschaffung ab."
+        },
+        {
+          "titel": "Planbarer Aufwand",
+          "text": "Ein festes Kontingent im Monat statt unklarer Einzelrechnungen bei jedem Anruf."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Was passiert, wenn wir das Stundenkontingent in einem Monat nicht voll nutzen?",
+          "antwort": "Wir besprechen das offen. Häufig ergeben sich in ruhigen Monaten gute Gelegenheiten, liegen gebliebene Themen wie Updates oder eine bessere Ordnerstruktur anzugehen."
+        },
+        {
+          "frage": "Können wir jederzeit anrufen, oder gibt es feste Termine?",
+          "antwort": "Beides. Für akute Fragen sind wir erreichbar, für größere Themen vereinbaren wir feste Termine, damit genug Zeit dafür da ist."
+        },
+        {
+          "frage": "Ersetzt das eine eigene IT-Abteilung?",
+          "antwort": "Nein. Eine mehrköpfige Abteilung mit eigener Infrastruktur ersetzt das nicht. Für einen Betrieb ohne eigene IT-Stelle deckt es aber genau die Aufgaben ab, die sonst niemand zuverlässig übernimmt."
+        },
+        {
+          "frage": "Was, wenn wir in einem Monat deutlich mehr Stunden brauchen als vereinbart?",
+          "antwort": "Wir sprechen das an, sobald sich das abzeichnet, und stocken das Kontingent für diesen Zeitraum auf. Es entstehen keine versteckten Zusatzkosten ohne Absprache."
+        },
+        {
+          "frage": "Wie schnell bekommen wir Hilfe bei einem akuten Problem?",
+          "antwort": "Das hängt vom vereinbarten Kontingent und der Dringlichkeit ab. Für echte Notfälle sprechen wir vorab eine Reaktionszeit ab, damit Sie wissen, woran Sie sind."
+        }
+      ],
+      "cta_titel": "Lassen Sie uns über Ihre IT sprechen",
+      "cta_text": "In einem ersten Gespräch schauen wir uns Ihren Betrieb an und finden heraus, welches Stundenkontingent zu Ihnen passt.",
+      "seo_beschreibung": "Feste IT-Ansprechperson für Betriebe ohne eigene IT-Abteilung. Monatliches Stundenkontingent, vom Alltagsproblem bis zur Strategie.",
+      "kurzbeschreibung": "Ein monatliches Stundenkontingent mit fester Ansprechperson für alle IT-Fragen, ohne eigene IT-Stelle einzurichten.",
+      "hero_bild": "Zwei Personen sitzen an einem Besprechungstisch, vor ihnen liegt ein aufgeschlagener Ordner mit handschriftlichen Notizen, eine Hand zeigt auf eine Zeile",
+      "zweitbild": "Ein Telefon liegt neben einem aufgeschlagenen Terminkalender mit handschriftlichen Einträgen, eine Hand blättert die Seite um",
+      "hintergrund_bild": "Ein helles Besprechungszimmer mit Glaswänden, in denen sich Tageslicht in klaren, geraden Linien spiegelt, blaugraue Töne, ruhige leere Fläche im Vordergrund, im Hintergrund unscharf ein Tisch mit Papieren"
+    },
+    "bilder": {
+      "hero_bild": "assets/eure-it-abteilung/hero_bild.png",
+      "zweitbild": "assets/eure-it-abteilung/zweitbild.png",
+      "hintergrund_bild": "assets/eure-it-abteilung/hintergrund_bild.png"
+    }
   },
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
