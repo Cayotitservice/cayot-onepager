@@ -561,7 +561,7 @@
   "e-mail-sicherheitscheck": {
     "titel": "E-Mail-Sicherheitscheck",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: konkret und ohne Panikmache. Ein Check, kein Cybersecurity-Consulting.",
-    "thema": "Geprueft werden: SPF, DKIM, DMARC, die DNS-Eintraege, die Microsoft-365-Konfiguration, die Mehr-Faktor-Anmeldung, eingerichtete Weiterleitungen und verdaechtige Postfachregeln (ein Klassiker nach einem gehackten Konto) sowie die grundlegende Mail-Sicherheit. Das ist ein festes, abgeschlossenes Produkt - keine Beratung nach Stunden. KEINE Preise nennen, nur 'Festpreis auf Anfrage'. Danach ist die Umsetzung moeglich: entweder mit Trend Micro als Schutzloesung inklusive Lizenzen und Wartungsvertrag, oder als Schulung, damit Ihr das Werkzeug selbst verwalten koennt - beide Wege gehoeren gleichwertig auf die Seite. Verstaendlich erklaeren, WARUM das wichtig ist: Ohne SPF/DKIM/DMARC kann jeder Mails im Namen der Firma verschicken - an Kunden, an die Buchhaltung, mit geaenderter Bankverbindung.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: NEU AUFNEHMEN: Wir setzen SPF, DKIM und DMARC anschliessend auch um - nicht nur pruefen. Das gehoert deutlich in die Loesung und in den Ablauf: erst pruefen, dann die Eintraege sauber setzen, dann kontrollieren, ob es wirkt. Zielgruppen konkret auf Mail-Situationen zuschneiden.",
+    "thema": "Geprueft werden: SPF, DKIM, DMARC, die DNS-Eintraege, die Microsoft-365-Konfiguration, die Mehr-Faktor-Anmeldung, eingerichtete Weiterleitungen und verdaechtige Postfachregeln (ein Klassiker nach einem gehackten Konto) sowie die grundlegende Mail-Sicherheit. Das ist ein festes, abgeschlossenes Produkt - keine Beratung nach Stunden. KEINE Preise nennen, nur 'Festpreis auf Anfrage'. Danach ist die Umsetzung moeglich: entweder mit Trend Micro als Schutzloesung inklusive Lizenzen und Wartungsvertrag, oder als Schulung, damit Ihr das Werkzeug selbst verwalten koennt - beide Wege gehoeren gleichwertig auf die Seite. Verstaendlich erklaeren, WARUM das wichtig ist: Ohne SPF/DKIM/DMARC kann jeder Mails im Namen der Firma verschicken - an Kunden, an die Buchhaltung, mit geaenderter Bankverbindung.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: NEU AUFNEHMEN: Wir setzen SPF, DKIM und DMARC anschliessend auch um - nicht nur pruefen. Das gehoert deutlich in die Loesung und in den Ablauf: erst pruefen, dann die Eintraege sauber setzen, dann kontrollieren, ob es wirkt. Zielgruppen konkret auf Mail-Situationen zuschneiden.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Pruefung, ob in Eurem Namen Mails verschickt werden koennen und ob Euer Postfach sauber eingestellt ist.",
     "path": "e-mail-sicherheitscheck.html",
     "assets": [
@@ -569,15 +569,134 @@
       "assets/e-mail-sicherheitscheck/zweitbild.png",
       "assets/e-mail-sicherheitscheck/hintergrund_bild.png"
     ],
-    "hero_titel": "Schutz vor gefälschten Mails in Ihrem Namen",
-    "bildrichtung": "Weiche Lichtspuren und Bewegung über einem unscharfen Motiv, Cyan auf Anthrazit",
+    "hero_titel": "Kontrolle darüber, wer in Ihrem Namen mailt",
+    "bildrichtung": "Strenges, sich wiederholendes Raster im Detail, Grau mit einem einzelnen grünen Akzent",
     "erstellt": "2026-08-07T23:10:30",
-    "ueberarbeitet": "2026-08-08T15:22:08",
-    "aufbau": "ruhig",
+    "ueberarbeitet": "2026-08-10T00:39:34",
+    "aufbau": "bild_oben",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Wir prüfen und richten SPF, DKIM und DMARC ein, damit niemand mehr Mails in Ihrem Namen verschicken kann.",
-    "ablauf_art": "pfeile",
-    "fuer_wen_art": "trennstrich"
+    "kurzbeschreibung": "Wir prüfen und richten SPF, DKIM und DMARC für Ihre Domain ein, damit niemand unbemerkt in Ihrem Namen mailt.",
+    "ablauf_art": "strang",
+    "fuer_wen_art": "chips",
+    "inhalt": {
+      "kategorie": "Sicherheit",
+      "hero_titel": "Kontrolle darüber, wer in Ihrem Namen mailt",
+      "hero_unterzeile": "Wir prüfen, ob unbemerkt Mails im Namen Ihrer Firma verschickt werden können, und richten SPF, DKIM und DMARC anschließend so ein, dass nur noch Ihre eigenen Server als Absender gelten.",
+      "fuer_wen": [
+        "Einzelunternehmer, die Rechnungen per Mail versenden",
+        "Handwerksbetriebe mit einem gemeinsamen Firmenpostfach",
+        "Firmen mit Microsoft 365, aber ohne eigene IT-Abteilung",
+        "Vereine und Praxen, deren Domain schon einmal für Spam-Mails missbraucht wurde"
+      ],
+      "problem_ueberschrift": "Wenn eine Mail nicht von Ihnen ist, aber so aussieht",
+      "problem": [
+        {
+          "titel": "Gefälschter Absender",
+          "text": "Ohne SPF, DKIM und DMARC kann praktisch jeder eine Mail schreiben, die aussieht, als käme sie von Ihrer Domain. Der Empfänger sieht Ihren Namen und vertraut der Nachricht."
+        },
+        {
+          "titel": "Geänderte Bankverbindung",
+          "text": "Eine gefälschte Rechnung mit neuer Kontonummer, verschickt im Namen Ihrer Firma an einen Kunden oder die eigene Buchhaltung, reicht oft schon für einen echten finanziellen Schaden."
+        },
+        {
+          "titel": "Unbemerkte Postfachregeln",
+          "text": "Nach einem gestohlenen Passwort legen Angreifer häufig eine stille Weiterleitung oder eine Regel an, die bestimmte Mails unauffällig aussortiert. Das fällt im Alltag oft monatelang nicht auf."
+        }
+      ],
+      "loesung_ueberschrift": "Vom Befund zur wirksamen Einstellung",
+      "loesung": [
+        {
+          "titel": "Bestandsaufnahme",
+          "text": "Wir prüfen SPF-, DKIM- und DMARC-Einträge, die DNS-Konfiguration, die Microsoft-365-Einstellungen, die Mehr-Faktor-Anmeldung sowie bestehende Weiterleitungen und Postfachregeln. Sie erhalten eine Übersicht, wo Lücken bestehen.",
+          "bild": "Eine Hand hält einen ausgedruckten Bericht mit mehreren farbig markierten Zeilen über einem Schreibtisch, im Hintergrund unscharf ein Aktenordner"
+        },
+        {
+          "titel": "Einträge setzen",
+          "text": "Wir tragen die fehlenden oder fehlerhaften SPF-, DKIM- und DMARC-Einträge direkt im DNS Ihrer Domain ein, nicht nur als Hinweis im Bericht. Danach ist die Absenderprüfung für Ihre Domain aktiv.",
+          "bild": "Nahaufnahme einer Hand, die an einer Tastatur eine Zeile in einem Konfigurationsfeld einträgt, der Bildschirm zeigt nur unscharfe Balken ohne lesbaren Text"
+        },
+        {
+          "titel": "Wirkung kontrollieren",
+          "text": "Nach der Umstellung schicken wir Testmails und prüfen die Zustellung. So sehen wir, ob SPF, DKIM und DMARC greifen und keine echte Mail dabei verloren geht.",
+          "bild": "Ein Briefumschlag liegt auf einem kleinen Poststapel, eine Hand drückt gerade einen Stempel darauf"
+        },
+        {
+          "titel": "Schutz oder Schulung",
+          "text": "Danach entscheiden Sie: Wir richten Trend Micro als Schutzprogramm ein, inklusive Lizenzen und Wartungsvertrag, oder wir zeigen Ihnen und Ihrem Team, wie Sie die Einstellungen künftig selbst pflegen.",
+          "bild": "Zwei Personen sitzen sich an einem Besprechungstisch gegenüber, eine zeigt der anderen etwas auf einem ausgedruckten Blatt, im Hintergrund eine Wandtafel mit einer einfachen Skizze"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Prüfung",
+          "text": "Wir sehen uns SPF, DKIM, DMARC, DNS, die Microsoft-365-Konfiguration, die Mehr-Faktor-Anmeldung, Weiterleitungen und Postfachregeln an."
+        },
+        {
+          "titel": "Einträge setzen",
+          "text": "Wir korrigieren oder ergänzen die DNS-Einträge für SPF, DKIM und DMARC für Ihre Domain."
+        },
+        {
+          "titel": "Wirkung prüfen",
+          "text": "Wir verschicken Testmails und prüfen, ob die Einträge greifen und keine reguläre Mail verloren geht."
+        },
+        {
+          "titel": "Ergebnis und nächster Schritt",
+          "text": "Sie erhalten einen Bericht sowie ein Angebot für Trend Micro als Schutzprogramm oder für eine Schulung."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Klarheit über den Ist-Zustand",
+          "text": "Sie wissen genau, welche Einträge fehlen und wo jemand in Ihrem Namen mailen könnte."
+        },
+        {
+          "titel": "Aktive Absenderprüfung",
+          "text": "Nach der Umsetzung sind SPF, DKIM und DMARC für Ihre Domain eingerichtet und wirksam."
+        },
+        {
+          "titel": "Fester Rahmen",
+          "text": "Ein abgeschlossenes Projekt mit Festpreis auf Anfrage, keine offene Beratung nach Stunden."
+        },
+        {
+          "titel": "Zwei Wege danach",
+          "text": "Sie entscheiden zwischen einem betreuten Schutzprogramm oder einer Schulung für die eigene Verwaltung."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Was ist der Unterschied zwischen SPF, DKIM und DMARC?",
+          "antwort": "SPF legt fest, welche Server für Ihre Domain Mails verschicken dürfen. DKIM signiert jede Mail digital, damit sie unterwegs nicht verändert wird. DMARC sagt dem Empfänger, was mit einer Mail passieren soll, die beide Prüfungen nicht besteht."
+        },
+        {
+          "frage": "Reicht die Prüfung oder müssen die Einträge auch neu gesetzt werden?",
+          "antwort": "Eine Prüfung allein schützt niemanden. Deshalb setzen wir die fehlenden oder fehlerhaften Einträge im Anschluss direkt um und kontrollieren, ob sie wirken."
+        },
+        {
+          "frage": "Was passiert, wenn schon einmal ein Konto gehackt wurde?",
+          "antwort": "Wir schauen uns gezielt Weiterleitungen und Postfachregeln an, die nach einem Konto-Diebstahl oft unbemerkt eingerichtet werden, zum Beispiel eine stille Kopie an eine fremde Adresse."
+        },
+        {
+          "frage": "Muss ich mich für Trend Micro entscheiden?",
+          "antwort": "Nein. Sie können die Einstellungen nach einer kurzen Schulung auch selbst pflegen. Trend Micro bieten wir als zweite Möglichkeit an, wenn Sie die laufende Wartung abgeben möchten."
+        },
+        {
+          "frage": "Wie lange dauert der Check?",
+          "antwort": "Der Check ist ein abgeschlossenes Projekt mit festem Umfang, keine offene Beratung nach Stunden. Den genauen Ablauf und einen Termin klären wir nach Ihrer Anfrage."
+        }
+      ],
+      "cta_titel": "Lassen Sie Ihr Postfach prüfen",
+      "cta_text": "Fordern Sie den E-Mail-Sicherheitscheck an und erfahren Sie, wer wirklich in Ihrem Namen mailen kann.",
+      "seo_beschreibung": "E-Mail-Sicherheitscheck: SPF, DKIM und DMARC prüfen und einrichten lassen. Festpreis auf Anfrage, für Firmen und Selbständige.",
+      "kurzbeschreibung": "Wir prüfen und richten SPF, DKIM und DMARC für Ihre Domain ein, damit niemand unbemerkt in Ihrem Namen mailt.",
+      "hero_bild": "Eine Hand drückt ein Wachssiegel auf einen Briefumschlag, im Hintergrund unscharf ein kleiner Stapel weiterer Umschläge",
+      "zweitbild": "Eine verschlossene Briefkastenanlage mit mehreren gleich großen Fächern, in einem der Schlösser steckt ein Schlüssel",
+      "hintergrund_bild": "Ein streng rasterförmiges Fächerregal aus grauem Metall mit vielen gleich großen Ablagefächern in Reihen, in einem einzigen Fach leuchtet ein schmaler grüner Streifen, gedämpftes Seitenlicht, geringe Schärfentiefe im Hintergrund"
+    },
+    "bilder": {
+      "hero_bild": "assets/e-mail-sicherheitscheck/hero_bild.png",
+      "zweitbild": "assets/e-mail-sicherheitscheck/zweitbild.png",
+      "hintergrund_bild": "assets/e-mail-sicherheitscheck/hintergrund_bild.png"
+    }
   },
   "it-checkup-fuer-kleine-unternehmen": {
     "titel": "IT-Checkup für kleine Unternehmen",
