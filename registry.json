@@ -43,7 +43,7 @@
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: Ordnung schaffen, wo ueber Jahre gewachsen wurde.",
-    "thema": "Wir schauen uns an: Benutzerkonten, Mehr-Faktor-Anmeldung (MFA), Adminrollen, alte Benutzer die niemand geloescht hat, Lizenzen (wofuer wird eigentlich bezahlt), Entra, Geraete, OneDrive, SharePoint, Defender, Mailweiterleitungen und die grundlegende Sicherheit. Es gibt das als laufende Betreuung nach Aufwand ODER als festes Paket 'M365 Quick Check'. Beim Quick Check bekommt der Kunde danach eine kurze, verstaendliche Liste mit Ampel-Bewertung: gruen = passt, gelb = sollte geaendert werden, rot = dringend. Die Umsetzung der Punkte wird danach getrennt beauftragt und berechnet - das gehoert klar gesagt, damit niemand ueberrascht ist. KEINE Preise nennen, auch keinen Festpreis - nur 'Festpreis auf Anfrage'. Das Ampel-Ergebnis ist der Star der Seite: kurz, verstaendlich, kein Fachbericht, den niemand liest.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Der Abschnitt fuer wen das gemacht ist soll konkreter auf Microsoft-365-Betriebe zugeschnitten sein - nenne dort echte Situationen statt allgemeiner Zielgruppen.",
+    "thema": "Wir schauen uns an: Benutzerkonten, Mehr-Faktor-Anmeldung (MFA), Adminrollen, alte Benutzer die niemand geloescht hat, Lizenzen (wofuer wird eigentlich bezahlt), Entra, Geraete, OneDrive, SharePoint, Defender, Mailweiterleitungen und die grundlegende Sicherheit. Es gibt das als laufende Betreuung nach Aufwand ODER als festes Paket 'M365 Quick Check'. Beim Quick Check bekommt der Kunde danach eine kurze, verstaendliche Liste mit Ampel-Bewertung: gruen = passt, gelb = sollte geaendert werden, rot = dringend. Die Umsetzung der Punkte wird danach getrennt beauftragt und berechnet - das gehoert klar gesagt, damit niemand ueberrascht ist. KEINE Preise nennen, auch keinen Festpreis - nur 'Festpreis auf Anfrage'. Das Ampel-Ergebnis ist der Star der Seite: kurz, verstaendlich, kein Fachbericht, den niemand liest.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Der Abschnitt fuer wen das gemacht ist soll konkreter auf Microsoft-365-Betriebe zugeschnitten sein - nenne dort echte Situationen statt allgemeiner Zielgruppen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Microsoft 365 pruefen, aufraeumen und sicher einstellen - fuer Betriebe mit 2 bis 20 Mitarbeitern.",
     "path": "microsoft-365-service.html",
     "assets": [
@@ -52,14 +52,133 @@
       "assets/microsoft-365-service/hintergrund_bild.png"
     ],
     "hero_titel": "Klarheit über Ihr Microsoft 365",
-    "bildrichtung": "Ein einzelner heller Lichtpunkt im halbdunklen Raum, starker Kontrast, alles andere ruhig",
+    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
     "erstellt": "2026-08-07T23:05:04",
-    "ueberarbeitet": "2026-08-08T15:13:53",
-    "aufbau": "bild_oben",
+    "ueberarbeitet": "2026-08-10T00:18:20",
+    "aufbau": "klassisch",
     "kategorie": "Microsoft 365",
-    "kurzbeschreibung": "Prüfung Ihres Microsoft 365 mit verständlicher Ampel-Liste - grün, gelb, rot statt Fachbericht.",
-    "ablauf_art": "pfeile",
-    "fuer_wen_art": "karten"
+    "kurzbeschreibung": "Ein verständlicher Check Ihres Microsoft 365 mit Ampel-Bewertung für Konten, Rechte und Sicherheit.",
+    "ablauf_art": "winkel",
+    "fuer_wen_art": "chips",
+    "inhalt": {
+      "kategorie": "Microsoft 365",
+      "hero_titel": "Klarheit über Ihr Microsoft 365",
+      "hero_unterzeile": "Wir prüfen Konten, Zugriffsrechte, Geräte und Sicherheitseinstellungen in Ihrem Microsoft 365 und fassen das Ergebnis in einer kurzen Ampel-Liste zusammen: grün, gelb, rot. Sie sehen sofort, wo Handlungsbedarf besteht.",
+      "fuer_wen": [
+        "Ein Mitarbeiter hat vor Monaten das Unternehmen verlassen, sein Postfach und seine Lizenz laufen aber weiter",
+        "Die Rechnung für Microsoft 365 steigt jedes Jahr, aber niemand kann sagen, wofür genau bezahlt wird",
+        "Ein früherer IT-Dienstleister hat Adminrechte vergeben, die heute niemand mehr zuordnen kann",
+        "Die Zwei-Faktor-Anmeldung ist bei manchen Konten aktiv, bei anderen nicht - aus Gewohnheit, nicht aus Plan"
+      ],
+      "problem_ueberschrift": "Was sich über die Jahre in Microsoft 365 ansammelt",
+      "problem": [
+        {
+          "titel": "Karteikonten",
+          "text": "Mitarbeiter kommen und gehen, ihre Konten und Lizenzen bleiben oft bestehen. Jedes davon ist ein mögliches Einfallstor und kostet zusätzlich Geld."
+        },
+        {
+          "titel": "Rechte ohne Überblick",
+          "text": "Über Jahre wurden Adminrollen und Freigaben vergeben - von wechselnden Mitarbeitern, von externen Dienstleistern, aus der Not eines Moments. Wer heute Zugriff auf was hat, weiß oft niemand mehr genau."
+        },
+        {
+          "titel": "Sicherheit nach Zufall",
+          "text": "Die Zwei-Faktor-Anmeldung ist bei einem Teil der Konten aktiv, beim Rest nicht. Mailweiterleitungen wurden eingerichtet und nie wieder geprüft."
+        }
+      ],
+      "loesung_ueberschrift": "Der M365 Quick Check im Überblick",
+      "loesung": [
+        {
+          "titel": "Bestandsaufnahme",
+          "text": "Wir sehen uns Benutzerkonten, Adminrollen, Geräte, Entra, OneDrive, SharePoint, Defender und Mailweiterleitungen an. Alte Konten und ungenutzte Lizenzen fallen dabei sofort auf.",
+          "bild": "Zwei Kollegen stehen an einem Stehtisch und sehen sich gemeinsam eine ausgedruckte Übersicht mit mehreren Spalten an"
+        },
+        {
+          "titel": "Ampel-Liste statt Fachbericht",
+          "text": "Das Ergebnis bekommen Sie als kurze, verständliche Liste: grün heißt passt, gelb heißt sollte geändert werden, rot heißt dringend.",
+          "bild": "Nahaufnahme eines Blattes auf einem Besprechungstisch, einzelne Zeilen sind am Rand grün, gelb und rot markiert"
+        },
+        {
+          "titel": "Sicherheit einordnen",
+          "text": "MFA-Status, Adminrollen und Freigaben werden einzeln bewertet, nicht pauschal. So sehen Sie genau, welches Konto welches Risiko trägt.",
+          "bild": "Ein Schlüsselbund liegt neben einem Mitarbeiterausweis auf einem hellen Schreibtisch"
+        },
+        {
+          "titel": "Lizenzen klären",
+          "text": "Wir gleichen ab, welche Lizenzen aktiv genutzt werden und welche seit Monaten ungenutzt mitlaufen. Das Ergebnis zeigt, wo tatsächlich gespart werden kann.",
+          "bild": "Eine Hand streicht mit einem Textmarker eine Position auf einem ausgedruckten Rechnungsblatt durch, ein Ordner liegt daneben"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Kurzgespräch",
+          "text": "Wir klären, ob laufende Betreuung oder ein einmaliger Quick Check zu Ihrem Betrieb passt."
+        },
+        {
+          "titel": "Prüfung im Tenant",
+          "text": "Mit einem eingeschränkten Zugang sehen wir uns Konten, Rollen, Geräte und Einstellungen an. Ihr laufender Betrieb wird dabei nicht gestört."
+        },
+        {
+          "titel": "Ampel-Liste",
+          "text": "Sie erhalten die Bewertung in verständlicher Sprache, geordnet nach grün, gelb und rot."
+        },
+        {
+          "titel": "Umsetzung getrennt beauftragt",
+          "text": "Sie entscheiden, welche Punkte zuerst angegangen werden. Die Umsetzung wird separat vereinbart und berechnet."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Klarer Überblick",
+          "text": "Statt eines Berichts voller Fachbegriffe bekommen Sie eine Liste, die auf einen Blick zeigt, wo Handlungsbedarf besteht."
+        },
+        {
+          "titel": "Weniger unnötige Kosten",
+          "text": "Ungenutzte Lizenzen und vergessene Konten werden sichtbar - und damit vermeidbar."
+        },
+        {
+          "titel": "Sie behalten die Entscheidung",
+          "text": "Welche Punkte zuerst umgesetzt werden, bestimmen Sie. Nichts wird automatisch mitverkauft."
+        },
+        {
+          "titel": "Unabhängige Einschätzung",
+          "text": "Auch wenn bereits ein anderer Dienstleister betreut, liefert der Quick Check eine zweite, neutrale Sicht auf den Zustand."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Was kostet der M365 Quick Check?",
+          "antwort": "Der Quick Check ist ein festes Paket, der Preis richtet sich nach der Anzahl der Konten - Festpreis auf Anfrage."
+        },
+        {
+          "frage": "Wird die Umsetzung der roten und gelben Punkte gleich mit erledigt?",
+          "antwort": "Nein. Der Quick Check liefert die Bewertung, die Umsetzung wird danach getrennt beauftragt und berechnet."
+        },
+        {
+          "frage": "Brauchen Sie vollen Admin-Zugang?",
+          "antwort": "Für die Prüfung reicht ein eingeschränkter, nachvollziehbarer Zugang. Wir richten das gemeinsam mit Ihnen ein."
+        },
+        {
+          "frage": "Wir haben schon einen IT-Dienstleister - lohnt sich der Check trotzdem?",
+          "antwort": "Ja. Der Quick Check ist eine unabhängige zweite Einschätzung und ersetzt keine laufende Betreuung."
+        },
+        {
+          "frage": "Wie lange dauert die Prüfung?",
+          "antwort": "Das hängt von der Anzahl der Konten und der Größe des Tenants ab. Den Zeitrahmen klären wir im Kurzgespräch."
+        }
+      ],
+      "cta_titel": "Quick Check anfragen",
+      "cta_text": "Schreiben Sie uns, wir klären im Kurzgespräch, was zu Ihrem Betrieb passt.",
+      "seo_beschreibung": "Microsoft 365 Quick Check: Konten, Rechte, MFA und Lizenzen geprüft - Ergebnis als klare Ampel-Liste. Für Betriebe mit 2 bis 20 Mitarbeitern.",
+      "kurzbeschreibung": "Ein verständlicher Check Ihres Microsoft 365 mit Ampel-Bewertung für Konten, Rechte und Sicherheit.",
+      "hero_bild": "Zwei Kollegen sitzen an einem Stehtisch und blicken gemeinsam auf einen ausgedruckten Bericht mit farbigen Randmarkierungen",
+      "zweitbild": "Nahaufnahme einer Hand, die mit einem grünen, einem gelben und einem roten Textmarker eine Liste auf Papier markiert",
+      "hintergrund_bild": "Aufsicht von schräg oben auf einen aufgeräumten Besprechungstisch: ordentlich gestapelte Papiere, eine Checkliste, ein Schlüsselbund und ein Kalenderblatt in geometrischer Anordnung, dezente türkise Akzente in den Randmarkierungen"
+    },
+    "bilder": {
+      "hero_bild": "assets/microsoft-365-service/hero_bild.png",
+      "zweitbild": "assets/microsoft-365-service/zweitbild.png",
+      "hintergrund_bild": "assets/microsoft-365-service/hintergrund_bild.png"
+    }
   },
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
