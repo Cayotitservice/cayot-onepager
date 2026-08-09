@@ -1401,7 +1401,7 @@
   "ki-assistent-fuer-ihren-betrieb": {
     "titel": "KI-Assistent für Ihren Betrieb",
     "stil": "Begeistert, aber ohne Übertreibung - es ist etwas Besonderes, dass so etwas im eigenen Haus läuft. Konkret bleiben, echte Beispiele statt Schlagworte. KEINE Preise.",
-    "thema": "Ein KI-Assistent, der LOKAL im Betrieb läuft, auf einem eigenen Rechner. Das ist der Kern: Die Daten bleiben im Haus.\n\nWAS SO EIN ASSISTENT KANN (das ist keine Aufzählung von Möglichkeiten, sondern das, was bei uns selbst seit Monaten wirklich läuft):\n- Er wird gesprochen bedient. Man fragt ihn wie einen Kollegen, er antwortet und führt aus.\n- Er sortiert das Postfach: erkennt, was eine Aufgabe ist, legt Anhänge ab und räumt Mails in die richtigen Ordner.\n- Er hält Termine über mehrere Kalender hinweg zusammen.\n- Er arbeitet im Ticketsystem mit: Tickets ansehen, kommentieren, Vorschläge hineinschreiben.\n- Er kennt die Zahlen: offene Rechnungen, Kosten, Auswertungen - und rechnet auf Zuruf.\n- Er erfasst Arbeitszeiten und wertet sie nach Kunde aus.\n- Er räumt Dateiablagen auf und schlägt vor, wohin etwas gehört.\n- Er beobachtet die Sicherheitslage und meldet, was auffällt.\n- Nachts prüft er sich selbst und meldet, was nicht mehr stimmt.\n- Jeder Mitarbeiter sieht nur, was zu seiner Rolle gehört - die Buchhaltung andere Dinge als die Technik.\n\nMITGELIEFERT WIRD EIN SICHERHEITSKONZEPT: schriftlich, mit Zugriffswegen, Rollen, Datenwegen und Notfallplan. Nicht als Beiwerk, sondern weil ein Assistent mit Zugriff auf Mail, Kalender und Zahlen ohne dieses Konzept fahrlässig wäre.\n\nAUF WUNSCH Wartung und Betreuung: Updates, Überwachung, neue Funktionen, Ansprechpartner bei Fragen.\n\nEhrlich dazusagen: Das ist kein Produkt von der Stange. Es wird auf den Betrieb zugeschnitten, und das braucht Zeit und Gespräche. Dafür gehört es hinterher wirklich dem Kunden.\n\nKEINE Preise nennen.",
+    "thema": "Ein KI-Assistent, der LOKAL im Betrieb läuft, auf einem eigenen Rechner. Das ist der Kern: Die Daten bleiben im Haus.\n\nWAS SO EIN ASSISTENT KANN (das ist keine Aufzählung von Möglichkeiten, sondern das, was bei uns selbst seit Monaten wirklich läuft):\n- Er wird gesprochen bedient. Man fragt ihn wie einen Kollegen, er antwortet und führt aus.\n- Er sortiert das Postfach: erkennt, was eine Aufgabe ist, legt Anhänge ab und räumt Mails in die richtigen Ordner.\n- Er hält Termine über mehrere Kalender hinweg zusammen.\n- Er arbeitet im Ticketsystem mit: Tickets ansehen, kommentieren, Vorschläge hineinschreiben.\n- Er kennt die Zahlen: offene Rechnungen, Kosten, Auswertungen - und rechnet auf Zuruf.\n- Er erfasst Arbeitszeiten und wertet sie nach Kunde aus.\n- Er räumt Dateiablagen auf und schlägt vor, wohin etwas gehört.\n- Er beobachtet die Sicherheitslage und meldet, was auffällt.\n- Nachts prüft er sich selbst und meldet, was nicht mehr stimmt.\n- Jeder Mitarbeiter sieht nur, was zu seiner Rolle gehört - die Buchhaltung andere Dinge als die Technik.\n\nMITGELIEFERT WIRD EIN SICHERHEITSKONZEPT: schriftlich, mit Zugriffswegen, Rollen, Datenwegen und Notfallplan. Nicht als Beiwerk, sondern weil ein Assistent mit Zugriff auf Mail, Kalender und Zahlen ohne dieses Konzept fahrlässig wäre.\n\nAUF WUNSCH Wartung und Betreuung: Updates, Überwachung, neue Funktionen, Ansprechpartner bei Fragen.\n\nEhrlich dazusagen: Das ist kein Produkt von der Stange. Es wird auf den Betrieb zugeschnitten, und das braucht Zeit und Gespräche. Dafür gehört es hinterher wirklich dem Kunden.\n\nKEINE Preise nennen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Ihr eigener Assistent, der auf Ihrem Rechner im Haus läuft - nicht in einer fremden Cloud.",
     "path": "ki-assistent-fuer-ihren-betrieb.html",
     "assets": [
@@ -1409,14 +1409,134 @@
       "assets/ki-assistent-fuer-ihren-betrieb/zweitbild.png",
       "assets/ki-assistent-fuer-ihren-betrieb/hintergrund_bild.png"
     ],
-    "hero_titel": "Ihr eigener Assistent - läuft bei Ihnen im Haus",
+    "hero_titel": "Ihr eigener Assistent, der im Haus bleibt",
     "kategorie": "Netzwerk & Daten",
-    "kurzbeschreibung": "Ein eigener KI-Assistent, der lokal bei Ihnen läuft, Postfach und Termine sortiert und Ihre Daten im Haus behält.",
-    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
-    "aufbau": "klassisch",
-    "ablauf_art": "winkel",
-    "fuer_wen_art": "zeilen",
-    "erstellt": "2026-08-08T15:07:11"
+    "kurzbeschreibung": "Ein KI-Assistent, der auf einem eigenen Rechner in Ihrem Betrieb läuft und Post, Termine, Tickets und Zahlen für Sie übernimmt.",
+    "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
+    "aufbau": "wechsel",
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "chips",
+    "erstellt": "2026-08-08T15:07:11",
+    "inhalt": {
+      "kategorie": "Netzwerk & Daten",
+      "hero_titel": "Ihr eigener Assistent, der im Haus bleibt",
+      "hero_unterzeile": "Ein Assistent für Post, Termine und Zahlen, der auf einem eigenen Rechner in Ihrem Betrieb läuft - nicht in einer fremden Cloud. Ihre Daten verlassen das Haus nicht.",
+      "fuer_wen": [
+        "Handwerksbetriebe mit vielen Baustellen, Terminen und Kunden gleichzeitig",
+        "Einzelunternehmer, die Post, Kalender und Zahlen allein im Griff behalten müssen",
+        "Kanzleien und Praxen, die mit sensiblen Daten arbeiten",
+        "Firmen ohne eigene IT-Abteilung, die moderne Werkzeuge nutzen wollen, ohne Daten aus der Hand zu geben"
+      ],
+      "problem_ueberschrift": "Viel Zeit geht für Kleinarbeit drauf",
+      "problem": [
+        {
+          "titel": "Das Postfach wächst schneller als die Zeit dafür",
+          "text": "Rechnungen, Anfragen und Werbung landen im selben Posteingang. Wichtiges geht unter, während jemand jeden Morgen von Hand sortiert, statt zu arbeiten."
+        },
+        {
+          "titel": "Cloud-Dienste sehen Ihre Zahlen und Ihre Post",
+          "text": "Viele KI-Werkzeuge laufen auf fremden Servern, oft im Ausland. Wer damit Rechnungen oder Kundendaten bearbeitet, gibt sie aus der Hand, ohne genau zu wissen, wohin."
+        },
+        {
+          "titel": "Termine, Tickets und Zahlen liegen verstreut",
+          "text": "Ein Kalender hier, ein Ticketsystem dort, die Auswertung in einer dritten Anwendung. Niemand behält das nebenbei im Kopf, und jede Rückfrage kostet erneut Zeit."
+        }
+      ],
+      "loesung_ueberschrift": "Ein Assistent, der im Haus bleibt",
+      "loesung": [
+        {
+          "titel": "Lokal statt Cloud",
+          "text": "Der Assistent läuft auf einem eigenen Rechner in Ihrem Betrieb. Anfragen, Antworten und Daten verlassen das Haus nicht - anders als bei Diensten, die über fremde Server laufen.",
+          "bild": "Ein kompakter Rechner in einem offenen Technikschrank im Büro, Kabel sauber gebündelt, gedämpftes Licht im Raum"
+        },
+        {
+          "titel": "Gesprochen statt getippt",
+          "text": "Sie fragen ihn wie einen Kollegen, er antwortet und führt die Aufgabe aus. Ein kleines Mikrofon am Arbeitsplatz genügt, die Tastatur bleibt liegen.",
+          "bild": "Nahaufnahme eines kleinen Standmikrofons neben einer Tastatur auf einem Schreibtisch, eine Hand ruht daneben"
+        },
+        {
+          "titel": "Postfach, Kalender und Ticketsystem im Griff",
+          "text": "Er erkennt Aufgaben in der Post, legt Anhänge ab und trägt Termine über mehrere Kalender hinweg ein. Im Ticketsystem sieht er Fälle an, kommentiert und schlägt Antworten vor.",
+          "bild": "Ausgedruckte Terminübersicht mit farbigen Markierungen auf einem Schreibtisch, daneben ein Klemmbrett mit Notizen"
+        },
+        {
+          "titel": "Zahlen und Arbeitszeiten auf Zuruf",
+          "text": "Offene Rechnungen, Kosten und Auswertungen kennt er auswendig und rechnet, sobald Sie fragen. Arbeitszeiten erfasst er nebenbei und wertet sie nach Kunde aus.",
+          "bild": "Aufgeschlagener Ordner mit Rechnungsbelegen auf einem Besprechungstisch, ein Taschenrechner liegt am Rand"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Erstgespräch",
+          "text": "Wir sehen uns Ihre Abläufe an: welche Postfächer, Kalender und Systeme im Einsatz sind und wo der Assistent wirklich helfen soll."
+        },
+        {
+          "titel": "Sicherheitskonzept",
+          "text": "Wir legen schriftlich fest, wer worauf zugreifen darf, wie die Daten fließen und was im Notfall passiert."
+        },
+        {
+          "titel": "Einrichtung im Haus",
+          "text": "Der Assistent wird auf einem eigenen Rechner in Ihrem Betrieb eingerichtet und auf Ihre Werkzeuge abgestimmt."
+        },
+        {
+          "titel": "Übergabe und Betreuung",
+          "text": "Sie erhalten eine Einweisung, danach gehört der Assistent Ihnen. Wartung und neue Funktionen sind auf Wunsch möglich."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Daten bleiben im Haus",
+          "text": "Post, Zahlen und Kundendaten verlassen nie den eigenen Rechner."
+        },
+        {
+          "titel": "Rollen getrennt",
+          "text": "Jeder Mitarbeiter sieht nur, was zu seiner Aufgabe gehört - die Buchhaltung andere Dinge als die Technik."
+        },
+        {
+          "titel": "Weniger Kleinarbeit",
+          "text": "Sortieren, Ablegen und Zusammenrechnen übernimmt der Assistent, nicht der Feierabend."
+        },
+        {
+          "titel": "Schriftlich abgesichert",
+          "text": "Ein dokumentiertes Sicherheitskonzept mit Zugriffswegen und Notfallplan gehört von Anfang an dazu."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Läuft der Assistent wirklich ohne Cloud?",
+          "antwort": "Ja. Er läuft auf einem Rechner in Ihrem Betrieb. Es gibt keinen Grund, warum Post, Kalender oder Zahlen das Haus verlassen müssten."
+        },
+        {
+          "frage": "Wie lange dauert die Einrichtung?",
+          "antwort": "Das hängt davon ab, wie viele Systeme angebunden werden. Es ist kein Produkt von der Stange - wir stimmen es in Gesprächen auf Ihren Betrieb ab, das braucht etwas Zeit."
+        },
+        {
+          "frage": "Was passiert, wenn ein Mitarbeiter das Unternehmen verlässt?",
+          "antwort": "Die Rollen und Zugriffsrechte sind Teil des Sicherheitskonzepts. Zugänge lassen sich einzeln entziehen, ohne den Assistenten neu aufzusetzen."
+        },
+        {
+          "frage": "Brauchen wir eine eigene IT-Abteilung dafür?",
+          "antwort": "Nein. Wir richten den Assistenten ein und übernehmen auf Wunsch auch die laufende Wartung."
+        },
+        {
+          "frage": "Für wie kleine Betriebe lohnt sich das?",
+          "antwort": "Auch für Einzelunternehmer, wenn Post, Termine und Zahlen sonst nebenbei laufen müssen. Bei sehr wenigen Aufgaben pro Woche lohnt sich der Aufwand allerdings kaum - das sagen wir im Erstgespräch offen."
+        }
+      ],
+      "cta_titel": "Lernen Sie Ihren Assistenten kennen",
+      "cta_text": "Im Erstgespräch sehen wir, welche Aufgaben er in Ihrem Betrieb übernehmen kann.",
+      "seo_beschreibung": "KI-Assistent, der lokal in Ihrem Betrieb läuft: Post, Termine, Tickets und Zahlen im Griff - Daten bleiben im Haus, mit Sicherheitskonzept.",
+      "kurzbeschreibung": "Ein KI-Assistent, der auf einem eigenen Rechner in Ihrem Betrieb läuft und Post, Termine, Tickets und Zahlen für Sie übernimmt.",
+      "hero_bild": "Ein kompakter Rechner auf einem Regal in einem kleinen Büro-Technikraum, Kabel ordentlich gebündelt, eine Hand justiert ein Anschlusskabel",
+      "zweitbild": "Nahaufnahme eines kleinen Mikrofons auf einem Schreibtisch neben einem Stapel Papierbelegen, im Hintergrund unscharf ein Bildschirm",
+      "hintergrund_bild": "Blick von schräg unten in einen offenen Serverschrank, Kabelstränge und Lüfter ragen ins Bild, kühles stahlblaues Licht von oben, starke Tiefe im Raum"
+    },
+    "bilder": {
+      "hero_bild": "assets/ki-assistent-fuer-ihren-betrieb/hero_bild.png",
+      "zweitbild": "assets/ki-assistent-fuer-ihren-betrieb/zweitbild.png",
+      "hintergrund_bild": "assets/ki-assistent-fuer-ihren-betrieb/hintergrund_bild.png"
+    },
+    "ueberarbeitet": "2026-08-10T00:47:05"
   },
   "digitale-tafeln-fuer-besprechungsraum-und-klassenzimmer": {
     "titel": "Digitale Tafeln für Besprechungsraum und Klassenzimmer",
