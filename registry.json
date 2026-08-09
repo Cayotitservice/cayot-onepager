@@ -8,16 +8,135 @@
       "assets/sicherheitscheck-von-au-en-gratis-pentest/zweitbild.png",
       "assets/sicherheitscheck-von-au-en-gratis-pentest/hintergrund_bild.png"
     ],
-    "hero_titel": "So sehen Angreifer Ihre Domain von außen",
-    "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Etwas professioneller und konkreter wirken.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret auf die Situation zuschneiden (wer sollte wissen, was von aussen sichtbar ist).",
-    "ueberarbeitet": "2026-08-08T15:19:31",
-    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
-    "aufbau": "klassisch",
+    "hero_titel": "Was Angreifer vor dem ersten Klick sehen",
+    "thema": "Bei unserem selbstentwickelten Public Discovery Scan wird die Erkundungsphase\r\neines Angreifers simuliert. Damit liefern wir Ihnen und Ihren Endkunden eine\r\numfassende Analyse öffentlich einsehbarer Schwachstellen und\r\nSicherheitslücken einer Domain.\r\nDabei handelt es sich um einen passiven Scan, bei dem nur öffentliche Quellen\r\ngenutzt werden.\r\nZiel:\r\n- Erkennung potenzieller Angriffsflächen und Ergreifen von\r\nSicherheitsmaßnahmen\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: komplett neu in meinem Style mit allen Regeln\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Das logo gegen mein richtiges ersetzen logo full nobuffer und Dezenten Serverraum als Hintergrund\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Etwas professioneller und konkreter wirken.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret auf die Situation zuschneiden (wer sollte wissen, was von aussen sichtbar ist).\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
+    "ueberarbeitet": "2026-08-10T00:35:28",
+    "bildrichtung": "Ein einzelner heller Lichtpunkt im halbdunklen Raum, starker Kontrast, alles andere ruhig",
+    "aufbau": "bild_oben",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Ein passiver Scan zeigt, welche Schwachstellen zu Ihrer Domain öffentlich sichtbar sind - inklusive verständlichem Bericht.",
+    "kurzbeschreibung": "Eine passive Analyse aller öffentlich sichtbaren Informationen zu Ihrer Domain, mit Bericht und Handlungsempfehlungen.",
     "titel": "Sicherheitscheck von außen",
-    "ablauf_art": "strang",
-    "fuer_wen_art": "zeilen"
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "karten",
+    "inhalt": {
+      "kategorie": "Sicherheit",
+      "hero_titel": "Was Angreifer vor dem ersten Klick sehen",
+      "hero_unterzeile": "Der Public Discovery Scan prüft, welche Informationen zu Ihrer Domain öffentlich einsehbar sind. Sie erhalten eine strukturierte Übersicht der Schwachstellen, bevor sie jemand anderes findet.",
+      "fuer_wen": [
+        "IT-Verantwortliche in Unternehmen ohne eigene Sicherheitsabteilung",
+        "Geschäftsführer und Selbständige, die für ihre Domain und Kundendaten verantwortlich sind",
+        "IT-Dienstleister und Systemhäuser, die ihren Endkunden eine unabhängige Prüfung anbieten möchten",
+        "Betreiber von Webseiten und Online-Shops, die wissen wollen, welche Informationen über sie öffentlich abrufbar sind"
+      ],
+      "problem_ueberschrift": "Was von außen sichtbar ist, wissen die wenigsten",
+      "problem": [
+        {
+          "titel": "Unbekannte Angriffsfläche",
+          "text": "Viele Unternehmen kennen nicht alle Systeme, die über ihre Domain öffentlich erreichbar sind. Alte Subdomains, vergessene Mailserver oder offene Dienste bleiben oft über Jahre unbemerkt."
+        },
+        {
+          "titel": "Veraltete Einträge bleiben liegen",
+          "text": "DNS-Einträge, Zertifikate und Mailserver-Konfigurationen werden eingerichtet und danach nicht mehr geprüft. Was einmal korrekt war, kann Jahre später ein Einfallstor sein."
+        },
+        {
+          "titel": "Die erste Phase eines Angriffs bleibt unbemerkt",
+          "text": "Bevor ein Angreifer aktiv wird, sammelt er öffentlich verfügbare Informationen über sein Ziel. Genau diese Erkundungsphase löst keine Alarme aus und wird deshalb selten bemerkt."
+        }
+      ],
+      "loesung_ueberschrift": "Der Public Discovery Scan",
+      "loesung": [
+        {
+          "titel": "Passive Erkundung wie ein Angreifer",
+          "text": "Unser selbst entwickelter Scan wertet ausschließlich öffentlich zugängliche Quellen aus, etwa DNS-Einträge, Zertifikate und Suchmaschinen-Treffer. Es findet kein aktiver Zugriff auf Ihre Systeme statt.",
+          "bild": "Nahaufnahme einer Hand an einer Tastatur, im unscharfen Hintergrund ein Monitor mit verbundenen Punkten und Linien, kein lesbarer Text"
+        },
+        {
+          "titel": "Vollständige Auswertung Ihrer Domain",
+          "text": "Sie erhalten eine strukturierte Übersicht aller gefundenen Auffälligkeiten, von veralteten Zertifikaten bis zu Diensten, die eigentlich nicht öffentlich erreichbar sein sollten.",
+          "bild": "Ein mehrseitiger ausgedruckter Bericht mit farbig markierten Abschnitten liegt auf einem Besprechungstisch, daneben ein Stift"
+        },
+        {
+          "titel": "Konkrete Einordnung nach Risiko",
+          "text": "Zu jedem Fund liefern wir eine Einschätzung, wie kritisch er ist, und einen Vorschlag zur Behebung. Sie entscheiden, welche Punkte zuerst angegangen werden.",
+          "bild": "Zwei Personen sitzen am Tisch, eine zeigt mit dem Finger auf eine Zeile in einem ausgedruckten Dokument, Nahaufnahme der Hände"
+        },
+        {
+          "titel": "Auch für Ihre Endkunden nutzbar",
+          "text": "IT-Dienstleister können den Scan als eigenständige Leistung anbieten und ihren Kunden eine unabhängige Prüfung der eigenen Außensicht liefern.",
+          "bild": "Eine Hand übergibt einen gehefteten Bericht über einen Tisch an eine zweite Person, Nahaufnahme der Übergabe"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Domain benennen",
+          "text": "Sie teilen uns mit, welche Domain geprüft werden soll. Ein Zugriff auf Ihre Systeme ist dafür nicht nötig."
+        },
+        {
+          "titel": "Passiver Scan",
+          "text": "Unser System wertet öffentlich verfügbare Quellen aus, darunter DNS-Einträge, Zertifikate und öffentliche Register. Ihre Systeme werden dabei nicht aktiv angesprochen."
+        },
+        {
+          "titel": "Auswertung durch uns",
+          "text": "Die Ergebnisse werden von uns geprüft und nach Risiko eingeordnet, bevor Sie sie erhalten."
+        },
+        {
+          "titel": "Bericht und Gespräch",
+          "text": "Sie bekommen einen verständlichen Bericht. Bei Bedarf besprechen wir die Ergebnisse gemeinsam mit Ihnen."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Keine Systemzugriffe nötig",
+          "text": "Der Scan arbeitet ausschließlich mit öffentlich zugänglichen Informationen, ohne Eingriff in Ihre Infrastruktur."
+        },
+        {
+          "titel": "Die Sicht eines Angreifers",
+          "text": "Sie sehen Ihre Domain genau so, wie sie in der Erkundungsphase eines Angriffs erscheint."
+        },
+        {
+          "titel": "Verständlich aufbereitet",
+          "text": "Die Ergebnisse werden nach Risiko eingeordnet und nicht als reine Rohdaten geliefert."
+        },
+        {
+          "titel": "Auch für Ihre Kunden einsetzbar",
+          "text": "IT-Dienstleister können den Scan als eigenständige Leistung an ihre Endkunden weitergeben."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Greifen Sie dabei auf unsere Systeme zu?",
+          "antwort": "Nein. Der Scan ist passiv und nutzt ausschließlich öffentlich einsehbare Quellen wie DNS-Einträge, Zertifikate und öffentliche Register. Ein aktiver Zugriff auf Ihre Infrastruktur findet nicht statt."
+        },
+        {
+          "frage": "Was genau wird geprüft?",
+          "antwort": "Wir werten öffentlich sichtbare Informationen zu Ihrer Domain aus, etwa Subdomains, DNS-Konfiguration, Zertifikate, Mailserver-Einträge und Treffer in Suchmaschinen."
+        },
+        {
+          "frage": "Eignet sich der Scan auch für kleinere Unternehmen?",
+          "antwort": "Ja. Der Scan eignet sich für jede Domain, unabhängig von Branche oder Größe. Auch Einzelunternehmer mit eigener Webseite profitieren von der Auswertung."
+        },
+        {
+          "frage": "Wie lange dauert die Auswertung?",
+          "antwort": "Das hängt vom Umfang der Domain ab. Sobald wir wissen, welche Domain geprüft werden soll, können wir Ihnen einen Zeitrahmen nennen."
+        },
+        {
+          "frage": "Kann ich den Scan für die Kunden meiner Firma nutzen?",
+          "antwort": "Ja. IT-Dienstleister und Systemhäuser setzen den Scan häufig ein, um ihren Endkunden eine unabhängige Prüfung der Außensicht anzubieten."
+        }
+      ],
+      "cta_titel": "Domain auf Sichtbarkeit prüfen lassen",
+      "cta_text": "Sagen Sie uns, welche Domain geprüft werden soll, den Rest übernehmen wir.",
+      "seo_beschreibung": "Public Discovery Scan: passive Prüfung öffentlich sichtbarer Schwachstellen Ihrer Domain, ohne Zugriff auf Ihre Systeme.",
+      "kurzbeschreibung": "Eine passive Analyse aller öffentlich sichtbaren Informationen zu Ihrer Domain, mit Bericht und Handlungsempfehlungen.",
+      "hero_bild": "Ein Maschendrahtzaun im Gegenlicht der Abenddämmerung, Blick von außen auf ein Gebäude, das im Unscharfen liegt",
+      "zweitbild": "Nahaufnahme eines geschlossenen Vorhängeschlosses an einem Metalltor, Streiflicht von der Seite",
+      "hintergrund_bild": "Ein dezent angedeuteter Serverraum im Halbdunkel, ein einzelner heller Lichtpunkt in Form einer leuchtenden Status-LED an einem Rack durchbricht die Dunkelheit, starker Kontrast, alle übrigen Konturen ruhig und unscharf"
+    },
+    "bilder": {
+      "hero_bild": "assets/sicherheitscheck-von-au-en-gratis-pentest/hero_bild.png",
+      "zweitbild": "assets/sicherheitscheck-von-au-en-gratis-pentest/zweitbild.png",
+      "hintergrund_bild": "assets/sicherheitscheck-von-au-en-gratis-pentest/hintergrund_bild.png"
+    }
   },
   "lokaler-it-notdienst": {
     "titel": "Lokaler IT-Notdienst",
