@@ -981,7 +981,7 @@
   "cyberversicherung-vorbereiten": {
     "titel": "Cyberversicherung vorbereiten",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: nuechtern und ehrlich. Kein Angstverkauf, sondern Hausaufgaben machen.",
-    "thema": "WICHTIG - genau so formulieren, nicht anders: Wir vermitteln und verkaufen KEINE Versicherungen. Wir pruefen den Ist-Zustand, arbeiten die Anforderungen ab, die Versicherer heute stellen (MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe), dokumentieren das nachvollziehbar und begleiten Euch - abgeschlossen wird bei Eurem Makler oder Versicherer. Das gehoert klar und selbstbewusst auf die Seite, nicht als Kleingedrucktes. Der Grund ist ein echter Nutzen fuer den Kunden: Viele Antraege scheitern oder die Police zahlt im Schadensfall nicht, weil im Fragebogen Dinge bestaetigt wurden, die technisch gar nicht umgesetzt sind. Genau das verhindern wir. Danach: Umsetzung von Massnahmen zur Vorbeugung und Begleitung im Umgang mit der aktuellen Bedrohungslage. KEINE Preise nennen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret auf die Versicherungssituation zuschneiden (wer gerade einen Antrag ausfuellt oder eine Police hat, deren Anforderungen er nicht erfuellt).",
+    "thema": "WICHTIG - genau so formulieren, nicht anders: Wir vermitteln und verkaufen KEINE Versicherungen. Wir pruefen den Ist-Zustand, arbeiten die Anforderungen ab, die Versicherer heute stellen (MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe), dokumentieren das nachvollziehbar und begleiten Euch - abgeschlossen wird bei Eurem Makler oder Versicherer. Das gehoert klar und selbstbewusst auf die Seite, nicht als Kleingedrucktes. Der Grund ist ein echter Nutzen fuer den Kunden: Viele Antraege scheitern oder die Police zahlt im Schadensfall nicht, weil im Fragebogen Dinge bestaetigt wurden, die technisch gar nicht umgesetzt sind. Genau das verhindern wir. Danach: Umsetzung von Massnahmen zur Vorbeugung und Begleitung im Umgang mit der aktuellen Bedrohungslage. KEINE Preise nennen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Zielgruppen konkret auf die Versicherungssituation zuschneiden (wer gerade einen Antrag ausfuellt oder eine Police hat, deren Anforderungen er nicht erfuellt).\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Den Ist-Zustand pruefen, die Anforderungen des Versicherers erfuellen und Euch zum Abschluss begleiten.",
     "path": "cyberversicherung-vorbereiten.html",
     "assets": [
@@ -989,15 +989,134 @@
       "assets/cyberversicherung-vorbereiten/zweitbild.png",
       "assets/cyberversicherung-vorbereiten/hintergrund_bild.png"
     ],
-    "hero_titel": "Bereit für Ihre Cyberversicherung",
-    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
+    "hero_titel": "Damit Ihre Cyberversicherung im Schadensfall zahlt",
+    "bildrichtung": "Weitwinkel mit starken Fluchtlinien und viel Tiefe, kühles Blau, ruhige dunkle Flächen",
     "erstellt": "2026-08-07T23:19:19",
-    "ueberarbeitet": "2026-08-08T15:25:04",
-    "aufbau": "bild_oben",
+    "ueberarbeitet": "2026-08-10T00:43:13",
+    "aufbau": "ruhig",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "Wir prüfen und dokumentieren, ob Ihre IT die Anforderungen Ihrer Cyberversicherung wirklich erfüllt.",
-    "ablauf_art": "winkel",
-    "fuer_wen_art": "karten"
+    "kurzbeschreibung": "Wir prüfen, ob Ihre IT die Anforderungen Ihrer Cyberversicherung wirklich erfüllt, und setzen um, was noch fehlt.",
+    "ablauf_art": "strang",
+    "fuer_wen_art": "chips",
+    "inhalt": {
+      "kategorie": "Sicherheit",
+      "hero_titel": "Damit Ihre Cyberversicherung im Schadensfall zahlt",
+      "hero_unterzeile": "Wir prüfen, ob Ihre IT die Anforderungen Ihres Versicherers tatsächlich erfüllt - MFA, Backup, Virenschutz, Notfallplan, Rechtevergabe. Abgeschlossen wird bei Ihrem Makler oder Versicherer, das übernehmen wir nicht.",
+      "fuer_wen": [
+        "Unternehmen, die gerade einen Antrag auf eine Cyberversicherung ausfüllen",
+        "Betriebe, deren Versicherer bei der Verlängerung neue Anforderungen stellt",
+        "Firmen mit bestehender Police, die die zugesagten Maßnahmen nie vollständig umgesetzt haben",
+        "Selbständige und Einzelunternehmer, die vom Makler nach MFA, Backup oder Notfallplan gefragt werden"
+      ],
+      "problem_ueberschrift": "Wenn der Fragebogen mehr verspricht, als die IT hält",
+      "problem": [
+        {
+          "titel": "Häkchen ohne Grundlage",
+          "text": "Im Antrag werden Mehrfaktor-Anmeldung, ein geregeltes Backup und ein Notfallplan bestätigt - oft ohne dass das im Betrieb tatsächlich so eingerichtet ist. Im Schadensfall prüft der Versicherer genau diese Angaben nach."
+        },
+        {
+          "titel": "Unklare Zusagen bei der Erneuerung",
+          "text": "Bei der Verlängerung fragen Versicherer heute detaillierter nach als noch vor wenigen Jahren. Wer die alten Antworten einfach übernimmt, riskiert, Dinge zuzusichern, die nicht mehr zutreffen."
+        },
+        {
+          "titel": "Police zahlt nicht",
+          "text": "Nach einem Vorfall verlangt der Versicherer Nachweise. Fehlen sie oder war eine Angabe im Fragebogen falsch, kann die Leistung ganz oder teilweise verweigert werden."
+        }
+      ],
+      "loesung_ueberschrift": "Was wir prüfen und umsetzen",
+      "loesung": [
+        {
+          "titel": "Ist-Zustand aufnehmen",
+          "text": "Wir sehen uns Ihre Systeme, Zugänge und Sicherungen an und gleichen sie mit den Fragen ab, die Ihr Versicherer oder Makler stellt. Am Ende steht eine Liste dessen, was schon passt und was fehlt.",
+          "bild": "Zwei Hände über einem ausgedruckten Netzwerkplan auf einem Besprechungstisch, ein Kugelschreiber hakt Punkte auf einer Liste ab"
+        },
+        {
+          "titel": "Zugänge und Anmeldung absichern",
+          "text": "Wir richten Mehrfaktor-Anmeldung und eine saubere Rechtevergabe ein, sodass nur Zugriff hat, wer ihn braucht. Das ist einer der Punkte, die Versicherer heute am häufigsten prüfen.",
+          "bild": "Eine Hand steckt einen kleinen Sicherheitsschlüssel in ein Lesegerät an einer Bürotür, das grüne Licht am Gerät leuchtet"
+        },
+        {
+          "titel": "Backup und Notfallplan aufsetzen",
+          "text": "Wir richten eine geregelte Datensicherung ein und halten schriftlich fest, wer im Notfall was tut. Beides gehört zu den Standardfragen jedes Antrags.",
+          "bild": "Eine Hand schiebt eine Festplatte in ein NAS-Gehäuse, daneben liegt ein handschriftlicher Ablaufplan auf dem Tisch"
+        },
+        {
+          "titel": "Dokumentation für den Versicherer",
+          "text": "Wir fassen die geprüften und umgesetzten Punkte nachvollziehbar zusammen. Diese Unterlage können Sie Ihrem Makler oder Versicherer vorlegen und im Schadensfall wieder heranziehen.",
+          "bild": "Ein gebundener Bericht mit farbigen Reitern liegt auf einem Besprechungstisch, daneben ein geöffneter Aktenordner"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Erstgespräch",
+          "text": "Wir klären, welche Police oder welcher Antrag konkret vorliegt und welche Anforderungen darin stehen."
+        },
+        {
+          "titel": "Bestandsaufnahme",
+          "text": "Wir prüfen Ihre Systeme vor Ort oder per Fernzugriff und gleichen den Stand mit den Anforderungen ab."
+        },
+        {
+          "titel": "Umsetzung",
+          "text": "Fehlende Punkte wie MFA, Backup oder Notfallplan werden eingerichtet und getestet."
+        },
+        {
+          "titel": "Übergabe",
+          "text": "Sie erhalten die Dokumentation für Ihren Makler oder Versicherer und können den Antrag oder die Verlängerung mit belastbaren Angaben stellen."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Antrag mit echten Angaben",
+          "text": "Sie beantworten den Fragebogen mit Angaben, die tatsächlich zutreffen, statt mit guten Absichten."
+        },
+        {
+          "titel": "Nachweis im Schadensfall",
+          "text": "Sie haben eine Dokumentation zur Hand, die Sie dem Versicherer im Ernstfall vorlegen können."
+        },
+        {
+          "titel": "Klarer Überblick",
+          "text": "Sie wissen genau, welche Punkte technisch schon stehen und welche noch offen sind."
+        },
+        {
+          "titel": "Unabhängige Prüfung",
+          "text": "Die Bewertung Ihrer IT kommt nicht vom Versicherer selbst, sondern von einer Stelle, die Ihre Interessen vertritt."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Verkaufen Sie auch die Versicherung?",
+          "antwort": "Nein. Wir vermitteln und verkaufen keine Versicherungen. Wir prüfen und bereiten die technische Seite vor und begleiten Sie dabei - abgeschlossen wird bei Ihrem Makler oder Versicherer."
+        },
+        {
+          "frage": "Was passiert, wenn Anforderungen fehlen?",
+          "antwort": "Wir zeigen Ihnen, was fehlt, und setzen es gemeinsam mit Ihnen um, bevor der Antrag gestellt oder verlängert wird."
+        },
+        {
+          "frage": "Passt das zu jedem Versicherer gleich?",
+          "antwort": "Die Anforderungen unterscheiden sich je nach Anbieter und Tarif. Wir richten uns nach dem, was Ihr Versicherer oder Makler konkret verlangt."
+        },
+        {
+          "frage": "Ich habe schon eine Police, lohnt sich das noch?",
+          "antwort": "Gerade dann. Wir prüfen, ob die im Fragebogen bestätigten Punkte tatsächlich umgesetzt sind, das schützt Sie im Schadensfall."
+        },
+        {
+          "frage": "Wie lange dauert die Vorbereitung?",
+          "antwort": "Das hängt vom Ist-Zustand ab. Nach der Bestandsaufnahme nennen wir Ihnen einen realistischen Zeitrahmen."
+        }
+      ],
+      "cta_titel": "Lassen Sie Ihre IT gegen den Fragebogen prüfen",
+      "cta_text": "Vereinbaren Sie eine Bestandsaufnahme, bevor Sie den Antrag unterschreiben oder verlängern.",
+      "seo_beschreibung": "Wir prüfen Ihre IT gegen die Anforderungen der Cyberversicherung - MFA, Backup, Notfallplan - und begleiten Sie bis zum Abschluss bei Ihrem Makler.",
+      "kurzbeschreibung": "Wir prüfen, ob Ihre IT die Anforderungen Ihrer Cyberversicherung wirklich erfüllt, und setzen um, was noch fehlt.",
+      "hero_bild": "Eine Hand dreht einen stabilen Schlüssel in einem massiven Türschloss, im Hintergrund unscharf ein Aktenordner auf einem Beistelltisch",
+      "zweitbild": "Nahaufnahme eines Vorhängeschlosses an einem Aktenschrank, daneben liegt ein Schlüsselbund auf der Tischplatte",
+      "hintergrund_bild": "Weitwinkelaufnahme eines langen, dunklen Flurs mit mehreren verschlossenen Türen in Reihe, starke Fluchtlinien führen in die Tiefe, kühles blaues Licht, ruhige dunkle Schattenflächen"
+    },
+    "bilder": {
+      "hero_bild": "assets/cyberversicherung-vorbereiten/hero_bild.png",
+      "zweitbild": "assets/cyberversicherung-vorbereiten/zweitbild.png",
+      "hintergrund_bild": "assets/cyberversicherung-vorbereiten/hintergrund_bild.png"
+    }
   },
   "it-dokumente": {
     "titel": "IT-Dokumente",
