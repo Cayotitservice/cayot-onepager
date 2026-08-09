@@ -421,7 +421,7 @@
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: ruhig und gruendlich. Daten sind das, was man nicht nachkaufen kann.",
-    "thema": "Typische Auftraege: neue Synology einrichten; alte Synology auf eine neue migrieren; PCs automatisch sichern; Microsoft 365 auf die Synology sichern (Mails, OneDrive, SharePoint); Fotos und Dokumente zentral speichern statt auf zehn Rechnern; das NAS sicher von aussen erreichbar machen; ein Backup-Konzept erstellen, das auch einen Ausfall ueberlebt. Eingerichtet werden ausserdem DHCP, DNS, Docker, VPN und weiteres. Wichtig: Im Anschluss ist laufende Wartung und Ueberwachung moeglich - also nicht nur aufbauen und weg sein, sondern dranbleiben und melden, wenn eine Platte stirbt oder eine Sicherung nicht durchlaeuft. Kernbotschaft: Ein Backup, das noch nie zurueckgespielt wurde, ist kein Backup.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: WICHTIG: Nicht so stark auf Backup stuerzen. Die Sicherung ist nur EINE von vielen Sachen, die ein NAS kann. Gleichrangig behandeln: zentrale Dateiablage statt Daten auf zehn Rechnern, Fotos und Dokumente an einem Ort, Zugriff von unterwegs, Rechte je Mitarbeiter, DHCP/DNS/Docker/VPN, Ueberwachung. Backup ist ein Punkt davon, nicht das Thema der Seite. Die Zielgruppen konkret auf NAS-Situationen zuschneiden.",
+    "thema": "Typische Auftraege: neue Synology einrichten; alte Synology auf eine neue migrieren; PCs automatisch sichern; Microsoft 365 auf die Synology sichern (Mails, OneDrive, SharePoint); Fotos und Dokumente zentral speichern statt auf zehn Rechnern; das NAS sicher von aussen erreichbar machen; ein Backup-Konzept erstellen, das auch einen Ausfall ueberlebt. Eingerichtet werden ausserdem DHCP, DNS, Docker, VPN und weiteres. Wichtig: Im Anschluss ist laufende Wartung und Ueberwachung moeglich - also nicht nur aufbauen und weg sein, sondern dranbleiben und melden, wenn eine Platte stirbt oder eine Sicherung nicht durchlaeuft. Kernbotschaft: Ein Backup, das noch nie zurueckgespielt wurde, ist kein Backup.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: WICHTIG: Nicht so stark auf Backup stuerzen. Die Sicherung ist nur EINE von vielen Sachen, die ein NAS kann. Gleichrangig behandeln: zentrale Dateiablage statt Daten auf zehn Rechnern, Fotos und Dokumente an einem Ort, Zugriff von unterwegs, Rechte je Mitarbeiter, DHCP/DNS/Docker/VPN, Ueberwachung. Backup ist ein Punkt davon, nicht das Thema der Seite. Die Zielgruppen konkret auf NAS-Situationen zuschneiden.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Synology-NAS einrichten, umziehen und richtig absichern - damit die Daten zentral liegen und wirklich gesichert sind.",
     "path": "nas-und-backup-service.html",
     "assets": [
@@ -429,15 +429,134 @@
       "assets/nas-und-backup-service/zweitbild.png",
       "assets/nas-und-backup-service/hintergrund_bild.png"
     ],
-    "hero_titel": "Alle Daten an einem Ort - sicher erreichbar",
-    "bildrichtung": "Strenges, sich wiederholendes Raster im Detail, Grau mit einem einzelnen grünen Akzent",
+    "hero_titel": "Ein Ort für alle Daten - im Büro und unterwegs",
+    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
     "erstellt": "2026-08-07T23:07:52",
-    "ueberarbeitet": "2026-08-08T15:16:36",
-    "aufbau": "bild_oben",
+    "ueberarbeitet": "2026-08-10T00:38:01",
+    "aufbau": "wechsel",
     "kategorie": "Netzwerk & Daten",
-    "kurzbeschreibung": "Ihr Synology-NAS eingerichtet, umgezogen und laufend betreut - für zentrale Dateien, Zugriff von unterwegs und funktionierende Sicherung.",
-    "ablauf_art": "winkel",
-    "fuer_wen_art": "chips"
+    "kurzbeschreibung": "Ein zentraler, überwachter Speicherort für all Ihre Daten - mit Zugriff von unterwegs und geprüfter Sicherung.",
+    "ablauf_art": "strang",
+    "fuer_wen_art": "trennstrich",
+    "inhalt": {
+      "kategorie": "Netzwerk & Daten",
+      "hero_titel": "Ein Ort für alle Daten - im Büro und unterwegs",
+      "hero_unterzeile": "Wir richten Ihre Synology so ein, dass Dateien, Fotos und Dokumente an einem Ort liegen, jeder Mitarbeiter nur sieht, was er sehen soll, und Sie auch von unterwegs darauf zugreifen. Sicherung ist ein Teil davon, nicht der einzige Grund für ein NAS.",
+      "fuer_wen": [
+        "Handwerksbetriebe und kleine Firmen, deren Dateien auf mehreren Rechnern verstreut liegen",
+        "Einzelunternehmer und Selbständige, die unterwegs auf ihre Unterlagen zugreifen müssen",
+        "Kanzleien und Praxen, die Zugriffsrechte je Mitarbeiter klar regeln müssen",
+        "Privathaushalte mit Fotos und Dokumenten auf mehreren Geräten"
+      ],
+      "problem_ueberschrift": "Wenn Daten überall und nirgends liegen",
+      "problem": [
+        {
+          "titel": "Verstreute Dateien",
+          "text": "Ein Dokument liegt auf dem Rechner im Büro, eine zweite Version auf dem Laptop, eine dritte auf einem USB-Stick. Niemand weiß mehr sicher, welche davon die aktuelle ist."
+        },
+        {
+          "titel": "Kein Zugriff von unterwegs",
+          "text": "Beim Kundentermin fehlt genau die Datei, die auf dem Rechner im Büro liegt. Ohne zentrale Ablage bleibt nur der Anruf und das Warten auf jemanden vor Ort."
+        },
+        {
+          "titel": "Kein Blick auf den Zustand",
+          "text": "Das NAS steht seit der Einrichtung im Schrank und läuft. Ob eine Platte Probleme macht oder eine Sicherung tatsächlich durchläuft, sieht niemand, bis es zu spät ist."
+        }
+      ],
+      "loesung_ueberschrift": "Was wir einrichten - und dabei im Blick behalten",
+      "loesung": [
+        {
+          "titel": "Zentrale Ablage",
+          "text": "Alle Dateien liegen auf einem Gerät im Haus statt verteilt auf mehreren Rechnern. Ordnerstruktur und Namensgebung legen wir gemeinsam mit Ihnen fest, damit sich das System bewährt und nicht wieder zuwächst.",
+          "bild": "Nahaufnahme einer Hand, die eine Festplatte in ein geöffnetes NAS-Gehäuse mit mehreren Laufwerksschächten einschiebt, warmes Seitenlicht"
+        },
+        {
+          "titel": "Zugriff von unterwegs, Rechte je Mitarbeiter",
+          "text": "Über eine gesicherte Verbindung erreichen Sie Ihre Dateien auch von außerhalb des Büros. Jeder Mitarbeiter bekommt genau die Rechte, die für seine Arbeit nötig sind, nicht mehr.",
+          "bild": "Hand steckt einen Schlüssel in ein Türschloss an einer Bürotür, Nahaufnahme mit unscharfem Hintergrund"
+        },
+        {
+          "titel": "Netzwerkdienste im Hintergrund",
+          "text": "DHCP, DNS, VPN und bei Bedarf Docker-Container richten wir so ein, dass Geräte im Netzwerk automatisch die richtigen Adressen bekommen und ein Fernzugriff sauber abgesichert ist.",
+          "bild": "Netzwerkdose in einer Wand, aus der eine Hand ein Kabel zieht und in ein Gerät steckt, Nahaufnahme"
+        },
+        {
+          "titel": "Sicherung, die getestet wird",
+          "text": "PCs, Microsoft 365 mit Mails, OneDrive und SharePoint werden auf das NAS gesichert. Nach der Einrichtung spielen wir eine Sicherung testweise zurück, denn eine Sicherung, die das nie durchlaufen hat, ist keine.",
+          "bild": "Zwei Festplatten liegen nebeneinander auf einer Werkbank, eine wird gerade aus einem geöffneten Gehäuse gezogen, Nahaufnahme"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Bestandsaufnahme",
+          "text": "Wir schauen uns an, wie viele Rechner und Nutzer es gibt, welche Dienste gebraucht werden und wie viel Speicherplatz sinnvoll ist."
+        },
+        {
+          "titel": "Einrichtung",
+          "text": "Das NAS wird installiert oder eine bestehende Synology übernommen, Ordner und Zugriffsrechte werden angelegt, Netzwerkdienste eingerichtet."
+        },
+        {
+          "titel": "Sicherung anlegen",
+          "text": "Backup-Pläne für PCs und Microsoft 365 werden erstellt und einmal testweise zurückgespielt, damit sie im Ernstfall auch wirklich funktionieren."
+        },
+        {
+          "titel": "Laufende Betreuung",
+          "text": "Wir behalten das NAS im Blick und melden uns, wenn eine Platte Anzeichen von Verschleiß zeigt oder eine Sicherung nicht durchgelaufen ist."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Ein Ort für alle Daten",
+          "text": "Dateien liegen an einer Stelle statt verteilt auf mehreren Rechnern und Sticks. Jeder findet die aktuelle Version."
+        },
+        {
+          "titel": "Zugriff von überall",
+          "text": "Unterwegs oder im Homeoffice erreichen Sie Ihre Unterlagen, ohne Dateien per E-Mail hin- und herzuschicken."
+        },
+        {
+          "titel": "Rechte klar geregelt",
+          "text": "Jeder Mitarbeiter sieht nur, was für seine Arbeit nötig ist. Nicht mehr, nicht weniger."
+        },
+        {
+          "titel": "Sicherung, die geprüft ist",
+          "text": "Im Ernstfall lässt sich tatsächlich etwas zurückspielen, weil wir das vorher getestet haben."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Welche Synology-Modelle richten Sie ein?",
+          "antwort": "Wir arbeiten mit den gängigen Modellen für kleine Betriebe und Privathaushalte, von Geräten mit einer Festplatte bis zu mehreren Laufwerken im Verbund. Welches Modell zu Ihrem Bedarf passt, klären wir vorab."
+        },
+        {
+          "frage": "Kann ich eine bestehende Synology übernehmen statt einer neuen?",
+          "antwort": "Ja. Wir übernehmen oder migrieren bestehende Geräte auf ein neues, inklusive Ordnerstruktur, Rechten und Einstellungen."
+        },
+        {
+          "frage": "Sichert das NAS auch Microsoft 365?",
+          "antwort": "Ja. Mails, OneDrive und SharePoint lassen sich zusätzlich auf dem NAS sichern, getrennt von Microsofts eigener, zeitlich begrenzter Wiederherstellung."
+        },
+        {
+          "frage": "Was passiert, wenn eine Festplatte ausfällt?",
+          "antwort": "Bei laufender Überwachung melden wir uns, sobald erste Warnzeichen auftreten, und tauschen die Platte, bevor daraus ein Datenverlust wird."
+        },
+        {
+          "frage": "Testen Sie, ob die Sicherung wirklich funktioniert?",
+          "antwort": "Ja. Eine Sicherung, die noch nie zurückgespielt wurde, ist keine. Wir testen die Rücksicherung nach der Einrichtung und in regelmäßigen Abständen danach."
+        }
+      ],
+      "cta_titel": "Bringen Sie Ihre Daten an einen Ort",
+      "cta_text": "Schreiben Sie uns, wir schauen uns Ihre aktuelle Situation an und sagen Ihnen, was ein NAS für Sie leisten kann.",
+      "seo_beschreibung": "Synology-NAS einrichten, umziehen und absichern: zentrale Ablage, Zugriff von unterwegs, Rechte je Nutzer und geprüfte Sicherung.",
+      "kurzbeschreibung": "Ein zentraler, überwachter Speicherort für all Ihre Daten - mit Zugriff von unterwegs und geprüfter Sicherung.",
+      "hero_bild": "Nahaufnahme einer Hand, die eine Festplatte in ein geöffnetes NAS-Gehäuse mit mehreren Laufwerksschächten einschiebt, warmes Seitenlicht auf dem Metall",
+      "zweitbild": "Netzwerkdose in einer Wand, aus der eine Hand ein Kabel zieht und in ein Gerät steckt, Nahaufnahme mit unscharfem Hintergrund",
+      "hintergrund_bild": "Nahaufnahme einer halb eingeschobenen Festplatte in einem geöffneten NAS-Gehäuse, warmes Bernsteinlicht auf der Metalloberfläche, geringe Schärfentiefe, weicher unscharfer Hintergrund mit sanftem Bokeh"
+    },
+    "bilder": {
+      "hero_bild": "assets/nas-und-backup-service/hero_bild.png",
+      "zweitbild": "assets/nas-und-backup-service/zweitbild.png",
+      "hintergrund_bild": "assets/nas-und-backup-service/hintergrund_bild.png"
+    }
   },
   "e-mail-sicherheitscheck": {
     "titel": "E-Mail-Sicherheitscheck",
