@@ -1261,7 +1261,7 @@
   "security-paket-fuer-unternehmen": {
     "titel": "Security-Paket für Unternehmen",
     "stil": "Sachlich und ruhig, kein Angstverkauf. Sicherheit ist Handwerk, kein Drama. KEINE Preise, keine Euro-Beträge.",
-    "thema": "Das volle Sicherheitspaket, drei Bausteine, die zusammengehören und aufeinander abgestimmt sind:\n1. E-MAIL-SICHERHEIT: Schutz vor Phishing, gefälschten Absendern und Schadanhängen. Dazu gehören SPF, DKIM und DMARC, damit niemand in Ihrem Namen schreiben kann.\n2. ENDGERÄTESCHUTZ (Endpoint): moderner Schutz auf jedem Rechner und Server, der nicht nur bekannte Viren erkennt, sondern auch verdächtiges Verhalten - inklusive Überwachung, damit ein Vorfall auffällt, während er passiert, und nicht Wochen später.\n3. FIREWALL: der Schutz an der Grenze zwischen Ihrem Netz und dem Internet. WAHLWEISE als Gerät bei Ihnen im Haus (on premise), zum Beispiel Sophos - für Betriebe, die ihre Absicherung im eigenen Serverschrank haben wollen.\n\nDer eigentliche Verkaufspunkt ist das ZUSAMMENSPIEL: Die drei Bausteine reden miteinander und werden von EINER Stelle betreut. Wer sich E-Mail-Schutz beim einen, Virenschutz beim anderen und die Firewall beim dritten holt, hat drei Rechnungen, drei Ansprechpartner - und im Ernstfall zeigt jeder auf den anderen.\n\nEhrlich dazusagen: Es gibt keinen hundertprozentigen Schutz. Was es gibt, ist die Kombination aus Abwehr, Erkennung und jemandem, der hinschaut.\n\nKEINE Preise nennen - Paketpreis auf Anfrage, weil er von der Zahl der Geräte und Postfächer abhängt.",
+    "thema": "Das volle Sicherheitspaket, drei Bausteine, die zusammengehören und aufeinander abgestimmt sind:\n1. E-MAIL-SICHERHEIT: Schutz vor Phishing, gefälschten Absendern und Schadanhängen. Dazu gehören SPF, DKIM und DMARC, damit niemand in Ihrem Namen schreiben kann.\n2. ENDGERÄTESCHUTZ (Endpoint): moderner Schutz auf jedem Rechner und Server, der nicht nur bekannte Viren erkennt, sondern auch verdächtiges Verhalten - inklusive Überwachung, damit ein Vorfall auffällt, während er passiert, und nicht Wochen später.\n3. FIREWALL: der Schutz an der Grenze zwischen Ihrem Netz und dem Internet. WAHLWEISE als Gerät bei Ihnen im Haus (on premise), zum Beispiel Sophos - für Betriebe, die ihre Absicherung im eigenen Serverschrank haben wollen.\n\nDer eigentliche Verkaufspunkt ist das ZUSAMMENSPIEL: Die drei Bausteine reden miteinander und werden von EINER Stelle betreut. Wer sich E-Mail-Schutz beim einen, Virenschutz beim anderen und die Firewall beim dritten holt, hat drei Rechnungen, drei Ansprechpartner - und im Ernstfall zeigt jeder auf den anderen.\n\nEhrlich dazusagen: Es gibt keinen hundertprozentigen Schutz. Was es gibt, ist die Kombination aus Abwehr, Erkennung und jemandem, der hinschaut.\n\nKEINE Preise nennen - Paketpreis auf Anfrage, weil er von der Zahl der Geräte und Postfächer abhängt.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Rundumschutz aus einer Hand: E-Mail-Sicherheit, Endgeräteschutz und Firewall.",
     "path": "security-paket-fuer-unternehmen.html",
     "assets": [
@@ -1269,14 +1269,134 @@
       "assets/security-paket-fuer-unternehmen/zweitbild.png",
       "assets/security-paket-fuer-unternehmen/hintergrund_bild.png"
     ],
-    "hero_titel": "Drei Schutzschichten. Ein Ansprechpartner.",
+    "hero_titel": "Ein Sicherheitspaket, das zusammenspielt",
     "kategorie": "Sicherheit",
-    "kurzbeschreibung": "E-Mail-Sicherheit, Endgeräteschutz und Firewall aus einer Hand, betreut von einem Ansprechpartner.",
-    "bildrichtung": "Perspektive von unten nach oben, ungewohnter Blickwinkel, Stahlblau",
-    "aufbau": "wechsel",
-    "ablauf_art": "pfeile",
-    "fuer_wen_art": "chips",
-    "erstellt": "2026-08-08T15:04:08"
+    "kurzbeschreibung": "Drei Schutzebenen, ein Ansprechpartner: E-Mail-Sicherheit, Endgeräteschutz und Firewall aufeinander abgestimmt.",
+    "bildrichtung": "Etwas Unscharfes im Vordergrund, dahinter das eigentliche Motiv scharf, tiefes Violett",
+    "aufbau": "problem_zuerst",
+    "ablauf_art": "winkel",
+    "fuer_wen_art": "trennstrich",
+    "erstellt": "2026-08-08T15:04:08",
+    "inhalt": {
+      "kategorie": "Sicherheit",
+      "hero_titel": "Ein Sicherheitspaket, das zusammenspielt",
+      "hero_unterzeile": "E-Mail-Schutz, Endgeräteschutz und Firewall aus einer Hand, aufeinander abgestimmt und von einer Stelle betreut. So verweist im Ernstfall niemand auf den anderen.",
+      "fuer_wen": [
+        "Handwerksbetriebe mit mehreren Rechnern und einem eigenen Server",
+        "Einzelunternehmer und Selbständige, die Kundendaten sicher verwalten müssen",
+        "Firmen ohne eigene IT-Abteilung, die Verantwortung nicht an drei Stellen aufteilen wollen",
+        "Kanzleien und Praxen, die für sensible Unterlagen einen belastbaren Schutz brauchen"
+      ],
+      "problem_ueberschrift": "Wenn jeder Anbieter nur sein Stück sieht",
+      "problem": [
+        {
+          "titel": "Drei Verträge, drei Zuständigkeiten",
+          "text": "Wer E-Mail-Schutz, Virenschutz und Firewall bei drei verschiedenen Anbietern kauft, hat drei Rechnungen und drei Support-Wege. Bei einem Vorfall zeigt jeder auf den anderen, und die Zeit läuft weiter."
+        },
+        {
+          "titel": "Gefälschte Absender",
+          "text": "Phishing-Mails, die aussehen wie von Ihrer eigenen Adresse, treffen Ihre Kunden und Ihre Mitarbeiter. Ohne saubere Absenderprüfung kann grundsätzlich jeder in Ihrem Namen schreiben, ohne dass es sofort auffällt."
+        },
+        {
+          "titel": "Ein Vorfall bleibt lange unbemerkt",
+          "text": "Klassischer Virenschutz erkennt vor allem, was er schon kennt. Ein Angriff, der sich unauffällig verhält, läuft dann Wochen lang im Hintergrund, bevor jemand ihn entdeckt."
+        }
+      ],
+      "loesung_ueberschrift": "Drei Bausteine, eine Betreuung",
+      "loesung": [
+        {
+          "titel": "E-Mail-Sicherheit",
+          "text": "Wir richten SPF, DKIM und DMARC für Ihre Domain ein, filtern Phishing-Versuche und Schadanhänge heraus. Damit kann niemand mehr unbemerkt in Ihrem Namen schreiben.",
+          "bild": "Eine Hand sortiert Briefe durch einen Schlitz mit sichtbarem Schloss, im Hintergrund unscharf ein Büroflur"
+        },
+        {
+          "titel": "Endgeräteschutz",
+          "text": "Auf jedem Rechner und Server läuft ein moderner Schutz, der nicht nur bekannte Viren erkennt, sondern auch verdächtiges Verhalten. Eine laufende Überwachung meldet einen Vorfall, während er passiert.",
+          "bild": "Ein Techniker steckt ein kleines Sicherheitsmodul in einen Firmenrechner, daneben ein Kontrollbildschirm mit farbigen Statusbalken"
+        },
+        {
+          "titel": "Firewall vor Ort",
+          "text": "Auf Wunsch steht die Firewall als eigenes Gerät bei Ihnen im Haus, etwa von Sophos, in Ihrem eigenen Serverschrank. Die Absicherung an der Grenze zum Internet bleibt so vollständig in Ihrer Hand.",
+          "bild": "Ein halb geöffneter Serverschrank mit einem kompakten Firewall-Gerät, Kabel sind ordentlich gebündelt"
+        },
+        {
+          "titel": "Eine Betreuung für alles",
+          "text": "Alle drei Bausteine sind aufeinander abgestimmt und werden von derselben Stelle betreut. Ein Ansprechpartner, ein Blick auf alle Warnungen, keine Zuständigkeitslücke.",
+          "bild": "Ein Servicetechniker sitzt vor einem Monitor mit einer Gesamtübersicht aus grünen und wenigen roten Feldern"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Bestandsaufnahme",
+          "text": "Wir sehen uns Ihre Geräte, Postfächer und die vorhandene Netzwerktechnik an und klären, was schon abgesichert ist."
+        },
+        {
+          "titel": "Einrichtung",
+          "text": "Wir richten E-Mail-Schutz, Endgeräteschutz und Firewall ein und stimmen die drei Bausteine so ab, dass sie zusammenarbeiten."
+        },
+        {
+          "titel": "Test und Feinabstimmung",
+          "text": "Wir prüfen die Einstellungen im laufenden Betrieb und passen sie an, damit legitime Post durchkommt und Angriffe hängen bleiben."
+        },
+        {
+          "titel": "Laufender Betrieb",
+          "text": "Wir überwachen alle drei Ebenen fortlaufend und melden uns, wenn etwas auffällt, statt Wochen später einen Bericht nachzuliefern."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Eine Rechnung, ein Ansprechpartner",
+          "text": "Statt drei Verträge und drei Support-Wege gibt es eine Stelle, die für das gesamte Paket zuständig ist."
+        },
+        {
+          "titel": "Erkennung während des Vorfalls",
+          "text": "Die Überwachung des Endgeräteschutzes meldet verdächtiges Verhalten, sobald es auftritt, nicht erst im Nachgang."
+        },
+        {
+          "titel": "Abgestimmte Konfiguration",
+          "text": "E-Mail-Schutz, Endgeräteschutz und Firewall sind aufeinander eingerichtet, statt drei unabhängige Insellösungen zu sein."
+        },
+        {
+          "titel": "Absender-Fälschung erschwert",
+          "text": "Mit SPF, DKIM und DMARC wird es deutlich schwerer, in Ihrem Namen gefälschte E-Mails zu verschicken."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Brauchen wir alle drei Bausteine, oder reicht auch nur einer?",
+          "antwort": "Jeder Baustein funktioniert auch einzeln. Den eigentlichen Vorteil bringt aber das Zusammenspiel, weil die drei Ebenen sich gegenseitig ergänzen und von einer Stelle betreut werden."
+        },
+        {
+          "frage": "Was kostet das Paket?",
+          "antwort": "Das hängt von der Anzahl der Geräte und Postfächer ab. Nach der Bestandsaufnahme erhalten Sie ein Angebot, das genau zu Ihrer Umgebung passt."
+        },
+        {
+          "frage": "Läuft die Firewall bei uns im Haus oder in der Cloud?",
+          "antwort": "Wir richten sie wahlweise als eigenes Gerät bei Ihnen im Serverschrank ein, zum Beispiel von Sophos. Wer die Absicherung physisch im eigenen Haus haben möchte, bekommt genau das."
+        },
+        {
+          "frage": "Sind wir damit vollständig geschützt?",
+          "antwort": "Einen hundertprozentigen Schutz gibt es nicht. Was das Paket liefert, ist die Kombination aus Abwehr, Erkennung und jemandem, der tatsächlich hinschaut, wenn etwas auffällt."
+        },
+        {
+          "frage": "Wie schnell merken wir, wenn etwas passiert?",
+          "antwort": "Der Endgeräteschutz wird laufend überwacht. Verdächtiges Verhalten wird gemeldet, während es geschieht, nicht erst Wochen später bei einer zufälligen Prüfung."
+        }
+      ],
+      "cta_titel": "Sicherheitspaket anfragen",
+      "cta_text": "Schildern Sie uns Ihre Umgebung, und wir sagen Ihnen, welche Bausteine für Ihr Unternehmen sinnvoll sind.",
+      "seo_beschreibung": "E-Mail-Sicherheit, Endgeräteschutz und Firewall aus einer Hand, aufeinander abgestimmt und zentral betreut. Angebot nach Bestandsaufnahme.",
+      "kurzbeschreibung": "Drei Schutzebenen, ein Ansprechpartner: E-Mail-Sicherheit, Endgeräteschutz und Firewall aufeinander abgestimmt.",
+      "hero_bild": "Ein Techniker schließt ein kompaktes Firewall-Gerät in einem halb geöffneten Serverschrank an, Kabel sind ordentlich gebündelt",
+      "zweitbild": "Nahaufnahme einer Hand, die ein massives Vorhängeschloss an einer stählernen Eingangstür schließt, im Hintergrund unscharf ein Bürogebäude",
+      "hintergrund_bild": "Im Vordergrund unscharf ein Schlüsselbund, dahinter scharf ein geschlossener Serverschrank mit einem kleinen Firewall-Gerät, die ganze Szene in tiefem Violett getaucht"
+    },
+    "bilder": {
+      "hero_bild": "assets/security-paket-fuer-unternehmen/hero_bild.png",
+      "zweitbild": "assets/security-paket-fuer-unternehmen/zweitbild.png",
+      "hintergrund_bild": "assets/security-paket-fuer-unternehmen/hintergrund_bild.png"
+    },
+    "ueberarbeitet": "2026-08-10T00:45:47"
   },
   "ki-assistent-fuer-ihren-betrieb": {
     "titel": "KI-Assistent für Ihren Betrieb",
