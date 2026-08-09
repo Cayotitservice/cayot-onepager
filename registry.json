@@ -141,7 +141,7 @@
   "lokaler-it-notdienst": {
     "titel": "Lokaler IT-Notdienst",
     "stil": "Sachlich, warm und direkt. Kein Marketing-Geschwurbel, keine Angstmache. So schreiben, dass ein Handwerker und ein Steuerberater es gleich gut verstehen. KEINE Preise, keine Euro-Betraege, keine Stundensaetze - stattdessen 'Preis nach Aufwand' oder 'Festpreis auf Anfrage'. Ton: der Nachbar, der sich wirklich auskennt und schnell da ist.",
-    "thema": "Typische Faelle: PC startet nicht mehr; WLAN funktioniert nicht; der Drucker spinnt; ein neuer PC muss eingerichtet werden; Daten vom alten Rechner uebernehmen; NAS einrichten; Microsoft-Konto reparieren; Outlook funktioniert nicht; Backup einrichten. GANZ WICHTIG und muss klar auf der Seite stehen: Es wird mindestens eine halbe Stunde berechnet, danach nach tatsaechlichem Aufwand. Das gehoert offen kommuniziert, am besten in den Ablauf oder die FAQ - nicht verstecken. Wir kommen persoenlich vorbei oder helfen per Fernwartung, je nachdem was schneller geht. Zielgruppe sind ausdruecklich auch Privatleute und Einzelunternehmer, nicht nur Firmen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Einzugsgebiet klar benennen: Bad Kreuznach und rund 100 km Umkreis. Abrechnung klar sagen: Berechnet wird mindestens die erste halbe Stunde plus Anfahrt. Die Formulierung 'je nachdem, was schneller geht' zum Thema vor Ort oder Fernwartung BITTE WEGLASSEN - wir kommen vor Ort oder helfen aus der Ferne, das entscheiden wir gemeinsam mit dem Kunden, ohne diese Floskel.",
+    "thema": "Typische Faelle: PC startet nicht mehr; WLAN funktioniert nicht; der Drucker spinnt; ein neuer PC muss eingerichtet werden; Daten vom alten Rechner uebernehmen; NAS einrichten; Microsoft-Konto reparieren; Outlook funktioniert nicht; Backup einrichten. GANZ WICHTIG und muss klar auf der Seite stehen: Es wird mindestens eine halbe Stunde berechnet, danach nach tatsaechlichem Aufwand. Das gehoert offen kommuniziert, am besten in den Ablauf oder die FAQ - nicht verstecken. Wir kommen persoenlich vorbei oder helfen per Fernwartung, je nachdem was schneller geht. Zielgruppe sind ausdruecklich auch Privatleute und Einzelunternehmer, nicht nur Firmen.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Einzugsgebiet klar benennen: Bad Kreuznach und rund 100 km Umkreis. Abrechnung klar sagen: Berechnet wird mindestens die erste halbe Stunde plus Anfahrt. Die Formulierung 'je nachdem, was schneller geht' zum Thema vor Ort oder Fernwartung BITTE WEGLASSEN - wir kommen vor Ort oder helfen aus der Ferne, das entscheiden wir gemeinsam mit dem Kunden, ohne diese Floskel.\n\nÄNDERUNGSWÜNSCHE für diese Überarbeitung: Die Texte sollen deutlich professioneller klingen.",
     "produkt": "Schnelle IT-Hilfe vor Ort und per Fernwartung in Bad Kreuznach und Umgebung.",
     "path": "lokaler-it-notdienst.html",
     "assets": [
@@ -149,15 +149,134 @@
       "assets/lokaler-it-notdienst/zweitbild.png",
       "assets/lokaler-it-notdienst/hintergrund_bild.png"
     ],
-    "hero_titel": "Schnelle IT-Hilfe in Bad Kreuznach",
-    "bildrichtung": "Nahaufnahme mit geringer Schärfentiefe, warmes Bernsteinlicht, weicher Hintergrund",
+    "hero_titel": "Schnelle Hilfe, wenn der Rechner streikt",
+    "bildrichtung": "Aufsicht von schräg oben, geometrische Muster und klare Ordnung, dezentes Türkis",
     "erstellt": "2026-08-07T23:00:34",
-    "ueberarbeitet": "2026-08-08T15:11:13",
-    "aufbau": "wechsel",
+    "ueberarbeitet": "2026-08-10T00:36:40",
+    "aufbau": "klassisch",
     "kategorie": "Soforthilfe",
-    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung in Bad Kreuznach und rund 100 km Umkreis.",
-    "ablauf_art": "strang",
-    "fuer_wen_art": "trennstrich"
+    "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung in Bad Kreuznach und Umgebung, für Privatleute, Selbständige und Betriebe.",
+    "ablauf_art": "pfeile",
+    "fuer_wen_art": "zeilen",
+    "inhalt": {
+      "kategorie": "Soforthilfe",
+      "hero_titel": "Schnelle Hilfe, wenn der Rechner streikt",
+      "hero_unterzeile": "Wir kommen bei Ihnen vorbei oder verbinden uns per Fernwartung mit Ihrem Gerät - für Privatleute, Selbständige und Betriebe in Bad Kreuznach und rund 100 Kilometer Umkreis.",
+      "fuer_wen": [
+        "Privatleute, deren PC, WLAN oder Drucker nicht mehr funktioniert",
+        "Einzelunternehmer und Selbständige ohne eigene IT-Abteilung",
+        "Handwerksbetriebe mit Büro und Werkstatt",
+        "Kleine Firmen, die schnell wieder arbeitsfähig sein müssen"
+      ],
+      "problem_ueberschrift": "Wenn die Technik genau jetzt ausfällt",
+      "problem": [
+        {
+          "titel": "Der Rechner steht still",
+          "text": "Der PC startet nicht mehr, Outlook lässt sich nicht öffnen oder der Drucker verweigert die Arbeit. Für Privatleute ist das ärgerlich, für ein Geschäft bedeutet es Stillstand."
+        },
+        {
+          "titel": "Keine eigene IT-Abteilung",
+          "text": "Wer selbständig arbeitet oder einen kleinen Betrieb führt, hat oft niemanden im Haus, der sich mit Netzwerk, Konten oder Backups auskennt. Für jede Kleinigkeit einen Fachmann zu finden, kostet Zeit, die fehlt."
+        },
+        {
+          "titel": "Unklar, wer zuständig ist",
+          "text": "Der Router stammt vom Internetanbieter, der Drucker vom Fachhandel, die Software von einem dritten Anbieter. Bei einem Problem schiebt jeder auf den anderen, und die eigentliche Ursache bleibt ungeklärt."
+        }
+      ],
+      "loesung_ueberschrift": "Was wir konkret für Sie tun",
+      "loesung": [
+        {
+          "titel": "Fehler vor Ort finden",
+          "text": "Wir kommen zu Ihnen nach Hause oder ins Büro und sehen uns Gerät und Anschlüsse direkt an. Viele Ursachen lassen sich nur so zuverlässig erkennen, etwa bei Kabeln, Steckdosen oder der Hardware selbst.",
+          "bild": "Hände untersuchen ein geöffnetes Computergehäuse, ein Schraubendreher liegt griffbereit daneben, warmes Licht aus einem Wohnzimmer"
+        },
+        {
+          "titel": "Hilfe per Fernwartung",
+          "text": "Bei Software-Problemen wie Outlook, Windows-Updates oder dem Microsoft-Konto reicht oft eine Fernwartungssitzung. Sie sehen auf Ihrem Bildschirm, was wir tun, und können jederzeit nachfragen.",
+          "bild": "Bildschirm mit laufender Fernwartungssitzung, Mauszeiger auf einem geöffneten Fenster, im Vordergrund eine Hand auf der Maus"
+        },
+        {
+          "titel": "Geräte einrichten und Daten umziehen",
+          "text": "Ein neuer PC, ein neues NAS oder ein anderer Drucker - wir richten das Gerät ein und übernehmen Ihre Daten vom alten Rechner. Danach läuft alles wieder so, wie Sie es gewohnt sind.",
+          "bild": "Zwei Festplatten nebeneinander auf einem Tisch, verbunden mit einem Datenkabel, eine Hand hält eine der Platten fest"
+        },
+        {
+          "titel": "Backup und Router in Ordnung bringen",
+          "text": "Wir richten ein automatisches Backup ein, damit Fotos und Dokumente nicht verloren gehen, und sorgen dafür, dass WLAN und Router wieder stabil laufen.",
+          "bild": "WLAN-Router hinter einem Regal, Kabel sauber verlegt, Statuslichter leicht sichtbar im Halbdunkel"
+        }
+      ],
+      "ablauf": [
+        {
+          "titel": "Anruf oder Nachricht",
+          "text": "Sie schildern kurz, was nicht funktioniert. Wir sagen Ihnen, ob ein Besuch nötig ist oder Fernwartung reicht."
+        },
+        {
+          "titel": "Vor-Ort-Termin oder Fernwartung",
+          "text": "Je nach Fall kommen wir bei Ihnen vorbei oder verbinden uns per Fernwartung mit Ihrem Gerät. Das legen wir gemeinsam mit Ihnen fest."
+        },
+        {
+          "titel": "Fehler beheben",
+          "text": "Wir suchen die Ursache, beheben sie und erklären Ihnen, was das Problem war und wie es dazu kam."
+        },
+        {
+          "titel": "Abrechnung nach Aufwand",
+          "text": "Berechnet wird mindestens die erste halbe Stunde plus Anfahrt, danach der tatsächliche Zeitaufwand. Sie erhalten eine nachvollziehbare Rechnung."
+        }
+      ],
+      "vorteile": [
+        {
+          "titel": "Vor Ort in Bad Kreuznach und Umgebung",
+          "text": "Wir sind in Bad Kreuznach und im Umkreis von rund 100 Kilometern innerhalb kurzer Zeit bei Ihnen."
+        },
+        {
+          "titel": "Fernwartung ohne lange Wartezeit",
+          "text": "Viele Probleme lösen wir per Fernwartung noch am selben Tag, ohne dass Sie einen Termin abwarten müssen."
+        },
+        {
+          "titel": "Klare Abrechnung",
+          "text": "Sie wissen vorher, dass mindestens eine halbe Stunde plus Anfahrt berechnet wird, danach zählt der tatsächliche Aufwand."
+        },
+        {
+          "titel": "Für Privat und Beruf",
+          "text": "Ob privater Rechner oder Firmen-PC - wir kennen beide Seiten und richten uns nach Ihrem Bedarf."
+        }
+      ],
+      "faq": [
+        {
+          "frage": "Wie groß ist Ihr Einzugsgebiet",
+          "antwort": "Wir sind in Bad Kreuznach und im Umkreis von rund 100 Kilometern vor Ort für Sie erreichbar. Bei größerer Entfernung helfen wir häufig per Fernwartung."
+        },
+        {
+          "frage": "Was kostet ein Einsatz",
+          "antwort": "Berechnet wird mindestens die erste halbe Stunde plus Anfahrt, danach der tatsächliche Aufwand. Den genauen Rahmen besprechen wir vorab mit Ihnen."
+        },
+        {
+          "frage": "Kommen Sie vorbei oder arbeiten Sie per Fernwartung",
+          "antwort": "Beides ist möglich. Wir besprechen mit Ihnen, was für Ihr Problem sinnvoll ist, und legen das gemeinsam fest."
+        },
+        {
+          "frage": "Helfen Sie auch Privatpersonen",
+          "antwort": "Ja. Ein großer Teil unserer Einsätze sind private Haushalte, dazu Einzelunternehmer und kleine Betriebe."
+        },
+        {
+          "frage": "Was mache ich, wenn mein PC gar nicht mehr startet",
+          "antwort": "Schildern Sie uns kurz, was passiert, wenn Sie ihn einschalten. Oft lässt sich schon am Telefon einschätzen, ob ein Besuch nötig ist."
+        }
+      ],
+      "cta_titel": "Jetzt Kontakt aufnehmen",
+      "cta_text": "Schildern Sie uns kurz Ihr Problem, wir sagen Ihnen den nächsten Schritt.",
+      "seo_beschreibung": "IT-Notdienst in Bad Kreuznach: Hilfe vor Ort oder per Fernwartung bei PC, WLAN, Drucker und Backup. Für Privat und Betrieb.",
+      "kurzbeschreibung": "Schnelle IT-Hilfe vor Ort oder per Fernwartung in Bad Kreuznach und Umgebung, für Privatleute, Selbständige und Betriebe.",
+      "hero_bild": "Geöffnete Werkzeugtasche mit Schraubendreher und Kabeln vor einer Wohnungstür, im Hintergrund ein Treppenhaus",
+      "zweitbild": "Hand hält ein Messgerät an eine offene Netzteilbuchse eines aufgeklappten Computergehäuses auf einem Tisch",
+      "hintergrund_bild": "Aufsicht von schräg oben auf ein geordnet ausgebreitetes Werkzeugset aus Schraubendrehern, Kabeln und einer Taschenlampe auf dunklem Untergrund, klare geometrische Anordnung, dezente türkise Lichtreflexion"
+    },
+    "bilder": {
+      "hero_bild": "assets/lokaler-it-notdienst/hero_bild.png",
+      "zweitbild": "assets/lokaler-it-notdienst/zweitbild.png",
+      "hintergrund_bild": "assets/lokaler-it-notdienst/hintergrund_bild.png"
+    }
   },
   "microsoft-365-service": {
     "titel": "Microsoft 365 Service",
