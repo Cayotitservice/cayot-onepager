@@ -700,7 +700,8 @@
       "hero_bild": "assets/e-mail-sicherheitscheck/hero_bild.png",
       "zweitbild": "assets/e-mail-sicherheitscheck/zweitbild.png",
       "hintergrund_bild": "assets/e-mail-sicherheitscheck/hintergrund_bild.png"
-    }
+    },
+    "neu_gesetzt": "2026-08-19T07:09:09"
   },
   "it-checkup-fuer-kleine-unternehmen": {
     "titel": "IT-Checkup für kleine Unternehmen",
