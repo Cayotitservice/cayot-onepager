@@ -559,7 +559,8 @@
       "hero_bild": "assets/nas-und-backup-service/hero_bild.png",
       "zweitbild": "assets/nas-und-backup-service/zweitbild.png",
       "hintergrund_bild": "assets/nas-und-backup-service/hintergrund_bild.png"
-    }
+    },
+    "neu_gesetzt": "2026-08-19T07:09:06"
   },
   "e-mail-sicherheitscheck": {
     "titel": "E-Mail-Sicherheitscheck",
