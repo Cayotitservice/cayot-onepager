@@ -418,7 +418,8 @@
       "hero_bild": "assets/microsoft-365-service/hero_bild.png",
       "zweitbild": "assets/microsoft-365-service/zweitbild.png",
       "hintergrund_bild": "assets/microsoft-365-service/hintergrund_bild.png"
-    }
+    },
+    "neu_gesetzt": "2026-08-19T07:09:02"
   },
   "nas-und-backup-service": {
     "titel": "NAS und Backup Service",
