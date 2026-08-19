@@ -1264,7 +1264,8 @@
       "hero_bild": "assets/it-dokumente/hero_bild.png",
       "zweitbild": "assets/it-dokumente/zweitbild.png",
       "hintergrund_bild": "assets/it-dokumente/hintergrund_bild.png"
-    }
+    },
+    "neu_gesetzt": "2026-08-19T07:09:24"
   },
   "security-paket-fuer-unternehmen": {
     "titel": "Security-Paket für Unternehmen",
